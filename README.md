@@ -2,6 +2,30 @@
 
 Ứng dụng web tiếng Việt có máy chủ và cơ sở dữ liệu thật cho giáo viên/học sinh. Giao diện xanh lá, hỗ trợ điện thoại, máy tính và sáng/tối. Không cần cài thư viện JavaScript để chạy.
 
+## Bản dùng thử mở trực tiếp trên web
+
+Repo đã có **`index.html` ở thư mục gốc và `assets/`**, chạy hoàn toàn tĩnh trên GitHub Pages. Quy trình xuất bản: [docs/PAGES.md](docs/PAGES.md).
+
+Đường dẫn dự kiến sau khi bật Pages: **https://vannam080306-hub.github.io/BTVN/**.
+
+| Vai trò dùng thử | Tên đăng nhập | Mật khẩu mẫu |
+|---|---|---|
+| Giáo viên | `giaovien` | `demo2026` |
+| Học sinh 1 | `hocsinh` | `demo2026` |
+| Học sinh 2 | `hocsinh2` | `demo2026` |
+
+**Chỉ là bản dùng thử:** dữ liệu lưu ở localStorage của trình duyệt, không đồng bộ thiết bị; đăng nhập/quyền chỉ để mô phỏng trải nghiệm, không phải biện pháp bảo vệ dữ liệu thật. AI phân tích/tạo bài/giải thích/đề xuất được mô phỏng bằng mẫu và quy tắc, không gọi dịch vụ AI. Không nhập mật khẩu, tài liệu hoặc thông tin học sinh thật. Tải tài liệu trên Pages hỗ trợ TXT/văn bản dán; PDF/Word dùng bản có máy chủ.
+
+Nút “Đặt lại dữ liệu mẫu” xóa dữ liệu thử trên trình duyệt và tạo lại tài khoản mặc định. Bản máy chủ, cơ sở dữ liệu và cấu hình Docker bên dưới vẫn được giữ riêng.
+
+Tạo lại bản Pages sau khi sửa giao diện:
+
+```sh
+node scripts/build-pages.mjs
+```
+
+Workflow chỉ tải `index.html`, `.nojekyll` và `assets/` lên Pages; không tải mã máy chủ, dữ liệu, tệp cấu hình hay bản sao lưu.
+
 **Đây là bản nền tảng v1 để thử nghiệm và tiếp tục phát triển, chưa phải bản đã nghiệm thu đầy đủ 28 yêu cầu ở quy mô sản xuất.** Phạm vi, những phần làm được và giới hạn được đối chiếu tại [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md).
 
 ## Chạy nhanh
@@ -76,7 +100,7 @@ docker compose up --build -d
 
 Ứng dụng bind cổng máy chủ tại `127.0.0.1:3000`. Đặt reverse proxy có HTTPS phía trước; chỉ sau khi HTTPS hoạt động mới đặt `COOKIE_SECURE=true`. Gắn volume bền vững cho cả dữ liệu và sao lưu. Dùng một tiến trình ứng dụng cho bản SQLite này.
 
-**GitHub Pages không chạy được phần máy chủ của ứng dụng.** Repo là nơi lưu mã nguồn. Muốn có địa chỉ website công khai cần triển khai container hoặc Node trên máy chủ có ổ đĩa bền vững.
+**GitHub Pages chạy bản dùng thử tĩnh ở thư mục gốc, không chạy phần máy chủ của ứng dụng.** Muốn dùng tài khoản và dữ liệu thật cần triển khai container hoặc Node trên máy chủ có ổ đĩa bền vững.
 
 Đọc [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) trước khi dùng với dữ liệu thật.
 
