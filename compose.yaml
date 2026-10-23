@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      PYTHON: /opt/venv/bin/python
+    volumes:
+      - bt_vn_data:/app/data
+      - bt_vn_backups:/app/backups
+volumes:
+  bt_vn_data:
+  bt_vn_backups:
