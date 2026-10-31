@@ -1,4 +1,4 @@
-name: Publish BTVN demo to GitHub Pages
+name: Publish BTVN to GitHub Pages
 on:
   push:
     branches: [main]
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '24'
       - run: node scripts/build-pages.mjs
-      - run: node --test tests/demo.test.mjs
+      - run: node --test tests/*.test.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Prepare static website only
