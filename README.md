@@ -18,7 +18,7 @@ Luồng: **Môn học → Lớp → Chương → Câu hỏi**. Không có đăng
 
 ## Nội dung hiện có
 
-Danh mục chương tham khảo cho 9 tổ hợp môn/lớp. Thứ tự có thể điều chỉnh theo bộ sách. Có **27 câu minh họa** (3 câu ở chương đầu mỗi môn/lớp); các chương khác ghi rõ đang bổ sung. Chưa phải ngân hàng đầy đủ chương trình THPT.
+Danh mục chương tham khảo cho 9 tổ hợp môn/lớp. Thứ tự có thể điều chỉnh theo bộ sách. Có **27 câu minh họa** (3 câu ở chương đầu mỗi môn/lớp) và **62 câu Toán 11 chương 3** biên soạn từ 7 PDF được cung cấp. Các chương khác ghi rõ đang bổ sung. Chưa phải ngân hàng đầy đủ chương trình THPT.
 
 ## Chỉnh sửa
 
@@ -41,3 +41,7 @@ Workflow `.github/workflows/pages.yml` tạo `index.html`, `assets/`, kiểm th�
 `site/` là nguồn chỉnh sửa; `index.html` và `assets/` là đầu ra tạo lại. Trên hosting tĩnh chỉ cần `index.html`, `.nojekyll`, `assets/`.
 
 Bản v2 thay thế giao diện cũ. Tệp máy chủ, tài khoản và bản mô phỏng cũ được loại khỏi bản hiện tại; lịch sử Git giữ phiên bản trước.
+
+## Toán 11 chương 3
+
+Dữ liệu ở `site/toan11-chuong3.js`, gồm 7 dạng, bảng số liệu dạng văn bản, 4 lựa chọn, gợi ý và lời giải. Xem `docs/TOAN11-CHUONG3.md` để đối chiếu nguồn và các hiệu chỉnh đề. Không tải bản PDF gốc lên website.
