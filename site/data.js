@@ -1,3 +1,4 @@
+import {chapter2Questions} from './toan11-chuong2.js';
 import {chapter1Questions} from './toan11-chuong1.js';
 import {chapter3Questions} from './toan11-chuong3.js';
 export const subjects=[
@@ -54,4 +55,4 @@ const bank={
  q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
  q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
 };
-export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}
+export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}

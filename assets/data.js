@@ -1,5 +1,6 @@
-import {chapter1Questions} from './toan11-chuong1.js?v=10aeb24a7436';
-import {chapter3Questions} from './toan11-chuong3.js?v=10aeb24a7436';
+import {chapter2Questions} from './toan11-chuong2.js?v=f672d09bc5db';
+import {chapter1Questions} from './toan11-chuong1.js?v=f672d09bc5db';
+import {chapter3Questions} from './toan11-chuong3.js?v=f672d09bc5db';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
@@ -54,4 +55,4 @@ const bank={
  q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
  q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
 };
-export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}
+export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}

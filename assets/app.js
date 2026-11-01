@@ -1,5 +1,5 @@
-import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=10aeb24a7436';
-import {subjects,chapters} from './data.js?v=10aeb24a7436';
+import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=f672d09bc5db';
+import {subjects,chapters} from './data.js?v=f672d09bc5db';
 const app=document.querySelector('#app');
 const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icons={book:'M4 4h6a3 3 0 0 1 2 2v15a5 5 0 0 0-5-2H4V4Zm16 0h-6a3 3 0 0 0-2 2v15a5 5 0 0 1 5-2h3V4Z',arrow:'M5 12h14m-5-5 5 5-5 5',back:'M19 12H5m5-5-5 5 5 5',star:'m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z',check:'m5 12 4 4L19 6',sun:'M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1 1M18 18l1 1M5 19l1-1M18 6l1-1M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0',search:'M20 20l-5-5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0',chevron:'m9 5 7 7-7 7',home:'m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9'};
