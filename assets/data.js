@@ -1,4 +1,4 @@
-import {chapter3Questions} from './toan11-chuong3.js';
+import {chapter3Questions} from './toan11-chuong3.js?v=5553c28a71b4';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
