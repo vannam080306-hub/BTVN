@@ -1,6 +1,6 @@
-import {geometryFigure} from './geometry.js?v=2b67ffdef772';
-import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=2b67ffdef772';
-import {subjects,chapters} from './data.js?v=2b67ffdef772';
+import {geometryFigure} from './geometry.js?v=67c01d792215';
+import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=67c01d792215';
+import {subjects,chapters} from './data.js?v=67c01d792215';
 const app=document.querySelector('#app');
 const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icons={book:'M4 4h6a3 3 0 0 1 2 2v15a5 5 0 0 0-5-2H4V4Zm16 0h-6a3 3 0 0 0-2 2v15a5 5 0 0 1 5-2h3V4Z',arrow:'M5 12h14m-5-5 5 5-5 5',back:'M19 12H5m5-5-5 5 5 5',star:'m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z',check:'m5 12 4 4L19 6',sun:'M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1 1M18 18l1 1M5 19l1-1M18 6l1-1M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0',search:'M20 20l-5-5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0',chevron:'m9 5 7 7-7 7',home:'m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9'};
@@ -36,6 +36,18 @@ document.addEventListener('input',event=>{if(event.target.id==='search'){query=e
 document.addEventListener('change',event=>{if(event.target.id==='chapter-select')go(`${route.subject}/${route.grade}/${event.target.value}`);if(event.target.id==='lesson-select'){lessonFilter=event.target.value;typeFilter='';index=0;render();}if(event.target.id==='type-select'){typeFilter=event.target.value;index=0;renderQuestion();}if(event.target.id==='pins-only'){onlyPins=event.target.checked;index=0;renderQuestion();}});
 document.addEventListener('submit',event=>{if(event.target.id!=='short-form')return;event.preventDefault();const q=filtered()[index];if(!q||q.kind!=='short'||isAnswered(q,saved.answers[q.id]))return;const response=event.target.elements.answer.value;try{const correct=gradeShortAnswer(q,response);saved.answers[q.id]={response,correct};store();render();}catch(error){document.querySelector('#answer-error').textContent=error.message;}});
 document.addEventListener('click',event=>{const button=event.target.closest('button');if(!button||button.disabled)return;const action=button.dataset.action;if(action==='theme'){localStorage.setItem('btvn-study-theme',document.documentElement.dataset.theme==='dark'?'light':'dark');render();return;}if(!route.chapter)return;const q=filtered()[index];if(button.dataset.answer!==undefined&&q){saved.answers[q.id]=Number(button.dataset.answer);store();render();}else if(button.dataset.index!==undefined){index=Number(button.dataset.index);renderQuestion();}else if(action==='pin'&&q){saved.pins[q.id]=!saved.pins[q.id];store();renderQuestion();}else if(action==='hint'&&q){saved.hints[q.id]=!saved.hints[q.id];store();renderQuestion();}else if(action==='prev'||action==='next'){index+=action==='next'?1:-1;renderQuestion();}else if(action==='clear-filter'){query='';onlyPins=false;typeFilter='';lessonFilter='';index=0;render();}else if(action==='reset'){showReset();}});
+function showFigure(button){
+ const figure=button.closest('.geometry-figure');
+ if(!figure)return;
+ const dialog=document.createElement('dialog');
+ dialog.className='geometry-dialog';
+ dialog.setAttribute('aria-label','Hình vẽ phóng to');
+ dialog.innerHTML='<div class="geometry-dialog-header"><strong>'+figure.querySelector('.geometry-toolbar span').textContent+'</strong><button class="button" type="button" data-close-figure>Đóng hình ×</button></div><div class="geometry-dialog-canvas">'+figure.querySelector('svg').outerHTML+'</div><p>'+figure.querySelector('figcaption').textContent+'</p>';
+ document.body.append(dialog);dialog.showModal();
+ dialog.querySelector('[data-close-figure]').onclick=()=>dialog.close();
+ dialog.addEventListener('close',()=>{dialog.remove();if(button.isConnected)button.focus();});
+}
+document.addEventListener('click',event=>{const button=event.target.closest('[data-action="zoom-figure"]');if(button)showFigure(button);});
 function showReset(){const dialog=document.createElement('dialog');dialog.innerHTML=`<h2>Làm lại chương ${route.chapter}?</h2><p>Kết quả trả lời và gợi ý đã mở trong chương này sẽ được xóa trên thiết bị. Các câu đã ghim vẫn được giữ.</p><div class="dialog-actions"><button class="button" data-cancel>Giữ kết quả</button><button class="button primary" data-confirm>Làm lại</button></div>`;document.body.append(dialog);dialog.showModal();dialog.querySelector('[data-cancel]').onclick=()=>dialog.close();dialog.querySelector('[data-confirm]').onclick=()=>{for(const q of current().questions){delete saved.answers[q.id];delete saved.hints[q.id];}store();dialog.close();render();toast('Đã đặt lại kết quả chương.');};dialog.addEventListener('close',()=>dialog.remove());}
 document.addEventListener('keydown',event=>{if(!route.chapter||event.altKey||event.ctrlKey||event.metaKey||event.target.closest('input,select,textarea,dialog'))return;if(event.key==='ArrowRight')document.querySelector('[data-action="next"]')?.click();if(event.key==='ArrowLeft')document.querySelector('[data-action="prev"]')?.click();if(['1','2','3','4'].includes(event.key))document.querySelector(`[data-answer="${Number(event.key)-1}"]`)?.click();});
 render();

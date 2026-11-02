@@ -57,5 +57,5 @@ export const chapter4Questions = rows.map(([lesson, page, type, prompt, choices,
   const answer = (i * 3 + 1) % 4;
   const options = [...choices];
   [options[0], options[answer]] = [options[answer], options[0]];
-  return {id: `toan-11-4-${i + 1}-v1`, kind: 'choice', lesson: lessons[lesson], type, prompt, options, answer, explanation, hint, difficulty, ...(figure ? {figure} : {}), sample: false, source: {file: files[lesson], page, item: 'Biên soạn theo dạng'}};
+  return {id: `toan-11-4-${i + 1}-v1`, kind: 'choice', lesson: lessons[lesson], type, prompt, options, answer, explanation, hint, difficulty, figure: {chapter4: i + 1}, sample: false, source: {file: files[lesson], page, item: 'Biên soạn theo dạng'}};
 });

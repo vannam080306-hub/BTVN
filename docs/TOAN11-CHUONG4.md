@@ -28,10 +28,14 @@
 
 ## Hình minh họa
 
-Các hình SVG được vẽ lại bằng mã trong `site/geometry.js`, gồm tứ diện, hình chóp, lăng trụ và hình hộp. Chỉ thể hiện cấu hình đỉnh; đề bài xác định các điểm phụ. Chú thích hiển thị trực tiếp để không hiểu hình biểu diễn chung là hình vẽ đầy đủ riêng cho từng câu. Không suy luận độ dài hoặc góc từ hình vẽ.
+Mỗi câu trong 48 câu có một cấu hình SVG riêng ở `site/geometry.js`, được gắn bằng `figure.chapter4`. Các điểm phụ, trọng tâm, trung điểm, giao điểm và đường kéo dài đều được dựng bằng phép toán affine. Các câu lý thuyết dùng cấu hình minh họa có chú thích giới hạn của ví dụ, không gán tính chất riêng của hình cho mọi trường hợp.
+
+Hình thể hiện đầy đủ đỉnh, điểm phụ và các đối tượng trong đề. Mặt phẳng/thiết diện tô nhẹ, đường phụ màu xanh, đường chiếu nét đứt có mũi tên, cạnh khuất và phần kéo dài dùng nét đứt. Nhãn điểm có viền nền để đọc trên đường và được bố trí tránh nhau. Nút **Phóng to hình** mở hộp thoại lớn, có thể cuộn ngang trên điện thoại, đóng bằng nút hoặc phím Escape.
+
+Các hình chỉ bổ sung cách trình bày; ID câu, đáp án và tiến độ cũ được giữ nguyên. Không ghi kết quả độ dài hoặc tỉ số cần tìm lên hình.
 
 ## Tích hợp và kiểm tra
 
 `site/toan11-chuong4.js` gắn vào chương 4 trong `site/data.js`; hình được hiển thị bởi `site/app.js`. Build sao chép cả dữ liệu và module SVG, đồng thời thêm phiên bản cho đường dẫn nhập để làm mới bộ nhớ đệm. Preview cho phép tải hai module mới.
 
-Chạy `node scripts/build-pages.mjs` và `node --test tests/*.test.mjs`. Kiểm tra cấu trúc, nguồn trang, ID, lựa chọn khác nhau, phân bố sáu phần; kiểm chứng độc lập các tỉ số, trung điểm, trọng tâm, mặt phẳng song song và phép chiếu bằng các cấu hình tọa độ xiên, cùng kiểm tra giao diện thực tế.
+Chạy `node scripts/build-pages.mjs` và `node --test tests/*.test.mjs`. Kiểm tra cấu trúc, nguồn trang, ID, lựa chọn khác nhau, phân bố sáu phần; kiểm chứng độc lập các tỉ số, trung điểm, trọng tâm, mặt phẳng song song và phép chiếu bằng các cấu hình tọa độ xiên, kiểm tra các phép dựng hình theo dữ liệu thực sự dùng để vẽ, rà soát 48 hình theo sáu nhóm và thử phóng to/đóng hình trên giao diện thực tế.

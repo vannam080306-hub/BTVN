@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {chapter4Questions as qs} from '../site/toan11-chuong4.js';
 import {chapters} from '../site/data.js';
-import {geometryFigure} from '../site/geometry.js';
+import {geometryFigure,chapter4Diagram} from '../site/geometry.js';
 const answer = n => qs[n - 1].options[qs[n - 1].answer];
 const add = (a,b) => a.map((v,i)=>v+b[i]);
 const sub = (a,b) => a.map((v,i)=>v-b[i]);
@@ -91,9 +91,52 @@ test('Kiểm chứng phép chiếu xiên và giao điểm trên phần kéo dài
   assert.equal(answer(48),'3');
 });
 
-test('Các chương cũ không có hình mới; hình SVG hỗ trợ cả cấu hình SABC',()=>{
-  assert.equal(geometryFigure(undefined),'');
-  assert.equal(geometryFigure('unknown'),'');
-  assert.match(geometryFigure('stetra'),/Tứ diện SABC/);
-  assert.match(geometryFigure('box'),/stroke-dasharray/);
+test('Mỗi câu có hình riêng, mọi đỉnh, đường và mặt đều hợp lệ',()=>{
+ const outputs=new Set();
+ for(let n=1;n<=48;n++){
+  const q=qs[n-1],s=chapter4Diagram(n),html=geometryFigure(q.figure);
+  assert.deepEqual(q.figure,{chapter4:n});
+  assert.match(html,new RegExp('data-figure-question="'+n+'"'));
+  assert.match(html,/Phóng to hình/);
+  assert.doesNotMatch(html,/NaN|Infinity|undefined|Hình biểu diễn chung/);
+  assert.ok(s.edges.length>0);
+  for(const p of Object.values(s.points))assert.ok(p.xy.every(Number.isFinite));
+  for(const e of s.edges){assert.ok(s.points[e.a]);assert.ok(s.points[e.b]);}
+  for(const f of s.faces)for(const k of f.keys)assert.ok(s.points[k]);
+  outputs.add(html);
+ }
+ assert.equal(outputs.size,48);
+ assert.equal(geometryFigure(undefined),'');
+ assert.equal(geometryFigure('unknown'),'');
+});
+
+const p2=(n,key)=>chapter4Diagram(n).get(key);
+const mid2=(a,b)=>a.map((v,i)=>(v+b[i])/2);
+const near2=(a,b)=>a.forEach((v,i)=>near(v,b[i]));
+const cross2=(a,b)=>a[0]*b[1]-a[1]*b[0];
+const sub2=(a,b)=>a.map((v,i)=>v-b[i]);
+const onLine=(p,a,b)=>near(cross2(sub2(p,a),sub2(b,a)),0);
+test('Các điểm phụ thực sự thỏa trung điểm, trọng tâm và giao điểm',()=>{
+ for(const [n,defs] of [[8,[['M','A','B'],['N','A','C'],['P','A','D']]],[12,[['M','A','B'],['N','A','C']]],[16,[['M','A','B'],['N','C','D'],['P','A','C'],['Q','B','D']]],[20,[['M','S','A'],['N','S','B']]],[21,[['M','A','B'],['N','B','C']]],[30,[['M','S','A'],['N','S','D'],['O','A','C']]],[31,[['M','S','A'],['N','S','B'],['P','S','C'],['Q','S','D']]],[44,[['I','A','B'],['I′','A′','B′']]],[46,[['M','B','B′'],['N','C','C′']]],[47,[['M','A','A′'],['N','B','B′'],['P','C','C′']]]]){
+  for(const [k,a,b]of defs)near2(p2(n,k),mid2(p2(n,a),p2(n,b)));
+ }
+ for(const [n,k,vertices]of [[13,'G',['A','B','C']],[13,'H',['A','B','D']],[23,'G',['S','A','B']],[23,'H',['S','B','C']]]){
+  near2(p2(n,k),[0,1].map(i=>vertices.reduce((sum,v)=>sum+p2(n,v)[i],0)/3));
+ }
+ onLine(p2(7,'K'),p2(7,'A'),p2(7,'M'));onLine(p2(7,'K'),p2(7,'S'),p2(7,'O'));
+ onLine(p2(43,'K'),p2(43,'M'),p2(43,'N'));onLine(p2(43,'K'),p2(43,'C'),p2(43,'D'));
+ onLine(p2(48,'J'),p2(48,'M'),p2(48,'G'));onLine(p2(48,'J'),p2(48,'A'),p2(48,'I'));
+});
+test('Hình thang, tỉ số và giao tuyến kéo dài được vẽ đúng',()=>{
+ const s=chapter4Diagram(42),AB=sub2(s.get('B'),s.get('A')),CD=sub2(s.get('D'),s.get('C'));
+ near(cross2(AB,CD),0);
+ assert.ok(Math.hypot(...AB)!==Math.hypot(...CD));
+ const t=chapter4Diagram(35);
+ near2(t.get('M'),t.get('A').map((v,i)=>v+(t.get('B')[i]-v)*2/3));
+ for(const k of ['A','M','B'])near2(sub2(t.get(k+'′'),t.get(k)),[60,170]);
+ const last=chapter4Diagram(48);
+ near2(last.get('G'),last.get('S').map((v,i)=>v+(last.get('I')[i]-v)*3/5));
+ const d=chapter4Diagram(46);
+ onLine(d.get('M'),d.get('A'),d.get('_U'));onLine(d.get('N'),d.get('A'),d.get('_V'));
+ near(cross2(sub2(d.get('_V'),d.get('_U')),sub2(d.get('C′'),d.get('B′'))),0);
 });
