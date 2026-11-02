@@ -42,7 +42,7 @@ function showFigure(button){
  const dialog=document.createElement('dialog');
  dialog.className='geometry-dialog';
  dialog.setAttribute('aria-label','Hình vẽ phóng to');
- dialog.innerHTML='<div class="geometry-dialog-header"><strong>'+figure.querySelector('.geometry-toolbar span').textContent+'</strong><button class="button" type="button" data-close-figure>Đóng hình ×</button></div><div class="geometry-dialog-canvas">'+figure.querySelector('svg').outerHTML+'</div><p>'+figure.querySelector('figcaption').textContent+'</p>';
+ dialog.innerHTML='<div class="geometry-dialog-header"><strong>'+figure.querySelector('.geometry-toolbar span').textContent+'</strong><button class="button" type="button" data-close-figure>Đóng hình ×</button></div><div class="geometry-dialog-canvas">'+figure.querySelector('svg').outerHTML+'</div>';
  document.body.append(dialog);dialog.showModal();
  dialog.querySelector('[data-close-figure]').onclick=()=>dialog.close();
  dialog.addEventListener('close',()=>{dialog.remove();if(button.isConnected)button.focus();});

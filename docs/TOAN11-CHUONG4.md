@@ -41,3 +41,5 @@ Các hình chỉ bổ sung cách trình bày; ID câu, đáp án và tiến đ�
 `site/toan11-chuong4.js` gắn vào chương 4 trong `site/data.js`; hình được hiển thị bởi `site/app.js`. Build sao chép cả dữ liệu và module SVG, đồng thời thêm phiên bản cho đường dẫn nhập để làm mới bộ nhớ đệm. Preview cho phép tải hai module mới.
 
 Chạy `node scripts/build-pages.mjs` và `node --test tests/*.test.mjs`. Kiểm tra cấu trúc, nguồn trang, ID, lựa chọn khác nhau, phân bố sáu phần; kiểm chứng độc lập các tỉ số, trung điểm, trọng tâm, mặt phẳng song song và phép chiếu bằng các cấu hình tọa độ xiên, kiểm tra các phép dựng hình theo dữ liệu thực sự dùng để vẽ, kiểm tra riêng các cạnh sau, đoạn trong lòng khối, phần thấy/khuất của cùng một đường, rà soát 48 hình theo sáu nhóm và thử phóng to/đóng hình trên giao diện thực tế.
+
+Phần chú giải kiểu nét và ghi chú dưới hình không hiển thị trong câu hỏi hoặc hộp thoại phóng to. Mô tả SVG vẫn có trong thuộc tính hỗ trợ trình đọc màn hình.
