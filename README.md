@@ -18,7 +18,7 @@ Luồng: **Môn học → Lớp → Chương → Câu hỏi**. Không có đăng
 
 ## Nội dung hiện có
 
-Danh mục chương tham khảo cho 9 tổ hợp môn/lớp. Thứ tự có thể điều chỉnh theo bộ sách. Có **27 câu minh họa** (3 câu ở chương đầu mỗi môn/lớp) và **30 câu Toán 11 chương 2**, **62 câu Toán 11 chương 3** biên soạn từ 7 PDF được cung cấp. Các chương khác ghi rõ đang bổ sung. Chưa phải ngân hàng đầy đủ chương trình THPT.
+Danh mục chương tham khảo cho 9 tổ hợp môn/lớp. Có **24 câu minh họa** ở các môn/lớp khác và ngân hàng Toán 11 gồm **200 câu chương 1**, **30 câu chương 2**, **62 câu chương 3**, **48 câu chương 4**. Các chương khác ghi rõ đang bổ sung. Chưa phải ngân hàng đầy đủ chương trình THPT.
 
 ## Chỉnh sửa
 
@@ -49,3 +49,7 @@ Dữ liệu ở `site/toan11-chuong3.js`, gồm 7 dạng, bảng số liệu d�
 ## Toán 11 chương 2
 
 Dữ liệu ở `site/toan11-chuong2.js`: 30 câu, gồm 2 câu dãy số, 12 câu cấp số cộng, 12 câu cấp số nhân và 4 câu vận dụng tổng hợp. Mỗi câu có 4 lựa chọn, gợi ý và lời giải; lọc riêng theo bài học hoặc dạng bài. Xem `docs/TOAN11-CHUONG2.md` để đối chiếu tài liệu và các điều kiện đã kiểm tra.
+
+## Toán 11 chương 4
+
+Dữ liệu ở `site/toan11-chuong4.js`: 48 câu chia đều cho năm bài học và phần ôn tập chung, theo sáu PDF được cung cấp. Có bốn lựa chọn, gợi ý, lời giải và hình biểu diễn không gian ở các câu phù hợp. Lọc theo bài học hoặc dạng bài để ôn riêng. Xem `docs/TOAN11-CHUONG4.md` để đối chiếu nguồn và các giả thiết đã làm rõ.
