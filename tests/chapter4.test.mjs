@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {chapter4Questions as qs} from '../site/toan11-chuong4.js';
 import {chapters} from '../site/data.js';
-import {geometryFigure,chapter4Diagram} from '../site/geometry.js';
+import {geometryFigure,chapter4Diagram,geometrySegments,isGeometryPointHidden} from '../site/geometry.js';
 const answer = n => qs[n - 1].options[qs[n - 1].answer];
 const add = (a,b) => a.map((v,i)=>v+b[i]);
 const sub = (a,b) => a.map((v,i)=>v-b[i]);
@@ -139,4 +139,37 @@ test('Hình thang, tỉ số và giao tuyến kéo dài được vẽ đúng',()
  const d=chapter4Diagram(46);
  onLine(d.get('M'),d.get('A'),d.get('_U'));onLine(d.get('N'),d.get('A'),d.get('_V'));
  near(cross2(sub2(d.get('_V'),d.get('_U')),sub2(d.get('C′'),d.get('B′'))),0);
+});
+
+// Kiểm tra trực tiếp dữ liệu độ sâu dùng để vẽ, không chỉ kiểm tra tên lớp SVG.
+const edgePieces=(n,a,b)=>geometrySegments(chapter4Diagram(n)).filter(p=>(p.edge.a===a&&p.edge.b===b)||(p.edge.a===b&&p.edge.b===a));
+test('Cạnh và đường phụ phía sau khối không bị vẽ đè bằng nét liền',()=>{
+ for(const [n,a,b]of [[4,'B','D'],[6,'S','A'],[6,'A','B'],[6,'A','D'],[6,'S','O'],[7,'A','M'],[8,'P','M'],[13,'G','H'],[16,'M','N'],[16,'P','Q'],[31,'M','N'],[31,'Q','M'],[45,'A','D′'],[47,'P','M']]){
+  const pieces=edgePieces(n,a,b);assert.ok(pieces.length,`${n}:${a}${b}`);assert.ok(pieces.every(p=>p.hidden),`${n}:${a}${b}`);
+ }
+ for(const [n,a,b]of [[4,'A','B'],[4,'A','C'],[4,'C','D'],[6,'S','B'],[6,'S','C'],[6,'B','C'],[8,'M','N'],[8,'N','P'],[31,'N','P'],[31,'P','Q'],[44,'I','B′']]){
+  const pieces=edgePieces(n,a,b);assert.ok(pieces.length);assert.ok(pieces.every(p=>!p.hidden),`${n}:${a}${b}`);
+ }
+});
+test('Một đường đổi kiểu nét đúng ở chỗ đi vào và ra khỏi khối',()=>{
+ const s=chapter4Diagram(48),segments=geometrySegments(s);
+ for(const [a,b]of [['A','J'],['M','J']]){
+  const pa=s.points[a].xyz,pb=s.points[b].xyz;
+  const pieces=segments.filter(p=>Math.abs(cross2(sub2(p.start,pa),sub2(pb,pa)))<1e-7&&Math.abs(cross2(sub2(p.end,pa),sub2(pb,pa)))<1e-7);
+  assert.ok(pieces.some(p=>p.hidden));assert.ok(pieces.some(p=>!p.hidden));
+ }
+ // Các phần che khuất được so sánh với bề mặt ở cùng tọa độ hình chiếu.
+ assert.ok(isGeometryPointHidden(chapter4Diagram(4),avg(...['A','B','D'].map(k=>chapter4Diagram(4).points[k].xyz))));
+ assert.equal(isGeometryPointHidden(chapter4Diagram(4),avg(...['A','B','C'].map(k=>chapter4Diagram(4).points[k].xyz))),false);
+});
+test('Các mặt khối và mặt cắt phẳng thực sự trong mô hình ba chiều',()=>{
+ for(let n=1;n<=48;n++){
+  const s=chapter4Diagram(n);
+  for(const face of [...s.hull,...s.faces.map(f=>f.keys)]){
+   const p=face.map(k=>s.points[k].xyz),normal=cross(sub(p[1],p[0]),sub(p[2],p[0]));
+   for(const q of p.slice(3))near(dot(normal,sub(q,p[0])),0);
+  }
+  for(const p of geometrySegments(s))assert.ok([...p.start,...p.end].every(Number.isFinite));
+  const html=geometryFigure({chapter4:n});assert.doesNotMatch(html,/geo-face|geo-amber|geo-teal|geo-projection|geo-arrow/);
+ }
 });

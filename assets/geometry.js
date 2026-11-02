@@ -2,7 +2,6 @@
 const mix=(a,b,t=.5)=>a.map((v,i)=>v+(b[i]-v)*t);
 const sum=(a,b)=>a.map((v,i)=>v+b[i]);
 const diff=(a,b)=>a.map((v,i)=>v-b[i]);
-const mean=(...a)=>a[0].map((_,i)=>a.reduce((s,p)=>s+p[i],0)/a.length);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const intersection=(a,b,c,d)=>{
   const u=diff(b,a),v=diff(d,c),w=diff(c,a),det=u[0]*v[1]-u[1]*v[0];
@@ -10,11 +9,13 @@ const intersection=(a,b,c,d)=>{
   return mix(a,b,(w[0]*v[1]-w[1]*v[0])/det);
 };
 function scene(n){
-  const s={number:n,points:{},edges:[],faces:[],notes:[],caption:'Hình dựng theo giả thiết. Không suy ra độ dài hoặc góc từ hình biểu diễn.'};
-  s.point=(name,p,label=name)=>{s.points[name]={xy:p,label};return p;};
+  const s={number:n,points:{},edges:[],faces:[],hull:[],notes:[],caption:'Hình dựng theo giả thiết. Không suy ra độ dài hoặc góc từ hình biểu diễn.'};
+  s.point=(name,p,label=name)=>{s.points[name]={xy:p.slice(0,2),depth:p[2]||0,label};return p;};
   s.get=name=>s.points[name].xy;
-  s.at=(name,a,b,t=.5)=>s.point(name,mix(s.get(a),s.get(b),t));
-  s.center=(name,...keys)=>s.point(name,mean(...keys.map(s.get)));
+  s.combine=(name,terms,label=name)=>{s.point(name,[0,1].map(i=>terms.reduce((v,[k,w])=>v+s.get(k)[i]*w,0)),label);s.points[name].affine=terms;};
+  s.at=(name,a,b,t=.5)=>s.combine(name,[[a,1-t],[b,t]]);
+  s.center=(name,...keys)=>s.combine(name,keys.map(k=>[k,1/keys.length]));
+  s.intersect=(name,a,b,c,d)=>{const p=intersection(s.get(a),s.get(b),s.get(c),s.get(d)),v=diff(s.get(b),s.get(a));s.at(name,a,b,(Math.abs(v[0])>Math.abs(v[1])?(p[0]-s.get(a)[0])/v[0]:(p[1]-s.get(a)[1])/v[1]));};
   s.line=(a,b,style='aux',label='')=>s.edges.push({a,b,style,label});
   s.face=(keys,color='teal')=>s.faces.push({keys,color});
   s.note=(x,y,text)=>s.notes.push({xy:[x,y],text});
@@ -22,26 +23,28 @@ function scene(n){
   s.poly=(keys,color='teal')=>{s.face(keys,color);keys.forEach((p,i)=>s.line(p,keys[(i+1)%keys.length],'section'));};
   s.long=(a,b,k=.18,style='aux',label='')=>{
     const u=`_${s.edges.length}u`,v=`_${s.edges.length}v`;
-    s.point(u,mix(s.get(a),s.get(b),-k),'');s.point(v,mix(s.get(a),s.get(b),1+k),'');s.line(u,v,style,label);
+    s.combine(u,[[a,1+k],[b,-k]],'');s.combine(v,[[a,-k],[b,1+k]],'');s.line(u,v,style,label);
   };
   return s;
 }
 function tetra(s,labels=['A','B','C','D']){
-  const p=[[255,35],[70,300],[425,325],[495,175]];
+  const p=[[255,35,0],[70,300,0],[425,325,180],[495,175,0]];
   labels.forEach((k,i)=>s.point(k,p[i]));
   [[0,1],[0,2],[0,3],[1,2],[2,3]].forEach(([a,b])=>s.line(labels[a],labels[b],'edge'));
   s.line(labels[1],labels[3],'hidden');
+  s.hull=[[0,1,2],[0,2,3],[0,3,1],[1,3,2]].map(face=>face.map(i=>labels[i]));
 }
 function pyramid(s,small=false,trapezoid=false){
-  const p=small?[[170,30],[90,180],[170,260],[300,230],[220,150]]:[[295,30],[140,205],[75,325],[440,325],[505,205]];
-  if(trapezoid)p[4]=[537.5,145];
+  const p=small?[[170,30,220],[90,180,-160],[170,260,0],[300,230,160],[220,150,0]]:[[300,30,220],[260,205,-160],[75,325,0],[400,325,160],[585,205,0]];
+  if(trapezoid)p[4]=[622,181,-32];
   ['S','A','B','C','D'].forEach((k,i)=>s.point(k,p[i]));
   [['S','B'],['S','C'],['S','D'],['A','B'],['B','C'],['C','D']].forEach(([a,b])=>s.line(a,b,'edge'));
   s.line('S','A','hidden');s.line('A','D','hidden');
+  s.hull=[['S','A','B'],['S','B','C'],['S','C','D'],['S','D','A'],['A','B','C','D']];
 }
 function prism(s,box=false){
-  const base=box?{A:[85,305],B:[390,325],C:[490,235],D:[185,215]}:{A:[90,300],B:[340,315],C:[425,205]};
-  const v=[-25,-165];
+  const base=box?{A:[85,305,100],B:[390,325,200],C:[490,235,100],D:[185,215,0]}:{A:[90,300,100],B:[340,315,200],C:[425,205,0]};
+  const v=[-25,-165,220];
   Object.entries(base).forEach(([k,p])=>{s.point(k,p);s.point(k+'′',sum(p,v));});
   const keys=Object.keys(base);
   keys.forEach((k,i)=>{
@@ -49,10 +52,11 @@ function prism(s,box=false){
     s.line(k,next,(box?(k==='C'||k==='D'):k==='C')?'hidden':'edge');
     s.line(k+'′',next+'′','edge');s.line(k,k+'′',box&&k==='D'?'hidden':'edge');
   });
+  s.hull=[keys,keys.map(k=>k+'′'),...keys.map((k,i)=>[k,keys[(i+1)%keys.length],keys[(i+1)%keys.length]+'′',k+'′'])];
 }
 function plane(s,id,x,y,w=410,h=115,color='teal',label=`(${id})`){
   const keys=[0,1,2,3].map(i=>`_${id}${i}`);
-  [[x,y],[x+w,y],[x+w+65,y-h],[x+65,y-h]].forEach((p,i)=>s.point(keys[i],p,''));
+  [[x,y,-y],[x+w,y,-y],[x+w+65,y-h,-y],[x+65,y-h,-y]].forEach((p,i)=>s.point(keys[i],p,''));
   s.face(keys,color);keys.forEach((p,i)=>s.line(p,keys[(i+1)%4],'plane'));
   if(label)s.note(x+22,y-14,label);
 }
@@ -75,9 +79,9 @@ export function chapter4Diagram(n){
     case 5:
       tetra(s);s.face(['A','B','C'],'teal');s.face(['A','B','D'],'amber');break;
     case 6:case 7:
-      pyramid(s);s.point('O',intersection(s.get('A'),s.get('C'),s.get('B'),s.get('D')));
+      pyramid(s);s.intersect('O','A','C','B','D');
       s.line('A','C','hidden');s.line('B','D','hidden');s.line('S','O');
-      if(n===7){s.at('M','S','C',.42);s.line('A','M');s.point('K',intersection(s.get('A'),s.get('M'),s.get('S'),s.get('O')));}
+      if(n===7){s.at('M','S','C',.42);s.line('A','M');s.intersect('K','A','M','S','O');}
       else{s.face(['S','A','C'],'teal');s.face(['S','B','D'],'amber');}break;
     case 8:
       tetra(s);s.at('M','A','B');s.at('N','A','C');s.at('P','A','D');s.poly(['M','N','P']);break;
@@ -97,9 +101,9 @@ export function chapter4Diagram(n){
       s.line('I','C');s.line('I','D');s.line('G','H','accent');s.line('C','D','accent2','15 cm');s.note(315,215,'GH = ?');break;
     case 14:
       pyramid(s);s.face(['S','A','B'],'teal');s.face(['S','C','D'],'amber');s.line('A','B','accent');s.line('C','D','accent2');
-      s.caption='Đáy ABCD là hình bình hành. Hai mặt phẳng cần xét được tô hai màu.';break;
+      s.caption='Đáy ABCD là hình bình hành. Các cạnh và đường của hai mặt phẳng được biểu diễn theo vị trí nhìn thấy hoặc bị khuất.';break;
     case 15:{
-      const O=[290,200],x=[180,25],y=[-110,65],z=[0,-150];
+      const O=[290,200,0],x=[180,25,0],y=[-110,65,-120],z=[0,-150,150];
       for(const [i,u,v,color] of [[0,x,y,'teal'],[1,x,z,'amber'],[2,y,z,'blue']]){
         const keys=[];
         for(const [j,a,b] of [[0,-.8,-.8],[1,.8,-.8],[2,.8,.8],[3,-.8,.8]]){
@@ -126,7 +130,7 @@ export function chapter4Diagram(n){
       pyramid(s);s.at('M','A','B');s.at('N','B','C');s.line('A','C','hidden');s.line('M','N');s.face(['S','A','C'],'amber');break;
     case 22:
       plane(s,'P',55,320);['_q1','_q2','_q3','_q4'].forEach((k,i)=>s.point(k,[[150,350],[460,300],[460,65],[150,115]][i],''));
-      s.face(['_q1','_q2','_q3','_q4'],'amber');s.note(425,100,'(Q)');loose(s,'b',[150,250],[460,200]);loose(s,'a',[150,150],[460,100]);break;
+      s.face(['_q1','_q2','_q3','_q4'],'amber');s.note(470,70,'(Q)');loose(s,'b',[150,250],[460,200]);loose(s,'a',[150,150],[460,100]);break;
     case 23:
       pyramid(s);s.center('G','S','A','B');s.center('H','S','B','C');s.at('I','S','B');s.line('I','A');s.line('I','C');s.line('G','H','accent');s.line('A','C','hidden');s.face(['S','A','C'],'amber');break;
     case 24:
@@ -166,7 +170,7 @@ export function chapter4Diagram(n){
       s.note(75,255,'Hình nguồn');s.note(370,320,'Hình chiếu');s.caption='Một phép chiếu song song không suy biến. A, B, C, D lần lượt có ảnh A′, B′, C′, D′.';break;
     case 37:
       prism(s,true);s.face(['A′','B′','C′'],'amber');s.face(['A','B','C'],'teal');['A','B','C'].forEach(k=>s.line(k+'′',k,'projection'));
-      s.caption='Tam giác nguồn tô vàng, mặt phẳng chiếu là (ABCD); đường chiếu theo phương AA′.';break;
+      s.caption='Tam giác nguồn A′B′C′; mặt phẳng chiếu (ABCD). Các đường chiếu theo phương AA′.';break;
     case 38:
       prism(s);s.center('O','B','C′');s.line('B','C′');s.line('C','B′');s.face(['A′','B′','C′'],'amber');s.center('O′','B′','C′');s.line('O','O′','projection');
       s.caption='O là tâm mặt bên BCC′B′. O′ ký hiệu ảnh cần xác định trên (A′B′C′).';break;
@@ -179,39 +183,151 @@ export function chapter4Diagram(n){
     case 42:
       pyramid(s,false,true);s.at('M','S','A');s.at('N','S','B');s.face(['M','C','D'],'amber');s.line('M','C');s.line('M','D');s.line('M','N');break;
     case 43:
-      tetra(s);s.at('M','B','C',.4);s.at('N','B','D',.7);s.point('K',intersection(s.get('M'),s.get('N'),s.get('C'),s.get('D')));
+      tetra(s);s.at('M','B','C',.4);s.at('N','B','D',.7);s.intersect('K','M','N','C','D');
       s.face(['A','C','D'],'amber');s.long('M','K',.04);s.long('C','K',.04,'hidden');break;
     case 44:
       prism(s);s.at('I','A','B');s.at('I′','A′','B′');s.line('A','I′','projection');s.line('I','B′','projection');s.line('I','I′');s.face(['A′','B′','C′'],'amber');break;
     case 45:
       prism(s,true);s.poly(['A','B′','D′'],'amber');s.caption='Mặt phẳng (AB′D′) được đánh dấu; các đỉnh còn lại đầy đủ để xét các mặt phẳng trong đáp án.';break;
     case 46:
-      prism(s);s.at('M','B','B′');s.at('N','C','C′');s.point('_U',sum(s.get('B′'),diff(s.get('B'),s.get('A'))),'');s.point('_V',sum(s.get('C′'),diff(s.get('C'),s.get('A'))),'');
+      prism(s);s.at('M','B','B′');s.at('N','C','C′');s.combine('_U',[['B′',1],['B',1],['A',-1]],'');s.combine('_V',[['C′',1],['C',1],['A',-1]],'');
       s.face(['A','_U','_V'],'teal');s.face(['A′','_U','_V'],'amber');s.line('A′','_U','hidden');s.line('A′','_V','hidden');s.line('A','_U');s.line('A','_V');s.line('M','N');s.long('_U','_V',.12,'accent2','d');
       s.caption='Mặt phẳng (A′B′C′) được kéo dài tới giao tuyến d với mặt phẳng (AMN).';break;
     case 47:
       prism(s);s.at('M','A','A′');s.at('N','B','B′');s.at('P','C','C′');s.poly(['M','N','P']);s.face(['A','B','C'],'amber');break;
     case 48:
-      pyramid(s,true);s.at('M','S','A');s.at('I','B','C');s.at('G','S','I',3/5);s.point('J',mix(s.get('A'),s.get('I'),3));
+      pyramid(s,true);s.at('M','S','A');s.at('I','B','C');s.at('G','S','I',3/5);s.at('J','A','I',3);
       s.line('S','I');s.long('A','J',.05);s.long('M','J',.05,'accent2');s.note(260,115,'SG : GI = 3 : 2');s.note(390,320,'AJ / AI = ?');break;
   }
+  prepareDepth(s);
   return s;
+}
+
+function prepareDepth(s){
+  // Độ sâu lớn hơn là gần người quan sát hơn; x,y là tọa độ chiếu song song.
+  const set=(k,z)=>{if(s.points[k])s.points[k].depth=z;};
+  const planeDepth=(id,z)=>{for(let i=0;i<4;i++)set(`_${id}${i}`,z);};
+  const lineDepth=(label,a,b=a)=>s.edges.filter(e=>e.label===label).forEach(e=>{set(e.a,a);set(e.b,b);});
+  if(!s.hull.length){
+    switch(s.number){
+      case 1:for(const k of ['A','B','C'])set(k,-315);break;
+      case 2:for(const k of ['A','B'])set(k,-310);break;
+      case 3:for(const k of ['A','B','C'])set(k,-300);break;
+      case 9:lineDepth('a',-300);lineDepth('b',-300);lineDepth('c',-120);lineDepth('d',-300);break;
+      case 17:lineDepth('d',-100);break;
+      case 18:lineDepth('a',-100);lineDepth('b',-315);break;
+      case 19:lineDepth('a',-300);lineDepth('b',-300);lineDepth('a₂',-100);lineDepth('b₂',-300);break;
+      case 22:{
+        planeDepth('P',0);
+        for(const k of ['_q1','_q2','_q3','_q4']){const [x,y]=s.get(k);set(k,250-(x-150)*50/310-y);}
+        lineDepth('a',100);lineDepth('b',0);break;
+      }
+      case 25:lineDepth('a',-185);lineDepth('b',-185);break;
+      case 26:set('M',-155);break;
+      case 27:{
+        planeDepth('P',100);planeDepth('Q',0);
+        for(const k of ['_r1','_r2','_r3','_r4']){const [x,y]=s.get(k);set(k,(265-(x-170)*.16-y)*100/140);}
+        lineDepth('a',100);lineDepth('b',0);break;
+      }
+      case 28:for(const [k,z] of [['A',-110],['A′',-110],['B',-200],['B′',-200],['C',-335],['C′',-335]])set(k,z);break;
+      case 33:set('M',-100);set('M′',-330);lineDepth('Δ',-100,-330);break;
+      case 34:
+        lineDepth('d',-80,-335);lineDepth('Δ',-80,-233);set('H',-335);
+        for(const [k,t] of [['M',.24],['N',.53],['T',.82]])set(k,-80-255*t);break;
+      case 35:
+        set('A',-120);set('B',-120);for(const k of ['A′','M′','B′'])set(k,-345);break;
+      case 39:{
+        lineDepth('a',-100);lineDepth('b',-185);lineDepth('a′',-355);lineDepth('b′',-355);lineDepth('Δ',-100,-355);
+        const unnamed=s.edges.filter(e=>e.style==='projection'&&!e.label);
+        if(unnamed[0]){set(unnamed[0].a,-100);set(unnamed[0].b,-355);}
+        if(unnamed[1]){set(unnamed[1].a,-185);set(unnamed[1].b,-355);}break;
+      }
+      case 41:lineDepth('a',-175);lineDepth('b',-335);break;
+    }
+  }
+  const cache=new Map();
+  const depth=k=>{
+    if(cache.has(k))return cache.get(k);
+    const p=s.points[k],z=p.affine?p.affine.reduce((v,[parent,w])=>v+depth(parent)*w,0):p.depth;
+    cache.set(k,z);return z;
+  };
+  for(const [k,p] of Object.entries(s.points))p.xyz=[...p.xy,depth(k)];
+  // Vẽ đủ biên các mặt phẳng được nhắc đến, không tô màu hay tô kín mặt.
+  const sameEdge=(a,b,e)=>(e.a===a&&e.b===b)||(e.a===b&&e.b===a);
+  for(const f of s.faces)for(let i=0;i<f.keys.length;i++){
+    const a=f.keys[i],b=f.keys[(i+1)%f.keys.length];
+    if(!s.edges.some(e=>sameEdge(a,b,e)))s.line(a,b,'plane');
+  }
+}
+
+const det2=(a,b)=>a[0]*b[1]-a[1]*b[0];
+function barycentric(p,a,b,c){
+  const u=diff(b,a),v=diff(c,a),w=diff(p,a),den=det2(u,v);
+  if(Math.abs(den)<1e-8)return null;
+  const t=det2(w,v)/den,r=det2(u,w)/den;
+  return [1-t-r,t,r];
+}
+function triangleDepth(p,triangle){
+  const b=barycentric(p,...triangle);
+  if(!b||b.some(v=>v< -1e-8))return null;
+  return b.reduce((z,v,i)=>z+v*triangle[i][2],0);
+}
+function triangles(s){
+  const surfaces=s.hull.length?s.hull:s.faces.map(f=>f.keys);
+  return surfaces.flatMap(keys=>keys.slice(1,-1).map((_,i)=>[keys[0],keys[i+1],keys[i+2]].map(k=>s.points[k].xyz)));
+}
+export function isGeometryPointHidden(s,p){
+  return triangles(s).some(t=>{const z=triangleDepth(p,t);return z!==null&&z>p[2]+1e-6;});
+}
+
+export function geometrySegments(s){
+  const mesh=triangles(s),result=[],drawn=new Set();
+  for(const edge of s.edges){
+    const a=s.points[edge.a].xyz,b=s.points[edge.b].xyz,v=diff(b,a);
+    if(Math.hypot(v[0],v[1])<1e-8)continue;
+    const splits=[0,1];
+    for(const triangle of mesh){
+      // Giao với biên hình chiếu từng mặt: một đường có thể vừa thấy vừa khuất.
+      for(let i=0;i<3;i++){
+        const c=triangle[i],d=triangle[(i+1)%3],u=diff(d,c),den=det2(v,u);
+        if(Math.abs(den)<1e-8)continue;
+        const w=diff(c,a),t=det2(w,u)/den,r=det2(w,v)/den;
+        if(t>1e-8&&t<1-1e-8&&r>=-1e-8&&r<=1+1e-8)splits.push(t);
+      }
+      // Giao thực với mặt phẳng, không chỉ giao nhau trên bản vẽ.
+      const ca=barycentric(a,...triangle),cb=barycentric(b,...triangle);
+      if(ca&&cb){
+        const za=ca.reduce((z,w,i)=>z+w*triangle[i][2],0)-a[2];
+        const zb=cb.reduce((z,w,i)=>z+w*triangle[i][2],0)-b[2];
+        if(Math.abs(za-zb)>1e-8){const t=za/(za-zb);if(t>1e-8&&t<1-1e-8)splits.push(t);}
+      }
+    }
+    const bounds=[...new Set(splits.map(t=>Number(t.toFixed(10))))].sort((x,y)=>x-y),pieces=[];
+    for(let i=1;i<bounds.length;i++){
+      const left=bounds[i-1],right=bounds[i];if(right-left<1e-8)continue;
+      const mid=mix(a,b,(left+right)/2),hidden=mesh.some(triangle=>{const z=triangleDepth(mid,triangle);return z!==null&&z>mid[2]+1e-6;});
+      const previous=pieces.at(-1);
+      if(previous&&previous.hidden===hidden)previous.right=right;
+      else pieces.push({left,right,hidden});
+    }
+    for(const piece of pieces){
+      const start=mix(a,b,piece.left),end=mix(a,b,piece.right);
+      const key=[start,end].map(p=>p.map(x=>x.toFixed(5)).join(',')).sort().join('/')+'/'+piece.hidden;
+      if(drawn.has(key))continue;drawn.add(key);
+      result.push({edge,start,end,hidden:piece.hidden});
+    }
+  }
+  return result;
 }
 
 function render(s){
   const all=[...Object.values(s.points).map(p=>p.xy),...s.notes.map(p=>p.xy)];
   const x0=Math.min(0,...all.map(p=>p[0]))-35,y0=Math.min(0,...all.map(p=>p[1]))-35;
   const w=Math.max(580,...all.map(p=>p[0]))-x0+60,h=Math.max(350,...all.map(p=>p[1]))-y0+45;
-  const pts=keys=>keys.map(k=>s.get(k).join(',')).join(' ');
-  const faces=s.faces.map(f=>`<polygon points="${pts(f.keys)}" class="geo-face geo-${f.color}"/>`).join('');
-  const edges=s.edges.map(e=>{
-    const a=s.get(e.a),b=s.get(e.b),m=mix(a,b,s.number===34&&e.label==='d'?.05:e.label.length<=2?.82:.5);
-    let arrow='';
-    if(e.style==='projection'){
-      const p=mix(a,b,.6),v=diff(b,a),length=Math.hypot(...v),u=v.map(x=>x/length),tail=diff(p,u.map(x=>x*10)),normal=[-u[1]*4,u[0]*4];
-      arrow=`<polygon points="${[p,sum(tail,normal),diff(tail,normal)].map(q=>q.join(',')).join(' ')}" class="geo-arrow"/>`;
-    }
-    return `<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" class="geo-line geo-${e.style}"/>${arrow}${e.label?`<text x="${m[0]+9}" y="${m[1]-10}" class="geo-label geo-measure">${esc(e.label)}</text>`:''}`;
+  const edges=geometrySegments(s).sort((a,b)=>Number(b.hidden)-Number(a.hidden)).map(p=>`<line x1="${p.start[0]}" y1="${p.start[1]}" x2="${p.end[0]}" y2="${p.end[1]}" class="geo-line geo-${p.hidden?'hidden':'visible'}" data-visibility="${p.hidden?'hidden':'visible'}"/>`).join('');
+  const edgeLabels=s.edges.filter(e=>e.label).map(e=>{
+    const m=mix(s.get(e.a),s.get(e.b),s.number===34&&e.label==='d'?.05:e.label.length<=2?.82:.5);
+    return `<text x="${m[0]+9}" y="${m[1]-10}" class="geo-label geo-measure">${esc(e.label)}</text>`;
   }).join('');
   const placed=[];
   const labels=Object.entries(s.points).filter(([,p])=>p.label).map(([key,p])=>{
@@ -227,6 +343,6 @@ function render(s){
     return `<g data-point="${esc(key)}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="3.4" class="geo-point"/><text x="${best.x}" y="${best.y}" class="geo-label">${esc(p.label)}</text></g>`;
   }).join('');
   const notes=s.notes.map(p=>`<text x="${p.xy[0]}" y="${p.xy[1]}" class="geo-label geo-note">${esc(p.text)}</text>`).join('');
-  return `<figure class="geometry-figure" data-figure-question="${s.number}"><div class="geometry-toolbar"><span>Hình câu ${s.number}</span><button type="button" class="figure-zoom" data-action="zoom-figure" aria-label="Phóng to hình câu ${s.number}">⤢ Phóng to hình</button></div><svg viewBox="${x0} ${y0} ${w} ${h}" role="img" aria-label="Hình dựng đầy đủ cho câu ${s.number}"><title>Hình câu ${s.number}</title><desc>Các điểm: ${esc(Object.values(s.points).map(p=>p.label).filter(Boolean).join(', '))}. ${esc(s.caption)}</desc>${faces}${edges}${labels}${notes}</svg><div class="geometry-legend"><span><i class="geo-key aux"></i>Đường phụ</span><span><i class="geo-key hidden"></i>Nét khuất / kéo dài</span><span><i class="geo-key face"></i>Mặt phẳng / thiết diện</span></div><figcaption>${esc(s.caption)}</figcaption></figure>`;
+  return `<figure class="geometry-figure" data-figure-question="${s.number}"><div class="geometry-toolbar"><span>Hình câu ${s.number}</span><button type="button" class="figure-zoom" data-action="zoom-figure" aria-label="Phóng to hình câu ${s.number}">⤢ Phóng to hình</button></div><svg viewBox="${x0} ${y0} ${w} ${h}" role="img" aria-label="Hình dựng đầy đủ cho câu ${s.number}"><title>Hình câu ${s.number}</title><desc>Các điểm: ${esc(Object.values(s.points).map(p=>p.label).filter(Boolean).join(', '))}. ${esc(s.caption)}</desc>${edges}${edgeLabels}${labels}${notes}</svg><div class="geometry-legend"><span><i class="geo-key visible"></i>Nét liền: nhìn thấy</span><span><i class="geo-key hidden"></i>Nét đứt: bị che khuất</span></div><figcaption>${esc(s.caption)}</figcaption></figure>`;
 }
 export function geometryFigure(figure){const s=chapter4Diagram(figure?.chapter4);return s?render(s):'';}

@@ -30,7 +30,9 @@
 
 Mỗi câu trong 48 câu có một cấu hình SVG riêng ở `site/geometry.js`, được gắn bằng `figure.chapter4`. Các điểm phụ, trọng tâm, trung điểm, giao điểm và đường kéo dài đều được dựng bằng phép toán affine. Các câu lý thuyết dùng cấu hình minh họa có chú thích giới hạn của ví dụ, không gán tính chất riêng của hình cho mọi trường hợp.
 
-Hình thể hiện đầy đủ đỉnh, điểm phụ và các đối tượng trong đề. Mặt phẳng/thiết diện tô nhẹ, đường phụ màu xanh, đường chiếu nét đứt có mũi tên, cạnh khuất và phần kéo dài dùng nét đứt. Nhãn điểm có viền nền để đọc trên đường và được bố trí tránh nhau. Nút **Phóng to hình** mở hộp thoại lớn, có thể cuộn ngang trên điện thoại, đóng bằng nút hoặc phím Escape.
+Hình thể hiện đầy đủ đỉnh, điểm phụ và các đối tượng trong đề bằng mực đen trên nền trắng, kể cả khi website ở chế độ tối. Không tô mặt phẳng, không dùng màu để phân biệt đường. Nét liền cho phần nhìn thấy; nét đứt cho phần bị che. Đường phụ, đường chiếu và phần kéo dài không mặc định là nét đứt: từng đoạn được xét theo độ che khuất thực tế. Nhãn điểm có nền trắng để đọc rõ. Nút **Phóng to hình** mở hộp thoại lớn, có thể cuộn ngang trên điện thoại, đóng bằng nút hoặc phím Escape.
+
+Mỗi điểm có thêm tọa độ độ sâu theo một hướng quan sát thống nhất trong từng hình. Trung điểm, trọng tâm, giao điểm và điểm ngoại suy kế thừa tọa độ ba chiều từ phép dựng affine. Các mặt tứ diện, hình chóp, lăng trụ, hình hộp và các mặt phẳng minh họa được kiểm tra đồng phẳng. Khi vẽ, đường được tách tại giao với biên hình chiếu và giao thực với mặt phẳng; so sánh độ sâu với các mặt chắn để chọn nét liền/nét đứt cho từng phần. Việc bỏ màu không dùng bộ lọc ảnh hoặc chỉ đổi CSS cho các kiểu nét cũ.
 
 Các hình chỉ bổ sung cách trình bày; ID câu, đáp án và tiến độ cũ được giữ nguyên. Không ghi kết quả độ dài hoặc tỉ số cần tìm lên hình.
 
@@ -38,4 +40,4 @@ Các hình chỉ bổ sung cách trình bày; ID câu, đáp án và tiến đ�
 
 `site/toan11-chuong4.js` gắn vào chương 4 trong `site/data.js`; hình được hiển thị bởi `site/app.js`. Build sao chép cả dữ liệu và module SVG, đồng thời thêm phiên bản cho đường dẫn nhập để làm mới bộ nhớ đệm. Preview cho phép tải hai module mới.
 
-Chạy `node scripts/build-pages.mjs` và `node --test tests/*.test.mjs`. Kiểm tra cấu trúc, nguồn trang, ID, lựa chọn khác nhau, phân bố sáu phần; kiểm chứng độc lập các tỉ số, trung điểm, trọng tâm, mặt phẳng song song và phép chiếu bằng các cấu hình tọa độ xiên, kiểm tra các phép dựng hình theo dữ liệu thực sự dùng để vẽ, rà soát 48 hình theo sáu nhóm và thử phóng to/đóng hình trên giao diện thực tế.
+Chạy `node scripts/build-pages.mjs` và `node --test tests/*.test.mjs`. Kiểm tra cấu trúc, nguồn trang, ID, lựa chọn khác nhau, phân bố sáu phần; kiểm chứng độc lập các tỉ số, trung điểm, trọng tâm, mặt phẳng song song và phép chiếu bằng các cấu hình tọa độ xiên, kiểm tra các phép dựng hình theo dữ liệu thực sự dùng để vẽ, kiểm tra riêng các cạnh sau, đoạn trong lòng khối, phần thấy/khuất của cùng một đường, rà soát 48 hình theo sáu nhóm và thử phóng to/đóng hình trên giao diện thực tế.

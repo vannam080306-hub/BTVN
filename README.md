@@ -52,4 +52,4 @@ Dữ liệu ở `site/toan11-chuong2.js`: 30 câu, gồm 2 câu dãy số, 12 c�
 
 ## Toán 11 chương 4
 
-Dữ liệu ở `site/toan11-chuong4.js`: 48 câu chia đều cho năm bài học và phần ôn tập chung, theo sáu PDF được cung cấp. Có bốn lựa chọn, gợi ý, lời giải và hình vẽ riêng đầy đủ cho cả 48 câu, kèm nút phóng to hình. Lọc theo bài học hoặc dạng bài để ôn riêng. Xem `docs/TOAN11-CHUONG4.md` để đối chiếu nguồn và các giả thiết đã làm rõ.
+Dữ liệu ở `site/toan11-chuong4.js`: 48 câu chia đều cho năm bài học và phần ôn tập chung, theo sáu PDF được cung cấp. Có bốn lựa chọn, gợi ý, lời giải và hình vẽ riêng đầy đủ cho cả 48 câu, vẽ bằng nét đen trên nền trắng, nét liền/nét đứt theo độ che khuất, kèm nút phóng to hình. Lọc theo bài học hoặc dạng bài để ôn riêng. Xem `docs/TOAN11-CHUONG4.md` để đối chiếu nguồn và các giả thiết đã làm rõ.

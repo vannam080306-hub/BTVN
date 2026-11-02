@@ -23,22 +23,18 @@
 .figure-zoom{background:var(--wash);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:12px;color:var(--teal);font-weight:600}
 .geometry-figure svg{display:block;width:100%;max-width:720px;height:auto;margin:0 auto;overflow:visible;stroke:none}
 .geometry-figure figcaption{font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px;text-align:left}
-.geo-line{fill:none;stroke:var(--text);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.geo-hidden{stroke:var(--muted);stroke-dasharray:7 6;stroke-width:1.7}
-.geo-plane{stroke:var(--muted);stroke-width:1.2;opacity:.7}
-.geo-aux,.geo-accent{stroke:#158b83;stroke-width:2.5}
-.geo-accent2{stroke:#bd721c;stroke-width:2.5}
-.geo-section{stroke:#0d8a83;stroke-width:2.6}
-.geo-projection{stroke:#5185c2;stroke-width:2;stroke-dasharray:8 5}
-.geo-arrow{fill:#5185c2;stroke:none}
-.geo-face{stroke:none;fill:#5bb6a5;fill-opacity:.13}
-.geo-amber{fill:#e7b04e;fill-opacity:.17}.geo-blue{fill:#7a9ddd;fill-opacity:.14}
-.geo-point{fill:var(--text);stroke:var(--panel);stroke-width:1.2}
-.geo-label{font-family:"Segoe UI",Arial,sans-serif;font-size:21px;font-weight:600;fill:var(--text);stroke:var(--panel);stroke-width:5px;paint-order:stroke fill;stroke-linejoin:round}
+.geo-line{fill:none;stroke:#000;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.geo-visible{stroke-dasharray:none}.geo-hidden{stroke-dasharray:7 5}
+.geo-point{fill:#000;stroke:#fff;stroke-width:1.2}
+.geo-label{font-family:"Segoe UI",Arial,sans-serif;font-size:21px;font-weight:600;fill:#000;stroke:#fff;stroke-width:5px;paint-order:stroke fill;stroke-linejoin:round}
 .geo-measure,.geo-note{font-size:19px;font-weight:500}
 .geometry-legend{display:flex;gap:9px 15px;flex-wrap:wrap;font-size:10px;color:var(--muted);margin-top:7px}
-.geometry-legend>span{display:flex;align-items:center;gap:5px}.geo-key{display:inline-block;width:18px;border-top:2px solid #158b83}.geo-key.hidden{border-top:2px dashed var(--muted)}.geo-key.face{height:8px;background:#5bb6a540;border:1px solid #5bb6a5}
+.geometry-legend>span{display:flex;align-items:center;gap:5px}.geo-key{display:inline-block;width:21px;border-top:2px solid #000}.geo-key.hidden{border-top:2px dashed #000}
 .geometry-dialog{width:min(1120px,96vw);max-width:96vw;max-height:94vh;padding:20px;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:18px;overflow:auto}
 .geometry-dialog::backdrop{background:#102823a8}.geometry-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:-20px;background:var(--panel);padding:10px 0;z-index:2}
 .geometry-dialog-canvas{overflow:auto}.geometry-dialog-canvas svg{display:block;width:100%;min-width:600px;height:auto;max-height:75vh;stroke:none}.geometry-dialog>p{font-size:12px;color:var(--muted);line-height:1.7;margin:10px 0 0}
 @media(max-width:600px){.geometry-figure{padding:9px;margin:16px 0}.geometry-toolbar{font-size:11px}.figure-zoom{font-size:11px;padding:6px 8px}.geometry-legend{font-size:9px}.geometry-dialog{padding:12px}.geometry-dialog-header{top:-12px}.geometry-dialog-canvas svg{max-height:none}.geometry-figure figcaption{font-size:11px}}
+
+/* Hình học được vẽ bằng mực đen trên giấy trắng trong cả chế độ sáng/tối. */
+.geometry-figure{background:#fff;color:#000}.geometry-figure svg,.geometry-dialog-canvas{background:#fff;color:#000}.geometry-figure figcaption,.geometry-legend,.geometry-toolbar{color:#000}.figure-zoom{background:#fff;color:#000;border-color:#aaa}
+.geometry-dialog{background:#fff;color:#000}.geometry-dialog-header{background:#fff;color:#000}.geometry-dialog>p{color:#000}.geometry-dialog-header .button{background:#fff;color:#000;border-color:#aaa}
