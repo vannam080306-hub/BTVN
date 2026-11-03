@@ -16,9 +16,13 @@ test('364 câu có trường hiển thị LaTeX và gợi ý đầy đủ, khôn
   assert.ok(d.guide.symbols.every(([symbol,meaning])=>symbol&&meaning),q.id);
   for(const v of [d.prompt,d.explanation,d.hint,d.answerText,...d.options||[]])if(v)assert.doesNotThrow(()=>richText(v),q.id);
   for(const row of [d.table?.headers||[],...d.table?.rows||[]])for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
-  const html=studyGuideHTML(d.guide,d.hint);
-  assert.ok(html.indexOf('Công thức cần dùng')<html.indexOf('Giải thích ký hiệu'));
-  assert.ok(html.indexOf('Giải thích ký hiệu')<html.indexOf('Gợi ý làm bài'));
+  const answer=q.kind==='short'?d.answerText:('ABCD'[q.answer]+'. '+d.options[q.answer]);
+  const html=studyGuideHTML(d.guide,d.explanation,answer);
+  assert.ok(d.explanation,q.id);
+  assert.ok(html.indexOf('Công thức cần dùng')<html.indexOf('Lời giải'));
+  assert.doesNotMatch(html,/Giải thích ký hiệu|Gợi ý làm bài|symbol-definitions/);
+  assert.ok(html.includes(richText(d.explanation)),q.id);
+  assert.ok(html.includes(richText(answer)),q.id);
   assert.doesNotMatch(html,/katex-error/);
  }
 });

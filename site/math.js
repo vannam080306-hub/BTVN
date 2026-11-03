@@ -10,7 +10,6 @@ export function richText(value){
  }
  return result+escape(text.slice(cursor));
 }
-export function studyGuideHTML(guide,hint){
- if(!guide)return `<p class="hint-text">${richText(hint)}</p>`;
- return `<section class="study-guide"><h2>Công thức cần dùng</h2><div class="formula-list">${guide.formulas.map(tex=>renderFormula(tex,true)).join('')}</div><h2>Giải thích ký hiệu</h2><dl class="symbol-definitions">${guide.symbols.map(([symbol,meaning])=>`<div><dt>${renderFormula(symbol)}</dt><dd>${richText(meaning)}</dd></div>`).join('')}</dl>${guide.condition?`<p class="formula-condition"><b>Điều kiện áp dụng:</b> ${richText(guide.condition)}</p>`:''}<h2>Gợi ý làm bài</h2><p class="hint-text">${richText(hint)}</p></section>`;
+export function studyGuideHTML(guide,solution,answer){
+ return `<section class="study-guide">${guide?`<h2>Công thức cần dùng</h2><div class="formula-list">${guide.formulas.map(tex=>renderFormula(tex,true)).join('')}</div>${guide.condition?`<p class="formula-condition"><b>Điều kiện áp dụng:</b> ${richText(guide.condition)}</p>`:''}`:''}<h2>Lời giải</h2><p class="hint-text">${richText(solution)}</p>${answer?`<p class="solution-answer"><b>Đáp án:</b> ${richText(answer)}</p>`:''}</section>`;
 }

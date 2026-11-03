@@ -9,7 +9,7 @@ Website dùng KaTeX 0.19.1, đóng gói cùng mã nguồn trong `site/vendor/kat
 - `site/study-guides.js` chứa công thức LaTeX, giải thích ký hiệu và điều kiện áp dụng theo dạng bài. Khi thêm dạng bài, bổ sung hướng dẫn tương ứng tại đây.
 - `site/math.js` hiển thị công thức, giữ văn bản thông thường được escape và tắt `trust` của KaTeX. Nội dung dùng `\(...\)` cho công thức trong dòng, `\[...\]` cho công thức riêng dòng. Các công thức trong bộ hướng dẫn là chuỗi LaTeX không có dấu phân cách.
 
-Phần Xem gợi ý luôn có thứ tự: Công thức cần dùng → Giải thích ký hiệu → Điều kiện áp dụng (nếu có) → Gợi ý làm bài. Hình vẽ tiếp tục dùng SVG riêng.
+Phần Xem gợi ý luôn có thứ tự: Công thức cần dùng → Điều kiện áp dụng (nếu có) → Lời giải → Đáp án. Hình vẽ tiếp tục dùng SVG riêng.
 
 ## Kiểm tra và xuất bản
 
@@ -19,6 +19,6 @@ node --test tests/*.test.mjs
 node scripts/preview.mjs
 ```
 
-Bộ kiểm tra xác nhận mọi câu có công thức và giải thích ký hiệu, mọi chuỗi LaTeX render được, đối chiếu giá trị các lựa chọn số với biểu thức kiểm chứng ban đầu, và kiểm tra tài nguyên/phông cục bộ. Cần xem trực tiếp các dạng bài đại diện trong trình duyệt để kiểm tra bố cục.
+Bộ kiểm tra xác nhận mọi câu có công thức và lời giải, phần xem gợi ý không hiển thị giải thích ký hiệu hay gợi ý làm bài, mọi chuỗi LaTeX render được, đối chiếu giá trị các lựa chọn số với biểu thức kiểm chứng ban đầu, và kiểm tra tài nguyên/phông cục bộ. Cần xem trực tiếp các dạng bài đại diện trong trình duyệt để kiểm tra bố cục.
 
 Tài liệu KaTeX: https://katex.org/docs/api và https://katex.org/docs/security.
