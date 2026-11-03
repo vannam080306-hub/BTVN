@@ -7,9 +7,10 @@ Website dùng KaTeX 0.19.1, đóng gói cùng mã nguồn trong `site/vendor/kat
 - Dữ liệu câu hỏi gốc trong `site/data.js` và các tệp chương tiếp tục quản lý mã câu, lựa chọn, đáp án, kiểm chứng và tìm kiếm.
 - `scripts/latex-migration.mjs` chuyển ký hiệu toán của dữ liệu gốc sang LaTeX; `scripts/build-math-content.mjs` tạo các trường trình bày trong `site/math-content.js`, ghép theo mã câu. Không sửa trực tiếp tệp sinh này.
 - `site/study-guides.js` chứa công thức LaTeX, giải thích ký hiệu và điều kiện áp dụng theo dạng bài. Khi thêm dạng bài, bổ sung hướng dẫn tương ứng tại đây.
+- `scripts/detailed-solutions.mjs` biên soạn các lời giải theo bước; các câu tính số liệu dùng dữ liệu gốc, các câu phương trình lượng giác viết từng họ nghiệm và lọc tham số nguyên. Trường `solutionSteps` được tạo cùng các trường trình bày.
 - `site/math.js` hiển thị công thức, giữ văn bản thông thường được escape và tắt `trust` của KaTeX. Nội dung dùng `\(...\)` cho công thức trong dòng, `\[...\]` cho công thức riêng dòng. Các công thức trong bộ hướng dẫn là chuỗi LaTeX không có dấu phân cách.
 
-Phần Xem gợi ý luôn có thứ tự: Công thức cần dùng → Điều kiện áp dụng (nếu có) → Lời giải → Đáp án. Hình vẽ tiếp tục dùng SVG riêng.
+Phần Xem gợi ý luôn có thứ tự: Công thức cần dùng → Điều kiện áp dụng (nếu có) → Lời giải → Đáp án. Các bài rút gọn, tính biểu thức và giải phương trình hiển thị từng bước cả khi mở gợi ý lẫn sau khi chấm đáp án. Hình vẽ tiếp tục dùng SVG riêng.
 
 ## Kiểm tra và xuất bản
 

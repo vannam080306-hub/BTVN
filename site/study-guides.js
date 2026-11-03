@@ -48,7 +48,13 @@ function chapter1(q){
    if(/đồng biến/.test(q.prompt))return pack([r`\sin x\text{ đồng biến trên }\left[-\frac\pi2+2k\pi;\frac\pi2+2k\pi\right]`],angles);
    if(/chẵn|lẻ/.test(q.prompt))return pack([r`f(-x)=f(x)\quad\text{(hàm chẵn)}`,r`f(-x)=-f(x)\quad\text{(hàm lẻ)}`],[[r`f,x`,'Hàm số và biến số; miền xác định phải đối xứng qua 0.']]);
    return pack([r`D_{\sin}=D_{\cos}=\mathbb R`,r`-1\le\sin x\le1,\quad-1\le\cos x\le1`,r`\tan x\text{ xác định}\ \Longleftrightarrow\ \cos x\ne0`,r`\cot x\text{ xác định}\ \Longleftrightarrow\ \sin x\ne0`],[[r`D`,'Tập xác định của hàm số.'],[r`x`,'Biến góc, tính theo radian.'],[r`\mathbb R`,'Tập các số thực.']]);
-  case 'Phương trình bậc hai':return pack([r`t=\sin x\text{ hoặc }t=\cos x,\qquad -1\le t\le1`,r`at^2+bt+c=0,\quad\Delta=b^2-4ac`,r`t=\frac{-b\pm\sqrt\Delta}{2a}\quad(a\ne0,\Delta\ge0)`],[[r`t`,'Ẩn phụ là giá trị sin hoặc cos; loại nghiệm ngoài [−1;1].'],[r`a,b,c`,'Các hệ số của phương trình bậc hai theo t.'],[r`\Delta`,'Biệt thức; Δ âm thì phương trình theo t không có nghiệm thực.'],[r`x`,'Ẩn ban đầu; giải phương trình lượng giác sau khi tìm t.']]);
+  case 'Phương trình bậc hai':{
+   const f=q.verification?.reduced?.kind||'sin';
+   const substitution=`t=\\${f} x`;
+   const condition=f==='tan'?r`\cos x\ne0`:f==='cot'?r`\sin x\ne0`:r`-1\le t\le1`;
+   if(q.prompt.includes('1/cos²x'))return pack([r`\frac1{\cos^2x}=1+\tan^2x`],[[r`x`,'Ẩn góc của phương trình.']], 'Điều kiện cos x khác 0.');
+   return pack([substitution,condition,r`at^2+bt+c=0,\quad\Delta=b^2-4ac`,r`t=\frac{-b\pm\sqrt\Delta}{2a}\quad(a\ne0,\Delta\ge0)`],[[r`t`,'Ẩn phụ là giá trị lượng giác được chọn.'],[r`a,b,c`,'Các hệ số theo ẩn phụ.'],[r`\Delta`,'Biệt thức của phương trình bậc hai.'],[r`x`,'Ẩn góc ban đầu.']],f==='sin'||f==='cos'?'Chỉ nhận nghiệm của ẩn phụ thuộc đoạn [−1;1].':'Kiểm tra điều kiện xác định của tang hoặc cotang trước khi biến đổi.');
+  }
   case 'Phương trình cơ bản':case 'Lý thuyết phương trình':return trigEquation(q);
  }
  throw Error('Thiếu công thức chương 1: '+q.type);

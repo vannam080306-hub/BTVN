@@ -115,7 +115,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\mathrm{rad}}=\\alpha_{\\text{độ}}\\frac\\pi{180}\\]"
+      },
+      {
+        "title": "Thay số và rút gọn",
+        "content": "\\[\\alpha=108\\cdot\\frac\\pi{180}=\\frac{3}{5}\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[k=\\frac{3}{5}\\]"
+      }
+    ]
   },
   "toan-11-1-8-13-mc-v2": {
     "prompt": "Đổi \\(120^{\\circ}\\) sang radian. Tìm hệ số \\(k\\) trong \\(\\alpha = k \\pi\\).",
@@ -147,7 +161,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\mathrm{rad}}=\\alpha_{\\text{độ}}\\frac\\pi{180}\\]"
+      },
+      {
+        "title": "Thay số và rút gọn",
+        "content": "\\[\\alpha=120\\cdot\\frac\\pi{180}=\\frac{2}{3}\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[k=\\frac{2}{3}\\]"
+      }
+    ]
   },
   "toan-11-1-8-12-mc-v2": {
     "prompt": "Đổi \\(\\frac{\\pi}{24}\\) rad sang độ. Số đo theo độ là:",
@@ -179,7 +207,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\text{độ}}=\\alpha_{\\mathrm{rad}}\\frac{180}\\pi\\]"
+      },
+      {
+        "title": "Thay số và khử pi",
+        "content": "\\[\\alpha_{\\text{độ}}=(\\frac{1}{24}\\pi)\\frac{180}\\pi=7.5\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\alpha=7.5^\\circ\\]"
+      }
+    ]
   },
   "toan-11-1-mc-8-7": {
     "prompt": "Cho \\(a = \\frac{\\pi}{2} + 2 k \\pi , k \\in \\mathbb{Z}\\). Để \\(10 \\pi < a < 11 \\pi\\) thì \\(k\\) bằng:",
@@ -210,7 +252,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Thay góc vào khoảng",
+        "content": "\\[10\\pi<\\frac\\pi2+2k\\pi<11\\pi\\]"
+      },
+      {
+        "title": "Chia cho số dương và chuyển vế",
+        "content": "\\[10<\\frac12+2k<11\\iff\\frac{19}2<2k<\\frac{21}2\\iff\\frac{19}4<k<\\frac{21}4\\]"
+      },
+      {
+        "title": "Chọn số nguyên",
+        "content": "\\[4.75<k<5.25,\\ k\\in\\mathbb Z\\Rightarrow k=5\\]"
+      }
+    ]
   },
   "toan-11-1-8-8-mc-v2": {
     "prompt": "Bánh xe có \\(72\\) răng cách đều nhau. Đi qua \\(10\\) răng tương ứng góc quay bao nhiêu độ?",
@@ -241,7 +297,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính góc ứng với một răng",
+        "content": "\\[\\frac{360^\\circ}{72}=5^\\circ\\]"
+      },
+      {
+        "title": "Nhân với số răng đi qua",
+        "content": "\\[\\alpha=10\\cdot5^\\circ=50^\\circ\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "Góc quay có độ lớn 50°."
+      }
+    ]
   },
   "toan-11-1-8-14-mc-v2": {
     "prompt": "Cung tròn bán kính \\(15\\) có góc ở tâm \\(50^{\\circ}\\). Độ dài cung bằng \\(k \\pi\\). Tìm \\(k\\).",
@@ -272,7 +342,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi góc sang radian",
+        "content": "\\[\\alpha=50\\cdot\\frac\\pi{180}=\\frac{5\\pi}{18}\\]"
+      },
+      {
+        "title": "Nhân với bán kính",
+        "content": "\\[l=R\\alpha=15\\cdot\\frac{5\\pi}{18}=\\frac{75\\pi}{18}=\\frac{25\\pi}6\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[l=k\\pi\\Rightarrow k=\\frac{25}6\\]"
+      }
+    ]
   },
   "toan-11-1-8-17-mc-v2": {
     "prompt": "Cung tròn bán kính \\(5\\), góc ở tâm \\(\\frac{\\pi}{8}\\) rad có độ dài \\(k \\pi\\). Tìm \\(k\\).",
@@ -303,7 +387,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhận đơn vị góc",
+        "content": "Góc đã tính bằng radian nên dùng trực tiếp công thức độ dài cung."
+      },
+      {
+        "title": "Thay số",
+        "content": "\\[l=R\\alpha=5\\cdot\\frac\\pi8=\\frac{5\\pi}8\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[k=\\frac58\\]"
+      }
+    ]
   },
   "toan-11-1-8-18-mc-v2": {
     "prompt": "Cung tròn bán kính \\(10\\) cm, góc ở tâm \\(40^{\\circ}\\). Tính độ dài cung (cm), làm tròn \\(4\\) chữ số thập phân.",
@@ -334,7 +432,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi độ sang radian",
+        "content": "\\[\\alpha=40\\cdot\\frac\\pi{180}=\\frac{2\\pi}9\\]"
+      },
+      {
+        "title": "Tính độ dài chính xác",
+        "content": "\\[l=10\\cdot\\frac{2\\pi}9=\\frac{20\\pi}9\\ \\text{cm}\\]"
+      },
+      {
+        "title": "Làm tròn ở bước cuối",
+        "content": "\\[l\\approx6.9813\\ \\text{cm}\\]"
+      }
+    ]
   },
   "toan-11-1-mc-8-15": {
     "prompt": "Cho \\(\\alpha = \\frac{5 \\pi}{6} , \\beta = \\frac{\\pi}{3} , \\gamma = \\frac{25 \\pi}{3} , \\delta = \\frac{19 \\pi}{6}\\). Cặp nào có điểm cuối trùng nhau?",
@@ -396,7 +508,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Cộng hệ số của pi",
+        "content": "\\[\\frac{5\\pi}2+2001\\pi=\\frac{4007\\pi}2\\]"
+      },
+      {
+        "title": "Tách số vòng nguyên",
+        "content": "\\[\\frac{4007\\pi}2=1001\\cdot2\\pi+\\frac{3\\pi}2\\]"
+      },
+      {
+        "title": "Chọn đại diện trong khoảng",
+        "content": "\\[0\\le\\frac{3\\pi}2<2\\pi\\Rightarrow k=\\frac32\\]"
+      }
+    ]
   },
   "toan-11-1-8-22-mc-v2": {
     "prompt": "Hai điểm \\(M , N\\) trên đường tròn đơn vị có góc lần lượt \\(\\frac{\\pi}{3}\\) và \\(\\frac{4 \\pi}{3}\\). Họ góc chung là \\(\\frac{\\pi}{3}\\) + kp\\(\\pi , k \\in \\mathbb{Z} , p > 0\\) nhỏ nhất. Tìm \\(p\\).",
@@ -427,7 +553,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "So sánh hai góc",
+        "content": "\\[\\frac{4\\pi}3-\\frac\\pi3=\\pi\\]"
+      },
+      {
+        "title": "Viết chung hai họ góc",
+        "content": "\\[\\frac\\pi3+2m\\pi\\quad\\text{và}\\quad\\frac{4\\pi}3+2m\\pi\\]Gộp lại thành \\(\\pi/3+k\\pi\\)."
+      },
+      {
+        "title": "Chọn bước dương nhỏ nhất",
+        "content": "Hai điểm đối nhau nên bước nhỏ nhất là \\(\\pi\\), do đó \\(p=1\\)."
+      }
+    ]
   },
   "toan-11-1-8-23-mc-v2": {
     "prompt": "\\(M\\) biểu diễn góc \\(\\frac{\\pi}{3}\\). Điểm đối xứng của \\(M\\) qua Ox biểu diễn góc nhỏ nhất không âm \\(k \\pi\\). Tìm \\(k\\).",
@@ -458,7 +598,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi góc khi đối xứng qua trục hoành",
+        "content": "\\[\\alpha'= -\\frac\\pi3+2m\\pi\\]"
+      },
+      {
+        "title": "Chọn góc không âm nhỏ nhất",
+        "content": "\\[m=1\\Rightarrow\\alpha'=2\\pi-\\frac\\pi3=\\frac{5\\pi}3\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[k=\\frac53\\]"
+      }
+    ]
   },
   "toan-11-1-mc-8-24": {
     "prompt": "Góc nào có cùng điểm cuối với \\(\\frac{7 \\pi}{4}\\)?",
@@ -520,7 +674,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xét ba giá trị liên tiếp của tham số",
+        "content": "\\[k=0,1,2\\Rightarrow\\alpha=\\frac\\pi6,\\frac{5\\pi}6,\\frac{3\\pi}2\\]"
+      },
+      {
+        "title": "Kiểm tra chu kì lặp điểm cuối",
+        "content": "\\[\\alpha_{k+3}-\\alpha_k=3\\cdot\\frac{2\\pi}3=2\\pi\\]"
+      },
+      {
+        "title": "Đếm",
+        "content": "Ba góc đầu có hiệu không là bội nguyên của một vòng nên tạo 3 điểm khác nhau. Từ đó các điểm lặp lại theo chu kì 3."
+      }
+    ]
   },
   "toan-11-1-mc-8-26": {
     "prompt": "Cho \\(\\frac{\\pi}{2} < a < \\pi\\). Kết luận nào đúng?",
@@ -792,7 +960,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi sang hàm nghịch đảo",
+        "content": "\\[\\cot\\alpha=\\frac1{\\tan\\alpha}\\]"
+      },
+      {
+        "title": "Thay giá trị đã cho",
+        "content": "\\[\\cot\\alpha=\\frac1{1/2}=1\\cdot\\frac21=2\\]"
+      },
+      {
+        "title": "Kiểm tra điều kiện",
+        "content": "Tang đã xác định và khác 0 nên cotang xác định."
+      }
+    ]
   },
   "toan-11-1-12-41-mc-v2": {
     "prompt": "\\(\\tan \\alpha = 2 , \\pi < \\alpha < \\frac{3 \\pi}{2}\\). Tính \\(\\sin \\alpha\\).",
@@ -816,7 +998,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xác định dấu",
+        "content": "Góc thuộc phần tư III nên cả sin và cos đều âm."
+      },
+      {
+        "title": "Tìm cos từ tan",
+        "content": "\\[1+\\tan^2\\alpha=\\frac1{\\cos^2\\alpha}\\Rightarrow\\cos^2\\alpha=\\frac15\\Rightarrow\\cos\\alpha=-\\frac1{\\sqrt5}\\]"
+      },
+      {
+        "title": "Tìm sin",
+        "content": "\\[\\sin\\alpha=\\tan\\alpha\\cos\\alpha=2\\left(-\\frac1{\\sqrt5}\\right)=-\\frac2{\\sqrt5}\\]"
+      }
+    ]
   },
   "toan-11-1-12-42-mc-v2": {
     "prompt": "Biết \\(\\tan \\alpha = -3\\). Tính \\(\\tan \\left(\\alpha - \\frac{7 \\pi}{2}\\right)\\).",
@@ -840,7 +1036,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Giảm góc theo chu kì",
+        "content": "\\[\\alpha-\\frac{7\\pi}2=\\alpha-\\frac\\pi2-3\\pi\\Rightarrow\\tan\\left(\\alpha-\\frac{7\\pi}2\\right)=\\tan\\left(\\alpha-\\frac\\pi2\\right)\\]"
+      },
+      {
+        "title": "Đổi tang của góc lệch",
+        "content": "\\[\\tan\\left(\\alpha-\\frac\\pi2\\right)=-\\cot\\alpha=-\\frac1{\\tan\\alpha}\\]"
+      },
+      {
+        "title": "Thay số",
+        "content": "\\[-\\frac1{-3}=\\frac13\\]"
+      }
+    ]
   },
   "toan-11-1-12-45-mc-v2": {
     "prompt": "\\(\\cos \\alpha = \\frac{4}{5} , 0 < \\alpha < \\frac{\\pi}{2}\\). Tính \\(\\sin \\alpha\\).",
@@ -864,7 +1074,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xác định dấu",
+        "content": "Góc thuộc phần tư I nên sin dương."
+      },
+      {
+        "title": "Dùng hệ thức cơ bản",
+        "content": "\\[\\sin^2\\alpha=1-\\cos^2\\alpha=1-\\frac{16}{25}=\\frac9{25}\\]"
+      },
+      {
+        "title": "Lấy căn theo dấu",
+        "content": "\\[\\sin\\alpha=\\sqrt{\\frac9{25}}=\\frac35\\]"
+      }
+    ]
   },
   "toan-11-1-12-46-mc-v2": {
     "prompt": "\\(P = \\sin \\left(a + \\frac{\\pi}{4}\\right) \\sin \\left(a - \\frac{\\pi}{4}\\right) = k \\cos 2 a\\). Tìm \\(k\\).",
@@ -888,7 +1112,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi tích thành tổng",
+        "content": "\\[P=\\frac{\\cos[(a+\\pi/4)-(a-\\pi/4)]-\\cos[(a+\\pi/4)+(a-\\pi/4)]}{2}\\]"
+      },
+      {
+        "title": "Thu gọn các góc",
+        "content": "\\[P=\\frac{\\cos(\\pi/2)-\\cos2a}{2}=-\\frac12\\cos2a\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số",
+        "content": "\\[k=-\\frac12\\]"
+      }
+    ]
   },
   "toan-11-1-12-50a-mc-v2": {
     "prompt": "\\(\\tan \\alpha = \\frac{-4}{5} , \\frac{3 \\pi}{2} < \\alpha < 2 \\pi\\). Tính \\(\\sin \\alpha\\).",
@@ -912,7 +1150,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xác định dấu",
+        "content": "Góc thuộc phần tư IV nên cos dương, sin âm."
+      },
+      {
+        "title": "Tính cos",
+        "content": "\\[\\cos^2\\alpha=\\frac1{1+\\tan^2\\alpha}=\\frac1{1+16/25}=\\frac{25}{41}\\Rightarrow\\cos\\alpha=\\frac5{\\sqrt{41}}\\]"
+      },
+      {
+        "title": "Tính sin và kết luận",
+        "content": "\\[\\sin\\alpha=\\tan\\alpha\\cos\\alpha=-\\frac45\\cdot\\frac5{\\sqrt{41}}=-\\frac4{\\sqrt{41}}\\]"
+      }
+    ]
   },
   "toan-11-1-12-50b-mc-v2": {
     "prompt": "\\(\\tan \\alpha = \\frac{-4}{5} , \\frac{3 \\pi}{2} < \\alpha < 2 \\pi\\). Tính \\(\\cos \\alpha\\).",
@@ -936,7 +1188,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xác định dấu",
+        "content": "Góc thuộc phần tư IV nên cos dương, sin âm."
+      },
+      {
+        "title": "Tính cos",
+        "content": "\\[\\cos^2\\alpha=\\frac1{1+\\tan^2\\alpha}=\\frac1{1+16/25}=\\frac{25}{41}\\Rightarrow\\cos\\alpha=\\frac5{\\sqrt{41}}\\]"
+      },
+      {
+        "title": "Tính sin và kết luận",
+        "content": "\\[\\sin\\alpha=\\tan\\alpha\\cos\\alpha=-\\frac45\\cdot\\frac5{\\sqrt{41}}=-\\frac4{\\sqrt{41}}\\]"
+      }
+    ]
   },
   "toan-11-1-12-52-mc-v2": {
     "prompt": "\\(\\sin \\alpha = \\frac{1}{3} , \\frac{\\pi}{2} < \\alpha < \\pi\\). Tính \\(\\cos \\alpha\\).",
@@ -960,7 +1226,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xác định dấu",
+        "content": "Góc thuộc phần tư II nên cos âm."
+      },
+      {
+        "title": "Tính bình phương cos",
+        "content": "\\[\\cos^2\\alpha=1-\\sin^2\\alpha=1-\\frac19=\\frac89\\]"
+      },
+      {
+        "title": "Chọn căn âm",
+        "content": "\\[\\cos\\alpha=-\\sqrt{\\frac89}=-\\frac{2\\sqrt2}3\\]"
+      }
+    ]
   },
   "toan-11-1-12-53-mc-v2": {
     "prompt": "Cho \\(\\tan x = 2\\). Tính \\(P = \\frac{3 \\sin x - \\cos x}{\\sin x + 2 \\cos x}\\).",
@@ -984,7 +1264,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các biểu thức phải xác định; kiểm tra mẫu khác \\(0\\) trước khi chia."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Kiểm tra phép chia",
+        "content": "Tang xác định nên cos khác 0. Mẫu của biểu thức bằng \\(\\cos x(\\tan x+2)=4\\cos x\\ne0\\)."
+      },
+      {
+        "title": "Chia tử và mẫu cho cos",
+        "content": "\\[P=\\frac{3\\sin x/\\cos x-1}{\\sin x/\\cos x+2}=\\frac{3\\tan x-1}{\\tan x+2}\\]"
+      },
+      {
+        "title": "Thay số và tính",
+        "content": "\\[P=\\frac{3\\cdot2-1}{2+2}=\\frac54\\]"
+      }
+    ]
   },
   "toan-11-1-11-1-4b-mc-v2": {
     "prompt": "Đổi \\(1000^{\\circ}\\) sang radian. Tìm hệ số \\(k\\) trong \\(\\alpha = k \\pi\\).",
@@ -1016,7 +1310,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\mathrm{rad}}=\\alpha_{\\text{độ}}\\frac\\pi{180}\\]"
+      },
+      {
+        "title": "Thay số và rút gọn",
+        "content": "\\[\\alpha=1000\\cdot\\frac\\pi{180}=\\frac{50}{9}\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số",
+        "content": "\\[k=\\frac{50}{9}\\]"
+      }
+    ]
   },
   "toan-11-1-11-1-1d-mc-v2": {
     "prompt": "Đổi \\(\\frac{5 \\pi}{18}\\) rad sang độ. Số đo theo độ là:",
@@ -1048,7 +1356,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\text{độ}}=\\alpha_{\\mathrm{rad}}\\frac{180}\\pi\\]"
+      },
+      {
+        "title": "Thay số và khử pi",
+        "content": "\\[\\alpha_{\\text{độ}}=(\\frac{5}{18}\\pi)\\frac{180}\\pi=50\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\alpha=50^\\circ\\]"
+      }
+    ]
   },
   "toan-11-1-11-1-3c-mc-v2": {
     "prompt": "Đổi \\(\\frac{\\pi}{10}\\) rad sang độ. Số đo theo độ là:",
@@ -1080,7 +1402,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi đơn vị",
+        "content": "\\[\\alpha_{\\text{độ}}=\\alpha_{\\mathrm{rad}}\\frac{180}\\pi\\]"
+      },
+      {
+        "title": "Thay số và khử pi",
+        "content": "\\[\\alpha_{\\text{độ}}=(\\frac{1}{10}\\pi)\\frac{180}\\pi=18\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\alpha=18^\\circ\\]"
+      }
+    ]
   },
   "toan-11-1-11-2-1b-mc-v2": {
     "prompt": "Đường tròn bán kính \\(36 m\\) có góc ở tâm \\(51^{\\circ}\\). Tính độ dài cung \\(\\left(m\\right)\\).",
@@ -1111,7 +1447,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi góc về radian",
+        "content": "\\[51^\\circ=51\\cdot\\frac\\pi{180}=\\frac{17\\pi}{60}\\]"
+      },
+      {
+        "title": "Thay bán kính vào công thức",
+        "content": "\\[l=R\\alpha=36\\cdot\\frac{17\\pi}{60}=\\frac{51\\pi}5\\]"
+      },
+      {
+        "title": "Viết kết quả theo đơn vị",
+        "content": "\\[l=10.2\\pi\\ \\text{m}\\]"
+      }
+    ]
   },
   "toan-11-1-11-2-1c-mc-v2": {
     "prompt": "Đường tròn bán kính \\(36 m\\) có góc ở tâm \\(\\frac{1}{3}\\) rad. Tính độ dài cung \\(\\left(m\\right)\\).",
@@ -1142,7 +1492,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Kiểm tra đơn vị",
+        "content": "Bán kính bằng 36 m; góc đã là radian."
+      },
+      {
+        "title": "Dùng công thức độ dài cung",
+        "content": "\\[l=R\\alpha=36\\cdot\\frac13\\]"
+      },
+      {
+        "title": "Rút gọn",
+        "content": "\\[l=12\\ \\text{m}\\]"
+      }
+    ]
   },
   "toan-11-1-11-2-3-mc-v2": {
     "prompt": "Hình vuông \\(A_{0} A_{1} A_{2} A_{3}\\) nội tiếp đường tròn, theo chiều ngược kim đồng hồ. Góc dương nhỏ nhất từ \\(OA_{0}\\) đến \\(OA_{3}\\) bằng \\(k \\pi\\). Tìm \\(k\\).",
@@ -1173,7 +1537,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính góc giữa hai đỉnh kề nhau",
+        "content": "\\[\\frac{2\\pi}4=\\frac\\pi2\\]"
+      },
+      {
+        "title": "Đếm số bước theo chiều dương",
+        "content": "Từ đỉnh thứ 0 đến đỉnh thứ 3 theo chiều ngược kim đồng hồ đi qua 3 cạnh liên tiếp."
+      },
+      {
+        "title": "Tính góc và hệ số",
+        "content": "\\[\\alpha=3\\cdot\\frac\\pi2=\\frac{3\\pi}2\\Rightarrow k=\\frac32\\]"
+      }
+    ]
   },
   "toan-11-1-mc-15-sin": {
     "prompt": "Điểm \\(M \\left(x ; y\\right)\\) biểu diễn góc \\(\\alpha\\) trên đường tròn đơn vị. \\(\\sin \\alpha\\) bằng:",
@@ -1258,7 +1636,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Khai triển góc tổng",
+        "content": "\\[2\\cos(\\pi/4+a)=\\sqrt2\\cos a-\\sqrt2\\sin a\\]\\[2\\sin(\\pi/4+a)=\\sqrt2\\cos a+\\sqrt2\\sin a\\]"
+      },
+      {
+        "title": "Rút gọn tử và mẫu",
+        "content": "\\[\\text{Tử}=\\sqrt2\\cos a-(\\sqrt2\\cos a-\\sqrt2\\sin a)=\\sqrt2\\sin a\\]\\[\\text{Mẫu}=-\\sqrt2\\sin a+(\\sqrt2\\cos a+\\sqrt2\\sin a)=\\sqrt2\\cos a\\]"
+      },
+      {
+        "title": "Chia và kết luận",
+        "content": "Mẫu khác 0 nên \\[A=\\frac{\\sqrt2\\sin a}{\\sqrt2\\cos a}=\\tan a\\Rightarrow k=1\\]"
+      }
+    ]
   },
   "toan-11-1-0-1b-mc-v2": {
     "prompt": "Tính \\(B = \\left(\\tan a - \\tan b\\right) \\cot \\left(a - b\\right) - \\tan a \\tan b\\) tại các góc biểu thức xác định.",
@@ -1287,7 +1679,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi cotang",
+        "content": "Theo giả thiết, các tang và cotang đều xác định; đặc biệt \\(\\sin(a-b)\\ne0\\)."
+      },
+      {
+        "title": "Biến đổi tích đầu",
+        "content": "\\[\\tan a-\\tan b=\\frac{\\sin(a-b)}{\\cos a\\cos b}\\]\\[(\\tan a-\\tan b)\\cot(a-b)=\\frac{\\cos(a-b)}{\\cos a\\cos b}=1+\\tan a\\tan b\\]"
+      },
+      {
+        "title": "Trừ hai hạng bằng nhau",
+        "content": "\\[B=1+\\tan a\\tan b-\\tan a\\tan b=1\\]"
+      }
+    ]
   },
   "toan-11-1-0-2a-mc-v2": {
     "prompt": "\\(\\sin x = \\frac{1}{\\sqrt{3}} , 0 < x < \\frac{\\pi}{2}\\). Tính \\(\\cos \\left(x + \\frac{\\pi}{3}\\right)\\).",
@@ -1316,7 +1722,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos và chọn dấu",
+        "content": "Góc nhọn nên \\[\\cos x=\\sqrt{1-\\frac13}=\\frac{\\sqrt6}3\\]"
+      },
+      {
+        "title": "Khai triển cos của tổng",
+        "content": "\\[\\cos(x+\\pi/3)=\\cos x\\cos(\\pi/3)-\\sin x\\sin(\\pi/3)\\]"
+      },
+      {
+        "title": "Thay các giá trị",
+        "content": "\\[\\frac{\\sqrt6}3\\cdot\\frac12-\\frac1{\\sqrt3}\\cdot\\frac{\\sqrt3}2=\\frac{\\sqrt6}6-\\frac12\\]"
+      }
+    ]
   },
   "toan-11-1-0-2b-mc-v2": {
     "prompt": "\\(\\cos a = \\frac{1}{3} , \\cos b = \\frac{1}{4}\\). Tính \\(\\cos \\left(a + b\\right) \\cos \\left(a - b\\right)\\).",
@@ -1345,7 +1765,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Khai triển hai thừa số",
+        "content": "\\[\\cos(a+b)\\cos(a-b)=(\\cos a\\cos b-\\sin a\\sin b)(\\cos a\\cos b+\\sin a\\sin b)\\]"
+      },
+      {
+        "title": "Dùng hiệu hai bình phương",
+        "content": "\\[=\\cos^2a\\cos^2b-\\sin^2a\\sin^2b=\\cos^2a+\\cos^2b-1\\]"
+      },
+      {
+        "title": "Thay số và quy đồng",
+        "content": "\\[\\frac19+\\frac1{16}-1=\\frac{16+9-144}{144}=-\\frac{119}{144}\\]"
+      }
+    ]
   },
   "toan-11-1-0-3a-mc-v2": {
     "prompt": "\\(\\sin \\alpha = \\frac{3}{5} , \\frac{\\pi}{2} < \\alpha < \\pi\\). Tính \\(\\tan \\left(\\alpha + \\frac{\\pi}{3}\\right)\\).",
@@ -1374,7 +1808,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tìm cos và tang",
+        "content": "Góc thuộc phần tư II nên \\[\\cos\\alpha=-\\sqrt{1-9/25}=-\\frac45,\\quad\\tan\\alpha=-\\frac34\\]"
+      },
+      {
+        "title": "Áp dụng tang của tổng",
+        "content": "\\[\\tan(\\alpha+\\pi/3)=\\frac{-3/4+\\sqrt3}{1+3\\sqrt3/4}=\\frac{4\\sqrt3-3}{4+3\\sqrt3}\\]Mẫu dương nên công thức áp dụng được."
+      },
+      {
+        "title": "Khử căn ở mẫu",
+        "content": "\\[\\frac{(4\\sqrt3-3)(4-3\\sqrt3)}{16-27}=\\frac{25\\sqrt3-48}{-11}=\\frac{48-25\\sqrt3}{11}\\]"
+      }
+    ]
   },
   "toan-11-1-0-3b-mc-v2": {
     "prompt": "\\(\\sin \\alpha = \\frac{-12}{13} , \\frac{3 \\pi}{2} < \\alpha < 2 \\pi\\). Tính \\(\\cos \\left(\\frac{\\pi}{3} - \\alpha\\right)\\).",
@@ -1403,7 +1851,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tìm cos theo góc phần tư IV",
+        "content": "\\[\\cos\\alpha=\\sqrt{1-144/169}=\\frac5{13}\\]"
+      },
+      {
+        "title": "Khai triển cos của hiệu",
+        "content": "\\[\\cos(\\pi/3-\\alpha)=\\frac12\\cos\\alpha+\\frac{\\sqrt3}2\\sin\\alpha\\]"
+      },
+      {
+        "title": "Thay số và quy đồng",
+        "content": "\\[\\frac5{26}-\\frac{12\\sqrt3}{26}=\\frac{5-12\\sqrt3}{26}\\]"
+      }
+    ]
   },
   "toan-11-1-0-3d-sin-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{8}{17} , \\tan b = \\frac{5}{12} ; a , b\\) nhọn. Tính \\(\\sin \\left(a - b\\right)\\).",
@@ -1432,7 +1894,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính các giá trị còn thiếu",
+        "content": "Hai góc nhọn nên các giá trị đều dương. \\[\\cos a=\\sqrt{1-64/289}=\\frac{15}{17}\\]\\[\\cos b=\\frac1{\\sqrt{1+25/144}}=\\frac{12}{13},\\quad\\sin b=\\frac5{13},\\quad\\tan a=\\frac8{15}\\]"
+      },
+      {
+        "title": "Chọn công thức",
+        "content": "\\[\\sin(a-b)=\\sin a\\cos b-\\cos a\\sin b\\]"
+      },
+      {
+        "title": "Thay số rồi thực hiện phép tính",
+        "content": "\\[\\sin(a-b)=\\frac8{17}\\frac{12}{13}-\\frac{15}{17}\\frac5{13}=\\frac{96-75}{221}=\\frac{21}{221}\\]"
+      }
+    ]
   },
   "toan-11-1-0-3d-cos-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{8}{17} , \\tan b = \\frac{5}{12} ; a , b\\) nhọn. Tính \\(\\cos \\left(a + b\\right)\\).",
@@ -1461,7 +1937,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính các giá trị còn thiếu",
+        "content": "Hai góc nhọn nên các giá trị đều dương. \\[\\cos a=\\sqrt{1-64/289}=\\frac{15}{17}\\]\\[\\cos b=\\frac1{\\sqrt{1+25/144}}=\\frac{12}{13},\\quad\\sin b=\\frac5{13},\\quad\\tan a=\\frac8{15}\\]"
+      },
+      {
+        "title": "Chọn công thức",
+        "content": "\\[\\cos(a+b)=\\cos a\\cos b-\\sin a\\sin b\\]"
+      },
+      {
+        "title": "Thay số rồi thực hiện phép tính",
+        "content": "\\[\\cos(a+b)=\\frac{15}{17}\\frac{12}{13}-\\frac8{17}\\frac5{13}=\\frac{180-40}{221}=\\frac{140}{221}\\]"
+      }
+    ]
   },
   "toan-11-1-0-3d-tan-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{8}{17} , \\tan b = \\frac{5}{12} ; a , b\\) nhọn. Tính \\(\\tan \\left(a + b\\right)\\).",
@@ -1490,7 +1980,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính các giá trị còn thiếu",
+        "content": "Hai góc nhọn nên các giá trị đều dương. \\[\\cos a=\\sqrt{1-64/289}=\\frac{15}{17}\\]\\[\\cos b=\\frac1{\\sqrt{1+25/144}}=\\frac{12}{13},\\quad\\sin b=\\frac5{13},\\quad\\tan a=\\frac8{15}\\]"
+      },
+      {
+        "title": "Chọn công thức",
+        "content": "\\[\\tan(a+b)=\\frac{\\tan a+\\tan b}{1-\\tan a\\tan b}\\]"
+      },
+      {
+        "title": "Thay số rồi thực hiện phép tính",
+        "content": "\\[\\tan(a+b)=\\frac{8/15+5/12}{1-(8/15)(5/12)}=\\frac{171/180}{140/180}=\\frac{171}{140}\\]"
+      }
+    ]
   },
   "toan-11-1-1-1a-sin-mc-v2": {
     "prompt": "\\(\\cos a = \\frac{5}{13} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\sin 2 a\\).",
@@ -1520,7 +2024,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính sin của góc nhọn",
+        "content": "\\[\\sin a=\\sqrt{1-25/169}=\\frac{12}{13}\\]"
+      },
+      {
+        "title": "Tính sin và cos góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac{12}{13}\\cdot\\frac5{13}=\\frac{120}{169}\\]\\[\\cos2a=2\\cdot\\frac{25}{169}-1=-\\frac{119}{169}\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\sin2a=\\frac{120}{169}\\]"
+      }
+    ]
   },
   "toan-11-1-1-1a-cos-mc-v2": {
     "prompt": "\\(\\cos a = \\frac{5}{13} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\cos 2 a\\).",
@@ -1550,7 +2068,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính sin của góc nhọn",
+        "content": "\\[\\sin a=\\sqrt{1-25/169}=\\frac{12}{13}\\]"
+      },
+      {
+        "title": "Tính sin và cos góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac{12}{13}\\cdot\\frac5{13}=\\frac{120}{169}\\]\\[\\cos2a=2\\cdot\\frac{25}{169}-1=-\\frac{119}{169}\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\cos2a=-\\frac{119}{169}\\]"
+      }
+    ]
   },
   "toan-11-1-1-1a-tan-mc-v2": {
     "prompt": "\\(\\cos a = \\frac{5}{13} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\tan 2 a\\).",
@@ -1580,7 +2112,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính sin của góc nhọn",
+        "content": "\\[\\sin a=\\sqrt{1-25/169}=\\frac{12}{13}\\]"
+      },
+      {
+        "title": "Tính sin và cos góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac{12}{13}\\cdot\\frac5{13}=\\frac{120}{169}\\]\\[\\cos2a=2\\cdot\\frac{25}{169}-1=-\\frac{119}{169}\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\tan2a=\\frac{120/169}{-119/169}=-\\frac{120}{119}\\]"
+      }
+    ]
   },
   "toan-11-1-1-1b-sin-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{1}{4} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\sin 2 a\\).",
@@ -1610,7 +2156,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos của góc nhọn",
+        "content": "\\[\\cos a=\\sqrt{1-1/16}=\\frac{\\sqrt{15}}4\\]"
+      },
+      {
+        "title": "Tính hai giá trị góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac14\\cdot\\frac{\\sqrt{15}}4=\\frac{\\sqrt{15}}8,\\quad\\cos2a=1-2\\cdot\\frac1{16}=\\frac78\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\sin2a=\\frac{\\sqrt{15}}8\\]"
+      }
+    ]
   },
   "toan-11-1-1-1b-cos-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{1}{4} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\cos 2 a\\).",
@@ -1640,7 +2200,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos của góc nhọn",
+        "content": "\\[\\cos a=\\sqrt{1-1/16}=\\frac{\\sqrt{15}}4\\]"
+      },
+      {
+        "title": "Tính hai giá trị góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac14\\cdot\\frac{\\sqrt{15}}4=\\frac{\\sqrt{15}}8,\\quad\\cos2a=1-2\\cdot\\frac1{16}=\\frac78\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\cos2a=\\frac78\\]"
+      }
+    ]
   },
   "toan-11-1-1-1b-tan-mc-v2": {
     "prompt": "\\(\\sin a = \\frac{1}{4} , 0 < a < \\frac{\\pi}{2}\\). Tính \\(\\tan 2 a\\).",
@@ -1670,7 +2244,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos của góc nhọn",
+        "content": "\\[\\cos a=\\sqrt{1-1/16}=\\frac{\\sqrt{15}}4\\]"
+      },
+      {
+        "title": "Tính hai giá trị góc đôi",
+        "content": "\\[\\sin2a=2\\cdot\\frac14\\cdot\\frac{\\sqrt{15}}4=\\frac{\\sqrt{15}}8,\\quad\\cos2a=1-2\\cdot\\frac1{16}=\\frac78\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[\\tan2a=\\frac{\\sqrt{15}/8}{7/8}=\\frac{\\sqrt{15}}7\\]"
+      }
+    ]
   },
   "toan-11-1-1-2-mc-v2": {
     "prompt": "\\(\\sin \\alpha = \\frac{3}{5} , \\frac{\\pi}{2} < \\alpha < \\pi\\). Tính \\(E = \\sin 2 \\alpha + \\tan 2 \\alpha\\).",
@@ -1700,7 +2288,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos theo góc phần tư II",
+        "content": "\\[\\cos\\alpha=-\\sqrt{1-9/25}=-\\frac45\\]"
+      },
+      {
+        "title": "Tính giá trị góc đôi",
+        "content": "\\[\\sin2\\alpha=2\\cdot\\frac35\\cdot\\frac{-4}5=-\\frac{24}{25},\\quad\\cos2\\alpha=1-2\\cdot\\frac9{25}=\\frac7{25}\\]\\[\\tan2\\alpha=\\frac{-24/25}{7/25}=-\\frac{24}7\\]"
+      },
+      {
+        "title": "Cộng và quy đồng",
+        "content": "\\[E=-\\frac{24}{25}-\\frac{24}7=\\frac{-168-600}{175}=-\\frac{768}{175}\\]"
+      }
+    ]
   },
   "toan-11-1-1-3a-mc-v2": {
     "prompt": "\\(\\tan \\left(\\frac{x}{2}\\right) = -2\\). Tính \\(A = \\frac{3 \\sin x + 4 \\cos x}{4 \\cot x + 3 \\tan x}\\).",
@@ -1730,7 +2332,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt biến nửa góc",
+        "content": "\\[t=\\tan(x/2)=-2,\\quad\\sin x=\\frac{2t}{1+t^2}=-\\frac45,\\quad\\cos x=\\frac{1-t^2}{1+t^2}=-\\frac35\\]"
+      },
+      {
+        "title": "Tính tử và mẫu riêng",
+        "content": "\\[\\tan x=\\frac43,\\quad\\cot x=\\frac34\\]\\[3\\sin x+4\\cos x=-\\frac{12}5-\\frac{12}5=-\\frac{24}5\\]\\[4\\cot x+3\\tan x=3+4=7\\ne0\\]"
+      },
+      {
+        "title": "Chia cho mẫu",
+        "content": "\\[A=\\frac{-24/5}{7}=-\\frac{24}{35}\\]"
+      }
+    ]
   },
   "toan-11-1-1-3b-cos-mc-v2": {
     "prompt": "\\(\\sin x = \\frac{-4}{5} , \\frac{3 \\pi}{2} < x < 2 \\pi\\). Tính \\(\\cos \\left(\\frac{x}{2}\\right)\\).",
@@ -1760,7 +2376,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos của góc ban đầu",
+        "content": "Góc thuộc phần tư IV nên \\[\\cos x=\\sqrt{1-16/25}=\\frac35\\]"
+      },
+      {
+        "title": "Xác định dấu ở nửa góc",
+        "content": "\\[\\frac{3\\pi}4<\\frac x2<\\pi\\]Nửa góc thuộc phần tư II: sin dương và cos âm."
+      },
+      {
+        "title": "Dùng công thức nửa góc",
+        "content": "\\[\\cos(x/2)=-\\sqrt{\\frac{1+3/5}2}=-\\sqrt{\\frac45}=-\\frac2{\\sqrt5}\\]"
+      }
+    ]
   },
   "toan-11-1-1-3b-sin-mc-v2": {
     "prompt": "\\(\\sin x = \\frac{-4}{5} , \\frac{3 \\pi}{2} < x < 2 \\pi\\). Tính \\(\\sin \\left(\\frac{x}{2}\\right)\\).",
@@ -1790,7 +2420,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cos của góc ban đầu",
+        "content": "Góc thuộc phần tư IV nên \\[\\cos x=\\sqrt{1-16/25}=\\frac35\\]"
+      },
+      {
+        "title": "Xác định dấu ở nửa góc",
+        "content": "\\[\\frac{3\\pi}4<\\frac x2<\\pi\\]Nửa góc thuộc phần tư II: sin dương và cos âm."
+      },
+      {
+        "title": "Dùng công thức nửa góc",
+        "content": "\\[\\sin(x/2)=\\sqrt{\\frac{1-3/5}2}=\\sqrt{\\frac15}=\\frac1{\\sqrt5}\\]"
+      }
+    ]
   },
   "toan-11-1-1-3c-mc-v2": {
     "prompt": "\\(\\tan x = \\frac{1}{15}\\). Tính \\(B = \\frac{\\sin 2 x}{1 + \\tan 2 x}\\).",
@@ -1820,7 +2464,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi giá trị góc đôi theo tang",
+        "content": "\\[\\sin2x=\\frac{2\\tan x}{1+\\tan^2x}=\\frac{2/15}{226/225}=\\frac{15}{113}\\]"
+      },
+      {
+        "title": "Tính mẫu của biểu thức",
+        "content": "\\[\\tan2x=\\frac{2/15}{1-1/225}=\\frac{15}{112},\\quad1+\\tan2x=\\frac{127}{112}\\ne0\\]"
+      },
+      {
+        "title": "Chia hai phân số",
+        "content": "\\[B=\\frac{15}{113}\\cdot\\frac{112}{127}=\\frac{1680}{14351}\\]"
+      }
+    ]
   },
   "toan-11-1-1-3d-mc-v2": {
     "prompt": "\\(\\tan \\left(\\frac{x}{2}\\right) = \\frac{-1}{2}\\). Tính \\(C = \\frac{2 \\sin 2 x - \\cos 2 x}{\\tan 2 x + \\cos 2 x}\\).",
@@ -1850,7 +2508,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị từ tang nửa góc",
+        "content": "\\[t=-\\frac12,\\quad\\sin x=\\frac{2t}{1+t^2}=-\\frac45,\\quad\\cos x=\\frac{1-t^2}{1+t^2}=\\frac35\\]"
+      },
+      {
+        "title": "Tính các giá trị góc đôi",
+        "content": "\\[\\sin2x=2\\cdot\\frac{-4}5\\cdot\\frac35=-\\frac{24}{25},\\quad\\cos2x=\\frac9{25}-\\frac{16}{25}=-\\frac7{25},\\quad\\tan2x=\\frac{24}7\\]"
+      },
+      {
+        "title": "Tính tử và mẫu",
+        "content": "\\[2\\sin2x-\\cos2x=-\\frac{48}{25}+\\frac7{25}=-\\frac{41}{25}\\]\\[\\tan2x+\\cos2x=\\frac{24}7-\\frac7{25}=\\frac{551}{175}\\ne0\\]"
+      },
+      {
+        "title": "Thực hiện phép chia",
+        "content": "\\[C=-\\frac{41}{25}\\cdot\\frac{175}{551}=-\\frac{287}{551}\\]"
+      }
+    ]
   },
   "toan-11-1-1-4a-mc-v2": {
     "prompt": "\\(\\sin^{4} x + \\cos^{4} x = \\frac{3}{4} + k \\cos 4 x\\) với mọi \\(x\\). Tìm \\(k\\).",
@@ -1880,7 +2556,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng bình phương của tổng",
+        "content": "\\[\\sin^4x+\\cos^4x=(\\sin^2x+\\cos^2x)^2-2\\sin^2x\\cos^2x=1-2\\sin^2x\\cos^2x\\]"
+      },
+      {
+        "title": "Nhân đôi rồi hạ bậc",
+        "content": "\\[=1-\\frac12\\sin^22x=1-\\frac{1-\\cos4x}{4}=\\frac34+\\frac14\\cos4x\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số",
+        "content": "\\[k=\\frac14\\]"
+      }
+    ]
   },
   "toan-11-1-1-4b-mc-v2": {
     "prompt": "\\(\\sin^{6} x + \\cos^{6} x = \\frac{5}{8} + k \\cos 4 x\\) với mọi \\(x\\). Tìm \\(k\\).",
@@ -1910,7 +2600,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt hai đại lượng có tổng bằng 1",
+        "content": "\\[u=\\sin^2x,\\quad v=\\cos^2x,\\quad u+v=1,\\quad uv=\\frac14\\sin^22x\\]"
+      },
+      {
+        "title": "Dùng tổng hai lập phương",
+        "content": "\\[u^3+v^3=(u+v)^3-3uv(u+v)=1-\\frac34\\sin^22x\\]"
+      },
+      {
+        "title": "Hạ bậc và lấy hệ số",
+        "content": "\\[=1-\\frac38(1-\\cos4x)=\\frac58+\\frac38\\cos4x\\Rightarrow k=\\frac38\\]"
+      }
+    ]
   },
   "toan-11-1-1-4c-mc-v2": {
     "prompt": "\\(\\sin x \\cos^{3} x - \\cos x \\sin^{3} x = k \\sin 4 x\\). Tìm \\(k\\).",
@@ -1940,7 +2644,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt nhân tử chung",
+        "content": "\\[\\sin x\\cos^3x-\\cos x\\sin^3x=\\sin x\\cos x(\\cos^2x-\\sin^2x)\\]"
+      },
+      {
+        "title": "Áp dụng nhân đôi lần thứ nhất",
+        "content": "\\[=\\frac12\\sin2x\\cos2x\\]"
+      },
+      {
+        "title": "Nhân đôi lần nữa",
+        "content": "\\[=\\frac14\\sin4x\\Rightarrow k=\\frac14\\]"
+      }
+    ]
   },
   "toan-11-1-2-1-mc-v2": {
     "prompt": "Với mọi \\(x , 4 \\cos x \\cos \\left(\\frac{\\pi}{3} - x\\right) \\cos \\left(\\frac{\\pi}{3} + x\\right) = \\cos \\left(k x\\right) , k\\) nguyên dương. Tìm \\(k\\).",
@@ -1969,7 +2687,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi tích hai cos có góc đối xứng",
+        "content": "\\[2\\cos(\\pi/3-x)\\cos(\\pi/3+x)=\\cos(2\\pi/3)+\\cos2x=\\cos2x-\\frac12\\]"
+      },
+      {
+        "title": "Nhân với thừa số còn lại",
+        "content": "\\[P=2\\cos x(\\cos2x-1/2)=2\\cos x\\cos2x-\\cos x\\]"
+      },
+      {
+        "title": "Đổi tích thành tổng và triệt tiêu",
+        "content": "\\[P=\\cos3x+\\cos x-\\cos x=\\cos3x\\Rightarrow k=3\\]"
+      }
+    ]
   },
   "toan-11-1-2-2-mc-v2": {
     "prompt": "Tính hằng số \\(S = \\cos^{2} x + \\cos^{2} \\left(\\frac{2 \\pi}{3} + x\\right) + \\cos^{2} \\left(\\frac{2 \\pi}{3} - x\\right)\\).",
@@ -1998,7 +2730,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Hạ bậc ba bình phương",
+        "content": "\\[S=\\frac32+\\frac12[\\cos2x+\\cos(4\\pi/3+2x)+\\cos(4\\pi/3-2x)]\\]"
+      },
+      {
+        "title": "Ghép hai hạng đối xứng",
+        "content": "\\[\\cos(4\\pi/3+2x)+\\cos(4\\pi/3-2x)=2\\cos(4\\pi/3)\\cos2x=-\\cos2x\\]"
+      },
+      {
+        "title": "Triệt tiêu và kết luận",
+        "content": "\\[S=\\frac32+\\frac12(\\cos2x-\\cos2x)=\\frac32\\]"
+      }
+    ]
   },
   "toan-11-1-2-3a-mc-v2": {
     "prompt": "\\(2 \\sin \\left(a + b\\right) \\cos \\left(a - b\\right) = \\sin \\left(2 a\\right) + k \\sin \\left(2 b\\right)\\). Tìm \\(k\\).",
@@ -2027,7 +2773,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn công thức",
+        "content": "\\[2\\sin u\\cos v=\\sin(u+v)+\\sin(u-v)\\]"
+      },
+      {
+        "title": "Thay hai góc",
+        "content": "\\[u=a+b,\\ v=a-b\\Rightarrow u+v=2a,\\ u-v=2b\\]"
+      },
+      {
+        "title": "Rút gọn và đối chiếu",
+        "content": "\\[2\\sin(a+b)\\cos(a-b)=\\sin2a+\\sin2b\\Rightarrow k=1\\]"
+      }
+    ]
   },
   "toan-11-1-2-3b-mc-v2": {
     "prompt": "\\(2 \\cos \\left(a + b\\right) \\cos \\left(a - b\\right) = \\cos \\left(2 a\\right) + k \\cos \\left(2 b\\right)\\). Tìm \\(k\\).",
@@ -2056,7 +2816,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn công thức",
+        "content": "\\[2\\cos u\\cos v=\\cos(u+v)+\\cos(u-v)\\]"
+      },
+      {
+        "title": "Thay hai góc",
+        "content": "\\[u=a+b,\\ v=a-b\\Rightarrow u+v=2a,\\ u-v=2b\\]"
+      },
+      {
+        "title": "Rút gọn và đối chiếu",
+        "content": "\\[2\\cos(a+b)\\cos(a-b)=\\cos2a+\\cos2b\\Rightarrow k=1\\]"
+      }
+    ]
   },
   "toan-11-1-2-3c-mc-v2": {
     "prompt": "Viết \\(4 \\sin 3 x \\sin 2 x \\cos x = A\\) + Bcos\\(2 x\\) + Ccos\\(4 x\\) + Dcos\\(6 x\\). Tìm \\(A\\).",
@@ -2085,7 +2859,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép sin với cos",
+        "content": "\\[2\\sin2x\\cos x=\\sin3x+\\sin x\\]"
+      },
+      {
+        "title": "Khai triển tích",
+        "content": "\\[4\\sin3x\\sin2x\\cos x=2\\sin^23x+2\\sin3x\\sin x\\]"
+      },
+      {
+        "title": "Hạ bậc và đổi tích",
+        "content": "\\[=1-\\cos6x+\\cos2x-\\cos4x\\Rightarrow A=1\\]"
+      }
+    ]
   },
   "toan-11-1-2-3d-mc-v2": {
     "prompt": "\\(4 \\sin \\left(\\frac{13 x}{2}\\right) \\cos x \\cos \\left(\\frac{x}{2}\\right) = \\sin\\)(px)\\(+\\sin\\)(qx)\\(+\\sin\\)(rx)\\(+\\sin\\)(sx), với \\(p , q , r , s\\) là số nguyên dương. Tính \\(p + q + r + s\\).",
@@ -2114,7 +2902,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép hai cos",
+        "content": "\\[2\\cos x\\cos(x/2)=\\cos(3x/2)+\\cos(x/2)\\]"
+      },
+      {
+        "title": "Đổi hai tích sin với cos",
+        "content": "\\[P=2\\sin(13x/2)\\cos(3x/2)+2\\sin(13x/2)\\cos(x/2)\\]\\[P=\\sin8x+\\sin5x+\\sin7x+\\sin6x\\]"
+      },
+      {
+        "title": "Cộng các hệ số góc",
+        "content": "\\[p+q+r+s=8+5+7+6=26\\]"
+      }
+    ]
   },
   "toan-11-1-2-3e-mc-v2": {
     "prompt": "\\(\\sin \\left(x + 30^{\\circ}\\right) \\cos \\left(x - 30^{\\circ}\\right) = A \\sin 2 x + B\\). Tìm \\(A\\).",
@@ -2143,7 +2945,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi tích thành tổng",
+        "content": "\\[\\sin(x+30^\\circ)\\cos(x-30^\\circ)=\\frac12\\{\\sin[(x+30^\\circ)+(x-30^\\circ)]+\\sin60^\\circ\\}\\]"
+      },
+      {
+        "title": "Tính sin của góc đặc biệt",
+        "content": "\\[=\\frac12\\sin2x+\\frac12\\cdot\\frac{\\sqrt3}2=\\frac12\\sin2x+\\frac{\\sqrt3}4\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số",
+        "content": "\\[A=\\frac12\\]"
+      }
+    ]
   },
   "toan-11-1-2-3f-mc-v2": {
     "prompt": "Tính \\(\\sin \\left(\\frac{\\pi}{5}\\right) \\sin \\left(\\frac{2 \\pi}{5}\\right)\\).",
@@ -2172,7 +2988,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi góc và tích",
+        "content": "\\[\\sin(\\pi/5)\\sin(2\\pi/5)=\\sin36^\\circ\\sin72^\\circ=\\frac{\\cos36^\\circ-\\cos108^\\circ}{2}\\]"
+      },
+      {
+        "title": "Tính các cos đặc biệt",
+        "content": "\\[\\cos36^\\circ=\\frac{1+\\sqrt5}4,\\quad\\cos108^\\circ=-\\cos72^\\circ=-\\frac{\\sqrt5-1}4\\]"
+      },
+      {
+        "title": "Thay và rút gọn",
+        "content": "\\[\\frac12\\left(\\frac{1+\\sqrt5}4+\\frac{\\sqrt5-1}4\\right)=\\frac{\\sqrt5}4\\]"
+      }
+    ]
   },
   "toan-11-1-2-3g-mc-v2": {
     "prompt": "Viết \\(2 \\sin x \\sin 2 x \\sin 3 x = A \\sin 2 x + B \\sin 4 x + C \\sin 6 x\\). Tìm \\(C\\).",
@@ -2201,7 +3031,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép hai sin",
+        "content": "\\[2\\sin x\\sin3x=\\cos2x-\\cos4x\\]"
+      },
+      {
+        "title": "Nhân với sin còn lại",
+        "content": "\\[P=\\sin2x\\cos2x-\\sin2x\\cos4x\\]"
+      },
+      {
+        "title": "Đổi tích và gom hạng",
+        "content": "\\[P=\\frac12\\sin4x-\\frac12(\\sin6x-\\sin2x)=\\frac12\\sin2x+\\frac12\\sin4x-\\frac12\\sin6x\\]\\[C=-\\frac12\\]"
+      }
+    ]
   },
   "toan-11-1-2-3h-mc-v2": {
     "prompt": "Viết \\(8 \\cos x \\sin 2 x \\sin 3 x = A\\) + Bcos\\(2 x\\) + Ccos\\(4 x\\) + Dcos\\(6 x\\). Tìm \\(A\\).",
@@ -2230,7 +3074,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi tích hai sin",
+        "content": "\\[2\\sin2x\\sin3x=\\cos x-\\cos5x\\]"
+      },
+      {
+        "title": "Nhân với phần còn lại",
+        "content": "\\[P=4\\cos x(\\cos x-\\cos5x)=4\\cos^2x-4\\cos x\\cos5x\\]"
+      },
+      {
+        "title": "Hạ bậc và đổi tích",
+        "content": "\\[P=2+2\\cos2x-2\\cos6x-2\\cos4x\\Rightarrow A=2\\]"
+      }
+    ]
   },
   "toan-11-1-2-3i-mc-v2": {
     "prompt": "Viết \\(\\sin \\left(x + \\frac{\\pi}{6}\\right) \\sin \\left(x - \\frac{\\pi}{6}\\right) \\cos 2 x = A\\) + Bcos\\(2 x\\) + Ccos\\(4 x\\). Tìm \\(A\\).",
@@ -2259,7 +3117,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi tích hai sin",
+        "content": "\\[\\sin(x+\\pi/6)\\sin(x-\\pi/6)=\\frac{\\cos(\\pi/3)-\\cos2x}2=\\frac14-\\frac12\\cos2x\\]"
+      },
+      {
+        "title": "Nhân rồi hạ bậc",
+        "content": "\\[P=\\frac14\\cos2x-\\frac12\\cos^22x=\\frac14\\cos2x-\\frac14(1+\\cos4x)\\]"
+      },
+      {
+        "title": "Đối chiếu hạng tự do",
+        "content": "\\[P=-\\frac14+\\frac14\\cos2x-\\frac14\\cos4x\\Rightarrow A=-\\frac14\\]"
+      }
+    ]
   },
   "toan-11-1-2-3k-mc-v2": {
     "prompt": "Với mọi \\(a , b , c : 4 \\cos \\left(a - b\\right) \\cos \\left(b - c\\right) \\cos \\left(c - a\\right) = K + \\cos 2 \\left(a - b\\right) + \\cos 2 \\left(b - c\\right) + \\cos 2 \\left(c - a\\right)\\). Tìm \\(K\\).",
@@ -2288,7 +3160,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi biến góc",
+        "content": "\\[u=a-b,\\quad v=b-c,\\quad c-a=-(u+v)\\]"
+      },
+      {
+        "title": "Đổi tích đầu",
+        "content": "\\[4\\cos u\\cos v\\cos(u+v)=2[\\cos(u+v)+\\cos(u-v)]\\cos(u+v)\\]"
+      },
+      {
+        "title": "Khai triển hai tích",
+        "content": "\\[=1+\\cos2(u+v)+\\cos2u+\\cos2v\\]"
+      },
+      {
+        "title": "Đổi lại góc ban đầu",
+        "content": "\\[=1+\\cos2(c-a)+\\cos2(a-b)+\\cos2(b-c)\\Rightarrow K=1\\]"
+      }
+    ]
   },
   "toan-11-1-3-1a-mc-v2": {
     "prompt": "\\(\\sin x + \\sin 2 x + \\sin 3 x = \\left(1 + k \\cos x\\right) \\sin 2 x\\). Tìm \\(k\\).",
@@ -2314,7 +3204,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép hai góc đối xứng",
+        "content": "\\[\\sin x+\\sin3x=2\\sin2x\\cos x\\]"
+      },
+      {
+        "title": "Cộng hạng còn lại",
+        "content": "\\[\\sin x+\\sin2x+\\sin3x=(2\\cos x+1)\\sin2x\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số",
+        "content": "\\[k=2\\]"
+      }
+    ]
   },
   "toan-11-1-3-1b-mc-v2": {
     "prompt": "\\(\\sin x + \\sin 3 x + \\sin 5 x + \\sin 7 x = k \\sin 4 x \\cos 2 x \\cos x\\). Tìm \\(k\\).",
@@ -2340,7 +3244,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép hai cặp",
+        "content": "\\[\\sin x+\\sin7x=2\\sin4x\\cos3x,\\quad\\sin3x+\\sin5x=2\\sin4x\\cos x\\]"
+      },
+      {
+        "title": "Đặt nhân tử chung và ghép cos",
+        "content": "\\[P=2\\sin4x(\\cos3x+\\cos x)=2\\sin4x\\cdot2\\cos2x\\cos x\\]"
+      },
+      {
+        "title": "Đối chiếu",
+        "content": "\\[P=4\\sin4x\\cos2x\\cos x\\Rightarrow k=4\\]"
+      }
+    ]
   },
   "toan-11-1-3-1c-mc-v2": {
     "prompt": "\\(\\cos x + \\cos 2 x + \\cos 3 x + \\cos 4 x = k \\cos \\left(\\frac{5 x}{2}\\right) \\cos x \\cos \\left(\\frac{x}{2}\\right)\\). Tìm \\(k\\).",
@@ -2366,7 +3284,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Ghép các góc có cùng trung bình",
+        "content": "\\[\\cos x+\\cos4x=2\\cos(5x/2)\\cos(3x/2)\\]\\[\\cos2x+\\cos3x=2\\cos(5x/2)\\cos(x/2)\\]"
+      },
+      {
+        "title": "Đặt nhân tử và ghép tiếp",
+        "content": "\\[P=2\\cos(5x/2)[\\cos(3x/2)+\\cos(x/2)]\\]\\[\\cos(3x/2)+\\cos(x/2)=2\\cos x\\cos(x/2)\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số",
+        "content": "\\[P=4\\cos(5x/2)\\cos x\\cos(x/2)\\Rightarrow k=4\\]"
+      }
+    ]
   },
   "toan-11-1-3-1d-mc-v2": {
     "prompt": "Khi biểu thức xác định, \\(\\frac{\\cos x + \\cos y}{\\cos x - \\cos y} = k \\cot \\left(\\frac{x + y}{2}\\right) \\cot \\left(\\frac{x - y}{2}\\right)\\). Tìm \\(k\\).",
@@ -2392,7 +3324,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Biến đổi tử và mẫu",
+        "content": "\\[\\cos x+\\cos y=2\\cos\\frac{x+y}2\\cos\\frac{x-y}2\\]\\[\\cos x-\\cos y=-2\\sin\\frac{x+y}2\\sin\\frac{x-y}2\\]"
+      },
+      {
+        "title": "Kiểm tra điều kiện",
+        "content": "Mẫu khác 0 nên cả hai sin ở mẫu đều khác 0; được phép chia từng thừa số."
+      },
+      {
+        "title": "Chia và đối chiếu",
+        "content": "\\[P=-\\frac{\\cos((x+y)/2)}{\\sin((x+y)/2)}\\frac{\\cos((x-y)/2)}{\\sin((x-y)/2)}=-\\cot\\frac{x+y}2\\cot\\frac{x-y}2\\Rightarrow k=-1\\]"
+      }
+    ]
   },
   "toan-11-1-3-2a-mc-v2": {
     "prompt": "\\(\\cos 5 x \\cos 3 x + \\sin 7 x \\sin x = \\cos 2 x \\cos \\left(k x\\right)\\) với mọi \\(x , k\\) nguyên dương. Tìm \\(k\\).",
@@ -2418,7 +3364,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi từng tích",
+        "content": "\\[\\cos5x\\cos3x=\\frac{\\cos2x+\\cos8x}2,\\quad\\sin7x\\sin x=\\frac{\\cos6x-\\cos8x}2\\]"
+      },
+      {
+        "title": "Cộng và triệt tiêu",
+        "content": "\\[P=\\frac{\\cos2x+\\cos6x}2\\]"
+      },
+      {
+        "title": "Tổng thành tích",
+        "content": "\\[P=\\cos4x\\cos2x\\Rightarrow k=4\\]"
+      }
+    ]
   },
   "toan-11-1-3-2b-mc-v2": {
     "prompt": "\\(\\sin 5 x - 2 \\sin x \\left(\\cos 2 x + \\cos 4 x\\right) = \\sin \\left(k x\\right)\\) với mọi \\(x , k\\) nguyên dương. Tìm \\(k\\).",
@@ -2444,7 +3404,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi hai tích",
+        "content": "\\[2\\sin x\\cos2x=\\sin3x-\\sin x,\\quad2\\sin x\\cos4x=\\sin5x-\\sin3x\\]"
+      },
+      {
+        "title": "Thế vào và khử các hạng",
+        "content": "\\[M=\\sin5x-[(\\sin3x-\\sin x)+(\\sin5x-\\sin3x)]=\\sin x\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[M=\\sin x\\Rightarrow k=1\\]"
+      }
+    ]
   },
   "toan-11-1-3-2c-mc-v2": {
     "prompt": "\\(\\cos 5 x \\cos x + \\sin 3 x \\sin x = \\cos 2 x \\cos \\left(k x\\right) , k\\) nguyên dương. Tìm \\(k\\).",
@@ -2470,7 +3444,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi từng tích",
+        "content": "\\[\\cos5x\\cos x=\\frac{\\cos6x+\\cos4x}2,\\quad\\sin3x\\sin x=\\frac{\\cos2x-\\cos4x}2\\]"
+      },
+      {
+        "title": "Triệt tiêu rồi ghép tổng",
+        "content": "\\[P=\\frac{\\cos6x+\\cos2x}2=\\cos4x\\cos2x\\]"
+      },
+      {
+        "title": "Đối chiếu hệ số góc",
+        "content": "\\[k=4\\]"
+      }
+    ]
   },
   "toan-11-1-3-2d-mc-v2": {
     "prompt": "\\(2 \\left(\\sin a \\cos 2 a - \\sin 2 a \\cos 3 a\\right) + \\sin 5 a = \\sin \\left(k a\\right) , k\\) nguyên dương. Tìm \\(k\\).",
@@ -2496,7 +3484,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi hai tích",
+        "content": "\\[2\\sin a\\cos2a=\\sin3a-\\sin a,\\quad2\\sin2a\\cos3a=\\sin5a-\\sin a\\]"
+      },
+      {
+        "title": "Thay vào biểu thức",
+        "content": "\\[P=(\\sin3a-\\sin a)-(\\sin5a-\\sin a)+\\sin5a\\]"
+      },
+      {
+        "title": "Triệt tiêu và kết luận",
+        "content": "\\[P=\\sin3a\\Rightarrow k=3\\]"
+      }
+    ]
   },
   "toan-11-1-3-3-mc-v2": {
     "prompt": "\\(M = \\sin 5 x - 2 \\sin x \\left(\\cos 4 x + \\cos 2 x\\right)\\). Tính \\(M\\) khi \\(x = \\frac{\\pi}{6}\\).",
@@ -2522,7 +3524,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi hai tích",
+        "content": "\\[2\\sin x\\cos2x=\\sin3x-\\sin x,\\quad2\\sin x\\cos4x=\\sin5x-\\sin3x\\]"
+      },
+      {
+        "title": "Thế vào và khử các hạng",
+        "content": "\\[M=\\sin5x-[(\\sin3x-\\sin x)+(\\sin5x-\\sin3x)]=\\sin x\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[x=\\pi/6\\Rightarrow M=\\sin(\\pi/6)=\\frac12\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-1": {
     "prompt": "Công thức nào đúng?",
@@ -2638,7 +3654,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Trong công thức \\(\\tan\\), các \\(\\tan\\) và mẫu số đều phải xác định. Chọn dấu trên hoặc dấu dưới nhất quán."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị còn lại theo dấu",
+        "content": "\\[\\cos\\alpha=\\sqrt{1-16/25}=\\frac35,\\quad\\sin\\beta=\\sqrt{1-25/169}=\\frac{12}{13}\\]"
+      },
+      {
+        "title": "Khai triển cos của hiệu",
+        "content": "\\[\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta\\]"
+      },
+      {
+        "title": "Thay số và quy đồng",
+        "content": "\\[=\\frac35\\cdot\\frac{-5}{13}+\\frac45\\cdot\\frac{12}{13}=\\frac{-15+48}{65}=\\frac{33}{65}\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-9": {
     "prompt": "Công thức \\(\\sin 2 a\\) đúng là:",
@@ -2758,7 +3788,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tìm sin theo phần tư II",
+        "content": "\\[\\sin\\alpha=\\sqrt{1-9/25}=\\frac45\\]"
+      },
+      {
+        "title": "Dùng công thức góc đôi",
+        "content": "\\[\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha\\]"
+      },
+      {
+        "title": "Thay số",
+        "content": "\\[\\sin2\\alpha=2\\cdot\\frac45\\cdot\\frac{-3}5=-\\frac{24}{25}\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-14": {
     "prompt": "\\(\\tan \\alpha = \\frac{1}{3}\\) và \\(\\tan 2 \\alpha\\) xác định. Tính \\(\\tan 2 \\alpha\\).",
@@ -2788,7 +3832,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Kiểm tra mẫu",
+        "content": "\\[1-\\tan^2\\alpha=1-\\frac19=\\frac89\\ne0\\]"
+      },
+      {
+        "title": "Áp dụng công thức",
+        "content": "\\[\\tan2\\alpha=\\frac{2\\tan\\alpha}{1-\\tan^2\\alpha}\\]"
+      },
+      {
+        "title": "Thực hiện phép chia",
+        "content": "\\[\\tan2\\alpha=\\frac{2/3}{8/9}=\\frac23\\cdot\\frac98=\\frac34\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-15": {
     "prompt": "\\(\\sin \\alpha + \\cos \\alpha = \\frac{1}{2}\\). Tính \\(\\sin 2 \\alpha\\).",
@@ -2818,7 +3876,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Bình phương đẳng thức đã cho",
+        "content": "\\[(\\sin\\alpha+\\cos\\alpha)^2=\\frac14\\]"
+      },
+      {
+        "title": "Khai triển và dùng hệ thức cơ bản",
+        "content": "\\[1+2\\sin\\alpha\\cos\\alpha=\\frac14\\Rightarrow1+\\sin2\\alpha=\\frac14\\]"
+      },
+      {
+        "title": "Giải theo giá trị cần tính",
+        "content": "\\[\\sin2\\alpha=\\frac14-1=-\\frac34\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-16": {
     "prompt": "\\(\\sin \\alpha - \\cos \\alpha = \\frac{1}{3}\\). Tính \\(\\sin 2 \\alpha\\).",
@@ -2848,7 +3920,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Công thức \\(\\tan\\) chỉ dùng khi các biểu thức và mẫu số xác định."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Bình phương đẳng thức đã cho",
+        "content": "\\[(\\sin\\alpha-\\cos\\alpha)^2=\\frac19\\]"
+      },
+      {
+        "title": "Khai triển và dùng hệ thức cơ bản",
+        "content": "\\[1-2\\sin\\alpha\\cos\\alpha=\\frac19\\Rightarrow1-\\sin2\\alpha=\\frac19\\]"
+      },
+      {
+        "title": "Giải theo giá trị cần tính",
+        "content": "\\[\\sin2\\alpha=1-\\frac19=\\frac89\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-17": {
     "prompt": "Công thức tích thành tổng đúng là:",
@@ -2935,7 +4021,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn công thức tích thành tổng",
+        "content": "\\[\\sin u\\cos v=\\frac{\\sin(u+v)+\\sin(u-v)}2\\]"
+      },
+      {
+        "title": "Tính tổng và hiệu hai góc",
+        "content": "\\[u=5x,\\ v=2x\\Rightarrow u+v=7x,\\ u-v=3x\\]"
+      },
+      {
+        "title": "Thay lại",
+        "content": "\\[\\sin5x\\cos2x=\\frac{\\sin7x+\\sin3x}2\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-22": {
     "prompt": "\\(s \\left(t\\right) = 2 \\sin \\left(100 t\\right) \\cos \\left(4 t\\right)\\) bằng:",
@@ -2964,7 +4064,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn hai góc",
+        "content": "\\[u=100t,\\quad v=4t\\]"
+      },
+      {
+        "title": "Áp dụng tích thành tổng",
+        "content": "\\[2\\sin u\\cos v=\\sin(u+v)+\\sin(u-v)\\]"
+      },
+      {
+        "title": "Thu gọn",
+        "content": "\\[s(t)=\\sin104t+\\sin96t\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-24": {
     "prompt": "Công thức \\(\\cos u + \\cos v\\) đúng là:",
@@ -3042,7 +4156,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính nửa tổng và nửa hiệu",
+        "content": "\\[\\frac{20^\\circ+40^\\circ}2=30^\\circ,\\quad\\frac{20^\\circ-40^\\circ}2=-10^\\circ\\]"
+      },
+      {
+        "title": "Tổng thành tích",
+        "content": "\\[\\cos20^\\circ+\\cos40^\\circ=2\\cos30^\\circ\\cos(-10^\\circ)\\]"
+      },
+      {
+        "title": "Dùng cos chẵn và góc đặc biệt",
+        "content": "\\[=2\\cdot\\frac{\\sqrt3}2\\cos10^\\circ=\\sqrt3\\cos10^\\circ\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-27": {
     "prompt": "\\(\\sin 75^{\\circ} - \\sin 15^{\\circ}\\) bằng:",
@@ -3068,7 +4196,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính nửa tổng và nửa hiệu",
+        "content": "\\[\\frac{75^\\circ+15^\\circ}2=45^\\circ,\\quad\\frac{75^\\circ-15^\\circ}2=30^\\circ\\]"
+      },
+      {
+        "title": "Hiệu thành tích",
+        "content": "\\[\\sin75^\\circ-\\sin15^\\circ=2\\cos45^\\circ\\sin30^\\circ\\]"
+      },
+      {
+        "title": "Thay giá trị đặc biệt",
+        "content": "\\[=2\\cdot\\frac{\\sqrt2}2\\cdot\\frac12=\\frac{\\sqrt2}2\\]"
+      }
+    ]
   },
   "toan-11-1-mc-10-30": {
     "prompt": "Hai dao động \\(x_{1} \\left(t\\right) = 3 \\cos \\left(4 t + \\frac{\\pi}{6}\\right) , x_{2} \\left(t\\right) = 3 \\cos \\left(4 t - \\frac{\\pi}{6}\\right)\\). Biên độ của \\(x_{1} + x_{2}\\) là:",
@@ -3094,7 +4236,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt hệ số chung",
+        "content": "\\[x_1+x_2=3[\\cos(4t+\\pi/6)+\\cos(4t-\\pi/6)]\\]"
+      },
+      {
+        "title": "Tổng thành tích",
+        "content": "\\[x_1+x_2=6\\cos4t\\cos(\\pi/6)=3\\sqrt3\\cos4t\\]"
+      },
+      {
+        "title": "Đọc biên độ dương",
+        "content": "\\[A=|3\\sqrt3|=3\\sqrt3\\]"
+      }
+    ]
   },
   "toan-11-1-9-115max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\sin 4 x - 3\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3123,7 +4279,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin4x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-4\\le (1)(\\sin4x)+(-3)\\le-2\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-116max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 3 \\sin 2 x - 5\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3152,7 +4322,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-8\\le (3)(\\sin2x)+(-5)\\le-2\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-117max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\sin 2 x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3181,7 +4365,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-1\\le (1)(\\sin2x)+(0)\\le1\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-118min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\cos^{2} x - 2 \\sqrt{3} \\sin x \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3210,7 +4408,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Hạ bậc và nhân đôi",
+        "content": "\\[y=2+\\cos2x-\\sqrt3\\sin2x\\]"
+      },
+      {
+        "title": "Gộp thành một cos",
+        "content": "\\[\\cos2x-\\sqrt3\\sin2x=2\\cos(2x+\\pi/3)\\]"
+      },
+      {
+        "title": "Tìm khoảng giá trị và kiểm tra đạt được",
+        "content": "\\[-1\\le\\cos(2x+\\pi/3)\\le1\\Rightarrow0\\le y\\le4\\]Giá trị 0 đạt khi \\(x=\\pi/3\\), giá trị 4 đạt khi \\(x=-\\pi/6\\)."
+      }
+    ]
   },
   "toan-11-1-9-118max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\cos^{2} x - 2 \\sqrt{3} \\sin x \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3239,7 +4451,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Hạ bậc và nhân đôi",
+        "content": "\\[y=2+\\cos2x-\\sqrt3\\sin2x\\]"
+      },
+      {
+        "title": "Gộp thành một cos",
+        "content": "\\[\\cos2x-\\sqrt3\\sin2x=2\\cos(2x+\\pi/3)\\]"
+      },
+      {
+        "title": "Tìm khoảng giá trị và kiểm tra đạt được",
+        "content": "\\[-1\\le\\cos(2x+\\pi/3)\\le1\\Rightarrow0\\le y\\le4\\]Giá trị 0 đạt khi \\(x=\\pi/3\\), giá trị 4 đạt khi \\(x=-\\pi/6\\)."
+      }
+    ]
   },
   "toan-11-1-9-119min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\cos^{2} x - \\sin x + 3\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3268,7 +4494,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ và tìm miền",
+        "content": "\\[t=\\sin x\\in[-1;1],\\quad\\cos^2x=1-t^2\\]"
+      },
+      {
+        "title": "Hoàn thành bình phương",
+        "content": "\\[y=5-t-2t^2=\\frac{41}8-2\\left(t+\\frac14\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và hai đầu mút",
+        "content": "\\[y(-1)=4,\\quad y(1)=2,\\quad y(-1/4)=\\frac{41}8\\]Đỉnh thuộc miền của ẩn phụ. Min bằng 2 tại \\(t=1\\), max bằng \\(41/8=5.125\\) tại \\(t=-1/4\\)."
+      }
+    ]
   },
   "toan-11-1-9-119max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\cos^{2} x - \\sin x + 3\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3297,7 +4537,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ và tìm miền",
+        "content": "\\[t=\\sin x\\in[-1;1],\\quad\\cos^2x=1-t^2\\]"
+      },
+      {
+        "title": "Hoàn thành bình phương",
+        "content": "\\[y=5-t-2t^2=\\frac{41}8-2\\left(t+\\frac14\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và hai đầu mút",
+        "content": "\\[y(-1)=4,\\quad y(1)=2,\\quad y(-1/4)=\\frac{41}8\\]Đỉnh thuộc miền của ẩn phụ. Min bằng 2 tại \\(t=1\\), max bằng \\(41/8=5.125\\) tại \\(t=-1/4\\)."
+      }
+    ]
   },
   "toan-11-1-9-121max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\cos 6 x + 5\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3326,7 +4580,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\cos6x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[4\\le (1)(\\cos6x)+(5)\\le6\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-122max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 - \\sin x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3355,7 +4623,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[1\\le (-1)(\\sin x)+(2)\\le3\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-124min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 3 \\sin x + 4 \\cos x - 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3384,7 +4666,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chuẩn hóa các hệ số",
+        "content": "\\[R=\\sqrt{3^2+4^2}=5,\\quad\\cos\\varphi=\\frac35,\\quad\\sin\\varphi=\\frac45\\]"
+      },
+      {
+        "title": "Viết thành một sin",
+        "content": "\\[y=5\\sin(x+\\varphi)-1\\]"
+      },
+      {
+        "title": "Chặn và xét dấu bằng",
+        "content": "\\[-1\\le\\sin(x+\\varphi)\\le1\\Rightarrow-6\\le y\\le4\\]Hai cận đều đạt được vì biến góc chạy trên toàn bộ số thực."
+      }
+    ]
   },
   "toan-11-1-9-124max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 3 \\sin x + 4 \\cos x - 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3413,7 +4709,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chuẩn hóa các hệ số",
+        "content": "\\[R=\\sqrt{3^2+4^2}=5,\\quad\\cos\\varphi=\\frac35,\\quad\\sin\\varphi=\\frac45\\]"
+      },
+      {
+        "title": "Viết thành một sin",
+        "content": "\\[y=5\\sin(x+\\varphi)-1\\]"
+      },
+      {
+        "title": "Chặn và xét dấu bằng",
+        "content": "\\[-1\\le\\sin(x+\\varphi)\\le1\\Rightarrow-6\\le y\\le4\\]Hai cận đều đạt được vì biến góc chạy trên toàn bộ số thực."
+      }
+    ]
   },
   "toan-11-1-9-125min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 4 \\sin x \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3442,7 +4752,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhân đôi",
+        "content": "\\[4\\sin x\\cos x=2\\sin2x\\Rightarrow y=2\\sin2x+1\\]"
+      },
+      {
+        "title": "Chặn giá trị",
+        "content": "\\[-1\\le\\sin2x\\le1\\Rightarrow-1\\le y\\le3\\]"
+      },
+      {
+        "title": "Kiểm tra dấu bằng",
+        "content": "Min bằng −1 khi \\(x=-\\pi/4\\), max bằng 3 khi \\(x=\\pi/4\\)."
+      }
+    ]
   },
   "toan-11-1-9-125max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 4 \\sin x \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3471,7 +4795,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhân đôi",
+        "content": "\\[4\\sin x\\cos x=2\\sin2x\\Rightarrow y=2\\sin2x+1\\]"
+      },
+      {
+        "title": "Chặn giá trị",
+        "content": "\\[-1\\le\\sin2x\\le1\\Rightarrow-1\\le y\\le3\\]"
+      },
+      {
+        "title": "Kiểm tra dấu bằng",
+        "content": "Min bằng −1 khi \\(x=-\\pi/4\\), max bằng 3 khi \\(x=\\pi/4\\)."
+      }
+    ]
   },
   "toan-11-1-9-126min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = \\sin 2024 x + \\sqrt{3} \\cos 2024 x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3500,7 +4838,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Gộp theo công thức cộng",
+        "content": "\\[\\sin2024x+\\sqrt3\\cos2024x=2\\sin(2024x+\\pi/3)\\]"
+      },
+      {
+        "title": "Chặn giá trị",
+        "content": "\\[-1\\le\\sin(2024x+\\pi/3)\\le1\\Rightarrow-2\\le y\\le2\\]"
+      },
+      {
+        "title": "Xét dấu bằng",
+        "content": "Cả hai dấu bằng xảy ra vì \\(2024x+\\pi/3\\) nhận mọi giá trị thực. Min bằng −2, max bằng 2."
+      }
+    ]
   },
   "toan-11-1-9-126max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\sin 2024 x + \\sqrt{3} \\cos 2024 x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3529,7 +4881,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Gộp theo công thức cộng",
+        "content": "\\[\\sin2024x+\\sqrt3\\cos2024x=2\\sin(2024x+\\pi/3)\\]"
+      },
+      {
+        "title": "Chặn giá trị",
+        "content": "\\[-1\\le\\sin(2024x+\\pi/3)\\le1\\Rightarrow-2\\le y\\le2\\]"
+      },
+      {
+        "title": "Xét dấu bằng",
+        "content": "Cả hai dấu bằng xảy ra vì \\(2024x+\\pi/3\\) nhận mọi giá trị thực. Min bằng −2, max bằng 2."
+      }
+    ]
   },
   "toan-11-1-9-128min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 3 \\sin \\left(x + \\frac{3 \\pi}{4}\\right) + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3558,7 +4924,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin(x+3\\pi/4)\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-2\\le (3)(\\sin(x+3\\pi/4))+(1)\\le4\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-128max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 3 \\sin \\left(x + \\frac{3 \\pi}{4}\\right) + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3587,7 +4967,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin(x+3\\pi/4)\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-2\\le (3)(\\sin(x+3\\pi/4))+(1)\\le4\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-129min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = \\cos^{2} x + \\sin x + 9 , x \\in \\left[0 ; \\pi\\right]\\).",
@@ -3616,7 +5010,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ đúng theo khoảng",
+        "content": "\\[x\\in[0;\\pi]\\Rightarrow t=\\sin x\\in[0;1]\\]"
+      },
+      {
+        "title": "Đổi về tam thức",
+        "content": "\\[y=1-t^2+t+9=10+t-t^2=\\frac{41}4-\\left(t-\\frac12\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và biên",
+        "content": "\\[y(0)=y(1)=10,\\quad y(1/2)=\\frac{41}4\\]Vậy min bằng 10, max bằng \\(41/4=10.25\\). Các giá trị của ẩn phụ đều đạt được."
+      }
+    ]
   },
   "toan-11-1-9-129max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\cos^{2} x + \\sin x + 9 , x \\in \\left[0 ; \\pi\\right]\\).",
@@ -3645,7 +5053,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ đúng theo khoảng",
+        "content": "\\[x\\in[0;\\pi]\\Rightarrow t=\\sin x\\in[0;1]\\]"
+      },
+      {
+        "title": "Đổi về tam thức",
+        "content": "\\[y=1-t^2+t+9=10+t-t^2=\\frac{41}4-\\left(t-\\frac12\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và biên",
+        "content": "\\[y(0)=y(1)=10,\\quad y(1/2)=\\frac{41}4\\]Vậy min bằng 10, max bằng \\(41/4=10.25\\). Các giá trị của ẩn phụ đều đạt được."
+      }
+    ]
   },
   "toan-11-1-9-130min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 6 \\cos 2 x - 7 , x \\in \\left[\\frac{-\\pi}{3} ; \\frac{\\pi}{6}\\right]\\).",
@@ -3674,7 +5096,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi khoảng của góc",
+        "content": "\\[x\\in[-\\pi/3;\\pi/6]\\Rightarrow2x\\in[-2\\pi/3;\\pi/3]\\]"
+      },
+      {
+        "title": "Xác định miền giá trị cos",
+        "content": "Trên khoảng góc này, cos nhỏ nhất tại \\(-2\\pi/3\\) và lớn nhất tại 0, nên \\[-\\frac12\\le\\cos2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số dương và cộng hằng số",
+        "content": "\\[-10\\le6\\cos2x-7\\le-1\\]Min đạt tại \\(x=-\\pi/3\\), max đạt tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-130max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 6 \\cos 2 x - 7 , x \\in \\left[\\frac{-\\pi}{3} ; \\frac{\\pi}{6}\\right]\\).",
@@ -3703,7 +5139,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi khoảng của góc",
+        "content": "\\[x\\in[-\\pi/3;\\pi/6]\\Rightarrow2x\\in[-2\\pi/3;\\pi/3]\\]"
+      },
+      {
+        "title": "Xác định miền giá trị cos",
+        "content": "Trên khoảng góc này, cos nhỏ nhất tại \\(-2\\pi/3\\) và lớn nhất tại 0, nên \\[-\\frac12\\le\\cos2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số dương và cộng hằng số",
+        "content": "\\[-10\\le6\\cos2x-7\\le-1\\]Min đạt tại \\(x=-\\pi/3\\), max đạt tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-131min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 3 \\sin 3 x + 2\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3732,7 +5182,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin3x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-1\\le (3)(\\sin3x)+(2)\\le5\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-131max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 3 \\sin 3 x + 2\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3761,7 +5225,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin3x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-1\\le (3)(\\sin3x)+(2)\\le5\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-133min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\sqrt{\\sin x + 1} - 3\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3790,7 +5268,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Kiểm tra căn và chặn biểu thức dưới căn",
+        "content": "\\[-1\\le\\sin x\\le1\\Rightarrow0\\le\\sin x+1\\le2\\]"
+      },
+      {
+        "title": "Lấy căn, nhân rồi trừ",
+        "content": "\\[0\\le\\sqrt{\\sin x+1}\\le\\sqrt2\\Rightarrow-3\\le y\\le2\\sqrt2-3\\]"
+      },
+      {
+        "title": "Kiểm tra đạt được",
+        "content": "Min bằng −3 tại \\(x=-\\pi/2\\), max bằng \\(2\\sqrt2-3\\approx-0.1716\\) tại \\(x=\\pi/2\\)."
+      }
+    ]
   },
   "toan-11-1-9-133max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\sqrt{\\sin x + 1} - 3\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3819,7 +5311,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Kiểm tra căn và chặn biểu thức dưới căn",
+        "content": "\\[-1\\le\\sin x\\le1\\Rightarrow0\\le\\sin x+1\\le2\\]"
+      },
+      {
+        "title": "Lấy căn, nhân rồi trừ",
+        "content": "\\[0\\le\\sqrt{\\sin x+1}\\le\\sqrt2\\Rightarrow-3\\le y\\le2\\sqrt2-3\\]"
+      },
+      {
+        "title": "Kiểm tra đạt được",
+        "content": "Min bằng −3 tại \\(x=-\\pi/2\\), max bằng \\(2\\sqrt2-3\\approx-0.1716\\) tại \\(x=\\pi/2\\)."
+      }
+    ]
   },
   "toan-11-1-9-134min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\sin^{2} x + 3 \\sin 2 x - 4 \\cos^{2} x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3848,7 +5354,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Hạ bậc",
+        "content": "\\[y=(1-\\cos2x)+3\\sin2x-2(1+\\cos2x)=-1-3\\cos2x+3\\sin2x\\]"
+      },
+      {
+        "title": "Gộp thành một sin",
+        "content": "\\[3\\sin2x-3\\cos2x=3\\sqrt2\\sin(2x-\\pi/4)\\]"
+      },
+      {
+        "title": "Xác định hai cận",
+        "content": "\\[-1-3\\sqrt2\\le y\\le-1+3\\sqrt2\\]Min đạt khi \\(x=-\\pi/8\\), max đạt khi \\(x=3\\pi/8\\)."
+      }
+    ]
   },
   "toan-11-1-9-134max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\sin^{2} x + 3 \\sin 2 x - 4 \\cos^{2} x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3877,7 +5397,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Hạ bậc",
+        "content": "\\[y=(1-\\cos2x)+3\\sin2x-2(1+\\cos2x)=-1-3\\cos2x+3\\sin2x\\]"
+      },
+      {
+        "title": "Gộp thành một sin",
+        "content": "\\[3\\sin2x-3\\cos2x=3\\sqrt2\\sin(2x-\\pi/4)\\]"
+      },
+      {
+        "title": "Xác định hai cận",
+        "content": "\\[-1-3\\sqrt2\\le y\\le-1+3\\sqrt2\\]Min đạt khi \\(x=-\\pi/8\\), max đạt khi \\(x=3\\pi/8\\)."
+      }
+    ]
   },
   "toan-11-1-9-135min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = \\cos \\left(2 x + \\frac{\\pi}{3}\\right) - \\cos 2 x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3906,7 +5440,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng hiệu hai cos",
+        "content": "\\[\\cos(2x+\\pi/3)-\\cos2x=-2\\sin(2x+\\pi/6)\\sin(\\pi/6)\\]"
+      },
+      {
+        "title": "Thay góc đặc biệt",
+        "content": "\\[y=-\\sin(2x+\\pi/6)\\]"
+      },
+      {
+        "title": "Chặn và xét dấu bằng",
+        "content": "\\[-1\\le y\\le1\\]Min đạt tại \\(x=\\pi/6\\), max đạt tại \\(x=2\\pi/3\\)."
+      }
+    ]
   },
   "toan-11-1-9-135max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\cos \\left(2 x + \\frac{\\pi}{3}\\right) - \\cos 2 x\\). Xét trên \\(\\mathbb{R}\\).",
@@ -3935,7 +5483,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng hiệu hai cos",
+        "content": "\\[\\cos(2x+\\pi/3)-\\cos2x=-2\\sin(2x+\\pi/6)\\sin(\\pi/6)\\]"
+      },
+      {
+        "title": "Thay góc đặc biệt",
+        "content": "\\[y=-\\sin(2x+\\pi/6)\\]"
+      },
+      {
+        "title": "Chặn và xét dấu bằng",
+        "content": "\\[-1\\le y\\le1\\]Min đạt tại \\(x=\\pi/6\\), max đạt tại \\(x=2\\pi/3\\)."
+      }
+    ]
   },
   "toan-11-1-9-136min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\cos^{2} x + 5 \\sin x + 1 , x \\in \\left[\\frac{\\pi}{3} ; \\frac{5 \\pi}{6}\\right]\\).",
@@ -3964,7 +5526,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi sang ẩn phụ theo khoảng",
+        "content": "\\[x\\in[\\pi/3;5\\pi/6]\\Rightarrow t=\\sin x\\in[1/2;1]\\]"
+      },
+      {
+        "title": "Đổi biểu thức và xét tính tăng",
+        "content": "\\[y=2(1-t^2)+5t+1=3+5t-2t^2\\]Với \\(1/2\\le u<v\\le1\\), ta có \\[y(v)-y(u)=(v-u)[5-2(u+v)]>0\\]"
+      },
+      {
+        "title": "Tính hai đầu mút",
+        "content": "\\[y(1/2)=5,\\quad y(1)=6\\]Min bằng 5, max bằng 6; cả hai giá trị của ẩn phụ đều đạt được."
+      }
+    ]
   },
   "toan-11-1-9-136max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\cos^{2} x + 5 \\sin x + 1 , x \\in \\left[\\frac{\\pi}{3} ; \\frac{5 \\pi}{6}\\right]\\).",
@@ -3993,7 +5569,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi sang ẩn phụ theo khoảng",
+        "content": "\\[x\\in[\\pi/3;5\\pi/6]\\Rightarrow t=\\sin x\\in[1/2;1]\\]"
+      },
+      {
+        "title": "Đổi biểu thức và xét tính tăng",
+        "content": "\\[y=2(1-t^2)+5t+1=3+5t-2t^2\\]Với \\(1/2\\le u<v\\le1\\), ta có \\[y(v)-y(u)=(v-u)[5-2(u+v)]>0\\]"
+      },
+      {
+        "title": "Tính hai đầu mút",
+        "content": "\\[y(1/2)=5,\\quad y(1)=6\\]Min bằng 5, max bằng 6; cả hai giá trị của ẩn phụ đều đạt được."
+      }
+    ]
   },
   "toan-11-1-9-138min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 2 \\sin^{2} x - 2 \\sin^{4} x - 2 \\sin 2 x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4022,7 +5612,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhóm và nhân đôi",
+        "content": "\\[2\\sin^2x-2\\sin^4x=2\\sin^2x\\cos^2x=\\frac12\\sin^22x\\]"
+      },
+      {
+        "title": "Đặt ẩn phụ",
+        "content": "\\[u=\\sin2x\\in[-1;1],\\quad y=\\frac12u^2-2u+1\\]"
+      },
+      {
+        "title": "Xét tính giảm",
+        "content": "Với \\(-1\\le u<v\\le1\\), \\[y(v)-y(u)=(v-u)\\left(\\frac{u+v}2-2\\right)<0\\]"
+      },
+      {
+        "title": "Tính giá trị biên",
+        "content": "\\[y(1)=-\\frac12,\\quad y(-1)=\\frac72\\]Min bằng −0,5; max bằng 3,5."
+      }
+    ]
   },
   "toan-11-1-9-138max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 2 \\sin^{2} x - 2 \\sin^{4} x - 2 \\sin 2 x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4051,7 +5659,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhóm và nhân đôi",
+        "content": "\\[2\\sin^2x-2\\sin^4x=2\\sin^2x\\cos^2x=\\frac12\\sin^22x\\]"
+      },
+      {
+        "title": "Đặt ẩn phụ",
+        "content": "\\[u=\\sin2x\\in[-1;1],\\quad y=\\frac12u^2-2u+1\\]"
+      },
+      {
+        "title": "Xét tính giảm",
+        "content": "Với \\(-1\\le u<v\\le1\\), \\[y(v)-y(u)=(v-u)\\left(\\frac{u+v}2-2\\right)<0\\]"
+      },
+      {
+        "title": "Tính giá trị biên",
+        "content": "\\[y(1)=-\\frac12,\\quad y(-1)=\\frac72\\]Min bằng −0,5; max bằng 3,5."
+      }
+    ]
   },
   "toan-11-1-9-139min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = \\cos 2 x + 4 \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4080,7 +5706,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng công thức nhân đôi",
+        "content": "\\[y=2\\cos^2x-1+4\\cos x+1=2(\\cos x+1)^2\\]"
+      },
+      {
+        "title": "Chặn trước khi bình phương",
+        "content": "\\[-1\\le\\cos x\\le1\\Rightarrow0\\le\\cos x+1\\le2\\Rightarrow0\\le y\\le8\\]"
+      },
+      {
+        "title": "Kiểm tra hai cận",
+        "content": "Min bằng 0 tại \\(x=\\pi\\), max bằng 8 tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-139max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\cos 2 x + 4 \\cos x + 1\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4109,7 +5749,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng công thức nhân đôi",
+        "content": "\\[y=2\\cos^2x-1+4\\cos x+1=2(\\cos x+1)^2\\]"
+      },
+      {
+        "title": "Chặn trước khi bình phương",
+        "content": "\\[-1\\le\\cos x\\le1\\Rightarrow0\\le\\cos x+1\\le2\\Rightarrow0\\le y\\le8\\]"
+      },
+      {
+        "title": "Kiểm tra hai cận",
+        "content": "Min bằng 0 tại \\(x=\\pi\\), max bằng 8 tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-140min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 4 \\cos 2 x - 1 , x \\in \\left[\\frac{-\\pi}{3} ; \\frac{\\pi}{6}\\right]\\).",
@@ -4138,7 +5792,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi khoảng góc",
+        "content": "\\[2x\\in[-2\\pi/3;\\pi/3]\\]"
+      },
+      {
+        "title": "Chặn cos trên đúng khoảng",
+        "content": "\\[-\\frac12\\le\\cos2x\\le1\\]Cận dưới đạt tại góc \\(-2\\pi/3\\), cận trên đạt tại góc 0."
+      },
+      {
+        "title": "Nhân rồi trừ",
+        "content": "\\[-3\\le4\\cos2x-1\\le3\\]Min đạt tại \\(x=-\\pi/3\\), max tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-140max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 4 \\cos 2 x - 1 , x \\in \\left[\\frac{-\\pi}{3} ; \\frac{\\pi}{6}\\right]\\).",
@@ -4167,7 +5835,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi khoảng góc",
+        "content": "\\[2x\\in[-2\\pi/3;\\pi/3]\\]"
+      },
+      {
+        "title": "Chặn cos trên đúng khoảng",
+        "content": "\\[-\\frac12\\le\\cos2x\\le1\\]Cận dưới đạt tại góc \\(-2\\pi/3\\), cận trên đạt tại góc 0."
+      },
+      {
+        "title": "Nhân rồi trừ",
+        "content": "\\[-3\\le4\\cos2x-1\\le3\\]Min đạt tại \\(x=-\\pi/3\\), max tại \\(x=0\\)."
+      }
+    ]
   },
   "toan-11-1-9-141min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = \\sin^{2} x - \\cos x + 2\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4196,7 +5878,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ",
+        "content": "\\[t=\\cos x\\in[-1;1],\\quad y=1-t^2-t+2=3-t-t^2\\]"
+      },
+      {
+        "title": "Hoàn thành bình phương",
+        "content": "\\[y=\\frac{13}4-\\left(t+\\frac12\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và biên",
+        "content": "\\[y(-1)=3,\\quad y(1)=1,\\quad y(-1/2)=\\frac{13}4\\]Min bằng 1, max bằng \\(13/4=3.25\\)."
+      }
+    ]
   },
   "toan-11-1-9-141max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = \\sin^{2} x - \\cos x + 2\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4225,7 +5921,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đặt ẩn phụ",
+        "content": "\\[t=\\cos x\\in[-1;1],\\quad y=1-t^2-t+2=3-t-t^2\\]"
+      },
+      {
+        "title": "Hoàn thành bình phương",
+        "content": "\\[y=\\frac{13}4-\\left(t+\\frac12\\right)^2\\]"
+      },
+      {
+        "title": "Xét đỉnh và biên",
+        "content": "\\[y(-1)=3,\\quad y(1)=1,\\quad y(-1/2)=\\frac{13}4\\]Min bằng 1, max bằng \\(13/4=3.25\\)."
+      }
+    ]
   },
   "toan-11-1-9-142min-mc-v2": {
     "prompt": "Tìm giá trị nhỏ nhất của \\(y = 8 \\sin 2 x - 5\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4254,7 +5964,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-13\\le (8)(\\sin2x)+(-5)\\le3\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-9-142max-mc-v2": {
     "prompt": "Tìm giá trị lớn nhất của \\(y = 8 \\sin 2 x - 5\\). Xét trên \\(\\mathbb{R}\\).",
@@ -4283,7 +6007,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Để kết luận đạt cực trị, kiểm tra góc có thể làm \\(\\sin\\) hoặc \\(\\cos\\) bằng \\(1\\) hay \\(-1\\) trong miền đề cho."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chặn hàm lượng giác",
+        "content": "\\[-1\\le \\sin2x\\le1\\]"
+      },
+      {
+        "title": "Nhân hệ số rồi cộng hằng số",
+        "content": "\\[-13\\le (8)(\\sin2x)+(-5)\\le3\\]"
+      },
+      {
+        "title": "Xét điều kiện đạt cận",
+        "content": "Góc bên trong chạy trên toàn bộ số thực nên sin hoặc cos đạt cả −1 và 1. Cận dưới là giá trị nhỏ nhất, cận trên là giá trị lớn nhất."
+      }
+    ]
   },
   "toan-11-1-mc-13-1": {
     "prompt": "Tập xác định của \\(y = \\tan x\\) là:",
@@ -4472,7 +6210,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hệ số của biến",
+        "content": "\\[a=3\\ne0\\]"
+      },
+      {
+        "title": "Dùng chu kì của hàm phù hợp",
+        "content": "\\[T=\\frac{2\\pi}{|a|}=\\frac{2\\pi}{3}=\\frac{2}{3}\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số trước pi",
+        "content": "\\[k=\\frac{2}{3}\\]"
+      }
+    ]
   },
   "toan-11-1-13-7-mc-v2": {
     "prompt": "Chu kì cơ bản của \\(y = \\cos \\left(2 x + 1\\right)\\) bằng \\(k \\pi\\). Tìm \\(k\\).",
@@ -4508,7 +6260,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hệ số của biến",
+        "content": "\\[a=2\\ne0\\]"
+      },
+      {
+        "title": "Dùng chu kì của hàm phù hợp",
+        "content": "\\[T=\\frac{2\\pi}{|a|}=\\frac{2\\pi}{2}=\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số trước pi",
+        "content": "\\[k=1\\]"
+      }
+    ]
   },
   "toan-11-1-13-8-mc-v2": {
     "prompt": "Chu kì cơ bản của \\(y = \\tan \\left(4 x - 1\\right)\\) bằng \\(k \\pi\\). Tìm \\(k\\).",
@@ -4544,7 +6310,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hệ số của biến",
+        "content": "\\[a=4\\ne0\\]"
+      },
+      {
+        "title": "Dùng chu kì của hàm phù hợp",
+        "content": "\\[T=\\frac{\\pi}{|a|}=\\frac{\\pi}{4}=\\frac{1}{4}\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số trước pi",
+        "content": "\\[k=\\frac{1}{4}\\]"
+      }
+    ]
   },
   "toan-11-1-13-9-mc-v2": {
     "prompt": "Chu kì cơ bản của \\(y = \\cot \\left(\\frac{x}{2}\\right)\\) bằng \\(k \\pi\\). Tìm \\(k\\).",
@@ -4580,7 +6360,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hệ số của biến",
+        "content": "\\[a=\\frac{1}{2}\\ne0\\]"
+      },
+      {
+        "title": "Dùng chu kì của hàm phù hợp",
+        "content": "\\[T=\\frac{\\pi}{|a|}=\\frac{\\pi}{\\frac{1}{2}}=2\\pi\\]"
+      },
+      {
+        "title": "Đọc hệ số trước pi",
+        "content": "\\[k=2\\]"
+      }
+    ]
   },
   "toan-11-1-7-1-mc-v2": {
     "prompt": "Phương trình \\(\\sin \\left(x - \\frac{\\pi}{2}\\right) = \\sin \\left(\\frac{2 \\pi}{5}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4616,7 +6410,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(\\frac{-1}{2}\\pi))=\\sin(\\frac{2}{5}\\pi)\\]Chọn \\(\\alpha=\\frac{2}{5}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{9}{10}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{11}{10}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{9}{10}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-9}{20}\\le k<\\frac{11}{20}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{11}{10}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-11}{20}\\le k<\\frac{9}{20}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{9}{10}\\pi;\\frac{11}{10}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-2-mc-v2": {
     "prompt": "Phương trình \\(\\sin \\left(x - \\frac{\\pi}{6}\\right) = \\sin \\left(\\frac{\\pi}{9}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4652,7 +6468,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(\\frac{-1}{6}\\pi))=\\sin(\\frac{1}{9}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{9}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{5}{18}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{19}{18}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{5}{18}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-5}{36}\\le k<\\frac{31}{36}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{19}{18}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-19}{36}\\le k<\\frac{17}{36}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{5}{18}\\pi;\\frac{19}{18}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-4-mc-v2": {
     "prompt": "Phương trình \\(2 \\sin x = -1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4688,7 +6526,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x)=\\sin(\\frac{-1}{6}\\pi)\\]Chọn \\(\\alpha=\\frac{-1}{6}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{7}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{1}{12}\\le k<\\frac{13}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\).\\[0\\le \\frac{7}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-7}{12}\\le k<\\frac{5}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{7}{6}\\pi;\\frac{11}{6}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-5-mc-v2": {
     "prompt": "Phương trình \\(\\sin \\left(x + \\frac{\\pi}{5}\\right) = -1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4724,7 +6584,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(\\frac{1}{5}\\pi))=\\sin(\\frac{-1}{2}\\pi)\\]Chọn \\(\\alpha=\\frac{-1}{2}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-7}{10}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-7}{10}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{7}{20}\\le k<\\frac{27}{20}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{13}{10}\\pi\\}\\]Có 1 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-6-mc-v2": {
     "prompt": "Phương trình \\(2 \\sin \\left(x - \\frac{\\pi}{6}\\right) + \\sqrt{2} = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4760,7 +6642,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(\\frac{-1}{6}\\pi))=\\sin(\\frac{-1}{4}\\pi)\\]Chọn \\(\\alpha=\\frac{-1}{4}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-1}{12}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{17}{12}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-1}{12}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{1}{24}\\le k<\\frac{25}{24}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\).\\[0\\le \\frac{17}{12}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-17}{24}\\le k<\\frac{7}{24}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{17}{12}\\pi;\\frac{23}{12}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-7-mc-v2": {
     "prompt": "Phương trình \\(2 \\sin \\left(x - \\frac{\\pi}{3}\\right) - \\sqrt{3} = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4796,7 +6700,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(\\frac{-1}{3}\\pi))=\\sin(\\frac{1}{3}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{3}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{2}{3}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{2}{3}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{3}\\le k<\\frac{2}{3}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{2}\\le k<\\frac{1}{2}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{2}{3}\\pi;\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-10-mc-v2": {
     "prompt": "Phương trình \\(5 \\sin x = 1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4832,7 +6758,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x)=\\frac{1}{5}\\]Chọn \\(\\alpha=\\operatorname{arcsin}(\\frac{1}{5})\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{(\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(\\pi-\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{(\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{(\\pi-\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\pi-\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\pi-\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.20135792;2.94023473\\). Có 2 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-7-11-mc-v2": {
     "prompt": "Phương trình \\(\\sin \\left(x - 2\\right) = \\frac{2}{3}\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4868,7 +6816,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\sin(x+(-2))=\\frac{2}{3}\\]Chọn \\(\\alpha=\\operatorname{arcsin}(\\frac{2}{3})\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{(\\alpha)-(-2)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(\\pi-\\alpha)-(-2)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{(\\alpha)-(-2)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(-2)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(-2)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{(\\pi-\\alpha)-(-2)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\pi-\\alpha)-(-2)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\pi-\\alpha)-(-2)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(2.72972766;4.411865\\). Có 2 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-7-12-mc-v2": {
     "prompt": "Phương trình \\(\\cos \\left(x + \\frac{2 \\pi}{5}\\right) = \\cos \\left(\\frac{\\pi}{7}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4904,7 +6874,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x+(\\frac{2}{5}\\pi))=\\cos(\\frac{1}{7}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{7}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-9}{35}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{-19}{35}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-9}{35}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{9}{70}\\le k<\\frac{79}{70}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\).\\[0\\le \\frac{-19}{35}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{19}{70}\\le k<\\frac{89}{70}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{51}{35}\\pi;\\frac{61}{35}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-13-mc-v2": {
     "prompt": "Phương trình \\(\\cos \\left(x - \\frac{2 \\pi}{9}\\right) = \\cos \\left(\\frac{\\pi}{18}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4940,7 +6932,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x+(\\frac{-2}{9}\\pi))=\\cos(\\frac{1}{18}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{18}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{5}{18}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{5}{18}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-5}{36}\\le k<\\frac{31}{36}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{12}\\le k<\\frac{11}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{6}\\pi;\\frac{5}{18}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-14-mc-v2": {
     "prompt": "Phương trình \\(2 \\cos x = -1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -4976,7 +6990,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x)=\\cos(\\frac{2}{3}\\pi)\\]Chọn \\(\\alpha=\\frac{2}{3}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{2}{3}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{-2}{3}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{2}{3}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{3}\\le k<\\frac{2}{3}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{-2}{3}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{1}{3}\\le k<\\frac{4}{3}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{2}{3}\\pi;\\frac{4}{3}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-15-mc-v2": {
     "prompt": "Phương trình \\(\\cos \\left(x - \\frac{\\pi}{8}\\right) = 1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5012,7 +7048,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x+(\\frac{-1}{8}\\pi))=\\cos(0)\\]Chọn \\(\\alpha=0\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{1}{8}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{1}{8}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{16}\\le k<\\frac{15}{16}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{8}\\pi\\}\\]Có 1 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-16-mc-v2": {
     "prompt": "Phương trình \\(2 \\cos \\left(x - \\frac{\\pi}{6}\\right) - \\sqrt{3} = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5048,7 +7106,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x+(\\frac{-1}{6}\\pi))=\\cos(\\frac{1}{6}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{6}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{1}{3}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=0+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{1}{3}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{6}\\le k<\\frac{5}{6}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le 0+(2\\pi)k<2\\pi\\]\\[0\\le k<1\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{0;\\frac{1}{3}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-17-mc-v2": {
     "prompt": "Phương trình \\(2 \\cos \\left(x + \\frac{\\pi}{6}\\right) + \\sqrt{2} = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5084,7 +7164,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x+(\\frac{1}{6}\\pi))=\\cos(\\frac{3}{4}\\pi)\\]Chọn \\(\\alpha=\\frac{3}{4}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{7}{12}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{-11}{12}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{7}{12}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-7}{24}\\le k<\\frac{17}{24}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{-11}{12}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{11}{24}\\le k<\\frac{35}{24}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{7}{12}\\pi;\\frac{13}{12}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-18-mc-v2": {
     "prompt": "Phương trình \\(3 \\cos x + \\sqrt{3} = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5120,7 +7222,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(x)=\\frac{-1}{3}\\sqrt{3}\\]Chọn \\(\\alpha=\\operatorname{arccos}(\\frac{-1}{3}\\sqrt{3})\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{(\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(-\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{(\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{(-\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(-\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(-\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(2.18627604;4.09690927\\). Có 2 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-7-19-mc-v2": {
     "prompt": "Phương trình \\(5 \\cos \\left(2 x - 1\\right) - 3 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5156,7 +7280,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "Sin và cos xác định với mọi số thực."
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cos(2x+(-1))=\\frac{3}{5}\\]Chọn \\(\\alpha=\\operatorname{arccos}(\\frac{3}{5})\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{(\\alpha)-(-1)}{2}+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(-\\alpha)-(-1)}{2}+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{(\\alpha)-(-1)}{2}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(-1)}{2}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(-1)}{2})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\).\\[0\\le \\frac{(-\\alpha)-(-1)}{2}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(-\\alpha)-(-1)}{2}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(-\\alpha)-(-1)}{2})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.03635239;0.96364761;3.17794504;4.10524026\\). Có 4 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-7-20-mc-v2": {
     "prompt": "Phương trình \\(\\tan \\left(x + \\frac{3 \\pi}{4}\\right) = \\tan \\left(\\frac{\\pi}{7}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5191,7 +7337,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(x+(\\frac{3}{4}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(x+(\\frac{3}{4}\\pi))=\\tan(\\frac{1}{7}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{7}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-17}{28}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-17}{28}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{17}{28}\\le k<\\frac{73}{28}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{11}{28}\\pi;\\frac{39}{28}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-21-mc-v2": {
     "prompt": "Phương trình \\(\\tan \\left(x + \\frac{4 \\pi}{15}\\right) = \\tan \\left(\\frac{5 \\pi}{36}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5226,7 +7394,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(x+(\\frac{4}{15}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(x+(\\frac{4}{15}\\pi))=\\tan(\\frac{5}{36}\\pi)\\]Chọn \\(\\alpha=\\frac{5}{36}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-23}{180}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-23}{180}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{23}{180}\\le k<\\frac{383}{180}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{157}{180}\\pi;\\frac{337}{180}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-22-mc-v2": {
     "prompt": "Phương trình \\(\\tan x = \\sqrt{3}\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5261,7 +7451,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(x)\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(x)=\\tan(\\frac{1}{3}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{3}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{1}{3}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{1}{3}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{-1}{3}\\le k<\\frac{5}{3}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{3}\\pi;\\frac{4}{3}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-23-mc-v2": {
     "prompt": "Phương trình \\(\\tan \\left(\\frac{\\pi}{6} - x\\right) = \\cot \\left(\\frac{\\pi}{6}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5296,7 +7508,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(-x+(\\frac{1}{6}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(-x+(\\frac{1}{6}\\pi))=\\tan(\\frac{1}{3}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{3}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-1}{6}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-1}{6}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{1}{6}\\le k<\\frac{13}{6}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{5}{6}\\pi;\\frac{11}{6}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-24-mc-v2": {
     "prompt": "Phương trình \\(\\tan \\left(x - \\frac{\\pi}{6}\\right) + 1 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5331,7 +7565,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(x+(\\frac{-1}{6}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(x+(\\frac{-1}{6}\\pi))=\\tan(\\frac{-1}{4}\\pi)\\]Chọn \\(\\alpha=\\frac{-1}{4}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-1}{12}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-1}{12}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{1}{12}\\le k<\\frac{25}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{11}{12}\\pi;\\frac{23}{12}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-25-mc-v2": {
     "prompt": "Phương trình \\(2 \\tan x + 5 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5366,7 +7622,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\cos(x)\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\tan(x)=\\frac{-5}{2}\\]Chọn \\(\\alpha=\\operatorname{arctan}(\\frac{-5}{2})\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{(\\alpha)-(0)}{1}+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{(\\alpha)-(0)}{1}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(1.9513027;5.09289536\\). Có 2 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-7-26-mc-v2": {
     "prompt": "Phương trình \\(\\cot \\left(x - \\frac{\\pi}{8}\\right) = \\cot \\left(\\frac{\\pi}{5}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5401,7 +7679,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\sin(x+(\\frac{-1}{8}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cot(x+(\\frac{-1}{8}\\pi))=\\cot(\\frac{1}{5}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{5}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{13}{40}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{13}{40}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{-13}{40}\\le k<\\frac{67}{40}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{13}{40}\\pi;\\frac{53}{40}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-27-mc-v2": {
     "prompt": "Phương trình \\(\\cot \\left(x + \\frac{7 \\pi}{45}\\right) = \\cot \\left(\\frac{\\pi}{15}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5436,7 +7736,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\sin(x+(\\frac{7}{45}\\pi))\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cot(x+(\\frac{7}{45}\\pi))=\\cot(\\frac{1}{15}\\pi)\\]Chọn \\(\\alpha=\\frac{1}{15}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{-4}{45}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{-4}{45}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{4}{45}\\le k<\\frac{94}{45}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{41}{45}\\pi;\\frac{86}{45}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-28-mc-v2": {
     "prompt": "Phương trình \\(\\sqrt{3} \\cot x + 3 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5471,7 +7793,29 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đưa về phương trình cơ bản",
+        "content": "\\[\\sin(x)\\ne0\\]"
+      },
+      {
+        "title": "Cô lập giá trị lượng giác",
+        "content": "\\[\\cot(x)=\\cot(\\frac{5}{6}\\pi)\\]Chọn \\(\\alpha=\\frac{5}{6}\\pi\\)."
+      },
+      {
+        "title": "Viết các họ nghiệm rồi giải theo x",
+        "content": "\\[x=\\frac{5}{6}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]Ở mỗi họ, tham số là số nguyên; có thể đổi dấu tham số khi hệ số của x âm."
+      },
+      {
+        "title": "Lọc tham số theo khoảng đề bài",
+        "content": "\\[0\\le \\frac{5}{6}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{-5}{6}\\le k<\\frac{7}{6}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{5}{6}\\pi;\\frac{11}{6}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-7-3-mc-v2": {
     "prompt": "Phương trình \\(\\sin x \\left(\\cos x + 2\\right) = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5507,7 +7851,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Xét thừa số thứ hai",
+        "content": "\\[-1\\le\\cos x\\le1\\Rightarrow1\\le\\cos x+2\\le3\\]"
+      },
+      {
+        "title": "Dùng phương trình tích",
+        "content": "Thừa số thứ hai luôn dương nên \\[\\sin x(\\cos x+2)=0\\iff\\sin x=0\\iff x=k\\pi,\\ k\\in\\mathbb Z\\]"
+      },
+      {
+        "title": "Lọc nghiệm",
+        "content": "\\[0\\le k\\pi<2\\pi\\iff0\\le k<2\\Rightarrow k=0,1\\]\\[x=0\\text{ hoặc }x=\\pi\\]"
+      }
+    ]
   },
   "toan-11-1-7-8-mc-v2": {
     "prompt": "Phương trình \\(\\sin 3 x = \\cos \\left(x - \\frac{\\pi}{3}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5543,7 +7901,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi về hai sin",
+        "content": "\\[\\cos(x-\\pi/3)=\\sin[\\pi/2-(x-\\pi/3)]=\\sin(5\\pi/6-x)\\]"
+      },
+      {
+        "title": "Tách hai trường hợp",
+        "content": "\\[3x=5\\pi/6-x+2k\\pi\\quad\\text{hoặc}\\quad3x=\\pi-(5\\pi/6-x)+2k\\pi\\]"
+      },
+      {
+        "title": "Giải theo x",
+        "content": "\\[x=\\frac{5\\pi}{24}+\\frac{k\\pi}2\\quad\\text{hoặc}\\quad x=\\frac\\pi{12}+k\\pi\\]"
+      },
+      {
+        "title": "Lọc từng họ",
+        "content": "Họ thứ nhất có \\(k=0,1,2,3\\), họ thứ hai có \\(k=0,1\\). \\[x\\in\\left\\{\\frac\\pi{12};\\frac{5\\pi}{24};\\frac{17\\pi}{24};\\frac{13\\pi}{12};\\frac{29\\pi}{24};\\frac{41\\pi}{24}\\right\\}\\]Sáu nghiệm đôi một khác nhau."
+      }
+    ]
   },
   "toan-11-1-7-9-mc-v2": {
     "prompt": "Phương trình \\(\\cos \\left(2 x + \\frac{\\pi}{5}\\right) = \\sin \\left(x - \\frac{\\pi}{4}\\right)\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5579,7 +7955,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi về hai cos",
+        "content": "\\[\\sin(x-\\pi/4)=\\cos[\\pi/2-(x-\\pi/4)]=\\cos(3\\pi/4-x)\\]"
+      },
+      {
+        "title": "Tách hai trường hợp",
+        "content": "\\[2x+\\pi/5=3\\pi/4-x+2k\\pi\\quad\\text{hoặc}\\quad2x+\\pi/5=-3\\pi/4+x+2k\\pi\\]"
+      },
+      {
+        "title": "Giải hai phương trình bậc nhất",
+        "content": "\\[x=\\frac{11\\pi}{60}+\\frac{2k\\pi}3\\quad\\text{hoặc}\\quad x=-\\frac{19\\pi}{20}+2k\\pi\\]"
+      },
+      {
+        "title": "Lọc và đếm",
+        "content": "Họ thứ nhất có \\(k=0,1,2\\), họ thứ hai có \\(k=1\\). \\[x\\in\\left\\{\\frac{11\\pi}{60};\\frac{17\\pi}{20};\\frac{21\\pi}{20};\\frac{91\\pi}{60}\\right\\}\\]Có 4 nghiệm phân biệt."
+      }
+    ]
   },
   "toan-11-1-6-1-mc-v2": {
     "prompt": "Phương trình \\(2 \\sin^{2} x - 3 \\sin x + 1 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5593,30 +7987,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\sin x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[t=\\sin x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[2t^2-3t+1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(2t-1)(t-1)=0\\]\\[t\\in\\{\\frac{1}{2};1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\sin x=\\frac{1}{2}\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{6}\\pi\\). \\[x=\\frac{1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{5}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{12}\\le k<\\frac{11}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{5}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-5}{12}\\le k<\\frac{7}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\sin x=1\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{2}\\pi\\). \\[x=\\frac{1}{2}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{2}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{4}\\le k<\\frac{3}{4}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{6}\\pi;\\frac{1}{2}\\pi;\\frac{5}{6}\\pi\\}\\]Có 3 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-2-mc-v2": {
     "prompt": "Phương trình \\(\\cos^{2} x + 3 \\cos x + 2 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5630,30 +8051,53 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cos x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[t=\\cos x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[t^2+3t+2=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(t+1)(t+2)=0\\]\\[t\\in\\{-1;-2\\}\\]Loại \\(-2\\) vì nằm ngoài đoạn từ −1 đến 1."
+      },
+      {
+        "title": "Giải \\(\\cos x=-1\\)",
+        "content": "Chọn \\(\\alpha=\\pi\\). \\[x=\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{2}\\le k<\\frac{1}{2}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\pi\\}\\]Có 1 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-3-mc-v2": {
     "prompt": "Phương trình \\(2 \\tan^{2} x - 3 \\tan x + 1 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5667,30 +8111,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\tan x",
+        "\\cos x\\ne0",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Kiểm tra điều kiện xác định của \\(\\tan g\\) hoặc cotang trước khi biến đổi."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "\\[\\cos x\\ne0\\]\\[t=\\tan x\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[2t^2-3t+1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(2t-1)(t-1)=0\\]\\[t\\in\\{\\frac{1}{2};1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\tan x=\\frac{1}{2}\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arctan}(\\frac{1}{2})\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\tan x=1\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{4}\\pi\\). \\[x=\\frac{1}{4}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{4}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{-1}{4}\\le k<\\frac{7}{4}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.46364761;0.78539816;3.60524026;3.92699082\\). Có 4 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-6-4-mc-v2": {
     "prompt": "Phương trình \\(\\cot^{2} x - \\cot x - 12 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5704,30 +8175,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cot x",
+        "\\sin x\\ne0",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Kiểm tra điều kiện xác định của \\(\\tan g\\) hoặc cotang trước khi biến đổi."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "\\[\\sin x\\ne0\\]\\[t=\\cot x\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[t^2-t-12=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(t-4)(t+3)=0\\]\\[t\\in\\{4;-3\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\cot x=4\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arccot}(4)\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\cot x=-3\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arccot}(-3)\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.24497866;2.8198421;3.38657132;5.96143475\\). Có 4 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-6-5-mc-v2": {
     "prompt": "Phương trình \\(8 \\cos^{2} x + 2 \\sin x - 7 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5741,30 +8239,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\sin x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\cos^2x=1-\\sin^2x,\\quad t=\\sin x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[8(1-t^2)+2t-7=0\\iff8t^2-2t-1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(4t+1)(2t-1)=0\\]\\[t\\in\\{\\frac{-1}{4};\\frac{1}{2}\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\sin x=\\frac{-1}{4}\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arcsin}(\\frac{-1}{4})\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(\\pi-\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\).\\[0\\le \\frac{(\\pi-\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\pi-\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\pi-\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\sin x=\\frac{1}{2}\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{6}\\pi\\). \\[x=\\frac{1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{5}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{12}\\le k<\\frac{11}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{5}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-5}{12}\\le k<\\frac{7}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.52359878;2.61799388;3.39427291;6.03050505\\). Có 4 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-6-6-mc-v2": {
     "prompt": "Phương trình \\(2 \\cos 2 x + \\cos x = 1\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5778,30 +8303,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cos x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\cos2x=2\\cos^2x-1,\\quad t=\\cos x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[2(2t^2-1)+t=1\\iff4t^2+t-3=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(4t-3)(t+1)=0\\]\\[t\\in\\{\\frac{3}{4};-1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\cos x=\\frac{3}{4}\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arccos}(\\frac{3}{4})\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(-\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{(-\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(-\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(-\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\cos x=-1\\)",
+        "content": "Chọn \\(\\alpha=\\pi\\). \\[x=\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{2}\\le k<\\frac{1}{2}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0.72273425;3.14159265;5.56045106\\). Có 3 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-6-7-mc-v2": {
     "prompt": "Phương trình \\(\\sin^{2} x - 2 \\cos x + 2 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5815,30 +8367,53 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cos x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\sin^2x=1-\\cos^2x,\\quad t=\\cos x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[1-t^2-2t+2=0\\iff t^2+2t-3=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(t-1)(t+3)=0\\]\\[t\\in\\{1;-3\\}\\]Loại \\(-3\\) vì nằm ngoài đoạn từ −1 đến 1."
+      },
+      {
+        "title": "Giải \\(\\cos x=1\\)",
+        "content": "Chọn \\(\\alpha=0\\). \\[x=0+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le 0+(2\\pi)k<2\\pi\\]\\[0\\le k<1\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{0\\}\\]Có 1 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-8-mc-v2": {
     "prompt": "Phương trình \\(\\cos 2 x + 5 \\sin x + 2 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5852,30 +8427,53 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\sin x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\cos2x=1-2\\sin^2x,\\quad t=\\sin x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[1-2t^2+5t+2=0\\iff2t^2-5t-3=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(2t+1)(t-3)=0\\]\\[t\\in\\{\\frac{-1}{2};3\\}\\]Loại \\(3\\) vì nằm ngoài đoạn từ −1 đến 1."
+      },
+      {
+        "title": "Giải \\(\\sin x=\\frac{-1}{2}\\)",
+        "content": "Chọn \\(\\alpha=\\frac{-1}{6}\\pi\\). \\[x=\\frac{-1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{7}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{-1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{1}{12}\\le k<\\frac{13}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\).\\[0\\le \\frac{7}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-7}{12}\\le k<\\frac{5}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{7}{6}\\pi;\\frac{11}{6}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-9-mc-v2": {
     "prompt": "Phương trình \\(2 \\cos^{2} x - \\sin^{2} x - 4 \\cos x + 2 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5889,30 +8487,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cos x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\sin^2x=1-\\cos^2x,\\quad t=\\cos x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[2t^2-(1-t^2)-4t+2=0\\iff3t^2-4t+1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(3t-1)(t-1)=0\\]\\[t\\in\\{\\frac{1}{3};1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\cos x=\\frac{1}{3}\\)",
+        "content": "Chọn \\(\\alpha=\\operatorname{arccos}(\\frac{1}{3})\\). \\[x=\\frac{(\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{(-\\alpha)-(0)}{1}+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{(\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{(-\\alpha)-(0)}{1}+(2\\pi)k<2\\pi\\]\\[-\\frac{\\frac{(-\\alpha)-(0)}{1}}{2\\pi}\\le k<\\frac{2\\pi-(\\frac{(-\\alpha)-(0)}{1})}{2\\pi}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\cos x=1\\)",
+        "content": "Chọn \\(\\alpha=0\\). \\[x=0+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le 0+(2\\pi)k<2\\pi\\]\\[0\\le k<1\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "Các nghiệm gần đúng (radian): \\(0;1.23095942;5.05222589\\). Có 3 nghiệm phân biệt. Các họ nghiệm ở trên là biểu diễn chính xác."
+      }
+    ]
   },
   "toan-11-1-6-10-mc-v2": {
     "prompt": "Phương trình \\(\\sin x - 2 \\cos^{2} x + 1 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5926,30 +8551,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\sin x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\cos^2x=1-\\sin^2x,\\quad t=\\sin x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[t-2(1-t^2)+1=0\\iff2t^2+t-1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(2t-1)(t+1)=0\\]\\[t\\in\\{\\frac{1}{2};-1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\sin x=\\frac{1}{2}\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{6}\\pi\\). \\[x=\\frac{1}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[x=\\frac{5}{6}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{12}\\le k<\\frac{11}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\).\\[0\\le \\frac{5}{6}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-5}{12}\\le k<\\frac{7}{12}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\sin x=-1\\)",
+        "content": "Chọn \\(\\alpha=\\frac{-1}{2}\\pi\\). \\[x=\\frac{-1}{2}\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{-1}{2}\\pi+(2\\pi)k<2\\pi\\]\\[\\frac{1}{4}\\le k<\\frac{5}{4}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{6}\\pi;\\frac{5}{6}\\pi;\\frac{3}{2}\\pi\\}\\]Có 3 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-11-mc-v2": {
     "prompt": "Phương trình \\(\\cos 2 x + \\sin^{2} x + 2 \\cos x + 1 = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -5963,30 +8615,53 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\cos x",
+        "-1\\le t\\le1",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Chỉ nhận nghiệm của ẩn phụ thuộc đoạn \\(\\left[-1 ; 1\\right]\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "Sin, cos xác định với mọi số thực. \\[\\cos2x=2\\cos^2x-1,\\quad\\sin^2x=1-\\cos^2x,\\quad t=\\cos x\\]\\[-1\\le t\\le1\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[(2t^2-1)+(1-t^2)+2t+1=0\\iff t^2+2t+1=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[(t+1)^2=0\\]\\[t\\in\\{-1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\cos x=-1\\)",
+        "content": "Chọn \\(\\alpha=\\pi\\). \\[x=\\pi+(2\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\pi+(2\\pi)k<2\\pi\\]\\[\\frac{-1}{2}\\le k<\\frac{1}{2}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\pi\\}\\]Có 1 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-12-mc-v2": {
     "prompt": "Phương trình \\(\\tan^{2} x + \\tan x = 0\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -6000,30 +8675,57 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
+        "t=\\tan x",
+        "\\cos x\\ne0",
         "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
         "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
       ],
       "symbols": [
         [
           "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
+          "Ẩn phụ là giá trị lượng giác được chọn."
         ],
         [
           "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
+          "Các hệ số theo ẩn phụ."
         ],
         [
           "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
+          "Biệt thức của phương trình bậc hai."
         ],
         [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc \\(b a n\\) đầu."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Kiểm tra điều kiện xác định của \\(\\tan g\\) hoặc cotang trước khi biến đổi."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "\\[\\cos x\\ne0\\]\\[t=\\tan x\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[t^2+t=0\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[t(t+1)=0\\]\\[t\\in\\{0;-1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\tan x=0\\)",
+        "content": "Chọn \\(\\alpha=0\\). \\[x=0+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le 0+(\\pi)k<2\\pi\\]\\[0\\le k<2\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Giải \\(\\tan x=-1\\)",
+        "content": "Chọn \\(\\alpha=\\frac{-1}{4}\\pi\\). \\[x=\\frac{-1}{4}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{-1}{4}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{1}{4}\\le k<\\frac{9}{4}\\]Vì tham số nguyên, suy ra \\(k\\in\\{1;2\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{0;\\frac{3}{4}\\pi;\\pi;\\frac{7}{4}\\pi\\}\\]Có 4 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-6-13-mc-v2": {
     "prompt": "Phương trình \\(\\frac{1}{\\cos^{2} x} = \\tan x + \\tan^{2} x\\) có bao nhiêu nghiệm phân biệt trong \\(\\left[0 ; 2 \\pi\\right)\\)?",
@@ -6037,30 +8739,38 @@ export const mathContent = {
     "hint": "Giải phương trình, liệt kê các nghiệm trong \\(\\left[0 ; 2 \\pi\\right)\\) và loại nghiệm trùng.",
     "guide": {
       "formulas": [
-        "t=\\sin x\\text{ hoặc }t=\\cos x,\\qquad -1\\le t\\le1",
-        "at^2+bt+c=0,\\quad\\Delta=b^2-4ac",
-        "t=\\frac{-b\\pm\\sqrt\\Delta}{2a}\\quad(a\\ne0,\\Delta\\ge0)"
+        "\\frac1{\\cos^2x}=1+\\tan^2x"
       ],
       "symbols": [
         [
-          "t",
-          "Ẩn phụ là giá trị \\(\\sin\\) hoặc \\(\\cos\\); loại nghiệm ngoài \\(\\left[-1 ; 1\\right]\\)."
-        ],
-        [
-          "a,b,c",
-          "Các hệ số của phương trình bậc hai theo \\(t\\)."
-        ],
-        [
-          "\\Delta",
-          "Biệt thức; \\(\\Delta\\) âm thì phương trình theo \\(t\\) không có nghiệm thực."
-        ],
-        [
           "x",
-          "Ẩn \\(b a n\\) đầu; giải phương trình lượng giác sau khi tìm \\(t\\)."
+          "Ẩn góc của phương trình."
         ]
       ],
-      "condition": ""
-    }
+      "condition": "Điều kiện \\(\\cos x\\) khác \\(0\\)."
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện và đổi về một hàm lượng giác",
+        "content": "\\[\\cos x\\ne0\\]\\[\\frac1{\\cos^2x}=1+\\tan^2x,\\quad t=\\tan x\\]"
+      },
+      {
+        "title": "Thu gọn phương trình theo ẩn phụ",
+        "content": "\\[1+t^2=t+t^2\\]"
+      },
+      {
+        "title": "Giải phương trình đại số",
+        "content": "\\[t=1\\]\\[t\\in\\{1\\}\\]"
+      },
+      {
+        "title": "Giải \\(\\tan x=1\\)",
+        "content": "Chọn \\(\\alpha=\\frac{1}{4}\\pi\\). \\[x=\\frac{1}{4}\\pi+(\\pi)k,\\quad k\\in\\mathbb Z\\]\\[0\\le \\frac{1}{4}\\pi+(\\pi)k<2\\pi\\]\\[\\frac{-1}{4}\\le k<\\frac{7}{4}\\]Vì tham số nguyên, suy ra \\(k\\in\\{0;1\\}\\)."
+      },
+      {
+        "title": "Liệt kê nghiệm phân biệt và kết luận",
+        "content": "\\[x\\in\\{\\frac{1}{4}\\pi;\\frac{5}{4}\\pi\\}\\]Có 2 nghiệm; không lấy đầu mút \\(2\\pi\\)."
+      }
+    ]
   },
   "toan-11-1-mc-14-lt1": {
     "prompt": "Phương trình \\(\\sin x = m\\) có nghiệm khi:",
@@ -6096,7 +8806,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng miền giá trị của sin",
+        "content": "\\[-1\\le\\sin x\\le1\\]"
+      },
+      {
+        "title": "Điều kiện cần",
+        "content": "Nếu có nghiệm thì vế phải phải thuộc miền giá trị, tức \\(-1\\le m\\le1\\)."
+      },
+      {
+        "title": "Điều kiện đủ",
+        "content": "Với mỗi \\(m\\in[-1;1]\\), tồn tại góc \\(x=\\operatorname{arcsin}m\\). Vậy điều kiện cần và đủ là \\(|m|\\le1\\)."
+      }
+    ]
   },
   "toan-11-1-mc-14-lt2": {
     "prompt": "Nghiệm của \\(\\cos x = 1\\) là:",
@@ -6132,7 +8856,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Nhận dạng góc cơ bản",
+        "content": "\\[1=\\cos0\\]"
+      },
+      {
+        "title": "Áp dụng công thức nghiệm",
+        "content": "\\[\\cos x=\\cos0\\iff x=\\pm0+2k\\pi\\]"
+      },
+      {
+        "title": "Gộp hai họ trùng nhau",
+        "content": "\\[x=2k\\pi,\\quad k\\in\\mathbb Z\\]"
+      }
+    ]
   },
   "toan-11-1-mc-14-lt3": {
     "prompt": "Nghiệm của \\(\\tan x = \\tan \\alpha\\) là:",
@@ -6167,7 +8905,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Điều kiện",
+        "content": "Giả thiết \\(\\tan\\alpha\\) xác định, tức \\(\\cos\\alpha\\ne0\\). Nghiệm cần thỏa \\(\\cos x\\ne0\\)."
+      },
+      {
+        "title": "Dùng công thức hiệu tang",
+        "content": "\\[\\tan x-\\tan\\alpha=\\frac{\\sin(x-\\alpha)}{\\cos x\\cos\\alpha}=0\\iff\\sin(x-\\alpha)=0\\]"
+      },
+      {
+        "title": "Giải và kiểm tra",
+        "content": "\\[x-\\alpha=k\\pi\\iff x=\\alpha+k\\pi,\\quad k\\in\\mathbb Z\\]Các nghiệm giữ nguyên điều kiện xác định của tang."
+      }
+    ]
   },
   "toan-11-1-mc-14-lt4": {
     "prompt": "Nghiệm của \\(\\cot x = 0\\) là:",
@@ -6202,7 +8954,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Các vế \\(\\tan\\) hoặc \\(\\cot\\) phải xác định. Khi đếm nghiệm, loại nghiệm trùng."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đổi về sin và cos",
+        "content": "\\[\\cot x=\\frac{\\cos x}{\\sin x},\\quad\\sin x\\ne0\\]"
+      },
+      {
+        "title": "Giải tử bằng 0",
+        "content": "\\[\\cot x=0\\iff\\cos x=0\\iff x=\\frac\\pi2+k\\pi\\]"
+      },
+      {
+        "title": "Kiểm tra điều kiện",
+        "content": "\\[\\sin(\\pi/2+k\\pi)=(-1)^k\\ne0\\]Vậy nhận toàn bộ họ nghiệm với tham số nguyên."
+      }
+    ]
   },
   "toan-11-2-1-v1": {
     "prompt": "Dãy số có \\(u_{n} = 3 n - 2 \\left(n \\ge 1\\right)\\). Bốn số hạng đầu là:",
@@ -6233,7 +8999,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Chỉ số bắt đầu từ \\(1\\). Dùng \\(u_{n} = 3 n - 2\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{1} = 3 \\times 1 - 2 = 1 ; u_{2} = 3 \\times 2 - 2 = 4\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{3} = 3 \\times 3 - 2 = 7 ; u_{4} = 3 \\times 4 - 2 = 10\\). Vậy bốn số hạng là \\(1 ; 4 ; 7 ; 10\\)."
+      }
+    ]
   },
   "toan-11-2-2-v1": {
     "prompt": "Cho \\(u_{1} = 2\\) và \\(u_{n+1} = -3 u_{n}\\) với \\(n \\ge 1\\). Bốn số hạng đầu là:",
@@ -6265,7 +9045,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Khi có số hạng bằng \\(0\\), dùng định nghĩa truy hồi; không chia cho số hạng đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Giữ \\(u_{1} = 2\\); số hạng sau bằng \\(-3\\) lần số hạng trước."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{2} = -3 \\times 2 = -6 ; u_{3} = -3 \\times \\left(-6\\right) = 18\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{4} = -3 \\times 18 = -54\\). Vậy bốn số hạng là \\(2 ; -6 ; 18 ; -54\\)."
+      }
+    ]
   },
   "toan-11-2-3-v1": {
     "prompt": "Dãy số nào sau đây là cấp số cộng với \\(n \\ge 1\\)?",
@@ -6297,7 +9091,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Với \\[u_{n} = 5 n - 2 : u_{n+1} - u_{n} = \\left[5 \\left(n + 1\\right) - 2\\right] - \\left(5 n - 2\\right) = 5\\], không đổi."
+      },
+      {
+        "title": "",
+        "content": "Với \\(u_{n} = n^{2} : u_{n+1} - u_{n} = 2 n + 1\\), phụ thuộc \\(n\\). Với \\(u_{n} = 2^{n} : u_{n+1} - u_{n} = 2^{n}\\), phụ thuộc \\(n\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\[u_{n} = \\frac{1}{n} : u_{n+1} - u_{n} = \\frac{-1}{n \\left(n + 1\\right)}\\], cũng phụ thuộc \\(n\\). Chỉ dãy \\(u_{n} = 5 n - 2\\) là cấp số cộng."
+      }
+    ]
   },
   "toan-11-2-4-v1": {
     "prompt": "Cho cấp số cộng có \\(u_{1} = -4 , d = 5\\). Tính \\(u_{12}\\).",
@@ -6329,7 +9137,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Từ số hạng đầu đến số hạng thứ \\(12\\) có \\(11\\) lần cộng công sai: \\(u_{12} = u_{1} + 11 d\\)."
+      },
+      {
+        "title": "",
+        "content": "Thay \\(u_{1} = -4 , d = 5 : u_{12} = -4 + 11 \\times 5\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{12} = -4 + 55 = 51\\)."
+      }
+    ]
   },
   "toan-11-2-5-v1": {
     "prompt": "Cho cấp số cộng có \\(u_{3} = 8 , u_{8} = 23\\). Tính \\(u_{20}\\).",
@@ -6361,7 +9183,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Hai chỉ số cách nhau \\(5 : u_{8} - u_{3} = 5 d\\). Suy ra \\(23 - 8 = 5 d\\) nên \\(d = 3\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{1} = u_{3} - 2 d = 8 - 2 \\times 3 = 2\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{20} = u_{1} + 19 d = 2 + 19 \\times 3 = 59\\)."
+      }
+    ]
   },
   "toan-11-2-6-v1": {
     "prompt": "Cho cấp số cộng có \\(u_{1} = 7 , d = -2\\). Số \\(-31\\) là số hạng thứ bao nhiêu?",
@@ -6393,7 +9229,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Đặt \\(u_{n} = -31 : 7 - 2 \\left(n - 1\\right) = -31\\)."
+      },
+      {
+        "title": "",
+        "content": "Khai triển: \\(9 - 2 n = -31\\). Chuyển vế: \\(-2 n = -40\\), suy ra \\(n = 20\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(n = 20\\) là số nguyên dương. Kiểm tra: \\(7 - 2 \\times 19 = -31\\), đúng."
+      }
+    ]
   },
   "toan-11-2-7-v1": {
     "prompt": "Bốn số \\(-7 ; x ; 11 ; y\\) theo thứ tự lập thành một cấp số cộng. Tìm \\(x , y\\).",
@@ -6420,7 +9270,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Từ \\(-7\\) đến \\(11\\) có hai bước: \\(2 d = 11 - \\left(-7\\right) = 18\\) nên \\(d = 9\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(x = -7 + 9 = 2 ; y = 11 + 9 = 20\\)."
+      },
+      {
+        "title": "",
+        "content": "Kiểm tra các hiệu: \\(2 - \\left(-7\\right) = 11 - 2 = 20 - 11 = 9\\)."
+      }
+    ]
   },
   "toan-11-2-8-v1": {
     "prompt": "Tìm \\(x\\) để \\(b a\\) số \\(x + 1 ; 2 x - 1 ; 5 x - 7\\) theo thứ tự lập thành cấp số cộng.",
@@ -6447,7 +9311,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Điều kiện \\(b a\\) số theo thứ tự lập cấp số cộng: \\[\\left(x + 1\\right) + \\left(5 x - 7\\right) = 2 \\left(2 x - 1\\right)\\]."
+      },
+      {
+        "title": "",
+        "content": "Khai triển: \\(6 x - 6 = 4 x - 2\\). Suy ra \\(2 x = 4\\) nên \\(x = 2\\)."
+      },
+      {
+        "title": "",
+        "content": "Thay \\(x = 2\\) được \\(3 ; 3 ; 3\\). Các hiệu bằng \\(0\\) nên nhận nghiệm."
+      }
+    ]
   },
   "toan-11-2-9-v1": {
     "prompt": "Cho cấp số cộng có \\(u_{1} = 3 , d = 4\\). Tính tổng \\(S_{20}\\) của \\(20\\) số hạng đầu.",
@@ -6483,7 +9361,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Tính số hạng cuối: \\(u_{20} = 3 + \\left(20 - 1\\right) \\times 4 = 3 + 76 = 79\\)."
+      },
+      {
+        "title": "",
+        "content": "Dùng tổng cấp số cộng: \\(S_{20} = \\frac{20 \\left(3 + 79\\right)}{2}\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(S_{20} = 10 \\times 82 = 820\\)."
+      }
+    ]
   },
   "toan-11-2-10-v1": {
     "prompt": "Cho cấp số cộng có \\(u_{1} = 5 , d = 3\\). Biết \\(S_{n} = 185\\), tìm số nguyên dương \\(n\\).",
@@ -6519,7 +9411,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Dùng \\[S_{n} = \\frac{n \\left[2 u_{1} + \\left(n - 1\\right) d\\right]}{2} : \\frac{n \\left[10 + 3 \\left(n - 1\\right)\\right]}{2} = 185\\]."
+      },
+      {
+        "title": "",
+        "content": "Khai triển và nhân \\(2 : 3 n^{2} + 7 n - 370 = 0\\)."
+      },
+      {
+        "title": "",
+        "content": "Phân tích: \\(\\left(n - 10\\right) \\left(3 n + 37\\right) = 0\\). Suy ra \\(n = 10\\) hoặc \\(n = \\frac{-37}{3}\\)."
+      },
+      {
+        "title": "",
+        "content": "Vì \\(n\\) là số nguyên dương nên loại \\(\\frac{-37}{3}\\), nhận \\(n = 10\\). Kiểm tra \\(S_{10} = \\frac{10 \\left(10 + 27\\right)}{2} = 185\\)."
+      }
+    ]
   },
   "toan-11-2-11-v1": {
     "prompt": "Cho cấp số cộng có \\(S_{4} = 18\\) và \\(S_{6} = 45\\). Tìm \\(u_{1} , d\\).",
@@ -6555,7 +9465,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Viết hai phương trình: \\(S_{4} = 4 u_{1} + 6 d = 18 ; S_{6} = 6 u_{1} + 15 d = 45\\)."
+      },
+      {
+        "title": "",
+        "content": "Nhân phương trình đầu với \\(3\\), phương trình sau với \\(2 : 12 u_{1} + 18 d = 54 ; 12 u_{1} + 30 d = 90\\)."
+      },
+      {
+        "title": "",
+        "content": "Lấy phương trình sau trừ trước: \\(12 d = 36\\) nên \\(d = 3\\)."
+      },
+      {
+        "title": "",
+        "content": "Thế lại: \\(4 u_{1} + 18 = 18\\) nên \\(u_{1} = 0\\). Hai tổng đều thỏa dữ kiện."
+      }
+    ]
   },
   "toan-11-2-12-v1": {
     "prompt": "Một dãy số có tổng \\(n\\) số hạng đầu là \\(S_{n} = 2 n^{2} + 3 n\\) với mọi \\(n \\ge 1\\). Công thức \\(u_{n}\\) và công sai là:",
@@ -6586,7 +9514,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Với \\(n = 1 : u_{1} = S_{1} = 2 + 3 = 5\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\[n \\ge 2 : S_{n-1} = 2 \\left(n - 1\\right)^{2} + 3 \\left(n - 1\\right) = 2 n^{2} - n - 1\\]."
+      },
+      {
+        "title": "",
+        "content": "\\[u_{n} = S_{n} - S_{n-1} = \\left(2 n^{2} + 3 n\\right) - \\left(2 n^{2} - n - 1\\right) = 4 n + 1\\]."
+      },
+      {
+        "title": "",
+        "content": "Công thức cũng cho \\(u_{1} = 5\\). Hiệu \\[u_{n+1} - u_{n} = \\left[4 \\left(n + 1\\right) + 1\\right] - \\left(4 n + 1\\right) = 4\\], nên \\(d = 4\\)."
+      }
+    ]
   },
   "toan-11-2-13-v1": {
     "prompt": "Xen bốn số giữa \\(3\\) và \\(28\\) để được cấp số cộng gồm sáu số hạng. Bốn số cần xen theo thứ tự là:",
@@ -6621,7 +9567,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Xen bốn số tạo sáu số hạng, tức năm khoảng công sai."
+      },
+      {
+        "title": "",
+        "content": "\\(28 = 3 + 5 d\\) nên \\(5 d = 25 , d = 5\\)."
+      },
+      {
+        "title": "",
+        "content": "Lần lượt cộng \\(5\\) từ số đầu: \\(8 ; 13 ; 18 ; 23\\). Cộng thêm \\(5\\) nữa được \\(28\\), đúng số cuối."
+      }
+    ]
   },
   "toan-11-2-14-v1": {
     "prompt": "Ba góc của một tam giác, xếp từ nhỏ đến lớn, lập thành cấp số cộng. Góc nhỏ nhất bằng \\(20^{\\circ}\\). Tìm \\(b a\\) góc.",
@@ -6645,7 +9605,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Mỗi góc phải dương và nhỏ hơn \\(180^{\\circ}\\)."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Gọi \\(b a\\) góc là \\(20^{\\circ} , 20^{\\circ} + d , 20^{\\circ} + 2 d\\) với \\(d \\ge 0\\)."
+      },
+      {
+        "title": "",
+        "content": "Tổng \\(b a\\) góc: \\(60^{\\circ} + 3 d = 180^{\\circ}\\) nên \\(3 d = 120^{\\circ} , d = 40^{\\circ}\\)."
+      },
+      {
+        "title": "",
+        "content": "Ba góc là \\(20^{\\circ} ; 60^{\\circ} ; 100^{\\circ}\\). Chúng đều dương, tăng dần và có tổng \\(180^{\\circ}\\)."
+      }
+    ]
   },
   "toan-11-2-15-v1": {
     "prompt": "Dãy số nào sau đây là cấp số nhân với \\(n \\ge 1\\)?",
@@ -6677,7 +9651,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Khi có số hạng bằng \\(0\\), dùng định nghĩa truy hồi; không chia cho số hạng đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Với \\(u_{n} = 3 \\times 2^{n-1} : u_{n+1} = 3 \\times 2^{n} = 2 u_{n}\\). Đây là cấp số nhân với \\(q = 2\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(u_{n} = 2 n + 1\\), tỉ số \\(\\frac{u_{2}}{u_{1}} = \\frac{5}{3}\\) khác \\(\\frac{u_{3}}{u_{2}} = \\frac{7}{5}\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(u_{n} = n^{2}\\), tỉ số đầu là \\(4\\) và \\(\\frac{9}{4}\\). Với \\(u_{n} = \\frac{1}{n}\\), tỉ số đầu là \\(\\frac{1}{2}\\) và \\(\\frac{2}{3}\\). Các dãy này không có công bội cố định."
+      }
+    ]
   },
   "toan-11-2-16-v1": {
     "prompt": "Cho cấp số nhân có \\(u_{1} = 3 , q = -2\\). Tính \\(u_{7}\\).",
@@ -6709,7 +9697,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Khi có số hạng bằng \\(0\\), dùng định nghĩa truy hồi; không chia cho số hạng đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Dùng số hạng tổng quát: \\(u_{7} = u_{1} q^{6} = 3 \\left(-2\\right)^{6}\\)."
+      },
+      {
+        "title": "",
+        "content": "Vì mũ \\(6\\) chẵn: \\(\\left(-2\\right)^{6} = 64\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{7} = 3 \\times 64 = 192\\)."
+      }
+    ]
   },
   "toan-11-2-17-v1": {
     "prompt": "Cho cấp số nhân có \\(u_{2} = 6\\) và \\(u_{5} = 162\\). Tính \\(u_{6}\\).",
@@ -6753,7 +9755,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Không bỏ nghiệm công bội âm nếu đề không yêu cầu \\(q\\) dương."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "\\(u_{5} = u_{2} q^{3}\\). Do \\(u_{2} = 6\\) khác \\(0\\) nên \\(q^{3} = \\frac{162}{6} = 27\\)."
+      },
+      {
+        "title": "",
+        "content": "Lấy căn bậc \\(b a\\) thực: \\(q = 3\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{6} = u_{5} q = 162 \\times 3 = 486\\)."
+      }
+    ]
   },
   "toan-11-2-18-v1": {
     "prompt": "Cho cấp số nhân thực có \\(u_{1} = 2 , u_{3} = 18\\). Tất cả các giá trị có thể của \\(u_{4}\\) là:",
@@ -6797,7 +9813,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Không bỏ nghiệm công bội âm nếu đề không yêu cầu \\(q\\) dương."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "\\(u_{3} = u_{1} q^{2}\\) nên \\(18 = 2 q^{2}\\), tức \\(q^{2} = 9\\)."
+      },
+      {
+        "title": "",
+        "content": "Phương trình có đủ hai nghiệm thực: \\(q = 3\\) hoặc \\(q = -3\\)."
+      },
+      {
+        "title": "",
+        "content": "Nếu \\(q = 3 : u_{4} = 2 \\times 3^{3} = 54\\). Nếu \\(q = -3 : u_{4} = 2 \\left(-3\\right)^{3} = -54\\). Nhận cả hai giá trị."
+      }
+    ]
   },
   "toan-11-2-19-v1": {
     "prompt": "Bốn số \\(x ; 12 ; y ; 192\\) theo thứ tự lập thành cấp số nhân thực. Tìm tất cả các cặp \\(\\left(x ; y\\right)\\).",
@@ -6841,7 +9871,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Không bỏ nghiệm công bội âm nếu đề không yêu cầu \\(q\\) dương."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Từ số hạng thứ hai đến thứ tư: \\(192 = 12 q^{2}\\), suy ra \\(q^{2} = 16 , q =\\) ±\\(4\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(q = 4 : x = \\frac{12}{4} = 3 ; y = 12 \\times 4 = 48\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\[q = -4 : x = \\frac{12}{-4} = -3 ; y = 12 \\times \\left(-4\\right) = -48\\]."
+      },
+      {
+        "title": "",
+        "content": "Kiểm tra yq = \\(192\\) trong cả hai trường hợp. Hai cặp là \\(\\left(3 ; 48\\right)\\) và \\(\\left(-3 ; -48\\right)\\)."
+      }
+    ]
   },
   "toan-11-2-20-v1": {
     "prompt": "Tìm \\(x\\) để \\(b a\\) số \\(x - 1 ; x + 1 ; x + 5\\) theo thứ tự lập thành cấp số nhân.",
@@ -6868,7 +9916,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Nếu có số bằng \\(0\\), kiểm tra trực tiếp điều kiện số sau bằng \\(q\\) lần số trước."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Điều kiện cần: \\(\\left(x + 1\\right)^{2} = \\left(x - 1\\right) \\left(x + 5\\right)\\)."
+      },
+      {
+        "title": "",
+        "content": "Khai triển: \\(x^{2} + 2 x + 1 = x^{2} + 4 x - 5\\). Suy ra \\(2 x = 6\\) nên \\(x = 3\\)."
+      },
+      {
+        "title": "",
+        "content": "Thay lại được \\(2 ; 4 ; 8\\), có \\(\\frac{4}{2} = \\frac{8}{4} = 2\\) nên đúng định nghĩa cấp số nhân."
+      }
+    ]
   },
   "toan-11-2-21-v1": {
     "prompt": "Cho cấp số nhân có \\(u_{1} = 2 , q = 3\\). Tính \\(S_{6}\\).",
@@ -6904,7 +9966,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Công bội \\(q = 3\\) khác \\(1\\) nên dùng \\(S_{6} = \\frac{u_{1} \\left(q^{6} - 1\\right)}{q - 1}\\)."
+      },
+      {
+        "title": "",
+        "content": "Thay số: \\[S_{6} = \\frac{2 \\left(3^{6} - 1\\right)}{3 - 1} = \\frac{2 \\left(729 - 1\\right)}{2}\\]."
+      },
+      {
+        "title": "",
+        "content": "Khử hệ số \\(2\\) rồi trừ: \\(S_{6} = 729 - 1 = 728\\)."
+      }
+    ]
   },
   "toan-11-2-22-v1": {
     "prompt": "Cho cấp số nhân có \\(u_{1} = 5 , q = 1\\). Tính \\(S_{20}\\).",
@@ -6939,7 +10015,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Khi \\(q = 1\\), mọi số hạng bằng \\(u_{1} = 5\\)."
+      },
+      {
+        "title": "",
+        "content": "Tổng gồm \\(20\\) số bằng nhau: \\(S_{20} = 20 \\times 5\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(S_{20} = 100\\). Không dùng công thức tổng có mẫu \\(q - 1\\) vì mẫu bằng \\(0\\)."
+      }
+    ]
   },
   "toan-11-2-23-v1": {
     "prompt": "Cho cấp số nhân có \\(u_{1} = 3 , q = 2\\). Số \\(384\\) là số hạng thứ bao nhiêu?",
@@ -6971,7 +10061,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Khi có số hạng bằng \\(0\\), dùng định nghĩa truy hồi; không chia cho số hạng đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Đặt \\(u_{n} = 384 : 3 \\times 2^{n-1} = 384\\)."
+      },
+      {
+        "title": "",
+        "content": "Chia cho \\(3 : 2^{n-1} = 128 = 2^{7}\\). Hai lũy thừa cùng cơ số \\(2\\) nên \\(n - 1 = 7\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(n = 8\\) là số nguyên dương; kiểm tra \\(3 \\times 2^{7} = 384\\), đúng."
+      }
+    ]
   },
   "toan-11-2-24-v1": {
     "prompt": "Xen \\(b a\\) số thực giữa \\(2\\) và \\(162\\) để được cấp số nhân gồm năm số hạng. Tìm tất cả các bộ \\(b a\\) theo thứ tự.",
@@ -7006,7 +10110,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Năm số hạng có bốn lần nhân công bội: \\(162 = 2 q^{4}\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(q^{4} = 81\\) nên hai công bội thực là \\(q = 3\\) và \\(q = -3\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(q = 3 : b a\\) số xen là \\(6 ; 18 ; 54\\). Với \\(q = -3 : b a\\) số xen là \\(-6 ; 18 ; -54\\)."
+      },
+      {
+        "title": "",
+        "content": "Kiểm tra số cuối: \\(54 \\times 3 = 162\\) và \\(\\left(-54\\right) \\left(-3\\right) = 162\\). Nhận cả hai bộ."
+      }
+    ]
   },
   "toan-11-2-25-v1": {
     "prompt": "Một cấp số nhân thực có năm số hạng, \\(u_{3} = 12\\) và \\(u_{5} = 48\\). Tất cả các giá trị có thể của \\(S_{5}\\) là:",
@@ -7050,7 +10172,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Không bỏ nghiệm công bội âm nếu đề không yêu cầu \\(q\\) dương."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "\\(\\frac{u_{5}}{u_{3}} = q^{2} = \\frac{48}{12} = 4\\), nên \\(q =\\) ±\\(2\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(u_{1} = \\frac{u_{3}}{q^{2}} = \\frac{12}{4} = 3\\) trong cả hai trường hợp."
+      },
+      {
+        "title": "",
+        "content": "Với \\(q = 2 : S_{5} = 3 + 6 + 12 + 24 + 48 = 93\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(q = -2 : S_{5} = 3 - 6 + 12 - 24 + 48 = 33\\). Hai giá trị là \\(33\\) và \\(93\\)."
+      }
+    ]
   },
   "toan-11-2-26-v1": {
     "prompt": "Cho cấp số nhân thực có \\(S_{3} = 14\\) và \\(S_{6} = 126\\). Tìm \\(u_{1} , q\\).",
@@ -7086,7 +10226,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Ba số hạng sau lần lượt bằng \\(q^{3}\\) lần \\(b a\\) số đầu, nên \\(S_{6} = S_{3} + q^{3} S_{3}\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(126 = 14 \\left(1 + q^{3}\\right)\\) nên \\(1 + q^{3} = 9 , q^{3} = 8 , q = 2\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(S_{3} = u_{1} \\left(1 + 2 + 4\\right) = 7 u_{1} = 14\\) nên \\(u_{1} = 2\\)."
+      },
+      {
+        "title": "",
+        "content": "Kiểm tra \\(S_{6} = \\frac{2 \\left(2^{6} - 1\\right)}{2 - 1} = 126\\)."
+      }
+    ]
   },
   "toan-11-2-27-v1": {
     "prompt": "Một hội trường có \\(20\\) hàng ghế. Hàng đầu có \\(18\\) ghế; mỗi hàng sau nhiều hơn hàng ngay trước \\(2\\) ghế. Tổng số ghế là:",
@@ -7122,7 +10280,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Số ghế mỗi hàng lập cấp số cộng với \\(u_{1} = 18 , d = 2 , n = 20\\)."
+      },
+      {
+        "title": "",
+        "content": "Hàng cuối: \\(u_{20} = 18 + 19 \\times 2 = 56\\) ghế."
+      },
+      {
+        "title": "",
+        "content": "Tổng số ghế: \\(S_{20} = \\frac{20 \\left(18 + 56\\right)}{2} = 10 \\times 74 = 740\\) ghế."
+      }
+    ]
   },
   "toan-11-2-28-v1": {
     "prompt": "Lúc \\(b a n\\) đầu có \\(500\\) vi khuẩn. Cứ sau \\(3\\) giờ, số lượng tăng gấp đôi; không có vi khuẩn chết. Sau \\(12\\) giờ có bao nhiêu vi khuẩn?",
@@ -7157,7 +10329,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Số chu kì tăng gấp đôi là \\(\\frac{12}{3} = 4\\)."
+      },
+      {
+        "title": "",
+        "content": "Sau mỗi chu kì nhân \\(2\\) nên số lượng là \\(500 \\times 2^{4}\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(2^{4} = 16\\), do đó có \\(500 \\times 16 = 8000\\) vi khuẩn."
+      }
+    ]
   },
   "toan-11-2-29-v1": {
     "prompt": "Tìm tất cả các cặp số thực \\(\\left(a ; b\\right)\\) sao cho \\(1 ; a ; b\\) là cấp số nhân và \\(1 ; a + 8 ; b\\) là cấp số cộng.",
@@ -7181,7 +10367,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Lập hai điều kiện cho hai bộ \\(b a\\) rồi giải chung; kiểm tra lại định nghĩa cấp số nhân."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Điều kiện cấp số nhân: \\(b = a^{2}\\) vì số đầu bằng \\(1\\). Điều kiện cấp số cộng: \\(1 + b = 2 \\left(a + 8\\right)\\)."
+      },
+      {
+        "title": "",
+        "content": "Thế \\(b = a^{2}\\) vào: \\(a^{2} - 2 a - 15 = 0\\)."
+      },
+      {
+        "title": "",
+        "content": "Phân tích: \\(\\left(a - 5\\right) \\left(a + 3\\right) = 0\\) nên \\(a = 5\\) hoặc \\(a = -3\\)."
+      },
+      {
+        "title": "",
+        "content": "Với \\(a = 5 : b = 25\\), hai bộ là \\(1 ; 5 ; 25\\) và \\(1 ; 13 ; 25\\). Với \\(a = -3 : b = 9\\), hai bộ là \\(1 ; -3 ; 9\\) và \\(1 ; 5 ; 9\\). Cả hai cặp đều thỏa."
+      }
+    ]
   },
   "toan-11-2-30-v1": {
     "prompt": "Cho \\(u_{1} = 1\\) và \\(u_{n+1} = 2 u_{n} + 3 \\left(n \\ge 1\\right)\\). Tính tổng \\(10\\) số hạng đầu của \\(\\left(u_{n}\\right)\\).",
@@ -7217,7 +10421,25 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "",
+        "content": "Đặt \\(v_{n} = u_{n} + 3\\). Khi đó \\(v_{1} = 4\\) và \\(v_{n+1} = 2 u_{n} + 6 = 2 \\left(u_{n} + 3\\right) = 2 v_{n}\\)."
+      },
+      {
+        "title": "",
+        "content": "Dãy phụ là cấp số nhân với số đầu \\(4\\), công bội \\(2\\). Tổng \\(10\\) số của dãy phụ bằng \\(\\frac{4 \\left(2^{10} - 1\\right)}{2 - 1}\\)."
+      },
+      {
+        "title": "",
+        "content": "\\(2^{10} = 1024\\) nên tổng dãy phụ là \\(4 \\times 1023 = 4092\\)."
+      },
+      {
+        "title": "",
+        "content": "Mỗi số hạng dãy phụ lớn hơn dãy gốc \\(3\\). Tổng dãy gốc là \\(4092 - 10 \\times 3 = 4062\\)."
+      }
+    ]
   },
   "toan-11-3-d1-1": {
     "prompt": "Bảng chiều cao của \\(100\\) học \\(\\sin h\\) có bao nhiêu nhóm?",
@@ -7323,7 +10545,21 @@ export const mathContent = {
           3
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hai đầu mút nhóm",
+        "content": "\\[a=156,\\quad b=158\\]"
+      },
+      {
+        "title": "Tính trung điểm",
+        "content": "\\[c=\\frac{a+b}2=\\frac{156+158}2=\\frac{314}2\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[c=157\\]Giá trị này có cùng đơn vị với đại lượng trong bảng."
+      }
+    ]
   },
   "toan-11-3-d1-3": {
     "prompt": "Bảng chiều cao của \\(500\\) học \\(\\sin h\\) có bao nhiêu nhóm?",
@@ -7425,7 +10661,21 @@ export const mathContent = {
           50
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hai đầu mút nhóm",
+        "content": "\\[a=162,\\quad b=166\\]"
+      },
+      {
+        "title": "Tính trung điểm",
+        "content": "\\[c=\\frac{a+b}2=\\frac{162+166}2=\\frac{328}2\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[c=164\\]Giá trị này có cùng đơn vị với đại lượng trong bảng."
+      }
+    ]
   },
   "toan-11-3-d1-5": {
     "prompt": "Giá trị đại diện của nhóm cân nặng \\(\\left[60{,}5 ; 65{,}5\\right)\\) là bao nhiêu?",
@@ -7474,7 +10724,21 @@ export const mathContent = {
           3
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hai đầu mút nhóm",
+        "content": "\\[a=60.5,\\quad b=65.5\\]"
+      },
+      {
+        "title": "Tính trung điểm",
+        "content": "\\[c=\\frac{a+b}2=\\frac{60.5+65.5}2=\\frac{126}2\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[c=63\\]Giá trị này có cùng đơn vị với đại lượng trong bảng."
+      }
+    ]
   },
   "toan-11-3-d1-6": {
     "prompt": "Giá trị đại diện của nhóm thời gian \\(\\left[20 ; 25\\right)\\) là bao nhiêu?",
@@ -7521,7 +10785,21 @@ export const mathContent = {
           2
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hai đầu mút nhóm",
+        "content": "\\[a=20,\\quad b=25\\]"
+      },
+      {
+        "title": "Tính trung điểm",
+        "content": "\\[c=\\frac{a+b}2=\\frac{20+25}2=\\frac{45}2\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[c=22.5\\]Giá trị này có cùng đơn vị với đại lượng trong bảng."
+      }
+    ]
   },
   "toan-11-3-d1-7": {
     "prompt": "Có bao nhiêu học \\(\\sin h\\) truy cập Internet từ \\(18{,}5\\) phút đến dưới \\(21{,}5\\) phút mỗi buổi tối?",
@@ -7623,7 +10901,21 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đọc hai đầu mút nhóm",
+        "content": "\\[a=20,\\quad b=40\\]"
+      },
+      {
+        "title": "Tính trung điểm",
+        "content": "\\[c=\\frac{a+b}2=\\frac{20+40}2=\\frac{60}2\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "\\[c=30\\]Giá trị này có cùng đơn vị với đại lượng trong bảng."
+      }
+    ]
   },
   "toan-11-3-d1-9": {
     "prompt": "Bảng cước điện thoại có phải mẫu số liệu ghép nhóm không? Nhóm \\(\\left[100 ; 150\\right)\\) cho biết điều gì?",
@@ -7912,7 +11204,21 @@ export const mathContent = {
           5
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. "
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([129;132)\\): \\(129\\); \\(130\\); \\(130\\), tần số 3. Nhóm \\([132;135)\\): \\(133\\); \\(134\\), tần số 2. Nhóm \\([135;138)\\): \\(135\\); \\(136\\); \\(136\\), tần số 3. Nhóm \\([138;141)\\): \\(138\\); \\(138\\); \\(138\\), tần số 3. Nhóm \\([141;144)\\): \\(141\\); \\(141\\); \\(141\\); \\(142\\); \\(142\\); \\(142\\); \\(142\\); \\(143\\); \\(143\\); \\(143\\); \\(143\\); \\(143\\), tần số 12. Nhóm \\([144;147)\\): \\(144\\); \\(144\\); \\(145\\); \\(145\\); \\(145\\); \\(145\\); \\(145\\), tần số 7."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=3+2+3+3+12+7=30\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d2-2": {
     "prompt": "Ghép cân nặng \\(35\\) người vào các nhóm \\(\\left[40 ; 45\\right) , \\left[45 ; 50\\right) , \\left[50 ; 55\\right) , \\left[55 ; 60\\right) , \\left[60 ; 65\\right)\\). Dãy tần số là:\nSố liệu: \\(43 ; 51 ; 47 ; 62 ; 48 ; 40 ; 50 ; 62 ; 53 ; 56 ; 40 ; 48 ; 56 ; 53 ; 50 ; 42 ; 55 ; 52 ; 48 ; 46 ; 45 ; 54 ; 52 ; 50 ; 47 ; 44 ; 54 ; 55 ; 60 ; 63 ; 58 ; 55 ; 60 ; 58 ; 53\\).",
@@ -7947,7 +11253,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Đọc đúng khoảng của từng nhóm. Chỉ tính đầu mút phải nếu đề ghi rõ nhóm đóng ở đầu đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. "
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([40;45)\\): \\(43\\); \\(40\\); \\(40\\); \\(42\\); \\(44\\), tần số 5. Nhóm \\([45;50)\\): \\(47\\); \\(48\\); \\(48\\); \\(48\\); \\(46\\); \\(45\\); \\(47\\), tần số 7. Nhóm \\([50;55)\\): \\(51\\); \\(50\\); \\(53\\); \\(53\\); \\(50\\); \\(52\\); \\(54\\); \\(52\\); \\(50\\); \\(54\\); \\(53\\), tần số 11. Nhóm \\([55;60)\\): \\(56\\); \\(56\\); \\(55\\); \\(55\\); \\(58\\); \\(55\\); \\(58\\), tần số 7. Nhóm \\([60;65)\\): \\(62\\); \\(62\\); \\(60\\); \\(63\\); \\(60\\), tần số 5."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=5+7+11+7+5=35\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d2-3": {
     "prompt": "Chia số sản phẩm thành \\(7\\) nhóm dài \\(7 : \\left[5 ; 12\\right) , \\left[12 ; 19\\right) , \\left[19 ; 26\\right) , \\left[26 ; 33\\right) , \\left[33 ; 40\\right) , \\left[40 ; 47\\right) , \\left[47 ; 54\\right]\\) (nhóm cuối đóng). Dãy tần số là:\nSố liệu: \\(18 ; 25 ; 39 ; 12 ; 54 ; 27 ; 46 ; 25 ; 19 ; 8 ; 36 ; 22 ; 20 ; 19 ; 17 ; 44 ; 5 ; 18 ; 23 ; 28 ; 25 ; 34 ; 46 ; 27 ; 16\\).",
@@ -7982,7 +11302,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Đọc đúng khoảng của từng nhóm. Chỉ tính đầu mút phải nếu đề ghi rõ nhóm đóng ở đầu đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. Riêng nhóm cuối đóng ở cả hai đầu theo đề."
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([5;12)\\): \\(8\\); \\(5\\), tần số 2. Nhóm \\([12;19)\\): \\(18\\); \\(12\\); \\(17\\); \\(18\\); \\(16\\), tần số 5. Nhóm \\([19;26)\\): \\(25\\); \\(25\\); \\(19\\); \\(22\\); \\(20\\); \\(19\\); \\(23\\); \\(25\\), tần số 8. Nhóm \\([26;33)\\): \\(27\\); \\(28\\); \\(27\\), tần số 3. Nhóm \\([33;40)\\): \\(39\\); \\(36\\); \\(34\\), tần số 3. Nhóm \\([40;47)\\): \\(46\\); \\(44\\); \\(46\\), tần số 3. Nhóm \\([47;54]\\): \\(54\\), tần số 1."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=2+5+8+3+3+3+1=25\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d2-4": {
     "prompt": "Chia giờ ra sân thành \\(7\\) nhóm dài \\(25 : \\left[490 ; 515\\right) , \\left[515 ; 540\\right) , \\left[540 ; 565\\right) , \\left[565 ; 590\\right) , \\left[590 ; 615\\right) , \\left[615 ; 640\\right) , \\left[640 ; 665\\right)\\). Dãy tần số là:\nSố liệu: \\(653 ; 632 ; 609 ; 572 ; 565 ; 535 ; 516 ; 514 ; 508 ; 505 ; 504 ; 504 ; 503 ; 499 ; 496 ; 492\\).",
@@ -8017,7 +11351,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Đọc đúng khoảng của từng nhóm. Chỉ tính đầu mút phải nếu đề ghi rõ nhóm đóng ở đầu đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. "
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([490;515)\\): \\(514\\); \\(508\\); \\(505\\); \\(504\\); \\(504\\); \\(503\\); \\(499\\); \\(496\\); \\(492\\), tần số 9. Nhóm \\([515;540)\\): \\(535\\); \\(516\\), tần số 2. Nhóm \\([540;565)\\): không có quan sát, tần số 0. Nhóm \\([565;590)\\): \\(572\\); \\(565\\), tần số 2. Nhóm \\([590;615)\\): \\(609\\), tần số 1. Nhóm \\([615;640)\\): \\(632\\), tần số 1. Nhóm \\([640;665)\\): \\(653\\), tần số 1."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=9+2+0+2+1+1+1=16\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d2-5": {
     "prompt": "Chia số liệu điện năng thành \\(8\\) nhóm dài \\(5 : \\left[30 ; 35\\right) , \\left[35 ; 40\\right) , \\left[40 ; 45\\right) , \\left[45 ; 50\\right) , \\left[50 ; 55\\right) , \\left[55 ; 60\\right) , \\left[60 ; 65\\right) , \\left[65 ; 70\\right]\\) (nhóm cuối đóng). Dãy tần số là:\nSố liệu: \\(50 ; 47 ; 30 ; 65 ; 63 ; 70 ; 38 ; 34 ; 48 ; 53 ; 33 ; 39 ; 32 ; 40 ; 50 ; 55 ; 50 ; 61 ; 37 ; 37 ; 43 ; 35 ; 65 ; 60 ; 31 ; 33 ; 41 ; 45 ; 55 ; 59\\).",
@@ -8052,7 +11400,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Đọc đúng khoảng của từng nhóm. Chỉ tính đầu mút phải nếu đề ghi rõ nhóm đóng ở đầu đó."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. Riêng nhóm cuối đóng ở cả hai đầu theo đề."
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([30;35)\\): \\(30\\); \\(34\\); \\(33\\); \\(32\\); \\(31\\); \\(33\\), tần số 6. Nhóm \\([35;40)\\): \\(38\\); \\(39\\); \\(37\\); \\(37\\); \\(35\\), tần số 5. Nhóm \\([40;45)\\): \\(40\\); \\(43\\); \\(41\\), tần số 3. Nhóm \\([45;50)\\): \\(47\\); \\(48\\); \\(45\\), tần số 3. Nhóm \\([50;55)\\): \\(50\\); \\(53\\); \\(50\\); \\(50\\), tần số 4. Nhóm \\([55;60)\\): \\(55\\); \\(55\\); \\(59\\), tần số 3. Nhóm \\([60;65)\\): \\(63\\); \\(61\\); \\(60\\), tần số 3. Nhóm \\([65;70]\\): \\(65\\); \\(70\\); \\(65\\), tần số 3."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=6+5+3+3+4+3+3+3=30\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d3-1": {
     "prompt": "Số trung bình ghép nhóm của doanh thu bán hàng trong \\(20\\) ngày thuộc khoảng nào?",
@@ -8111,7 +11473,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{5+7}2=6\\]\\[c_{2}=\\frac{7+9}2=8\\]\\[c_{3}=\\frac{9+11}2=10\\]\\[c_{4}=\\frac{11+13}2=12\\]\\[c_{5}=\\frac{13+15}2=14\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=2+7+7+3+1=20\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=2\\cdot6+7\\cdot8+7\\cdot10+3\\cdot12+1\\cdot14=188\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{188}{20}\\approx9.40\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d3-2": {
     "prompt": "Ước lượng cân nặng trung bình của học \\(\\sin h\\) lớp \\(11 D\\). (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8172,7 +11552,25 @@ export const mathContent = {
           3
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{40.5+45.5}2=43\\]\\[c_{2}=\\frac{45.5+50.5}2=48\\]\\[c_{3}=\\frac{50.5+55.5}2=53\\]\\[c_{4}=\\frac{55.5+60.5}2=58\\]\\[c_{5}=\\frac{60.5+65.5}2=63\\]\\[c_{6}=\\frac{65.5+70.5}2=68\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=10+7+16+4+2+3=42\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=10\\cdot43+7\\cdot48+16\\cdot53+4\\cdot58+2\\cdot63+3\\cdot68=2176\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{2176}{42}\\approx51.81\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d3-3": {
     "prompt": "Ước lượng thời gian xem tivi trung bình trong tuần. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8231,7 +11629,25 @@ export const mathContent = {
           2
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{0+5}2=2.5\\]\\[c_{2}=\\frac{5+10}2=7.5\\]\\[c_{3}=\\frac{10+15}2=12.5\\]\\[c_{4}=\\frac{15+20}2=17.5\\]\\[c_{5}=\\frac{20+25}2=22.5\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=8+16+4+2+2=32\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=8\\cdot2.5+16\\cdot7.5+4\\cdot12.5+2\\cdot17.5+2\\cdot22.5=270\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{270}{32}\\approx8.44\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d3-4": {
     "prompt": "Ước lượng thời gian sử dụng điện thoại từ lúc đầy pin đến khi hết pin. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8290,7 +11706,25 @@ export const mathContent = {
           3
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{7+9}2=8\\]\\[c_{2}=\\frac{9+11}2=10\\]\\[c_{3}=\\frac{11+13}2=12\\]\\[c_{4}=\\frac{13+15}2=14\\]\\[c_{5}=\\frac{15+17}2=16\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=2+5+7+6+3=23\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=2\\cdot8+5\\cdot10+7\\cdot12+6\\cdot14+3\\cdot16=282\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{282}{23}\\approx12.26\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d4-1": {
     "prompt": "Nhóm chứa trung vị của thời gian tập thể dục là:",
@@ -8353,7 +11787,25 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=5+9+12+10+6=42,\\quad\\frac{2N}4=21\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(5\\); \\(14\\); \\(26\\); \\(36\\); \\(42\\). \\[14<21\\le26\\]Nhóm cần dùng là \\([40;60)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=40,\\quad h=60-40=20,\\quad F=14,\\quad f=12\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=40+\\frac{21-14}{12}\\cdot20\\approx51.6667\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d4-2": {
     "prompt": "Trung vị ghép nhóm của doanh thu bán hàng thuộc khoảng nào?",
@@ -8416,7 +11868,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=2+7+7+3+1=20,\\quad\\frac{2N}4=10\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(2\\); \\(9\\); \\(16\\); \\(19\\); \\(20\\). \\[9<10\\le16\\]Nhóm cần dùng là \\([9;11)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=9,\\quad h=11-9=2,\\quad F=9,\\quad f=7\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=9+\\frac{10-9}{7}\\cdot2\\approx9.2857\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d4-3": {
     "prompt": "Ước lượng trung vị thời gian truy cập Internet mỗi tối. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8479,7 +11949,25 @@ export const mathContent = {
           2
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=3+12+15+24+2=56,\\quad\\frac{2N}4=28\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(3\\); \\(15\\); \\(30\\); \\(54\\); \\(56\\). \\[15<28\\le30\\]Nhóm cần dùng là \\([15.5;18.5)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=15.5,\\quad h=18.5-15.5=3,\\quad F=15,\\quad f=15\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=15.5+\\frac{28-15}{15}\\cdot3\\approx18.1000\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d4-4": {
     "prompt": "Ước lượng trung vị tốc độ bóng trong \\(200\\) lần giao bóng. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8544,7 +12032,25 @@ export const mathContent = {
           35
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=18+28+35+43+41+35=200,\\quad\\frac{2N}4=100\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(18\\); \\(46\\); \\(81\\); \\(124\\); \\(165\\); \\(200\\). \\[81<100\\le124\\]Nhóm cần dùng là \\([165;170)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=165,\\quad h=170-165=5,\\quad F=81,\\quad f=43\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=165+\\frac{100-81}{43}\\cdot5\\approx167.2093\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-1": {
     "prompt": "Nhóm chứa tứ phân vị thứ nhất \\(Q_{1}\\) của thời gian tập thể dục là:",
@@ -8607,7 +12113,25 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=5+9+12+10+6=42,\\quad\\frac{1N}4=10.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(5\\); \\(14\\); \\(26\\); \\(36\\); \\(42\\). \\[5<10.5\\le14\\]Nhóm cần dùng là \\([20;40)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=20,\\quad h=40-20=20,\\quad F=5,\\quad f=9\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=20+\\frac{10.5-5}{9}\\cdot20\\approx32.2222\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-2": {
     "prompt": "Nhóm chứa tứ phân vị thứ \\(b a Q_{3}\\) của thời gian tập thể dục là:",
@@ -8670,7 +12194,25 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=5+9+12+10+6=42,\\quad\\frac{3N}4=31.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(5\\); \\(14\\); \\(26\\); \\(36\\); \\(42\\). \\[26<31.5\\le36\\]Nhóm cần dùng là \\([60;80)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=60,\\quad h=80-60=20,\\quad F=26,\\quad f=10\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=60+\\frac{31.5-26}{10}\\cdot20\\approx71.0000\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-3": {
     "prompt": "Tứ phân vị thứ nhất của doanh thu gần nhất với giá trị nào (triệu đồng)?",
@@ -8733,7 +12275,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=2+7+7+3+1=20,\\quad\\frac{1N}4=5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(2\\); \\(9\\); \\(16\\); \\(19\\); \\(20\\). \\[2<5\\le9\\]Nhóm cần dùng là \\([7;9)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=7,\\quad h=9-7=2,\\quad F=2,\\quad f=7\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=7+\\frac{5-2}{7}\\cdot2\\approx7.8571\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-4": {
     "prompt": "Tứ phân vị thứ \\(b a\\) của doanh thu gần nhất với giá trị nào (triệu đồng)?",
@@ -8796,7 +12356,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=2+7+7+3+1=20,\\quad\\frac{3N}4=15\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(2\\); \\(9\\); \\(16\\); \\(19\\); \\(20\\). \\[9<15\\le16\\]Nhóm cần dùng là \\([9;11)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=9,\\quad h=11-9=2,\\quad F=9,\\quad f=7\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=9+\\frac{15-9}{7}\\cdot2\\approx10.7143\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-5": {
     "prompt": "Ước lượng \\(Q_{1}\\) của thời gian truy cập Internet. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8859,7 +12437,25 @@ export const mathContent = {
           2
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=3+12+15+24+2=56,\\quad\\frac{1N}4=14\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(3\\); \\(15\\); \\(30\\); \\(54\\); \\(56\\). \\[3<14\\le15\\]Nhóm cần dùng là \\([12.5;15.5)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=12.5,\\quad h=15.5-12.5=3,\\quad F=3,\\quad f=12\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=12.5+\\frac{14-3}{12}\\cdot3\\approx15.2500\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d5-6": {
     "prompt": "Ước lượng \\(Q_{3}\\) của thời gian truy cập Internet. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -8922,7 +12518,25 @@ export const mathContent = {
           2
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=3+12+15+24+2=56,\\quad\\frac{3N}4=42\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(3\\); \\(15\\); \\(30\\); \\(54\\); \\(56\\). \\[30<42\\le54\\]Nhóm cần dùng là \\([18.5;21.5)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=18.5,\\quad h=21.5-18.5=3,\\quad F=30,\\quad f=24\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=18.5+\\frac{42-30}{24}\\cdot3\\approx20.0000\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d6-1": {
     "prompt": "Nhóm chứa mốt của thời gian tập thể dục là:",
@@ -8982,7 +12596,25 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(12\\), chọn nhóm \\([40;60)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=12-9=3,\\quad d_2=12-10=2\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=40+\\frac{3}{3+2}\\cdot20\\approx52.0000\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d6-2": {
     "prompt": "Mốt ghép nhóm của thời gian tập thể dục bằng:",
@@ -9042,7 +12674,25 @@ export const mathContent = {
           6
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(12\\), chọn nhóm \\([40;60)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=12-9=3,\\quad d_2=12-10=2\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=40+\\frac{3}{3+2}\\cdot20\\approx52.0000\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d6-3": {
     "prompt": "Mốt ghép nhóm của doanh thu thuộc khoảng nào?",
@@ -9102,7 +12752,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(7\\), chọn nhóm \\([7;9)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=7-2=5,\\quad d_2=7-7=0\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=7+\\frac{5}{5+0}\\cdot2\\approx9.0000\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d6-4": {
     "prompt": "Ước lượng mốt chiều cao của \\(50\\) học \\(\\sin h\\) lớp \\(11 A\\). (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9162,7 +12830,25 @@ export const mathContent = {
           9
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(14\\), chọn nhóm \\([150;155)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=14-7=7,\\quad d_2=14-10=4\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=150+\\frac{7}{7+4}\\cdot5\\approx153.1818\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d6-5": {
     "prompt": "Từ mốt chiều cao khoảng \\(153{,}18\\) cm, kết luận nào phù hợp?",
@@ -9282,7 +12968,25 @@ export const mathContent = {
           3
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(10\\), chọn nhóm \\([10.5;20.5)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=10-2=8,\\quad d_2=10-6=4\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=10.5+\\frac{8}{8+4}\\cdot10\\approx17.1667\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d7-1": {
     "prompt": "Ước lượng số trung bình điểm Toán của học \\(\\sin h\\). (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9345,7 +13049,25 @@ export const mathContent = {
           4
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{6.5+7}2=6.75\\]\\[c_{2}=\\frac{7+7.5}2=7.25\\]\\[c_{3}=\\frac{7.5+8}2=7.75\\]\\[c_{4}=\\frac{8+8.5}2=8.25\\]\\[c_{5}=\\frac{8.5+9}2=8.75\\]\\[c_{6}=\\frac{9+9.5}2=9.25\\]\\[c_{7}=\\frac{9.5+10}2=9.75\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=8+10+16+24+13+7+4=82\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=8\\cdot6.75+10\\cdot7.25+16\\cdot7.75+24\\cdot8.25+13\\cdot8.75+7\\cdot9.25+4\\cdot9.75=666\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{666}{82}\\approx8.12\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d7-2": {
     "prompt": "Ước lượng tứ phân vị \\(Q_{1}\\) của điểm Toán. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9412,7 +13134,25 @@ export const mathContent = {
           4
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=8+10+16+24+13+7+4=82,\\quad\\frac{1N}4=20.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(8\\); \\(18\\); \\(34\\); \\(58\\); \\(71\\); \\(78\\); \\(82\\). \\[18<20.5\\le34\\]Nhóm cần dùng là \\([7.5;8)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=7.5,\\quad h=8-7.5=0.5,\\quad F=18,\\quad f=16\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=7.5+\\frac{20.5-18}{16}\\cdot0.5\\approx7.5781\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-3": {
     "prompt": "Ước lượng tứ phân vị \\(Q_{2}\\) của điểm Toán. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9479,7 +13219,25 @@ export const mathContent = {
           4
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=8+10+16+24+13+7+4=82,\\quad\\frac{2N}4=41\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(8\\); \\(18\\); \\(34\\); \\(58\\); \\(71\\); \\(78\\); \\(82\\). \\[34<41\\le58\\]Nhóm cần dùng là \\([8;8.5)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=8,\\quad h=8.5-8=0.5,\\quad F=34,\\quad f=24\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=8+\\frac{41-34}{24}\\cdot0.5\\approx8.1458\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-4": {
     "prompt": "Ước lượng tứ phân vị \\(Q_{3}\\) của điểm Toán. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9546,7 +13304,25 @@ export const mathContent = {
           4
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=8+10+16+24+13+7+4=82,\\quad\\frac{3N}4=61.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(8\\); \\(18\\); \\(34\\); \\(58\\); \\(71\\); \\(78\\); \\(82\\). \\[58<61.5\\le71\\]Nhóm cần dùng là \\([8.5;9)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=8.5,\\quad h=9-8.5=0.5,\\quad F=58,\\quad f=13\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=8.5+\\frac{61.5-58}{13}\\cdot0.5\\approx8.6346\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-5": {
     "prompt": "Ước lượng mốt điểm Toán. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9610,7 +13386,25 @@ export const mathContent = {
           4
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(24\\), chọn nhóm \\([8;8.5)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=24-16=8,\\quad d_2=24-13=11\\]"
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=8+\\frac{8}{8+11}\\cdot0.5\\approx8.2105\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d7-6": {
     "prompt": "Từ số liệu thô lượng mưa tháng \\(8\\) ở Vũng Tàu, \\(2002 - 2020\\) (mm), tính số trung bình (làm tròn đến hai chữ số thập phân).",
@@ -9671,7 +13465,21 @@ export const mathContent = {
           255
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đếm số quan sát",
+        "content": "\\[N=19\\]"
+      },
+      {
+        "title": "Cộng các số liệu",
+        "content": "Các giá trị được cộng: \\(121.8\\); \\(158.3\\); \\(334.9\\); \\(200.9\\); \\(165.6\\); \\(161.5\\); \\(194.3\\); \\(220.7\\); \\(189.8\\); \\(243.2\\); \\(165.9\\); \\(165.9\\); \\(134\\); \\(173\\); \\(169\\); \\(189\\); \\(254\\); \\(168\\); \\(255\\). \\[\\sum x_j=3664.8\\]"
+      },
+      {
+        "title": "Chia và làm tròn",
+        "content": "\\[\\overline x=\\frac{3664.8}{19}\\approx192.88\\]Giữ đơn vị ban đầu của mẫu số liệu."
+      }
+    ]
   },
   "toan-11-3-d7-7": {
     "prompt": "Từ số liệu thô lượng mưa tháng \\(8\\) ở Vũng Tàu, \\(2002 - 2020\\) (mm), xác định \\(Q_{1}\\).",
@@ -9737,7 +13545,21 @@ export const mathContent = {
           255
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(121.8\\); \\(134\\); \\(158.3\\); \\(161.5\\); \\(165.6\\); \\(165.9\\); \\(165.9\\); \\(168\\); \\(169\\); \\(173\\); \\(189\\); \\(189.8\\); \\(194.3\\); \\(200.9\\); \\(220.7\\); \\(243.2\\); \\(254\\); \\(255\\); \\(334.9\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Mẫu có 19 giá trị. Bỏ phần tử trung vị chung, rồi lấy nửa dưới gồm 9 giá trị: \\(121.8\\); \\(134\\); \\(158.3\\); \\(161.5\\); \\(165.6\\); \\(165.9\\); \\(165.9\\); \\(168\\); \\(169\\)."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 5: \\[Q_1=165.6\\]"
+      }
+    ]
   },
   "toan-11-3-d7-8": {
     "prompt": "Từ số liệu thô lượng mưa tháng \\(8\\) ở Vũng Tàu, \\(2002 - 2020\\) (mm), xác định \\(Q_{2}\\).",
@@ -9803,7 +13625,21 @@ export const mathContent = {
           255
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(121.8\\); \\(134\\); \\(158.3\\); \\(161.5\\); \\(165.6\\); \\(165.9\\); \\(165.9\\); \\(168\\); \\(169\\); \\(173\\); \\(189\\); \\(189.8\\); \\(194.3\\); \\(200.9\\); \\(220.7\\); \\(243.2\\); \\(254\\); \\(255\\); \\(334.9\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Lấy toàn bộ 19 giá trị để tính trung vị."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 10: \\[Q_2=173\\]"
+      }
+    ]
   },
   "toan-11-3-d7-9": {
     "prompt": "Từ số liệu thô lượng mưa tháng \\(8\\) ở Vũng Tàu, \\(2002 - 2020\\) (mm), xác định \\(Q_{3}\\).",
@@ -9869,7 +13705,21 @@ export const mathContent = {
           255
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(121.8\\); \\(134\\); \\(158.3\\); \\(161.5\\); \\(165.6\\); \\(165.9\\); \\(165.9\\); \\(168\\); \\(169\\); \\(173\\); \\(189\\); \\(189.8\\); \\(194.3\\); \\(200.9\\); \\(220.7\\); \\(243.2\\); \\(254\\); \\(255\\); \\(334.9\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Mẫu có 19 giá trị. Bỏ phần tử trung vị chung, rồi lấy nửa trên gồm 9 giá trị: \\(189\\); \\(189.8\\); \\(194.3\\); \\(200.9\\); \\(220.7\\); \\(243.2\\); \\(254\\); \\(255\\); \\(334.9\\)."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 5: \\[Q_3=220.7\\]"
+      }
+    ]
   },
   "toan-11-3-d7-10": {
     "prompt": "Hoàn thành dãy tần số lượng mưa theo thứ tự các nhóm trong bảng.\nDữ liệu gốc: \\(121{,}8 ; 158{,}3 ; 334{,}9 ; 200{,}9 ; 165{,}6 ; 161{,}5 ; 194{,}3 ; 220{,}7 ; 189{,}8 ; 243{,}2 ; 165{,}9 ; 165{,}9 ; 134 ; 173 ; 169 ; 189 ; 254 ; 168 ; 255\\).",
@@ -9922,7 +13772,21 @@ export const mathContent = {
           "?"
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. "
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([120;175)\\): \\(121.8\\); \\(158.3\\); \\(165.6\\); \\(161.5\\); \\(165.9\\); \\(165.9\\); \\(134\\); \\(173\\); \\(169\\); \\(168\\), tần số 10. Nhóm \\([175;230)\\): \\(200.9\\); \\(194.3\\); \\(220.7\\); \\(189.8\\); \\(189\\), tần số 5. Nhóm \\([230;285)\\): \\(243.2\\); \\(254\\); \\(255\\), tần số 3. Nhóm \\([285;340)\\): \\(334.9\\), tần số 1."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=10+5+3+1=19\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d7-11": {
     "prompt": "Ước lượng số trung bình lượng mưa sau khi ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -9979,7 +13843,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{120+175}2=147.5\\]\\[c_{2}=\\frac{175+230}2=202.5\\]\\[c_{3}=\\frac{230+285}2=257.5\\]\\[c_{4}=\\frac{285+340}2=312.5\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=10+5+3+1=19\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=10\\cdot147.5+5\\cdot202.5+3\\cdot257.5+1\\cdot312.5=3572.5\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{3572.5}{19}\\approx188.03\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d7-12": {
     "prompt": "Ước lượng \\(Q_{1}\\) của lượng mưa sau khi ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10040,7 +13922,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=10+5+3+1=19,\\quad\\frac{1N}4=4.75\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(10\\); \\(15\\); \\(18\\); \\(19\\). \\[0<4.75\\le10\\]Nhóm cần dùng là \\([120;175)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=120,\\quad h=175-120=55,\\quad F=0,\\quad f=10\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=120+\\frac{4.75-0}{10}\\cdot55\\approx146.1250\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-13": {
     "prompt": "Ước lượng \\(Q_{2}\\) của lượng mưa sau khi ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10101,7 +14001,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=10+5+3+1=19,\\quad\\frac{2N}4=9.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(10\\); \\(15\\); \\(18\\); \\(19\\). \\[0<9.5\\le10\\]Nhóm cần dùng là \\([120;175)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=120,\\quad h=175-120=55,\\quad F=0,\\quad f=10\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=120+\\frac{9.5-0}{10}\\cdot55\\approx172.2500\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-14": {
     "prompt": "Ước lượng \\(Q_{3}\\) của lượng mưa sau khi ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10162,7 +14080,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=10+5+3+1=19,\\quad\\frac{3N}4=14.25\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(10\\); \\(15\\); \\(18\\); \\(19\\). \\[10<14.25\\le15\\]Nhóm cần dùng là \\([175;230)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=175,\\quad h=230-175=55,\\quad F=10,\\quad f=5\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=175+\\frac{14.25-10}{5}\\cdot55\\approx221.7500\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-15": {
     "prompt": "Ước lượng mốt lượng mưa sau khi ghép nhóm (nhóm biên dùng tần số ngoài bằng \\(0 )\\). (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10220,7 +14156,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(10\\), chọn nhóm \\([120;175)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=10-0=10,\\quad d_2=10-5=5\\]Nhóm ở biên dùng tần số nhóm ngoài bằng 0 theo quy ước của đề."
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=120+\\frac{10}{10+5}\\cdot55\\approx156.6667\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-3-d7-16": {
     "prompt": "Từ số liệu thô số ca nhiễm mới mỗi ngày trong bảng tháng \\(\\frac{12}{2021}\\) (ca), tính số trung bình (làm tròn đến hai chữ số thập phân).",
@@ -10295,7 +14249,21 @@ export const mathContent = {
           17004
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đếm số quan sát",
+        "content": "\\[N=31\\]"
+      },
+      {
+        "title": "Cộng các số liệu",
+        "content": "Các giá trị được cộng: \\(15139\\); \\(14295\\); \\(14254\\); \\(14598\\); \\(14927\\); \\(15215\\); \\(14433\\); \\(15223\\); \\(15965\\); \\(15474\\); \\(16830\\); \\(15264\\); \\(16035\\); \\(15871\\); \\(16192\\); \\(15720\\); \\(15685\\); \\(16363\\); \\(16586\\); \\(15420\\); \\(16806\\); \\(17044\\); \\(16860\\); \\(16633\\); \\(16046\\); \\(15667\\); \\(15310\\); \\(14866\\); \\(14299\\); \\(20454\\); \\(17004\\). \\[\\sum x_j=490478\\]"
+      },
+      {
+        "title": "Chia và làm tròn",
+        "content": "\\[\\overline x=\\frac{490478}{31}\\approx15821.87\\]Giữ đơn vị ban đầu của mẫu số liệu."
+      }
+    ]
   },
   "toan-11-3-d7-17": {
     "prompt": "Từ số liệu thô số ca nhiễm mới mỗi ngày trong bảng tháng \\(\\frac{12}{2021}\\) (ca), xác định \\(Q_{1}\\).",
@@ -10375,7 +14343,21 @@ export const mathContent = {
           17004
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(14254\\); \\(14295\\); \\(14299\\); \\(14433\\); \\(14598\\); \\(14866\\); \\(14927\\); \\(15139\\); \\(15215\\); \\(15223\\); \\(15264\\); \\(15310\\); \\(15420\\); \\(15474\\); \\(15667\\); \\(15685\\); \\(15720\\); \\(15871\\); \\(15965\\); \\(16035\\); \\(16046\\); \\(16192\\); \\(16363\\); \\(16586\\); \\(16633\\); \\(16806\\); \\(16830\\); \\(16860\\); \\(17004\\); \\(17044\\); \\(20454\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Mẫu có 31 giá trị. Bỏ phần tử trung vị chung, rồi lấy nửa dưới gồm 15 giá trị: \\(14254\\); \\(14295\\); \\(14299\\); \\(14433\\); \\(14598\\); \\(14866\\); \\(14927\\); \\(15139\\); \\(15215\\); \\(15223\\); \\(15264\\); \\(15310\\); \\(15420\\); \\(15474\\); \\(15667\\)."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 8: \\[Q_1=15139\\]"
+      }
+    ]
   },
   "toan-11-3-d7-18": {
     "prompt": "Từ số liệu thô số ca nhiễm mới mỗi ngày trong bảng tháng \\(\\frac{12}{2021}\\) (ca), xác định \\(Q_{2}\\).",
@@ -10455,7 +14437,21 @@ export const mathContent = {
           17004
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(14254\\); \\(14295\\); \\(14299\\); \\(14433\\); \\(14598\\); \\(14866\\); \\(14927\\); \\(15139\\); \\(15215\\); \\(15223\\); \\(15264\\); \\(15310\\); \\(15420\\); \\(15474\\); \\(15667\\); \\(15685\\); \\(15720\\); \\(15871\\); \\(15965\\); \\(16035\\); \\(16046\\); \\(16192\\); \\(16363\\); \\(16586\\); \\(16633\\); \\(16806\\); \\(16830\\); \\(16860\\); \\(17004\\); \\(17044\\); \\(20454\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Lấy toàn bộ 31 giá trị để tính trung vị."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 16: \\[Q_2=15685\\]"
+      }
+    ]
   },
   "toan-11-3-d7-19": {
     "prompt": "Từ số liệu thô số ca nhiễm mới mỗi ngày trong bảng tháng \\(\\frac{12}{2021}\\) (ca), xác định \\(Q_{3}\\).",
@@ -10535,7 +14531,21 @@ export const mathContent = {
           17004
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Sắp xếp tăng dần",
+        "content": "\\(14254\\); \\(14295\\); \\(14299\\); \\(14433\\); \\(14598\\); \\(14866\\); \\(14927\\); \\(15139\\); \\(15215\\); \\(15223\\); \\(15264\\); \\(15310\\); \\(15420\\); \\(15474\\); \\(15667\\); \\(15685\\); \\(15720\\); \\(15871\\); \\(15965\\); \\(16035\\); \\(16046\\); \\(16192\\); \\(16363\\); \\(16586\\); \\(16633\\); \\(16806\\); \\(16830\\); \\(16860\\); \\(17004\\); \\(17044\\); \\(20454\\)."
+      },
+      {
+        "title": "Chọn phần dữ liệu cần lấy trung vị",
+        "content": "Mẫu có 31 giá trị. Bỏ phần tử trung vị chung, rồi lấy nửa trên gồm 15 giá trị: \\(15720\\); \\(15871\\); \\(15965\\); \\(16035\\); \\(16046\\); \\(16192\\); \\(16363\\); \\(16586\\); \\(16633\\); \\(16806\\); \\(16830\\); \\(16860\\); \\(17004\\); \\(17044\\); \\(20454\\)."
+      },
+      {
+        "title": "Lấy phần tử giữa",
+        "content": "Phần dữ liệu có số phần tử lẻ, lấy vị trí 8: \\[Q_3=16586\\]"
+      }
+    ]
   },
   "toan-11-3-d7-20": {
     "prompt": "Đổi số ca sang nghìn ca rồi hoàn thành dãy tần số theo thứ tự các nhóm.\nDữ liệu gốc: \\(15{,}14 ; 14{,}29 ; 14{,}25 ; 14{,}6 ; 14{,}93 ; 15{,}21 ; 14{,}43 ; 15{,}22 ; 15{,}96 ; 15{,}47 ; 16{,}83 ; 15{,}26 ; 16{,}04 ; 15{,}87 ; 16{,}19 ; 15{,}72 ; 15{,}69 ; 16{,}36 ; 16{,}59 ; 15{,}42 ; 16{,}81 ; 17{,}04 ; 16{,}86 ; 16{,}63 ; 16{,}05 ; 15{,}67 ; 15{,}31 ; 14{,}87 ; 14{,}3 ; 20{,}45 ; 17\\).",
@@ -10590,7 +14600,21 @@ export const mathContent = {
           "?"
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Áp dụng quy tắc chia nhóm",
+        "content": "Giá trị bằng đầu mút trái được tính vào nhóm; giá trị bằng đầu mút phải chuyển sang nhóm kế tiếp. "
+      },
+      {
+        "title": "Đếm từng nhóm",
+        "content": "Nhóm \\([14;15.5)\\): \\(15.139\\); \\(14.295\\); \\(14.254\\); \\(14.598\\); \\(14.927\\); \\(15.215\\); \\(14.433\\); \\(15.223\\); \\(15.474\\); \\(15.264\\); \\(15.42\\); \\(15.31\\); \\(14.866\\); \\(14.299\\), tần số 14. Nhóm \\([15.5;17)\\): \\(15.965\\); \\(16.83\\); \\(16.035\\); \\(15.871\\); \\(16.192\\); \\(15.72\\); \\(15.685\\); \\(16.363\\); \\(16.586\\); \\(16.806\\); \\(16.86\\); \\(16.633\\); \\(16.046\\); \\(15.667\\), tần số 14. Nhóm \\([17;18.5)\\): \\(17.044\\); \\(17.004\\), tần số 2. Nhóm \\([18.5;20)\\): không có quan sát, tần số 0. Nhóm \\([20;21.5)\\): \\(20.454\\), tần số 1."
+      },
+      {
+        "title": "Kiểm tra tổng và kết luận",
+        "content": "\\[N=14+14+2+0+1=31\\]Tổng tần số bằng số quan sát; lấy dãy tần số theo đúng thứ tự các nhóm."
+      }
+    ]
   },
   "toan-11-3-d7-21": {
     "prompt": "Ước lượng số trung bình số ca mỗi ngày từ bảng ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10649,7 +14673,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính giá trị đại diện từng nhóm",
+        "content": "\\[c_{1}=\\frac{14+15.5}2=14.75\\]\\[c_{2}=\\frac{15.5+17}2=16.25\\]\\[c_{3}=\\frac{17+18.5}2=17.75\\]\\[c_{4}=\\frac{18.5+20}2=19.25\\]\\[c_{5}=\\frac{20+21.5}2=20.75\\]"
+      },
+      {
+        "title": "Cộng tần số",
+        "content": "\\[N=14+14+2+0+1=31\\]"
+      },
+      {
+        "title": "Tính tổng có trọng số",
+        "content": "\\[\\sum n_ic_i=14\\cdot14.75+14\\cdot16.25+2\\cdot17.75+0\\cdot19.25+1\\cdot20.75=490.25\\]"
+      },
+      {
+        "title": "Chia tổng cho số quan sát",
+        "content": "\\[\\overline x\\approx\\frac{490.25}{31}\\approx15.81\\]Đây là số trung bình ước lượng; chỉ làm tròn ở bước cuối. Nếu đề hỏi khoảng, đối chiếu kết quả này với các khoảng đáp án."
+      }
+    ]
   },
   "toan-11-3-d7-22": {
     "prompt": "Ước lượng \\(Q_{1}\\) của số ca từ bảng ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10712,7 +14754,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=14+14+2+0+1=31,\\quad\\frac{1N}4=7.75\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(14\\); \\(28\\); \\(30\\); \\(30\\); \\(31\\). \\[0<7.75\\le14\\]Nhóm cần dùng là \\([14;15.5)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=14,\\quad h=15.5-14=1.5,\\quad F=0,\\quad f=14\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_1=14+\\frac{7.75-0}{14}\\cdot1.5\\approx14.8304\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-23": {
     "prompt": "Ước lượng \\(Q_{2}\\) của số ca từ bảng ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10775,7 +14835,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=14+14+2+0+1=31,\\quad\\frac{2N}4=15.5\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(14\\); \\(28\\); \\(30\\); \\(30\\); \\(31\\). \\[14<15.5\\le28\\]Nhóm cần dùng là \\([15.5;17)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=15.5,\\quad h=17-15.5=1.5,\\quad F=14,\\quad f=14\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_2=15.5+\\frac{15.5-14}{14}\\cdot1.5\\approx15.6607\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-24": {
     "prompt": "Ước lượng \\(Q_{3}\\) của số ca từ bảng ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10838,7 +14916,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính cỡ mẫu và vị trí nội suy",
+        "content": "\\[N=14+14+2+0+1=31,\\quad\\frac{3N}4=23.25\\]"
+      },
+      {
+        "title": "Lập tần số tích lũy và tìm nhóm",
+        "content": "Tần số tích lũy lần lượt: \\(14\\); \\(28\\); \\(30\\); \\(30\\); \\(31\\). \\[14<23.25\\le28\\]Nhóm cần dùng là \\([15.5;17)\\)."
+      },
+      {
+        "title": "Lấy số liệu của nhóm",
+        "content": "\\[L=15.5,\\quad h=17-15.5=1.5,\\quad F=14,\\quad f=14\\]"
+      },
+      {
+        "title": "Nội suy và kết luận",
+        "content": "\\[Q_3=15.5+\\frac{23.25-14}{14}\\cdot1.5\\approx16.4911\\]Nếu đề hỏi nhóm, dùng nhóm đã xác định ở bước 2. Nếu đề hỏi giá trị gần nhất, so sánh với các lựa chọn; không làm tròn trong các bước trung gian."
+      }
+    ]
   },
   "toan-11-3-d7-25": {
     "prompt": "Ước lượng mốt số ca mỗi ngày từ bảng ghép nhóm. (Làm tròn đến hai chữ số thập phân nếu cần.)",
@@ -10898,7 +14994,25 @@ export const mathContent = {
           1
         ]
       ]
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn nhóm mốt",
+        "content": "Các nhóm có độ dài bằng nhau. Tần số lớn nhất là \\(14\\), chọn nhóm \\([14;15.5)\\)."
+      },
+      {
+        "title": "Tính hai chênh lệch",
+        "content": "\\[d_1=14-0=14,\\quad d_2=14-14=0\\]Nhóm ở biên dùng tần số nhóm ngoài bằng 0 theo quy ước của đề."
+      },
+      {
+        "title": "Thay vào công thức nội suy",
+        "content": "\\[M_o=14+\\frac{14}{14+0}\\cdot1.5\\approx15.5000\\]"
+      },
+      {
+        "title": "Đối chiếu yêu cầu",
+        "content": "Nếu đề hỏi nhóm chứa mốt, đặt giá trị vừa tìm vào đúng khoảng. Khi giá trị bằng đầu mút, dùng quy ước đầu trái đóng, đầu phải mở của bảng; nếu hỏi số đo, giữ đơn vị và làm tròn theo đề."
+      }
+    ]
   },
   "toan-11-4-1-v1": {
     "prompt": "Yếu tố nào sau đây luôn xác định một mặt phẳng duy nhất?",
@@ -11259,7 +15373,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn tam giác cần xét",
+        "content": "Hai điểm M, N là trung điểm hai cạnh AB, AC của tam giác ABC."
+      },
+      {
+        "title": "Áp dụng đường trung bình",
+        "content": "\\[MN\\parallel BC,\\quad MN=\\frac12BC\\]"
+      },
+      {
+        "title": "Thay độ dài",
+        "content": "\\[MN=\\frac{10}2=5\\ \\text{cm}\\]"
+      }
+    ]
   },
   "toan-11-4-13-v1": {
     "prompt": "Cho tứ diện \\(ABCD\\). \\(G , H\\) lần lượt là trọng tâm các tam giác \\(ABC , ABD ; CD = 15\\) cm. Tính \\(GH\\).",
@@ -11290,7 +15418,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Lấy các tỉ số tính từ \\(I\\) trên hai trung tuyến, không lấy từ đỉnh đối diện."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng tính chất trọng tâm",
+        "content": "Gọi I là trung điểm AB. Hai trọng tâm nằm trên các trung tuyến CI và DI, nên \\[\\frac{IG}{IC}=\\frac{IH}{ID}=\\frac13\\]"
+      },
+      {
+        "title": "Áp dụng Thalès trong tam giác ICD",
+        "content": "\\[GH\\parallel CD,\\quad\\frac{GH}{CD}=\\frac{IG}{IC}=\\frac13\\]"
+      },
+      {
+        "title": "Thay độ dài",
+        "content": "\\[GH=\\frac13\\cdot15=5\\ \\text{cm}\\]"
+      }
+    ]
   },
   "toan-11-4-14-v1": {
     "prompt": "Cho hình chóp \\(S . ABCD\\) có đáy là hình bình hành. Giao tuyến của \\(\\left(SAB\\right)\\) và \\(\\left(SCD\\right)\\) là:",
@@ -11755,7 +15897,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Ghép đúng các đoạn tương ứng theo định lí Thalès trong không gian."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Lập tỉ lệ Thalès",
+        "content": "Ba mặt phẳng song song tạo các đoạn tương ứng trên hai cát tuyến: \\[\\frac{AB}{BC}=\\frac{A'B'}{B'C'}\\]"
+      },
+      {
+        "title": "Thay số và nhân chéo",
+        "content": "\\[\\frac23=\\frac4{B'C'}\\Rightarrow2B'C'=3\\cdot4=12\\]"
+      },
+      {
+        "title": "Chia và kết luận",
+        "content": "\\[B'C'=\\frac{12}2=6\\]"
+      }
+    ]
   },
   "toan-11-4-29-v1": {
     "prompt": "Mệnh đề nào đúng với mọi hình lăng trụ?",
@@ -12371,7 +16527,25 @@ export const mathContent = {
         ]
       ],
       "condition": "Đây là dạng độ dài của Menelaus với một điểm trên phần kéo dài."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đưa về tam giác phẳng",
+        "content": "M thuộc SA, G thuộc SI nên đường MG nằm trong mặt phẳng (SAI). Giao tuyến của (SAI) với mặt phẳng đáy là AI; do đó tìm giao điểm của MG với đường AI."
+      },
+      {
+        "title": "Tính các tỉ số đã biết",
+        "content": "\\[\\frac{SM}{MA}=1,\\quad\\frac{IG}{GS}=\\frac{1-3/5}{3/5}=\\frac23\\]"
+      },
+      {
+        "title": "Dùng Menelaus",
+        "content": "Đường qua hai điểm trong hai cạnh SA, SI gặp đường AI ở ngoài đoạn AI. Theo Menelaus với độ dài dương: \\[\\frac{SM}{MA}\\cdot\\frac{AJ}{JI}\\cdot\\frac{IG}{GS}=1\\Rightarrow\\frac{AJ}{JI}=\\frac32\\]"
+      },
+      {
+        "title": "Xác định phía và giải tỉ số",
+        "content": "Vì \\(AJ>JI\\), điểm J ở phía ngoài I trên tia AI. Khi đó \\(AJ=AI+IJ\\). \\[\\frac{AI+IJ}{IJ}=\\frac32\\Rightarrow2AI=IJ\\Rightarrow AJ=3AI\\]\\[\\frac{AJ}{AI}=3\\]"
+      }
+    ]
   },
   "toan-12-1-1": {
     "prompt": "Cho \\(f \\left(x\\right) = x^{3} - 3 x\\). Đạo hàm \\(f^{\\prime} \\left(x\\right)\\) là:",
@@ -12395,7 +16569,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Xét dấu trên từng khoảng; cực trị cần kiểm tra đổi dấu đạo hàm."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Đạo hàm từng hạng",
+        "content": "\\[(x^3)'=3x^2,\\quad(-3x)'=-3\\]"
+      },
+      {
+        "title": "Dùng đạo hàm của hiệu",
+        "content": "\\[f'(x)=(x^3-3x)'=(x^3)'-3x'\\]"
+      },
+      {
+        "title": "Rút gọn",
+        "content": "\\[f'(x)=3x^2-3\\]"
+      }
+    ]
   },
   "toan-12-1-2": {
     "prompt": "Hàm số \\(y = x^{2}\\) nghịch biến trên khoảng nào?",
@@ -12419,7 +16607,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Xét dấu trên từng khoảng; cực trị cần kiểm tra đổi dấu đạo hàm."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính đạo hàm",
+        "content": "\\[y'=2x\\]"
+      },
+      {
+        "title": "Giải điều kiện nghịch biến",
+        "content": "\\[y'<0\\iff2x<0\\iff x<0\\]"
+      },
+      {
+        "title": "Kết luận",
+        "content": "Hàm số nghịch biến trên \\((-\\infty;0)\\)."
+      }
+    ]
   },
   "toan-12-1-3": {
     "prompt": "Hàm số \\(y = x^{3} - 3 x\\) có điểm cực đại tại:",
@@ -12443,7 +16645,21 @@ export const mathContent = {
         ]
       ],
       "condition": "Xét dấu trên từng khoảng; cực trị cần kiểm tra đổi dấu đạo hàm."
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Tính và phân tích đạo hàm",
+        "content": "\\[y'=3x^2-3=3(x-1)(x+1)\\]"
+      },
+      {
+        "title": "Tìm nghiệm đạo hàm và xét dấu",
+        "content": "\\[y'=0\\iff x=-1\\text{ hoặc }x=1\\]Đạo hàm dương trước −1, âm trên khoảng (−1;1), dương sau 1."
+      },
+      {
+        "title": "Kết luận cực đại",
+        "content": "Tại \\(x=-1\\), đạo hàm đổi dấu từ dương sang âm nên hàm đạt cực đại. Tại \\(x=1\\) là cực tiểu."
+      }
+    ]
   },
   "ly-10-1-1": {
     "prompt": "Đơn vị của độ dài trong hệ \\(SI\\) là:",
@@ -12528,7 +16744,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Cộng ba kết quả đo",
+        "content": "\\[10.1+10.2+10.3=30.6\\ \\text{cm}\\]"
+      },
+      {
+        "title": "Chia cho số lần đo",
+        "content": "\\[\\overline l=\\frac{30.6}3\\]"
+      },
+      {
+        "title": "Tính kết quả và đơn vị",
+        "content": "\\[\\overline l=10.2\\ \\text{cm}\\]"
+      }
+    ]
   },
   "ly-11-1-1": {
     "prompt": "Một dao động có chu kì \\(T = 0{,}5 s\\). Tần số của dao động là:",
@@ -12568,7 +16798,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Chọn công thức",
+        "content": "\\[f=\\frac1T\\]"
+      },
+      {
+        "title": "Thay chu kì tính bằng giây",
+        "content": "\\[f=\\frac1{0.5}=\\frac1{1/2}\\]"
+      },
+      {
+        "title": "Lấy nghịch đảo và ghi đơn vị",
+        "content": "\\[f=2\\ \\text{Hz}\\]"
+      }
+    ]
   },
   "ly-11-1-2": {
     "prompt": "Vật dao động điều hòa có phương trình \\(x = 4 \\cos \\left(2 \\pi t\\right)\\) cm. Biên độ là:",
@@ -12833,7 +17077,21 @@ export const mathContent = {
         ]
       ],
       "condition": ""
-    }
+    },
+    "solutionSteps": [
+      {
+        "title": "Dùng hệ thức số khối",
+        "content": "\\[A=Z+N\\]"
+      },
+      {
+        "title": "Chuyển vế tìm neutron",
+        "content": "\\[N=A-Z\\]"
+      },
+      {
+        "title": "Thay số",
+        "content": "\\[N=23-11=12\\]Nguyên tử có 12 neutron."
+      }
+    ]
   },
   "hoa-11-1-1": {
     "prompt": "Khi một hệ phản ứng thuận nghịch đạt trạng thái cân bằng, điều nào đúng?",

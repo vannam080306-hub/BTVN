@@ -11,5 +11,9 @@ export function richText(value){
  return result+escape(text.slice(cursor));
 }
 export function studyGuideHTML(guide,solution,answer){
- return `<section class="study-guide">${guide?`<h2>Công thức cần dùng</h2><div class="formula-list">${guide.formulas.map(tex=>renderFormula(tex,true)).join('')}</div>${guide.condition?`<p class="formula-condition"><b>Điều kiện áp dụng:</b> ${richText(guide.condition)}</p>`:''}`:''}<h2>Lời giải</h2><p class="hint-text">${richText(solution)}</p>${answer?`<p class="solution-answer"><b>Đáp án:</b> ${richText(answer)}</p>`:''}</section>`;
+ return `<section class="study-guide">${guide?`<h2>Công thức cần dùng</h2><div class="formula-list">${guide.formulas.map(tex=>renderFormula(tex,true)).join('')}</div>${guide.condition?`<p class="formula-condition"><b>Điều kiện áp dụng:</b> ${richText(guide.condition)}</p>`:''}`:''}<h2>Lời giải</h2>${solutionHTML(solution)}${answer?`<p class="solution-answer"><b>Đáp án:</b> ${richText(answer)}</p>`:''}</section>`;
+}
+export function solutionHTML(solution){
+ if(!Array.isArray(solution))return `<p class="hint-text">${richText(solution)}</p>`;
+ return `<ol class="solution-steps">${solution.map((step,i)=>`<li><h3>Bước ${i+1}${step.title?': '+richText(step.title):''}</h3><div class="solution-content">${richText(step.content)}</div></li>`).join('')}</ol>`;
 }

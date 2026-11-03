@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {subjects,chapters} from '../site/data.js';
 import {mathContent} from '../site/math-content.js';
-import {richText,renderFormula,studyGuideHTML} from '../site/math.js';
+import {richText,renderFormula,studyGuideHTML,solutionHTML} from '../site/math.js';
+import {deriveEquationRoots} from '../scripts/detailed-solutions.mjs';
 import {toLatexText} from '../scripts/latex-migration.mjs';
 import {parseNumericAnswer} from '../site/answers.js';
 const questions=subjects.flatMap(s=>[10,11,12].flatMap(g=>chapters(s.id,g).flatMap(c=>c.questions)));
@@ -17,14 +18,40 @@ test('364 câu có trường hiển thị LaTeX và gợi ý đầy đủ, khôn
   for(const v of [d.prompt,d.explanation,d.hint,d.answerText,...d.options||[]])if(v)assert.doesNotThrow(()=>richText(v),q.id);
   for(const row of [d.table?.headers||[],...d.table?.rows||[]])for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
   const answer=q.kind==='short'?d.answerText:('ABCD'[q.answer]+'. '+d.options[q.answer]);
-  const html=studyGuideHTML(d.guide,d.explanation,answer);
+  const solution=d.solutionSteps??d.explanation;
+  const html=studyGuideHTML(d.guide,solution,answer);
   assert.ok(d.explanation,q.id);
   assert.ok(html.indexOf('Công thức cần dùng')<html.indexOf('Lời giải'));
   assert.doesNotMatch(html,/Giải thích ký hiệu|Gợi ý làm bài|symbol-definitions/);
-  assert.ok(html.includes(richText(d.explanation)),q.id);
+  assert.ok(html.includes(solutionHTML(solution)),q.id);
   assert.ok(html.includes(richText(answer)),q.id);
   assert.doesNotMatch(html,/katex-error/);
  }
+});
+
+test('Các bài biến đổi, tính toán và phương trình có lời giải từng bước bằng LaTeX',()=>{
+ const detailed=questions.filter(q=>mathContent[q.id].solutionSteps);
+ assert.ok(detailed.length>=260);
+ for(const q of detailed){
+  const steps=mathContent[q.id].solutionSteps;
+  assert.ok(steps.length>=3,q.id);
+  for(const step of steps){assert.ok(step.content,q.id);assert.doesNotThrow(()=>richText(step.title),q.id);assert.doesNotThrow(()=>richText(step.content),q.id);}
+  const html=solutionHTML(steps);
+  assert.match(html,/Bước 1/);assert.match(html,/Bước 3/);assert.doesNotMatch(html,/katex-error/);
+ }
+ for(const q of questions.filter(q=>q.id.startsWith('toan-11-1-')&&(/Rút gọn|Tính |Tìm giá trị|Phương trình/.test(q.prompt))))assert.ok(mathContent[q.id].solutionSteps,q.id);
+ for(const q of questions.filter(q=>q.id.startsWith('toan-11-2-')))assert.ok(mathContent[q.id].solutionSteps,q.id);
+});
+
+test('Lọc tham số từng họ nghiệm khớp các nghiệm đã kiểm chứng, không bỏ hoặc đếm trùng',()=>{
+ let count=0;
+ for(const q of questions){
+  const actual=deriveEquationRoots(q);if(!actual)continue;
+  const expected=q.verification.roots;
+  assert.equal(actual.length,expected.length,q.id);
+  actual.forEach((x,i)=>assert.ok(Math.abs(x-expected[i])<1e-7,`${q.id}: ${x} ≠ ${expected[i]}`));count++;
+ }
+ assert.equal(count,38);
 });
 
 function numericTex(tex){

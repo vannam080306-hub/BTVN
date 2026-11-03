@@ -2,6 +2,7 @@ import {writeFile} from 'node:fs/promises';
 import {subjects,chapters} from '../site/data.js';
 import {toLatexText} from './latex-migration.mjs';
 import {getStudyGuide} from '../site/study-guides.js';
+import {getDetailedSolution} from './detailed-solutions.mjs';
 
 export async function buildMathContent(){
  const data={};
@@ -9,6 +10,8 @@ export async function buildMathContent(){
   const convert=value=>toLatexText(value,{chem:subject.id==='hoa'});
   const guide=getStudyGuide(q);
   data[q.id]={prompt:convert(q.prompt),options:q.options?.map(convert),explanation:convert(q.explanation),hint:convert(q.hint),guide:{...guide,symbols:guide.symbols.map(([symbol,meaning])=>[symbol,convert(meaning)]),condition:convert(guide.condition)},...(q.answerText?{answerText:convert(q.answerText)}:{}),...(q.table?{table:{headers:q.table.headers?.map(convert),rows:q.table.rows.map(r=>r.map(convert))}}:{})};
+  const steps=getDetailedSolution(q);
+  if(steps)data[q.id].solutionSteps=steps;
  }
  await writeFile(new URL('../site/math-content.js',import.meta.url),'// Generated LaTeX presentation fields. Run node scripts/build-math-content.mjs.\nexport const mathContent = '+JSON.stringify(data,null,2)+';\n');
  return data;
