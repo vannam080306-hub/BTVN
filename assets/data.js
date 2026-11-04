@@ -1,8 +1,8 @@
-import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=5d712f1e3341';
-import {chapter4Questions} from './toan11-chuong4.js?v=5d712f1e3341';
-import {chapter2Questions} from './toan11-chuong2.js?v=5d712f1e3341';
-import {chapter1Questions} from './toan11-chuong1.js?v=5d712f1e3341';
-import {chapter3Questions} from './toan11-chuong3.js?v=5d712f1e3341';
+import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=9e3fec15b591';
+import {chapter4Questions} from './toan11-chuong4.js?v=9e3fec15b591';
+import {chapter2Questions} from './toan11-chuong2.js?v=9e3fec15b591';
+import {chapter1Questions} from './toan11-chuong1.js?v=9e3fec15b591';
+import {chapter3Questions} from './toan11-chuong3.js?v=9e3fec15b591';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
