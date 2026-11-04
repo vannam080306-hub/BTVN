@@ -14,5 +14,5 @@ export function parseNumericAnswer(value){
  const result=add();if(i!==tokens.length||!Number.isFinite(result)||Math.abs(result)>1e15)throw new Error('Giá trị không hợp lệ.');return result;
 }
 export function gradeShortAnswer(question,response){const value=parseNumericAnswer(response);return Math.abs(value-question.value)<=(question.tolerance??0.000051);}
-export function isAnswered(question,record){return question.kind==='short'?!!record&&typeof record==='object'&&typeof record.correct==='boolean':Number.isInteger(record);}
-export function isCorrect(question,record){return question.kind==='short'?isAnswered(question,record)&&record.correct:record===question.answer;}
+export function isAnswered(question,record){return ['short','true-false'].includes(question.kind)?!!record&&typeof record==='object'&&typeof record.correct==='boolean':Number.isInteger(record);}
+export function isCorrect(question,record){return ['short','true-false'].includes(question.kind)?isAnswered(question,record)&&record.correct:record===question.answer;}

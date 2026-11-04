@@ -1,3 +1,4 @@
+import {thermalPhysicsQuestions} from './ly12-nhiet.js';
 import {chapter4Questions} from './toan11-chuong4.js';
 import {chapter2Questions} from './toan11-chuong2.js';
 import {chapter1Questions} from './toan11-chuong1.js';
@@ -39,10 +40,6 @@ const bank={
  q('Một dao động có chu kì T = 0,5 s. Tần số của dao động là:', ['0,5 Hz','1 Hz','2 Hz','5 Hz'],2,'Tần số f = 1/T = 1/0,5 = 2 Hz.','Tần số là nghịch đảo của chu kì.'),
  q('Vật dao động điều hòa có phương trình x = 4cos(2πt) cm. Biên độ là:', ['2 cm','4 cm','2π cm','8 cm'],1,'Trong x = A cos(ωt + φ), A là biên độ. Ở đây A = 4 cm.','Đọc hệ số đứng trước hàm cos.'),
  q('Trong dao động điều hòa, tốc độ của vật lớn nhất khi vật:', ['Ở vị trí biên dương','Ở vị trí biên âm','Đi qua vị trí cân bằng','Có gia tốc lớn nhất về độ lớn'],2,'Ở vị trí cân bằng, thế năng nhỏ nhất và động năng lớn nhất, vì vậy tốc độ đạt cực đại.','Xét sự chuyển hóa giữa động năng và thế năng.','Trung bình')],
- 'ly-12':[
- q('Trong hệ SI, đơn vị của nhiệt độ nhiệt động lực học là:', ['Độ Celsius (°C)','Kelvin (K)','Joule (J)','Watt (W)'],1,'Kelvin, kí hiệu K, là đơn vị cơ bản của nhiệt độ nhiệt động lực học trong SI.','Đơn vị này có kí hiệu K.'),
- q('Ở áp suất khí quyển tiêu chuẩn, nhiệt độ nước đá đang nóng chảy gần bằng:', ['0 °C','100 °C','−100 °C','273 °C'],0,'Ở áp suất khí quyển tiêu chuẩn, nước đá tinh khiết nóng chảy ở khoảng 0 °C.','Phân biệt nhiệt độ nóng chảy với nhiệt độ sôi của nước.'),
- q('Nội năng của một vật là:', ['Chỉ động năng chuyển động của cả vật','Tổng động năng và thế năng tương tác của các phân tử cấu tạo nên vật','Chỉ thế năng trọng trường của vật','Nhiệt lượng vật luôn chứa sẵn'],1,'Nội năng gồm động năng chuyển động nhiệt và thế năng tương tác của các phân tử cấu tạo nên vật. Nhiệt lượng là năng lượng truyền do chênh lệch nhiệt độ.','Xét năng lượng ở cấp độ phân tử.','Trung bình')],
  'hoa-10':[
  q('Hạt nào trong nguyên tử mang điện tích âm?', ['Proton','Neutron','Electron','Hạt nhân'],2,'Electron mang điện tích âm; proton mang điện tích dương và neutron không mang điện.','Hạt này chuyển động trong vùng vỏ nguyên tử.'),
  q('Một nguyên tử trung hòa có 11 proton. Số electron của nguyên tử đó là:', ['10','11','12','22'],1,'Nguyên tử trung hòa có số proton bằng số electron, nên có 11 electron.','Tổng điện tích dương bằng độ lớn tổng điện tích âm.'),
@@ -56,4 +53,4 @@ const bank={
  q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
  q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
 };
-export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}
+export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='ly'&&Number(grade)===12&&i===0?thermalPhysicsQuestions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}

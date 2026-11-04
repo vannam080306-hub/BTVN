@@ -7,9 +7,9 @@ import {richText,renderFormula,studyGuideHTML,solutionHTML} from '../site/math.j
 import {deriveEquationRoots} from '../scripts/detailed-solutions.mjs';
 import {toLatexText} from '../scripts/latex-migration.mjs';
 import {parseNumericAnswer} from '../site/answers.js';
-const questions=subjects.flatMap(s=>[10,11,12].flatMap(g=>chapters(s.id,g).flatMap(c=>c.questions)));
+const questions=subjects.flatMap(s=>[10,11,12].flatMap(g=>chapters(s.id,g).flatMap(c=>c.questions))).filter(q=>!q.pdfSource);
 
-test('364 câu có trường hiển thị LaTeX và gợi ý đầy đủ, không đổi số lựa chọn',()=>{
+test('Các câu dùng trường hiển thị LaTeX và gợi ý đầy đủ, không đổi số lựa chọn',()=>{
  assert.equal(Object.keys(mathContent).length,questions.length);
  for(const q of questions){
   const d=mathContent[q.id];assert.ok(d,q.id);assert.equal(d.options?.length,q.options?.length,q.id);
