@@ -1,41 +1,5 @@
-// Câu hỏi và lời giải trích từ PDF chương 1 Vật lý nhiệt.
+// Câu hỏi từ hai PDF Vật lý nhiệt và các câu thông hiểu bổ sung.
 export const thermalPhysicsQuestions = [
-  {
-    "id": "ly-12-1-nhiet-1",
-    "difficulty": "Nhận biết",
-    "prompt": "Đơn vị đo nhiệt độ trong hệ đo lường SI là. ◦ A. Celsius ( C). ◦ B. Fahrenheit ( F). C. Kelvin (K). D. Jun (J).",
-    "explanation": "Đáp án C. Giải Kelvin, kí hiệu K, là đơn vị cơ bản của nhiệt độ nhiệt động lực học trong hệ SI.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "1-de",
-      "solution": "1-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-2",
-    "difficulty": "Nhận biết",
-    "prompt": "Trong hệ SI, đơn vị của nhiệt hóa hơi riêng là ◦ A. J/ C. B. J/(kg · K). C. J/K. D. J/kg.",
-    "explanation": "Đáp án D. Giải Từ L = Q/m, nhiệt hóa hơi riêng là nhiệt lượng tính cho mỗi kilôgam chất lỏng hóa hơi ở nhiệt độ sôi. Đơn vị SI là J/kg.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "2-de",
-      "solution": "2-giai"
-    }
-  },
   {
     "id": "ly-12-1-nhiet-3",
     "difficulty": "Nhận biết",
@@ -88,24 +52,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "5-de",
       "solution": "5-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-6",
-    "difficulty": "Nhận biết",
-    "prompt": "Gọi ∆t và ∆T lần lượt là độ lớn một độ chia trên thang đo nhiệt độ Celsius và thang nhiệt độ Kelvin. Hệ thức nào sau đây là đúng? A. ∆t = 1 ∆T . 273 B. ∆T = 1 ∆t. 100 C. ∆t = 273∆T . D. ∆t = ∆T .",
-    "explanation": "Đáp án D. Giải Hai thang có cùng độ lớn mỗi độ chia. Khi lấy hiệu hai nhiệt độ, số hạng 273,15 trong công thức đổi thang triệt tiêu, nên ∆T = ∆t về giá trị số.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "6-de",
-      "solution": "6-giai"
     }
   },
   {
@@ -163,24 +109,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-10",
-    "difficulty": "Nhận biết",
-    "prompt": "Hãy tìm ý không đúng với mô hình động học phân tử trong các ý sau đây? A. Các phân tử luôn chuyển động không ngừng. B. Các chất được cấu tạo từ các hạt riêng biệt gọi là phân tử. C. Giữa các phân tử chỉ tồn tại lực hút gọi là lực liên kết phân tử. D. Tốc độ chuyển động của các phân tử phụ thuộc vào nhiệt độ.",
-    "explanation": "Đáp án C. Giải Tương tác giữa các phân tử có cả lực hút và lực đẩy. Khi khoảng cách đủ nhỏ, lực đẩy trở nên mạnh, nên từ “chỉ” trong C làm phát biểu sai.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "10-de",
-      "solution": "10-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-11",
     "difficulty": "Nhận biết",
     "prompt": "Điều nào sau đây không đúng khi nói về cấu tạo chất. A. Các chất được cấu tạo từ các hạt riêng biệt gọi là phân tử. B. Giữa các phân tử có lực hút và lực đẩy gọi chung là lực liên kết phân tử. C. Các phân tử chuyển động không ngừng, các phân tử chuyển động càng nhanh thì nhiệt độ của vật càng cao. D. Giữa các phân tử có lực hút và lực đẩy, lực hút luôn lớn hơn lực đẩy.",
@@ -235,24 +163,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-14",
-    "difficulty": "Nhận biết",
-    "prompt": "Nội năng của một vật A. không phụ thuộc vào thể tích của vật, chỉ phụ thuộc vào nhiệt độ của vật. B. là tổng động năng của các phân tử cấu tạo nên vật. C. không phụ thuộc vào nhiệt độ của vật, chỉ phụ thuộc vào thể tích của vật. D. phụ thuộc cả thể tích và nhiệt độ của vật.",
-    "explanation": "Đáp án D. Giải Nhiệt độ ảnh hưởng đến động năng chuyển động nhiệt. Thể tích có thể làm thay đổi khoảng cách giữa các phân tử, từ đó làm thay đổi thế năng tương tác. Vì vậy, với một vật nói chung, nội năng phụ thuộc cả hai đại lượng.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "14-de",
-      "solution": "14-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-15",
     "difficulty": "Nhận biết",
     "prompt": "Nội dung định luật I nhiệt động lực học là A. độ biến thiên nội năng của vật bằng tổng công và nhiệt lượng mà vật nhận được. B. độ biến thiên nội năng của vật bằng hiệu số công và nhiệt lượng mà vật nhận được. C. độ biến thiên nội năng của vật bằng tổng công mà vật nhận được. D. độ biến thiên nội năng của vật bằng tổng nhiệt lượng mà vật nhận được.",
@@ -268,114 +178,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "15-de",
       "solution": "15-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-16",
-    "difficulty": "Nhận biết",
-    "prompt": "Trong nhiệt động lực học, một tập hợp xác định gồm một lượng lớn các phân tử, gọi là hệ nhiệt động (gọi tắt là hệ). Độ biến thiên nội năng của hệ A. bằng tổng công và nhiệt mà hệ nhận được. B. hiệu công và nhiệt mà hệ nhận được. C. lớn hơn tổng công và nhiệt mà hệ nhận được. D. nhỏ hơn tổng công và nhiệt mà hệ nhận được.",
-    "explanation": "Đáp án A. Giải Năng lượng đi qua biên của hệ dưới dạng công hoặc nhiệt làm thay đổi nội năng. Theo định luật I, ∆U = A+Q.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "16-de",
-      "solution": "16-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-17",
-    "difficulty": "Nhận biết",
-    "prompt": "Cho hai vật có nhiệt độ khác nhau tiếp xúc với nhau. Năng lượng nhiệt được truyền từ A. Vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn. B. Vật ở trên cao sang vật ở dưới thấp. C. Vật có khối lượng lớn hơn sang vật có khối lượng nhỏ hơn. D. Vật ở dưới thấp sang vật ở trên cao.",
-    "explanation": "Đáp án A. Giải Chênh lệch nhiệt độ quyết định chiều tự truyền nhiệt. Khi hai vật tiếp xúc, vật nóng truyền năng lượng nhiệt cho vật lạnh.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "17-de",
-      "solution": "17-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-18",
-    "difficulty": "Nhận biết",
-    "prompt": "Điều nào sau đây đúng với nguyên lí truyền nhiệt? A. Nhiệt truyền từ vật có nhiệt dung riêng thấp hơn sang vật có nhiệt dung riêng cao hơn. B. Nhiệt tự truyền từ vật có nhiệt độ thấp hơn sang vật có nhiệt độ cao hơn. C. Nhiệt tự truyền từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn. D. Nhiệt truyền từ vật có nhiệt dung riêng cao hơn sang vật có nhiệt dung riêng thấp hơn.",
-    "explanation": "Đáp án C. Giải Nhiệt tự truyền từ nơi có nhiệt độ cao sang nơi có nhiệt độ thấp. Nhiệt dung riêng ảnh hưởng đến mức thay đổi nhiệt độ khi trao đổi nhiệt.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "18-de",
-      "solution": "18-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-19",
-    "difficulty": "Nhận biết",
-    "prompt": "Khi cho hai vật P và Q tiếp xúc nhau, nhiệt chỉ tự truyền từ vật P sang vật Q khi A. nội năng vật P lớn hơn nội năng vật Q. B. thể tích vật P lớn hơn thể tích vật Q. C. nhiệt độ vật P lớn hơn nhiệt độ vật Q. D. khối lượng của vật P lớn hơn khối lượng vật Q.",
-    "explanation": "Đáp án C. Giải Để nhiệt tự truyền từ P sang Q thì t > t . Khối lượng, thể tích và nội năng của từng vật chưa đủ để xác định P Q chiều truyền nhiệt.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "19-de",
-      "solution": "19-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-20",
-    "difficulty": "Nhận biết",
-    "prompt": "Hai vật tiếp xúc nhiệt với nhau mà không có sự truyền nhiệt lượng giữa chúng thì hai vật đó A. có cùng nhiệt dung riêng. B. có cùng nội năng. C. có cùng khối lượng. D. có cùng nhiệt độ.",
-    "explanation": "Đáp án D. Giải Hai vật tiếp xúc nhiệt mà không có sự truyền nhiệt ròng đang cân bằng nhiệt. Khi đó, chúng có cùng nhiệt độ.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "20-de",
-      "solution": "20-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-21",
-    "difficulty": "Nhận biết",
-    "prompt": "Nếu hai vật có nhiệt độ khác nhau đặt tiếp xúc nhau thì A. quá trình truyền nhiệt tiếp tục cho đến khi nhiệt dung riêng hai vật như nhau. ◦ B. quá trình truyền nhiệt dừng lại khi nhiệt độ một vật đạt 0 C. C. quá trình truyền nhiệt tiếp tục cho đến khi nhiệt năng hai vật như nhau. D. quá trình truyền nhiệt dừng lại khi nhiệt độ hai vật như nhau.",
-    "explanation": "Đáp án D. Giải Vật nóng nguội dần và vật lạnh nóng dần khi trao đổi nhiệt. Khi hai vật đạt cùng nhiệt độ, sự truyền nhiệt ròng giữa chúng dừng lại.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "21-de",
-      "solution": "21-giai"
     }
   },
   {
@@ -397,24 +199,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-23",
-    "difficulty": "Nhận biết",
-    "prompt": "Trong thời gian sắt nóng chảy, nhiệt độ của nó A. mới đầu tăng, sau giảm. B. không ngừng tăng. C. không ngừng giảm. D. không đổi.",
-    "explanation": "Đáp án D. Giải Trong thời gian sắt nóng chảy ở áp suất không đổi, nhiệt lượng cung cấp làm sắt chuyển từ rắn sang lỏng. Nhiệt độ giữ ở nhiệt độ nóng chảy cho đến khi sắt tan hết.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "23-de",
-      "solution": "23-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-24",
     "difficulty": "Nhận biết",
     "prompt": "Công nghệ đúc kim loại liên quan đến A. sự nóng chảy và sự hóa hơi. B. sự thăng hoa và sự ngưng kết. C. sự ngưng kết và sự nóng chảy. D. sự nóng chảy và sự đông đặc.",
@@ -430,96 +214,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "24-de",
       "solution": "24-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-25",
-    "difficulty": "Nhận biết",
-    "prompt": "Nhiệt lượng Q cần cung cấp để làm cho m kilôgam chất lỏng hóa hơi hoàn toàn ở nhiệt độ sôi được tính theo công thức nào? Biết L là nhiệt hóa hơi riêng của chất lỏng. A. Q = L · m. B. Q = m/L. C. Q = L/m. D. Q = mc∆t.",
-    "explanation": "Đáp án A. Giải Mỗi kilôgam chất lỏng cần nhiệt lượng L để hóa hơi ở nhiệt độ sôi. Với m kilôgam, nhiệt lượng cần cấp là Q = Lm.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "25-de",
-      "solution": "25-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-26",
-    "difficulty": "Nhận biết",
-    "prompt": "Gọi Q là nhiệt lượng cần truyền cho vật có khối lượng m để làm vật nóng chảy hoàn toàn ở nhiệt độ nóng chảy mà không thay đổi nhiệt độ của vật. Nhiệt nóng chảy riêng λ của chất đó được tính theo công thức A. λ = Q · m. B. λ = Q − m. C. λ = Q + m. D. λ = Q/m.",
-    "explanation": "Đáp án D. Giải Nhiệt lượng làm nóng chảy hoàn toàn khối lượng m ngay tại nhiệt độ nóng chảy là Q = λm. Suy ra λ = Q/m.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "26-de",
-      "solution": "26-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-27",
-    "difficulty": "Nhận biết",
-    "prompt": "Gọi Q là nhiệt lượng cần thiết để làm một lượng chất có khối lượng m chuyển hoàn toàn từ thể lỏng sang thể hơi ở nhiệt độ sôi. Công thức xác định nhiệt hóa hơi riêng của chất này ở nhiệt độ sôi đó là A. 2Q . m B. Q . m C. Q . 2m D. m . Q",
-    "explanation": "Đáp án B. Giải Ở nhiệt độ sôi, quá trình hóa hơi hoàn toàn thỏa mãn Q = Lm. Chia hai vế cho m, được L = Q/m.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1,
-    "pdfSource": {
-      "question": "27-de",
-      "solution": "27-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-28",
-    "difficulty": "Nhận biết",
-    "prompt": "Nhiệt lượng Q cần cung cấp để làm nóng chảy hoàn toàn một khối lượng m chất rắn ở nhiệt độ nóng chảy được xác định bởi công thức: A. Q = mc∆t. B. Q = Lm. C. Q = λm. D. Q = L . m",
-    "explanation": "Đáp án C. Giải Chất rắn đã ở nhiệt độ nóng chảy, nên nhiệt lượng dùng để chuyển thể được tính bằng Q = λm.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "28-de",
-      "solution": "28-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-29",
-    "difficulty": "Nhận biết",
-    "prompt": "Gọi t là nhiệt độ lúc sau, t là nhiệt độ lúc đầu của vật. Công thức nào là công thức tính nhiệt lượng 0 mà vật thu vào? A. Q = mc. B. Q = m(t − t ). 0 C. Q = mc(t − t ). 0 D. Q = mc(t − t). 0",
-    "explanation": "Đáp án C. Giải Khi vật nóng lên và không chuyển thể, độ tăng nhiệt độ là ∆t = t − t . Nhiệt lượng vật thu vào là Q = 0 mc(t − t ). 0 ◦",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "29-de",
-      "solution": "29-giai"
     }
   },
   {
@@ -595,24 +289,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-34",
-    "difficulty": "Nhận biết",
-    "prompt": "Trường hợp làm biến đổi nội năng không do thực hiện công là A. một viên bi bằng thép rơi xuống đất mềm. B. đun nóng nước bằng bếp. C. nén khí trong xilanh. D. cọ xát hai vật vào nhau.",
-    "explanation": "Đáp án B. Giải Khi đun nước bằng bếp, nước nhận năng lượng qua truyền nhiệt. Ba trường hợp còn lại có tác dụng cơ học làm biến đổi nội năng.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1,
-    "pdfSource": {
-      "question": "34-de",
-      "solution": "34-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-35",
     "difficulty": "Thông hiểu và vận dụng trực tiếp",
     "prompt": "Hãy tìm câu sai trong các câu sau. A. Nhiệt độ của một vật phụ thuộc vào tốc độ chuyển động của các phân tử cấu tạo nên vật. B. Nhiệt độ cho biết trạng thái cân bằng nhiệt của các vật tiếp xúc nhau và chiều truyền nhiệt năng. C. Nhiệt độ của một vật là số đo nội năng của vật đó. D. Nhiệt độ là đại lượng dùng để mô tả mức độ nóng, lạnh của vật.",
@@ -628,40 +304,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "35-de",
       "solution": "35-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-36",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Khi đo nhiệt độ của một khối khí lí tưởng trong phòng thí nghiệm, nhiệt kế hiển thị giá trị là 320 K. Trong thang đo Celsius, nhiệt độ này tương ứng với ◦ A. 72 C. ◦ B. 47 C. ◦ C. 593 C. D. −47 ◦ C.",
-    "explanation": "Đáp án B. Giải Đổi từ Kelvin sang Celsius bằng cách trừ 273,15. t = 320 − 273,15 = 46,85 ◦ C ≈ 47 ◦ C. ◦",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1,
-    "pdfSource": {
-      "question": "36-de",
-      "solution": "36-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-37",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "(Trả lời ngắn) Tại một trạm khí tượng, nhiệt độ không khí lúc 6 giờ sáng đo được là 18 C và lúc 13 ◦ giờ trưa cùng ngày đo được là 34 C. Độ chênh lệch nhiệt độ giữa hai thời điểm trên tính theo thang nhiệt độ Kelvin bằng bao nhiêu Kelvin? (làm tròn kết quả đến chữ số hàng đơn vị)",
-    "explanation": "Giải ◦ Lấy nhiệt độ lúc 13 giờ trừ nhiệt độ lúc 6 giờ. Vì một khoảng 1 C có độ lớn bằng một khoảng 1 K, ta có ∆T = (34 + 273,15) − (18 + 273,15) = 16 K. Đáp số 16 K.",
-    "kind": "short",
-    "type": "Trả lời ngắn",
-    "value": 16,
-    "unit": "K",
-    "tolerance": 5.1e-05,
-    "answerText": "16 K",
-    "pdfSource": {
-      "question": "37-de",
-      "solution": "37-giai"
     }
   },
   {
@@ -755,96 +397,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-43",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Gọi n , n , n lần lượt là mật độ phân tử của một chất (không phải là nước) ở thể rắn, thể lỏng và R L K thể khí. Thứ tự đúng là A. n > n > n . R K L B. n < n < n . R K L C. n > n > n . R L K D. n < n < n . R L K",
-    "explanation": "Đáp án C theo giả thiết thông thường. Giải Mật độ phân tử n = N /V . Với cùng số phân tử, chất khí chiếm thể tích lớn nhất. Với chất có thể rắn đặc hơn thể lỏng như đề ngầm giả định, V < V < V , nên n > n > n . R L K R L K",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "43-de",
-      "solution": "43-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-44",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Dựa vào kết luận “Nội năng phụ thuộc vào hai yếu tố: nhiệt độ và thể tích của vật”, một học sinh đưa ra hai nhận định như sau: Nhận định 1: Nhiệt độ của vật liên quan đến tốc độ chuyển động của các phân tử, điều này có nghĩa nhiệt độ liên quan đến động năng phân tử; Nhận định 2: Thể tích của vật liên quan đến khoảng cách giữa các phân tử, điều này liên quan đến lực tương tác phân tử và thế năng phân tử. Nhận định nào sau đây là đúng? A. Nhận định (1). B. Nhận định (2). C. Cả hai nhận định đều đúng. D. Cả hai nhận định đều sai.",
-    "explanation": "Đáp án C. Giải Nhiệt độ liên quan đến động năng chuyển động nhiệt của các phân tử. Thể tích thay đổi có thể làm khoảng cách giữa các phân tử thay đổi, kéo theo thay đổi thế năng tương tác. Cả hai nhận định đều đúng.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "44-de",
-      "solution": "44-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-45",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Tìm phát biểu sai. A. Nội năng chính là nhiệt lượng của vật. B. Nội năng của một vật phụ thuộc vào nhiệt độ và thể tích của vật. C. Nội năng của vật có thể tăng hoặc giảm. D. Nội năng là một dạng năng lượng nên có thể chuyển hóa thành các dạng năng lượng khác.",
-    "explanation": "Đáp án A. Giải Nội năng là năng lượng của vật ở cấp độ vi mô. Nhiệt lượng là năng lượng truyền giữa các vật do chênh lệch nhiệt độ, nên đồng nhất hai khái niệm này là sai.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "45-de",
-      "solution": "45-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-46",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Phát biểu nào sau đây nói về nhiệt lượng là không đúng? A. Nhiệt lượng là số đo độ biến thiên nội năng của vật trong quá trình truyền nhiệt. B. Một vật lúc nào cũng có nội năng, do đó lúc nào cũng có nhiệt lượng. C. Đơn vị của nhiệt lượng cũng là đơn vị của nội năng. D. Nhiệt lượng không phải là nội năng.",
-    "explanation": "Đáp án B. Giải Vật có nội năng ở một trạng thái xác định. Nhiệt lượng chỉ được xác định cho một quá trình truyền nhiệt, nên có nội năng chưa hàm ý vật luôn có nhiệt lượng.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1,
-    "pdfSource": {
-      "question": "46-de",
-      "solution": "46-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-47",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Khi đặt vật X tiếp xúc nhiệt với vật Y và có sự truyền nhiệt từ vật Y sang vật X, phát biểu nào sau đây là đúng? A. Vật Y chứa nhiều nhiệt lượng hơn vật X. B. Vật X và vật Y đều không chứa nhiệt lượng. C. Vật X chứa rất ít nhiệt lượng. D. Vật X chứa rất nhiều nhiệt lượng.",
-    "explanation": "Đáp án B. Giải Trong quá trình này, Y truyền năng lượng cho X dưới dạng nhiệt. Mỗi vật có nội năng, còn nhiệt lượng chỉ lượng năng lượng được truyền trong quá trình đó.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 1,
-    "pdfSource": {
-      "question": "47-de",
-      "solution": "47-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-48",
     "difficulty": "Thông hiểu và vận dụng trực tiếp",
     "prompt": "Nhiệt dung riêng của rượu là 2500 J/(kg · K). Điều đó có nghĩa là gì? A. 1 kg rượu bị đông đặc thì giải phóng nhiệt lượng là 2500 J. B. Nhiệt lượng có trong 1 kg rượu ở nhiệt độ bình thường là 2500 J. ◦ C. Để nâng 1 kg rượu tăng thêm 1 K (1 C) ta cần cung cấp cho nó nhiệt lượng là 2500 J. D. Để nâng 1 kg rượu lên nhiệt độ bay hơi ta phải cung cấp cho nó một nhiệt lượng là 2500 J.",
@@ -860,24 +412,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "48-de",
       "solution": "48-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-49",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Nhiệt dung riêng của rượu là 2500 J/(kg · K). Điều đó có nghĩa là gì. A. 1 kg rượu bị đông đặc thì giải phóng nhiệt lượng là 2500 J. B. Nhiệt lượng có trong 1 kg chất ấy ở nhiệt độ bình thường. ◦ C. Để nâng 1 kg rượu tăng lên 1 C ta cần cung cấp cho nó nhiệt lượng là 2500 J D. Để nâng 1 kg rượu lên nhiệt độ bay hơi ta phải cung cấp cho nó một nhiệt lượng là 2500 J",
-    "explanation": "Đáp án C. Giải ◦ Độ tăng 1 C bằng độ tăng 1 K. Với m = 1 kg và ∆T = 1 K, công thức Q = mc∆T cho Q = 2500 J.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 2,
-    "pdfSource": {
-      "question": "49-de",
-      "solution": "49-giai"
     }
   },
   {
@@ -989,42 +523,6 @@ export const thermalPhysicsQuestions = [
     }
   },
   {
-    "id": "ly-12-1-nhiet-56",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Theo định luật I của nhiệt động lực học ∆U = Q + A; trong quá trình chất khí nhận nhiệt lượng và thực hiện công thì A. Q > 0, A < 0. B. Q < 0, A > 0. C. Q > 0, A > 0. D. Q < 0, A < 0.",
-    "explanation": "Đáp án A. Giải Trong quy ước ∆U = Q + A, Q dương khi khí nhận nhiệt. Khí thực hiện công lên môi trường nên công mà khí nhận A âm.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "56-de",
-      "solution": "56-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-57",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Hệ thức ∆U = A + Q khi Q < 0 và A > 0 mô tả quá trình A. hệ nhận nhiệt và nhận công. B. hệ truyền nhiệt và sinh công. C. hệ nhận nhiệt và sinh công. D. hệ truyền nhiệt và nhận công.",
-    "explanation": "Đáp án D. Giải Q < 0 nghĩa là hệ truyền nhiệt ra ngoài. A > 0 nghĩa là môi trường thực hiện công lên hệ, tức hệ nhận công.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 3,
-    "pdfSource": {
-      "question": "57-de",
-      "solution": "57-giai"
-    }
-  },
-  {
     "id": "ly-12-1-nhiet-58",
     "difficulty": "Thông hiểu và vận dụng trực tiếp",
     "prompt": "Một động cơ hơi nước cần một nồi hơi “súp de” để đun nước sôi tạo hơi. Việc giãn nở của hơi tạo áp lực đẩy lên pit-tông hay các cánh turbine, khi đó chuyển động thẳng được chuyển thành chuyển động quay để quay bánh xe hay truyền động cho các bộ phận cơ khí khác. Động cơ này có nguyên tắc hoạt động dựa trên. A. Định luật Jun Len xơ. B. Định luật I của nhiệt động lực học. C. Định luật II Newton. D. Mô hình động học phân tử về cấu tạo chất.",
@@ -1076,24 +574,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "60-de",
       "solution": "60-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-61",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "Trong thí nghiệm đo nhiệt hóa hơi riêng của nước, một học sinh đun nước bằng nguồn nhiệt có công ◦ suất P không đổi. Khi nước bắt đầu sôi (100 C), học sinh đo thời gian đun t và xác định được khối lượng nước đã hóa hơi là m. Bỏ qua hao phí nhiệt ra môi trường, công thức tính nhiệt hóa hơi riêng nào sau đây là đúng? A. L = P ·t . m B. L = P tm. C. L = P ·m . t D. L = P . m·t",
-    "explanation": "Đáp án A. Giải Trong khoảng thời gian nước đã sôi, bỏ qua hao phí thì nhiệt lượng P t dùng để hóa hơi khối lượng m. Từ P t = Lm suy ra L = P t/m.",
-    "type": "Trắc nghiệm",
-    "options": [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    "answer": 0,
-    "pdfSource": {
-      "question": "61-de",
-      "solution": "61-giai"
     }
   },
   {
@@ -1221,7 +701,7 @@ export const thermalPhysicsQuestions = [
       "question": "68-de",
       "solution": "68-giai",
       "shared": "68-69-de-chung",
-      "sharedText": "Sử dụng thông tin sau cho câu 68 và câu 69. Hình vẽ bên biểu diễn sự phụ thuộc của nhiệt độ vào thời gian của 400 g nước khi được đun nóng. ◦ t ( C) 100 35 T (s) O T T 1 2"
+      "sharedText": "Hình vẽ bên biểu diễn sự phụ thuộc của nhiệt độ vào thời gian của 400 g nước khi được đun nóng. ◦ t ( C) 100 35 T (s) O T T 1 2"
     }
   },
   {
@@ -1241,8 +721,608 @@ export const thermalPhysicsQuestions = [
       "question": "69-de",
       "solution": "69-giai",
       "shared": "68-69-de-chung",
-      "sharedText": "Sử dụng thông tin sau cho câu 68 và câu 69. Hình vẽ bên biểu diễn sự phụ thuộc của nhiệt độ vào thời gian của 400 g nước khi được đun nóng. ◦ t ( C) 100 35 T (s) O T T 1 2"
+      "sharedText": "Hình vẽ bên biểu diễn sự phụ thuộc của nhiệt độ vào thời gian của 400 g nước khi được đun nóng. ◦ t ( C) 100 35 T (s) O T T 1 2"
     }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-14",
+    "difficulty": "Thông hiểu",
+    "prompt": "Khi bắt đầu đun, nhiệt độ của vật rắn kết tinh tăng dần. Đến nhiệt độ xác định, sự nóng chảy diễn ra, vật chuyển từ thể rắn sang thể lỏng và nhiệt độ …(1)... dù tiếp tục đun. Sau khi toàn bộ vật chuyển sang thể lỏng, nhiệt độ của chất lỏng ...(2)... khi tiếp tục đun. Chỗ trống (1) và (2) lần lượt là A. “giảm xuống” và “giữ giá trị ổn định“. B. “không tăng” và “giảm xuống“. C. “giảm xuống” và “tiếp tục tăng lên“. D. “không tăng” và “tiếp tục tăng lên“.",
+    "explanation": "Đáp án D Giải Trong giai đoạn nóng chảy của chất rắn kết tinh, nhiệt lượng cung cấp dùng để chuyển thể nên nhiệt độ giữ nguyên. Khi chất đã hóa lỏng hoàn toàn, cấp nhiệt tiếp làm nhiệt độ chất lỏng tăng.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 3,
+    "pdfSource": {
+      "question": "pdf2-14-de",
+      "solution": "pdf2-14-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-17",
+    "difficulty": "Thông hiểu",
+    "prompt": "Với mô hình động học phân tử, sự khác biệt về độ lớn của lực tương tác giữa các phân tử trong chất rắn, chất lỏng, chất khí dẫn đến sự A. đồng nhất về cấu trúc của chúng. B. khác biệt về cấu trúc của chúng. C. khác biệt về khối lượng của chúng. D. đồng nhất về khối lượng của chúng.",
+    "explanation": "Đáp án B Giải Lực tương tác ảnh hưởng đến cách các phân tử sắp xếp và khả năng dịch chuyển. Vì thế các thể rắn, lỏng và khí có cấu trúc khác nhau.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "pdfSource": {
+      "question": "pdf2-17-de",
+      "solution": "pdf2-17-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-21",
+    "difficulty": "Thông hiểu",
+    "prompt": "Khi làm nóng liên tục vật rắn vô định hình, vật rắn mềm đi và chuyển dần sang thể lỏng một cách liên tục. Trong quá trình này nhiệt độ của vật ...(1)…. Do đó, vật rắn vô định hình ...(2)…. Điền vào chỗ trống các cụm từ thích hợp. A. (1) tăng lên liên tục; (2) không có nhiệt độ nóng chảy xác định. B. (1) giữ ổn định; (2) không có nhiệt độ nóng chảy xác định. C. (1) giữ ổn định; (2) có nhiệt độ nóng chảy xác định được. D. (1) tăng lên liên tục; (2) có nhiệt độ nóng chảy xác định được.",
+    "explanation": "Đáp án A Giải Chất rắn vô định hình mềm dần trong một khoảng nhiệt độ khi được đun. Nhiệt độ tăng liên tục trong quá trình đó, nên không có một nhiệt độ nóng chảy xác định.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "pdfSource": {
+      "question": "pdf2-21-de",
+      "solution": "pdf2-21-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-22",
+    "difficulty": "Thông hiểu",
+    "prompt": "Nếu nhiệt truyền từ một cái bàn sang một khối băng chuyển động ngang trượt trên mặt bàn thì điều nào sau đây phải đúng? A. Mặt bàn gồ ghề và có ma sát giữa mặt bàn và mặt băng. B. Khối băng lạnh hơn cái bàn. C. Khối băng đang chuyển pha. D. Khối băng đang ở nhiệt độ điểm ba.",
+    "explanation": "Đáp án B Giải Nhiệt tự truyền từ nơi có nhiệt độ cao hơn đến nơi có nhiệt độ thấp hơn. Vì bàn truyền nhiệt cho khối băng nên bàn nóng hơn khối băng.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "pdfSource": {
+      "question": "pdf2-22-de",
+      "solution": "pdf2-22-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-23",
+    "difficulty": "Thông hiểu",
+    "prompt": "Phát biểu nào sau đây nói về nhiệt lượng là không đúng? A. Nhiệt lượng là số đo độ biến thiên nội năng của vật trong quá trình truyền nhiệt. B. Một vật lúc nào cũng có nội năng, do đó lúc nào cũng có nhiệt lượng. C. Đơn vị của nhiệt lượng cũng là đơn vị của nội năng. D. Nhiệt lượng không phải là nội năng.",
+    "explanation": "Đáp án B Giải Nội năng là năng lượng của vật ở một trạng thái. Nhiệt lượng chỉ xác định cho một quá trình truyền nhiệt, nên vật có nội năng không có nghĩa là vật luôn có nhiệt lượng.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "pdfSource": {
+      "question": "pdf2-23-de",
+      "solution": "pdf2-23-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-25",
+    "difficulty": "Thông hiểu",
+    "prompt": "Lực tương tác giữa các phân tử chất rắn ...(1)... nên giữ được các phân tử ở các vị trí cân bằng và mỗi phân tử ...(2)... Điền vào chỗ trống các cụm từ thích hợp. A. (1) là lực hút; (2) dao động xung quanh vị trí cân bằng có thể di chuyển được. B. (1) rất mạnh; (2) đứng yên tại vị trí cân bằng này. C. (1) là lực hút; (2) chỉ có thể dao động xung quanh vị trí cân bằng xác định này. D. (1) rất mạnh; (2) chỉ có thể dao động xung quanh vị trí cân bằng xác định này.",
+    "explanation": "Đáp án D Giải Tương tác mạnh giữ các hạt của chất rắn gần các vị trí cân bằng. Chuyển động nhiệt khiến chúng dao động quanh những vị trí ấy.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 3,
+    "pdfSource": {
+      "question": "pdf2-25-de",
+      "solution": "pdf2-25-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-26",
+    "difficulty": "Thông hiểu",
+    "prompt": "Đồ thị bên minh họa sự thay đổi nhiệt độ của chất X theo thời gian khi nhận nhiệt và chuyển thể. Chất X có thể là A. cồn. B. nước. C. kim loại. D. băng phiến.",
+    "explanation": "Đáp án B Giải ◦ ◦ ◦ Đồ thị bắt đầu dưới 0 C, có đoạn chuyển thể tại 0 C, rồi có đoạn nằm ngang tại 100 C. Hai mốc phù hợp với nước ở áp suất thường.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "pdfSource": {
+      "question": "pdf2-26-de",
+      "solution": "pdf2-26-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-35",
+    "difficulty": "Thông hiểu",
+    "prompt": "Trong những ngày nắng ở bãi biển, đứng trên cát cảm thấy nóng nhưng bước chân xuống nước biển thì vẫn tương đối mát là do sự khác biệt về tính chất nào giữa nước và cát? A. Khối lượng riêng. B. Nhiệt dung riêng. C. Nhiệt độ. D. Nhiệt nóng chảy.",
+    "explanation": "Đáp án B Giải Nước có nhiệt dung riêng lớn hơn cát. Với cùng nhiệt lượng hấp thụ trên một đơn vị khối lượng, ∆T = Q/(mc) nhỏ hơn đối với nước, nên nước nóng lên chậm hơn.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "pdfSource": {
+      "question": "pdf2-35-de",
+      "solution": "pdf2-35-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-37",
+    "difficulty": "Thông hiểu",
+    "prompt": "Một số phân tử ở gần mặt thoáng chất lỏng, chuyển động hướng ra ngoài, có ...(1)... đủ lớn thắng được lực tương tác giữa các phân tử thì có thể thoát ra ngoài khối chất lỏng. Như vậy, có thể nói sự bay hơi là sự hóa hơi xảy ra ở ...(2)... của khối chất lỏng. Điền vào chỗ trống các cụm từ thích hợp. A. (1) động năng; (2) mặt thoáng. B. (1) thế năng; (2) mặt thoáng. C. (1) động năng; (2) trong lòng. D. (1) thế năng; (2) trong lòng.",
+    "explanation": "Đáp án A Giải Phân tử chuyển động ra ngoài có thể rời chất lỏng nếu động năng đủ để thắng tương tác với các phân tử bên cạnh. Quá trình này xảy ra ở mặt thoáng. ◦",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "pdfSource": {
+      "question": "pdf2-37-de",
+      "solution": "pdf2-37-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-38",
+    "difficulty": "Thông hiểu",
+    "prompt": "Đặt cốc nhôm đựng 0,2 lít nước ở nhiệt độ 30 C, đo bằng nhiệt kế 1 (NK1) vào trong bình cách nhiệt ◦ đựng 0,5 lít nước ở nhiệt độ 60 C, đo bằng nhiệt kế 2 (NK2). Quan sát sự thay đổi nhiệt độ của nước trong bình và cốc từ khi bắt đầu thí nghiệm cho đến khi hai nhiệt độ này bằng nhau. Làm thế nào để nhận biết quá trình truyền nhiệt lượng giữa nước trong bình và nước trong cốc đã kết thúc? A. Khi thấy số chỉ NK1 và số chỉ NK2 bằng nhau. B. Khi thấy số chỉ NK1 và số chỉ NK2 đều bằng nhiệt độ môi trường. C. Khi thấy số chỉ NK1 giảm còn số chỉ NK2 tăng. D. Khi thấy số chỉ NK1 tăng còn số chỉ NK2 giảm.",
+    "explanation": "Đáp án A Giải NK1 và NK2 có cùng số chỉ khi hai phần nước có cùng nhiệt độ. Khi đó, sự truyền nhiệt ròng giữa chúng kết thúc.",
+    "type": "Trắc nghiệm",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "pdfSource": {
+      "question": "pdf2-38-de",
+      "solution": "pdf2-38-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-1",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao sương xuất hiện ở mặt ngoài cốc nước đá dù cốc không rò?",
+    "options": [
+      "Nước trong cốc sôi ở mặt ngoài.",
+      "Thành cốc tạo ra nước khi co lại.",
+      "Hơi nước trong không khí gặp thành cốc lạnh rồi ngưng tụ.",
+      "Nước đá thăng hoa xuyên qua thành cốc."
+    ],
+    "answer": 2,
+    "explanation": "Không khí sát thành cốc bị làm lạnh. Khi nhiệt độ xuống dưới điểm sương, một phần hơi nước ngưng tụ thành giọt ở mặt ngoài.",
+    "hint": "Không khí sát thành cốc bị làm lạnh. Khi nhiệt độ xuống dưới điểm sương, một phần hơi nước ngưng tụ thành giọt ở mặt ngoài."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-2",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai khăn ướt giống nhau được treo trong cùng phòng. Một khăn đặt trước quạt, khăn kia ở nơi không có gió. Vì sao khăn trước quạt thường khô nhanh hơn?",
+    "options": [
+      "Quạt làm nhiệt độ sôi của nước giảm đến nhiệt độ phòng.",
+      "Quạt làm nước trong khăn đông đặc.",
+      "Quạt làm nước có nhiệt dung riêng nhỏ hơn.",
+      "Quạt liên tục thay lớp không khí ẩm sát khăn bằng không khí ít ẩm hơn."
+    ],
+    "answer": 3,
+    "explanation": "Hơi nước tích lại sát mặt khăn làm chậm bay hơi. Luồng gió cuốn lớp không khí ẩm đó đi và duy trì sự bay hơi nhanh hơn.",
+    "hint": "Hơi nước tích lại sát mặt khăn làm chậm bay hơi. Luồng gió cuốn lớp không khí ẩm đó đi và duy trì sự bay hơi nhanh hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-3",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao nồi áp suất giúp thực phẩm chín nhanh hơn nồi hở?",
+    "options": [
+      "Nắp nồi làm nhiệt dung riêng của nước giảm mạnh.",
+      "Nước sôi ở nhiệt độ thấp hơn vì áp suất cao hơn.",
+      "Áp suất cao làm nước đóng băng trong nồi.",
+      "Áp suất cao làm nhiệt độ sôi tăng, nên thực phẩm được nấu ở nhiệt độ cao hơn."
+    ],
+    "answer": 3,
+    "explanation": "Nước sôi khi áp suất hơi bão hòa bằng áp suất bên ngoài. Trong nồi áp suất, điều kiện đó đạt ở nhiệt độ cao hơn so với nồi hở.",
+    "hint": "Nước sôi khi áp suất hơi bão hòa bằng áp suất bên ngoài. Trong nồi áp suất, điều kiện đó đạt ở nhiệt độ cao hơn so với nồi hở."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-4",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một ống tiêm kín chứa ít không khí và một ống khác đầy nước, không có bọt khí. Vì sao ấn pít-tông của ống khí dễ làm giảm thể tích hơn?",
+    "options": [
+      "Các phân tử nước biến mất khi bị ép.",
+      "Khoảng trống giữa các phân tử khí lớn hơn nhiều so với giữa các phân tử nước.",
+      "Chỉ nước có khoảng cách giữa các phân tử.",
+      "Các phân tử khí nhỏ đi khi bị ép."
+    ],
+    "answer": 1,
+    "explanation": "Khi nén, khoảng cách trung bình giữa các phân tử giảm. Khí có nhiều khoảng trống giữa các phân tử nên giảm thể tích dễ hơn chất lỏng.",
+    "hint": "Khi nén, khoảng cách trung bình giữa các phân tử giảm. Khí có nhiều khoảng trống giữa các phân tử nên giảm thể tích dễ hơn chất lỏng."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-5",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Trong cùng một phòng, vì sao chạm tay vào miếng kim loại thường thấy lạnh hơn chạm vào miếng gỗ đã ở trong phòng đủ lâu?",
+    "options": [
+      "Kim loại dẫn nhiệt tốt hơn nên tay mất nhiệt nhanh hơn.",
+      "Kim loại luôn có nhiệt độ thấp hơn gỗ.",
+      "Gỗ truyền nhiệt từ tay nhanh hơn kim loại.",
+      "Tay không trao đổi nhiệt với hai miếng."
+    ],
+    "answer": 0,
+    "explanation": "Hai miếng có thể cùng nhiệt độ phòng. Kim loại dẫn nhiệt tốt, đưa năng lượng ra xa điểm tiếp xúc nhanh hơn, nên da nguội nhanh hơn.",
+    "hint": "Hai miếng có thể cùng nhiệt độ phòng. Kim loại dẫn nhiệt tốt, đưa năng lượng ra xa điểm tiếp xúc nhanh hơn, nên da nguội nhanh hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-6",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Bình giữ nhiệt có lớp chân không giữa hai vách. Lớp này hạn chế trực tiếp hai cơ chế truyền nhiệt nào?",
+    "options": [
+      "Chỉ bức xạ.",
+      "Dẫn nhiệt và bức xạ.",
+      "Dẫn nhiệt qua không khí và đối lưu.",
+      "Đối lưu và bức xạ."
+    ],
+    "answer": 2,
+    "explanation": "Dẫn nhiệt qua khí và đối lưu cần vật chất giữa hai vách. Chân không làm hai cơ chế này giảm mạnh, còn bức xạ vẫn có thể truyền qua.",
+    "hint": "Dẫn nhiệt qua khí và đối lưu cần vật chất giữa hai vách. Chân không làm hai cơ chế này giảm mạnh, còn bức xạ vẫn có thể truyền qua."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-7",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai bình giống nhau chứa nước nóng cùng nhiệt độ. Mặt ngoài một bình sơn đen mờ, bình kia bóng phản xạ. Nếu chỉ xét bức xạ nhiệt, bình nào mất năng lượng nhanh hơn?",
+    "options": [
+      "Bình đen mờ vì phát bức xạ nhiệt mạnh hơn.",
+      "Hai bình luôn mất như nhau vì cùng nhiệt độ.",
+      "Bình đen mờ vì chỉ truyền nhiệt bằng đối lưu.",
+      "Bình bóng vì phản xạ tốt."
+    ],
+    "answer": 0,
+    "explanation": "Ở cùng nhiệt độ và diện tích, bề mặt đen mờ có độ phát xạ lớn hơn bề mặt bóng phản xạ, nên tỏa nhiều năng lượng hơn qua bức xạ.",
+    "hint": "Ở cùng nhiệt độ và diện tích, bề mặt đen mờ có độ phát xạ lớn hơn bề mặt bóng phản xạ, nên tỏa nhiều năng lượng hơn qua bức xạ."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-8",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao bộ phận đun nước thường đặt gần đáy ấm thay vì sát mặt nước?",
+    "options": [
+      "Nước chỉ truyền năng lượng bằng bức xạ.",
+      "Nước lạnh ở phía trên không thể chuyển động.",
+      "Nước nóng nặng hơn và luôn chìm xuống.",
+      "Nước nóng ở đáy nhẹ hơn và đi lên, tạo dòng đối lưu."
+    ],
+    "answer": 3,
+    "explanation": "Trong khoảng nhiệt độ thông thường khi đun, nước được làm nóng ở đáy nở ra và có khối lượng riêng nhỏ hơn. Nước nóng đi lên, nước lạnh đi xuống và dòng đối lưu phân phối nhiệt.",
+    "hint": "Trong khoảng nhiệt độ thông thường khi đun, nước được làm nóng ở đáy nở ra và có khối lượng riêng nhỏ hơn. Nước nóng đi lên, nước lạnh đi xuống và dòng đối lưu phân phối nhiệt."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-9",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao quấn nhiều lớp vải khô quanh một bình nước ấm giúp nước nguội chậm hơn?",
+    "options": [
+      "Các lớp vải giữ những túi không khí, làm giảm dẫn nhiệt và đối lưu.",
+      "Vải luôn tự sinh nhiệt đủ để bù hao phí.",
+      "Vải làm mất hoàn toàn mọi trao đổi nhiệt.",
+      "Vải làm nước có nhiệt dung riêng lớn hơn."
+    ],
+    "answer": 0,
+    "explanation": "Không khí bị giữ giữa các sợi dẫn nhiệt kém. Khi khó lưu thông, nó cũng truyền ít năng lượng bằng đối lưu, nên nước mất nhiệt chậm hơn.",
+    "hint": "Không khí bị giữ giữa các sợi dẫn nhiệt kém. Khi khó lưu thông, nó cũng truyền ít năng lượng bằng đối lưu, nên nước mất nhiệt chậm hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-10",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao để cùng một lượng nước trong đĩa rộng thường cạn nhanh hơn trong cốc hẹp ở cùng điều kiện?",
+    "options": [
+      "Mặt thoáng lớn cho phép nhiều phân tử thoát ra đồng thời hơn.",
+      "Đĩa rộng làm nhiệt hóa hơi riêng của nước bằng không.",
+      "Cốc hẹp làm lực tương tác giữa các phân tử nước lớn hơn.",
+      "Đĩa rộng làm nước sôi ở nhiệt độ phòng."
+    ],
+    "answer": 0,
+    "explanation": "Bay hơi xảy ra ở mặt thoáng. Khi diện tích tiếp xúc với không khí tăng, có nhiều phân tử ở bề mặt có thể thoát ra trong cùng thời gian.",
+    "hint": "Bay hơi xảy ra ở mặt thoáng. Khi diện tích tiếp xúc với không khí tăng, có nhiều phân tử ở bề mặt có thể thoát ra trong cùng thời gian."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-11",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai khay nước giống nhau đặt ở cùng nhiệt độ và có luồng khí như nhau, nhưng không khí quanh khay X ẩm hơn. Khay nào thường mất nước chậm hơn?",
+    "options": [
+      "Khay X vì độ ẩm làm nước có nhiệt độ thấp hơn ngay lập tức.",
+      "Khay X vì trong không khí ẩm, sự bay hơi ròng giảm.",
+      "Khay Y vì không khí khô làm tăng ngưng tụ.",
+      "Hai khay luôn mất nước bằng nhau."
+    ],
+    "answer": 1,
+    "explanation": "Trong không khí ẩm, nhiều phân tử hơi nước có thể quay lại mặt nước hơn. Chênh lệch giữa số phân tử thoát ra và quay lại nhỏ hơn, nên nước mất chậm hơn.",
+    "hint": "Trong không khí ẩm, nhiều phân tử hơi nước có thể quay lại mặt nước hơn. Chênh lệch giữa số phân tử thoát ra và quay lại nhỏ hơn, nên nước mất chậm hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-12",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao một lọ kín chứa nước có thể có lượng nước lỏng gần như không đổi dù các phân tử vẫn bay hơi?",
+    "options": [
+      "Áp suất trong lọ bằng không.",
+      "Mọi phân tử nước ngừng chuyển động.",
+      "Nước không thể bay hơi trong bình kín.",
+      "Khi đạt cân bằng động, tốc độ bay hơi bằng tốc độ ngưng tụ."
+    ],
+    "answer": 3,
+    "explanation": "Các phân tử vẫn trao đổi giữa pha lỏng và pha hơi. Ở cân bằng động, hai quá trình diễn ra với tốc độ bằng nhau nên lượng nước trong mỗi pha ổn định.",
+    "hint": "Các phân tử vẫn trao đổi giữa pha lỏng và pha hơi. Ở cân bằng động, hai quá trình diễn ra với tốc độ bằng nhau nên lượng nước trong mỗi pha ổn định."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-13",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Ở vùng núi cao, đun nước trong nồi hở vẫn thấy nước sôi nhưng rau có thể lâu chín hơn. Vì sao?",
+    "options": [
+      "Nhiệt dung riêng của nước tăng vô hạn.",
+      "Áp suất khí quyển thấp làm nước sôi ở nhiệt độ thấp hơn.",
+      "Áp suất thấp làm nước sôi ở nhiệt độ cao hơn.",
+      "Nước sôi ở cùng nhiệt độ ở mọi nơi."
+    ],
+    "answer": 1,
+    "explanation": "Ở vùng cao, áp suất khí quyển thấp. Nước đạt áp suất hơi bão hòa bằng áp suất khí quyển ở nhiệt độ thấp hơn, nên rau được nấu trong nước ít nóng hơn.",
+    "hint": "Ở vùng cao, áp suất khí quyển thấp. Nước đạt áp suất hơi bão hòa bằng áp suất khí quyển ở nhiệt độ thấp hơn, nên rau được nấu trong nước ít nóng hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-14",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao túi nước đá đang tan làm mát thức uống lâu hơn một túi nước lỏng cùng khối lượng, cả hai ban đầu ở 0 °C?",
+    "options": [
+      "Nước đá còn hấp thụ nhiệt nóng chảy trước khi nước tan ấm lên.",
+      "Nước lỏng luôn tỏa nhiệt cho thức uống.",
+      "Nước đá không cần nhận nhiệt để tan.",
+      "Nước đá giữ lạnh lâu hơn vì có nhiệt độ ban đầu thấp hơn trong tình huống này."
+    ],
+    "answer": 0,
+    "explanation": "Trong khi tan, nước đá hấp thụ nhiệt nóng chảy mà vẫn ở khoảng 0 °C. Nước lỏng ban đầu ở 0 °C chỉ có thể hấp thụ thêm năng lượng bằng cách ấm lên.",
+    "hint": "Trong khi tan, nước đá hấp thụ nhiệt nóng chảy mà vẫn ở khoảng 0 °C. Nước lỏng ban đầu ở 0 °C chỉ có thể hấp thụ thêm năng lượng bằng cách ấm lên."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-15",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao mặt hồ có thể đóng băng trong khi bên dưới vẫn còn nước lỏng?",
+    "options": [
+      "Băng nặng hơn nước và lắng xuống đáy.",
+      "Băng dẫn nhiệt tốt hơn nước nên đáy ấm lên.",
+      "Băng chỉ hình thành nếu toàn bộ hồ đã đông cứng.",
+      "Băng có khối lượng riêng nhỏ hơn nước, nổi và tạo lớp hạn chế mất nhiệt."
+    ],
+    "answer": 3,
+    "explanation": "Băng nổi vì khối lượng riêng nhỏ hơn nước lỏng. Lớp băng trên mặt hạn chế truyền nhiệt từ nước phía dưới ra không khí lạnh.",
+    "hint": "Băng nổi vì khối lượng riêng nhỏ hơn nước lỏng. Lớp băng trên mặt hạn chế truyền nhiệt từ nước phía dưới ra không khí lạnh."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-16",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Nhiệt kế điện tử đang ở nhiệt độ phòng được đặt vào nước ấm. Vì sao cần đợi số chỉ ổn định?",
+    "options": [
+      "Để cảm biến đạt nhiệt độ phòng.",
+      "Để cảm biến tiến gần cân bằng nhiệt với nước.",
+      "Để nước ấm thêm nhờ nhiệt kế.",
+      "Để cảm biến không trao đổi năng lượng với nước ở bất kỳ thời điểm nào."
+    ],
+    "answer": 1,
+    "explanation": "Cảm biến ban đầu lạnh hơn nước và cần thời gian nhận nhiệt. Khi số chỉ ổn định, nhiệt độ cảm biến đã gần bằng nhiệt độ nước.",
+    "hint": "Cảm biến ban đầu lạnh hơn nước và cần thời gian nhận nhiệt. Khi số chỉ ổn định, nhiệt độ cảm biến đã gần bằng nhiệt độ nước."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-17",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai vật cùng chất và cùng nhiệt độ, nhưng một vật có khối lượng gấp đôi. Nếu cấp cùng một nhiệt lượng và bỏ qua hao phí, điều gì xảy ra?",
+    "options": [
+      "Vật nhẹ tăng nhiệt độ nhiều hơn.",
+      "Vật nặng không thể nóng lên.",
+      "Cả hai tăng nhiệt độ bằng nhau.",
+      "Vật nặng tăng nhiệt độ nhiều hơn."
+    ],
+    "answer": 0,
+    "explanation": "Năng lượng nhận trên mỗi kilôgam của vật nhẹ lớn hơn. Với cùng chất và không chuyển thể, độ tăng nhiệt độ của vật nhẹ lớn hơn.",
+    "hint": "Năng lượng nhận trên mỗi kilôgam của vật nhẹ lớn hơn. Với cùng chất và không chuyển thể, độ tăng nhiệt độ của vật nhẹ lớn hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-18",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Cho một tinh thể nhỏ vào túi chườm chứa dung dịch quá bão hòa. Chất tan nhanh chóng kết tinh và túi ấm lên. Năng lượng làm ấm túi xuất phát chủ yếu từ đâu?",
+    "options": [
+      "Từ năng lượng giải phóng khi chất tan kết tinh.",
+      "Từ lực hấp dẫn tác dụng lên túi.",
+      "Từ nhiệt độ của tinh thể mồi truyền sang toàn bộ túi.",
+      "Từ sự bay hơi của nước qua vỏ túi."
+    ],
+    "answer": 0,
+    "explanation": "Khi chất tan chuyển sang cấu trúc tinh thể bền hơn, hệ giải phóng năng lượng. Năng lượng đó làm phần còn lại của túi chườm ấm lên; tinh thể mồi chỉ khởi phát kết tinh.",
+    "hint": "Khi chất tan chuyển sang cấu trúc tinh thể bền hơn, hệ giải phóng năng lượng. Năng lượng đó làm phần còn lại của túi chườm ấm lên; tinh thể mồi chỉ khởi phát kết tinh."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-19",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một quả bóng kim loại nóng bị thả vào chậu nước mát. Xét cả bóng và nước, bỏ qua chậu và môi trường. Năng lượng mà bóng mất đi có quan hệ thế nào với năng lượng nước nhận?",
+    "options": [
+      "Năng lượng bóng mất lớn hơn vì bóng nóng hơn.",
+      "Năng lượng nước nhận lớn hơn vì nước có thể có khối lượng lớn hơn.",
+      "Hai độ lớn bằng nhau do hệ không trao đổi năng lượng với bên ngoài.",
+      "Cả hai đều bằng không vì vật và nước tiếp xúc trực tiếp."
+    ],
+    "answer": 2,
+    "explanation": "Năng lượng chuyển từ bóng sang nước bên trong hệ. Với giả thiết hệ cô lập, phần năng lượng bóng giảm đúng bằng phần nước tăng.",
+    "hint": "Năng lượng chuyển từ bóng sang nước bên trong hệ. Với giả thiết hệ cô lập, phần năng lượng bóng giảm đúng bằng phần nước tăng."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-20",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai bình nhiệt lượng kế đều chứa cùng lượng nước mát. Rót cùng lượng nước nóng vào mỗi bình, nhưng bình thứ hai có thành kim loại dày hơn và ban đầu cùng nhiệt độ với nước mát. Bỏ qua mất nhiệt ra ngoài. Vì sao bình thứ hai có thể đạt nhiệt độ cân bằng thấp hơn?",
+    "options": [
+      "Nước nóng có nhiệt độ ban đầu thấp hơn trong bình thứ hai.",
+      "Thành bình dày ngăn nước nóng hòa vào nước mát.",
+      "Nhiệt dung riêng của nước thay đổi vì bình dày hơn.",
+      "Thành bình thứ hai cần nhiều năng lượng hơn để tăng nhiệt độ."
+    ],
+    "answer": 3,
+    "explanation": "Nước nóng truyền năng lượng cho cả nước mát và thành bình. Thành bình có nhiệt dung lớn hơn nhận nhiều năng lượng hơn với cùng mức tăng nhiệt độ, nên mức nhiệt độ cân bằng thấp hơn.",
+    "hint": "Nước nóng truyền năng lượng cho cả nước mát và thành bình. Thành bình có nhiệt dung lớn hơn nhận nhiều năng lượng hơn với cùng mức tăng nhiệt độ, nên mức nhiệt độ cân bằng thấp hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-21",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một nhiệt kế chất lỏng được chuyển từ nước ấm sang nước lạnh. Vì sao cột chất lỏng trong ống mao dẫn hạ xuống sau khi ổn định?",
+    "options": [
+      "Chất lỏng đo chuyển thành khí rồi thoát ra ngoài.",
+      "Nhiệt kế ngừng truyền nhiệt nên chất lỏng đột ngột mất khối lượng.",
+      "Chất lỏng đo co lại khi nguội, thể tích của nó giảm tương đối so với bình chứa.",
+      "Ống mao dẫn tự hút chất lỏng ra khỏi bầu nhiệt kế."
+    ],
+    "answer": 2,
+    "explanation": "Chất lỏng trong nhiệt kế trao đổi nhiệt với môi trường lạnh và co lại. Mức co của chất lỏng so với phần thủy tinh làm thể tích trong ống giảm, nên mặt cột hạ xuống.",
+    "hint": "Chất lỏng trong nhiệt kế trao đổi nhiệt với môi trường lạnh và co lại. Mức co của chất lỏng so với phần thủy tinh làm thể tích trong ống giảm, nên mặt cột hạ xuống."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-22",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một khối khí cách nhiệt giãn nở và nâng một vật nặng qua pít-tông. Nội năng của khí thay đổi ra sao nếu bỏ qua mọi trao đổi năng lượng khác?",
+    "options": [
+      "Không thể suy ra dù biết khí thực hiện công.",
+      "Giữ nguyên vì không có truyền nhiệt.",
+      "Giảm vì khí truyền năng lượng ra ngoài dưới dạng công.",
+      "Tăng vì khí giãn nở."
+    ],
+    "answer": 2,
+    "explanation": "Lớp cách nhiệt làm nhiệt lượng trao đổi bằng không. Năng lượng để nâng vật đến từ khối khí, nên nội năng khí giảm đúng bằng công khí thực hiện.",
+    "hint": "Lớp cách nhiệt làm nhiệt lượng trao đổi bằng không. Năng lượng để nâng vật đến từ khối khí, nên nội năng khí giảm đúng bằng công khí thực hiện."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-23",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một khối khí nhận nhiệt, đồng thời đẩy pít-tông đi lên. Nếu nhiệt lượng nhận vào bằng công do khí thực hiện, nội năng thay đổi thế nào?",
+    "options": [
+      "Không đổi vì hai phần năng lượng vào và ra bằng nhau.",
+      "Tăng đúng bằng nhiệt lượng nhận.",
+      "Tăng gấp đôi nhiệt lượng nhận.",
+      "Giảm đúng bằng công khí thực hiện."
+    ],
+    "answer": 0,
+    "explanation": "Khí nhận năng lượng dưới dạng nhiệt và truyền năng lượng ra dưới dạng công. Hai phần bằng nhau nên độ biến thiên nội năng bằng không.",
+    "hint": "Khí nhận năng lượng dưới dạng nhiệt và truyền năng lượng ra dưới dạng công. Hai phần bằng nhau nên độ biến thiên nội năng bằng không."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-24",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một bình cách nhiệt chứa nước được khuấy bằng cánh quạt quay. Vì sao nhiệt độ nước có thể tăng?",
+    "options": [
+      "Vì môi trường truyền nhiệt qua lớp cách nhiệt.",
+      "Vì nhiệt dung riêng của nước bằng không khi khuấy.",
+      "Vì cánh quạt làm giảm khối lượng nước.",
+      "Vì trục quay truyền công vào nước, làm nội năng tăng."
+    ],
+    "answer": 3,
+    "explanation": "Lớp cách nhiệt hạn chế trao đổi nhiệt với môi trường. Công từ trục quay truyền vào nước và chuyển thành nội năng khi chuyển động dòng chảy bị tiêu tán.",
+    "hint": "Lớp cách nhiệt hạn chế trao đổi nhiệt với môi trường. Công từ trục quay truyền vào nước và chuyển thành nội năng khi chuyển động dòng chảy bị tiêu tán."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-25",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Hai miếng sắt giống nhau cùng nóng tới một nhiệt độ. Một miếng bị cắt thành nhiều mảnh và thả vào nước cùng điều kiện với miếng nguyên. Vì sao các mảnh thường nguội nhanh hơn?",
+    "options": [
+      "Tổng diện tích tiếp xúc với nước lớn hơn.",
+      "Các mảnh không thể truyền nhiệt cho nước.",
+      "Tổng khối lượng của các mảnh lớn hơn miếng nguyên.",
+      "Nhiệt dung riêng của sắt giảm khi cắt nhỏ."
+    ],
+    "answer": 0,
+    "explanation": "Cắt nhỏ làm tổng diện tích bề mặt tiếp xúc với nước tăng. Với cùng chênh lệch nhiệt độ ban đầu, diện tích lớn hơn giúp trao đổi nhiệt nhanh hơn.",
+    "hint": "Cắt nhỏ làm tổng diện tích bề mặt tiếp xúc với nước tăng. Với cùng chênh lệch nhiệt độ ban đầu, diện tích lớn hơn giúp trao đổi nhiệt nhanh hơn."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-26",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Một chén nước đang được làm lạnh. Khi nước bắt đầu đóng băng và cả nước lẫn băng cùng tồn tại, tủ lạnh tiếp tục lấy nhiệt. Nhiệt lượng lấy đi chủ yếu làm gì?",
+    "options": [
+      "Làm thêm nước chuyển sang thể rắn.",
+      "Làm nước đang đông giảm nhiệt độ liên tục mà không đổi tỉ lệ hai pha.",
+      "Làm băng chuyển ngay sang thể hơi.",
+      "Làm toàn bộ nước lỏng tăng nhiệt độ."
+    ],
+    "answer": 0,
+    "explanation": "Khi nước tinh khiết đông đặc ở áp suất cố định, năng lượng tiếp tục thoát ra dưới dạng nhiệt đông đặc. Tỉ lệ băng tăng trong khi nhiệt độ gần như giữ ở mốc đông đặc.",
+    "hint": "Khi nước tinh khiết đông đặc ở áp suất cố định, năng lượng tiếp tục thoát ra dưới dạng nhiệt đông đặc. Tỉ lệ băng tăng trong khi nhiệt độ gần như giữ ở mốc đông đặc."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-27",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Vì sao mặt kính phòng tắm mờ đi khi tắm nước nóng nhưng rõ lại khi phòng thông thoáng và kính ấm lên?",
+    "options": [
+      "Hơi nước chuyển thẳng thành tinh thể rồi nóng chảy.",
+      "Các giọt nước biến mất vì kính hấp thụ chúng vĩnh viễn.",
+      "Kính biến thành nước rồi trở lại thể rắn.",
+      "Hơi nước ngưng tụ trên kính lạnh, rồi các giọt bay hơi khi điều kiện thuận lợi."
+    ],
+    "answer": 3,
+    "explanation": "Kính lạnh làm hơi nước ngưng tụ thành nhiều giọt nhỏ tán xạ ánh sáng. Khi kính ấm lên và không khí bớt ẩm, các giọt bay hơi, giúp kính trong lại.",
+    "hint": "Kính lạnh làm hơi nước ngưng tụ thành nhiều giọt nhỏ tán xạ ánh sáng. Khi kính ấm lên và không khí bớt ẩm, các giọt bay hơi, giúp kính trong lại."
+  },
+  {
+    "id": "ly-12-1-nhiet-tinh-huong-28",
+    "difficulty": "Thông hiểu",
+    "type": "Trắc nghiệm",
+    "prompt": "Tại sao dùng kẹp kim loại dài để gắp vật nóng giúp tay ít nóng hơn dùng kẹp cùng loại nhưng ngắn, trong một khoảng thời gian gắp ngắn?",
+    "options": [
+      "Nhiệt dung riêng của kim loại tăng theo chiều dài kẹp.",
+      "Đầu cầm của kẹp dài nóng lên ngay khi chạm vật.",
+      "Kẹp dài không truyền nhiệt.",
+      "Nhiệt phải truyền qua quãng đường dài hơn mới tới tay."
+    ],
+    "answer": 3,
+    "explanation": "Năng lượng dẫn dọc theo kim loại từ đầu gắp nóng đến tay. Với các yếu tố khác như nhau, đầu cầm xa nguồn nóng hơn thường tăng nhiệt chậm hơn trong thời gian ngắn.",
+    "hint": "Năng lượng dẫn dọc theo kim loại từ đầu gắp nóng đến tay. Với các yếu tố khác như nhau, đầu cầm xa nguồn nóng hơn thường tăng nhiệt chậm hơn trong thời gian ngắn."
   },
   {
     "id": "ly-12-1-nhiet-70",
@@ -1261,22 +1341,6 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "70-de",
       "solution": "70-giai"
-    }
-  },
-  {
-    "id": "ly-12-1-nhiet-71",
-    "difficulty": "Thông hiểu và vận dụng trực tiếp",
-    "prompt": "(Trả lời ngắn) Để xử lí nấm mốc của thóc giống trước khi ngâm, người nông dân dùng nước ấm “nước 3 sôi 2 lạnh” được tạo ra bằng cách trộn 3 phần nước sôi với 2 phần nước lạnh (nước ở nhiệt độ thường). Coi ◦ ◦ rằng nước lạnh có nhiệt độ là 20 C, nước sôi có nhiệt độ 100 C và nhiệt tỏa ra xung quanh là không đáng kể. ◦ Nhiệt độ của nước sau khi pha là bao nhiêu C? (Kết quả làm tròn kết quả đến chữ số hàng đơn vị)?",
-    "explanation": "Giải Coi các phần nước được đong sao cho khối lượng nước nóng và lạnh có tỉ lệ 3 : 2. Gọi t là nhiệt độ sau khi pha. Bỏ qua nhiệt lượng mất ra ngoài, nhiệt nước nóng tỏa ra bằng nhiệt nước lạnh thu vào 3c(100 − t) = 2c(t − 20). Chia hai vế cho c rồi giải, được 300 − 3t = 2t − 40, nên 5t = 340. ◦ Đáp số 68 C.",
-    "kind": "short",
-    "type": "Trả lời ngắn",
-    "value": 68,
-    "unit": "°C",
-    "tolerance": 5.1e-05,
-    "answerText": "68 °C",
-    "pdfSource": {
-      "question": "71-de",
-      "solution": "71-giai"
     }
   },
   {
@@ -1334,6 +1398,136 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "74-de",
       "solution": "74-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-16",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Khi hai vật tiếp xúc với nhau, a) nhiệt lượng luôn tự truyền từ vật có nội năng lớn hơn sang vật có nội năng nhỏ hơn. b) nhiệt lượng luôn tự truyền từ vật có nhiệt độ cao hơn sang vật có nhiệt độ nhỏ hơn. c) hai vật không trao đổi nhiệt với nhau nếu nhiệt độ chúng bằng nhau. d) hai vật không trao đổi nhiệt với nhau nếu khối lượng chúng bằng nhau.",
+    "explanation": "Đáp án S, Đ, Đ, S Giải a) Sai. Chiều tự truyền nhiệt phụ thuộc vào nhiệt độ của hai vật. b) Đúng. Nhiệt tự truyền từ vật nóng sang vật lạnh. c) Đúng. Khi nhiệt độ bằng nhau, dòng nhiệt ròng bằng không. d) Sai. Hai vật cùng khối lượng vẫn trao đổi nhiệt nếu nhiệt độ khác nhau.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Sai",
+      "Đúng",
+      "Đúng",
+      "Sai"
+    ],
+    "answerText": "a) Sai, b) Đúng, c) Đúng, d) Sai",
+    "pdfSource": {
+      "question": "pdf2-16-de",
+      "solution": "pdf2-16-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-20",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Một khối khí đựng trong xilanh có pít-tông. Đốt nóng xilanh trong thời gian đủ dài (trong quá trình đốt pít-tông không dịch chuyển). a) Nhiệt độ khối khí tăng lên. b) Nội năng của khối khí giảm. c) Động năng trung bình của phân tử khí tăng. d) Áp suất khối khí không đổi.",
+    "explanation": "Đáp án Đ, S, Đ, S Giải a) Đúng. Khí được đun nóng trong xilanh có thể tích không đổi. b) Sai. Pít-tông đứng yên nên công bằng không. Khí nhận nhiệt nên ∆U = Q > 0. c) Đúng. Động năng trung bình của phân tử tăng khi nhiệt độ tăng. d) Sai. Với lượng khí cố định và thể tích không đổi, p/T không đổi. Nhiệt độ tăng làm áp suất tăng.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Đúng",
+      "Sai",
+      "Đúng",
+      "Sai"
+    ],
+    "answerText": "a) Đúng, b) Sai, c) Đúng, d) Sai",
+    "pdfSource": {
+      "question": "pdf2-20-de",
+      "solution": "pdf2-20-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-28",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Các phân tử chuyển động hỗn loạn không ngừng nên chúng có động năng (động năng phân tử). Các phân tử tương tác với nhau nên chúng có thế năng (thế năng phân tử). a) Động năng phân tử phụ thuộc vào tốc độ chuyển động của phân tử. b) Thế năng phân tử phụ thuộc vào khoảng cách giữa các phân tử. c) Nội năng của vật là tổng động năng và thế năng của các phân tử cấu tạo nên vật. d) Nội năng của một vật phụ thuộc vào nhiệt độ và thể tích của vật.",
+    "explanation": "Đáp án Đ, Đ, Đ, Đ Giải a) Đúng. Động năng của một phân tử là mv2/2. b) Đúng. Thế năng tương tác thay đổi khi khoảng cách giữa các phân tử thay đổi. c) Đúng. Nội năng là tổng các phần năng lượng vi mô này. d) Đúng. Với một vật nói chung, nhiệt độ liên quan đến động năng, còn thể tích có thể ảnh hưởng tới thế năng tương tác.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Đúng",
+      "Đúng",
+      "Đúng",
+      "Đúng"
+    ],
+    "answerText": "a) Đúng, b) Đúng, c) Đúng, d) Đúng",
+    "pdfSource": {
+      "question": "pdf2-28-de",
+      "solution": "pdf2-28-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-32",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Các phân tử cấu tạo nên vật chuyển động hỗn loạn không ngừng nên a) tốc độ của các phân tử không ngừng thay đổi. b) khoảng cách giữa các phân tử thay đổi không đáng kể. c) động năng và cả thế năng của các phân tử không ngừng thay đổi. d) Khi nói động năng và thế năng của phân tử thì phải hiểu đó là động năng và thế năng hiệu dụng của các phân tử cấu tạo nên vật.",
+    "explanation": "Đáp án Đ, S, Đ, S theo mô hình động học Giải a) Đúng. Tương tác và va chạm có thể làm vận tốc từng phân tử thay đổi theo thời gian. b) Sai. Chuyển động hỗn loạn nói chung không bảo đảm khoảng cách giữa từng cặp phân tử chỉ thay đổi ít. c) Đúng. Vận tốc và khoảng cách có thể thay đổi, làm động năng và thế năng vi mô thay đổi. d) Sai. Đây là các năng lượng vi mô. Khi mô tả cả hệ, ta có thể tính tổng hoặc giá trị trung bình tùy đại lượng.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Đúng",
+      "Sai",
+      "Đúng",
+      "Sai"
+    ],
+    "answerText": "a) Đúng, b) Sai, c) Đúng, d) Sai",
+    "pdfSource": {
+      "question": "pdf2-32-de",
+      "solution": "pdf2-32-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-36",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Đặt ống nghiệm đựng bột băng phiến vào bình nước. Trong ống nghiệm có nhiệt kế để đo nhiệt độ của băng phiến. Dùng đèn cồn đun nóng bình đựng nước. Thí nghiệm cho thấy, trong thời gian bị đun, bột băng phiến đang nóng chảy thì a) nhiệt độ của băng phiến tăng. b) động năng của các phân tử băng phiến tăng. c) thế năng của các phân tử băng phiến thay đổi. d) nội năng của bột băng phiến tăng.",
+    "explanation": "Đáp án S, S, Đ, Đ Giải a) Sai. Trong lúc băng phiến kết tinh đang nóng chảy, nhiệt độ giữ ở mốc nóng chảy. b) Sai. Nhiệt độ không tăng nên động năng chuyển động nhiệt trung bình không tăng. c) Đúng. Khi cấu trúc chuyển từ rắn sang lỏng, thế năng tương tác thay đổi. d) Đúng. Băng phiến tiếp tục thu nhiệt trong quá trình nóng chảy, làm nội năng tăng.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Sai",
+      "Sai",
+      "Đúng",
+      "Đúng"
+    ],
+    "answerText": "a) Sai, b) Sai, c) Đúng, d) Đúng",
+    "pdfSource": {
+      "question": "pdf2-36-de",
+      "solution": "pdf2-36-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-39",
+    "difficulty": "Thông hiểu",
+    "prompt": "(Đúng/sai) Các nội dung sau đây liên quan đến sự hóa hơi. a) Chất lỏng có thể hóa hơi ở các nhiệt độ khác nhau. b) Độ lớn của nhiệt hóa hơi riêng của chất lỏng phụ thuộc vào nhiệt độ ở đó chất lỏng hóa hơi. c) Với một chất lỏng nhất định, thông thường nhiệt hóa hơi riêng tăng khi nhiệt độ giảm. d) Với một chất lỏng nhất định, nhiệt độ sôi không phụ thuộc vào áp suất trên mặt thoáng.",
+    "explanation": "Đáp án Đ, Đ, Đ, S Giải a) Đúng. Bay hơi xảy ra ở nhiều nhiệt độ khác nhau. b) Đúng. Nhiệt hóa hơi riêng thay đổi theo nhiệt độ của quá trình chuyển thể. c) Đúng. Với một chất thông thường, nhiệt hóa hơi riêng giảm khi nhiệt độ tiến gần nhiệt độ tới hạn. d) Sai. Khi áp suất trên mặt thoáng thay đổi, nhiệt độ mà tại đó áp suất hơi bão hòa bằng áp suất ngoài cũng thay đổi.",
+    "kind": "true-false",
+    "type": "Đúng/sai",
+    "answer": [
+      "Đúng",
+      "Đúng",
+      "Đúng",
+      "Sai"
+    ],
+    "answerText": "a) Đúng, b) Đúng, c) Đúng, d) Sai",
+    "pdfSource": {
+      "question": "pdf2-39-de",
+      "solution": "pdf2-39-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-71",
+    "difficulty": "Thông hiểu và vận dụng trực tiếp",
+    "prompt": "(Trả lời ngắn) Để xử lí nấm mốc của thóc giống trước khi ngâm, người nông dân dùng nước ấm “nước 3 sôi 2 lạnh” được tạo ra bằng cách trộn 3 phần nước sôi với 2 phần nước lạnh (nước ở nhiệt độ thường). Coi ◦ ◦ rằng nước lạnh có nhiệt độ là 20 C, nước sôi có nhiệt độ 100 C và nhiệt tỏa ra xung quanh là không đáng kể. ◦ Nhiệt độ của nước sau khi pha là bao nhiêu C? (Kết quả làm tròn kết quả đến chữ số hàng đơn vị)?",
+    "explanation": "Giải Coi các phần nước được đong sao cho khối lượng nước nóng và lạnh có tỉ lệ 3 : 2. Gọi t là nhiệt độ sau khi pha. Bỏ qua nhiệt lượng mất ra ngoài, nhiệt nước nóng tỏa ra bằng nhiệt nước lạnh thu vào 3c(100 − t) = 2c(t − 20). Chia hai vế cho c rồi giải, được 300 − 3t = 2t − 40, nên 5t = 340. ◦ Đáp số 68 C.",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 68,
+    "unit": "°C",
+    "tolerance": 5.1e-05,
+    "answerText": "68 °C",
+    "pdfSource": {
+      "question": "71-de",
+      "solution": "71-giai"
     }
   },
   {
@@ -1398,6 +1592,118 @@ export const thermalPhysicsQuestions = [
     "pdfSource": {
       "question": "78-de",
       "solution": "78-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-43",
+    "difficulty": "Vận dụng",
+    "prompt": "(Trả lời ngắn) Một thùng đựng 20,0 lít nước ở nhiệt độ 20,0 C. Cho khối lượng riêng của nước là 1,0.103 kg/m3; nhiệt dung riêng của nước là 4 200 J/(kg.K). Tính thời gian truyền nhiệt lượng cần thiết nếu ◦ dùng một thiết bị điện có công suất 25,0 kW để đun lượng nước trên đến 70 C. Biết chỉ có 80,0% năng lượng điện tiêu thụ được dùng để làm nóng nước.",
+    "explanation": "Giải Đổi 20,0 lít thành 0,0200 m3. Khối lượng nước là m = ρV = 20,0 kg. Nhiệt lượng nước cần thu vào là Q = mc∆T = 20,0 × 4200 × (70 − 20) = 4,2 × 106 J. Công suất có ích là ηP = 0,800 × 25 000 = 20 000 W. Suy ra t = Q/(ηP ) = 210 s. Đáp số 210 s ◦ ◦ ◦",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 210,
+    "unit": "s",
+    "tolerance": 5.1e-05,
+    "answerText": "210 s",
+    "pdfSource": {
+      "question": "pdf2-43-de",
+      "solution": "pdf2-43-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-45",
+    "difficulty": "Vận dụng",
+    "prompt": "(Trả lời ngắn) Một viên đạn bằng bạc có khối lượng 2,00 g bay với tốc độ 2,00.102 m/s đến xuyên vào một bức tường gỗ. Nhiệt dung riêng của bạc là 0,234 kJ/(kg.K). Coi viên đạn không trao đổi nhiệt với bên ngoài và toàn bộ công cản của bức tường chỉ dùng để làm nóng viên đạn, nhiệt độ của viên đạn sẽ tăng thêm bao nhiêu kelvin (viết kết quả đến một chữ số sau dấu phẩy thập phân)?",
+    "explanation": "Giải Theo giả thiết, viên đạn dừng lại và toàn bộ động năng ban đầu làm nóng viên đạn. Đổi c = 0,234 kJ/(kg · K) = 234 J/(kg · K). (200)2 mc∆T = 1 mv2 ⇒ ∆T = ≈ 85,5 K. 2 2 × 234 Đáp số 85,5 K",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 85.5,
+    "unit": "K",
+    "tolerance": 0.05,
+    "answerText": "85,5 K",
+    "pdfSource": {
+      "question": "pdf2-45-de",
+      "solution": "pdf2-45-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-47",
+    "difficulty": "Vận dụng",
+    "prompt": "(Trả lời ngắn) Một lượng khí nhận nhiệt lượng 250 kJ do được đun nóng; đồng thời nhận công 500 kJ do bị nén. Xác định độ tăng nội năng của lượng khí (theo đơn vị kJ). (Viết kết quả đến phần nguyên).",
+    "explanation": "Giải Khí vừa nhận nhiệt Q = +250 kJ, vừa nhận công A = +500 kJ. Theo định luật I, ∆U = Q + A = 250 + 500 = 750 kJ. Đáp số 750 kJ",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 750,
+    "unit": "kJ",
+    "tolerance": 5.1e-05,
+    "answerText": "750 kJ",
+    "pdfSource": {
+      "question": "pdf2-47-de",
+      "solution": "pdf2-47-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-49",
+    "difficulty": "Vận dụng",
+    "prompt": "(Trả lời ngắn) Một quả bóng khối lượng 0,100 kg rơi từ độ cao 10,00 m xuống sân và nảy lên được 7,00 m. Lấy g = 9,81 m/s2. Độ biến thiên nội năng của hệ gồm quả bóng, mặt sân và không khí bằng bao nhiêu J? (Viết kết quả đến hai chữ số sau dấu phẩy thập phân).",
+    "explanation": "Giải Ở hai vị trí cao nhất, vận tốc bằng không. Độ giảm cơ năng của hệ chuyển thành nội năng theo mô hình của đề. ∆U = mg(h − h ) = 0,100 × 9,81(10,00 − 7,00) = 2,943 J. 1 2 Đáp số 2,94 J ◦ ◦",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 2.94,
+    "unit": "J",
+    "tolerance": 0.005,
+    "answerText": "2,94 J",
+    "pdfSource": {
+      "question": "pdf2-49-de",
+      "solution": "pdf2-49-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-51",
+    "difficulty": "Vận dụng",
+    "prompt": "(Trả lời ngắn) Xác định độ biến thiên nhiệt độ (K) của nước rơi từ độ cao 96,0 m xuống và đập vào cánh tuabin làm quay máy phát điện, biết rằng 67% thế năng của nước biến thành nội năng của nước. Cho biết nhiệt dung riêng của nước là 4 190 J/(kg.K). Lấy g =9,81 m/s2. (Viết kết quả đến hai chữ số sau dấu phẩy thập phân).",
+    "explanation": "Giải Phần thế năng làm nóng nước bằng 0,67mgh. Vì nước thu nhiệt làm tăng nhiệt độ mà không chuyển thể, 0,67 × 9,81 × 96,0 mc∆T = 0,67mgh ⇒ ∆T = ≈ 0,1506 K. 4190 Đáp số 0,15 K",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 0.15,
+    "unit": "K",
+    "tolerance": 0.005,
+    "answerText": "0,15 K",
+    "pdfSource": {
+      "question": "pdf2-51-de",
+      "solution": "pdf2-51-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-52",
+    "difficulty": "Vận dụng cao",
+    "prompt": "(Trả lời ngắn) Vào mùa hè, một số người thường có thói quen uống trà đá. Để có một cốc trà đá chất ◦ ◦ lượng, người chủ quán rót khoảng 0,250 kg trà nóng ở 80,0 C vào cốc, sau đó cho tiếp m kg nước đá 0 C. ◦ Cuối cùng được cốc trà đá ở nhiệt độ phù họp nhất là 10,0 C. Bỏ qua hao phí do trao đổi nhiệt với môi trường và cốc. Nhiệt dung riêng của nước là 4,20 kJ/(kg.K); nhiệt nóng chảy của nước đá là 3,33.105 J/kg. Giá trị của m là bao nhiêu kg? (Viết kết quả đến hai chừ số sau dấu phẩy thập phân).",
+    "explanation": "Giải ◦ ◦ Nhiệt trà tỏa ra khi nguội từ 80 xuống 10 C làm đá tan hết và làm phần nước đá tan nóng lên đến 10 C. 0,250 × 4200(80 − 10) = m[3,33 × 105 + 4200(10 − 0)]. Suy ra m = 73 500/375 000 = 0,196 kg, làm tròn thành 0,20 kg. Đáp số 0,20 kg",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 0.2,
+    "unit": "kg",
+    "tolerance": 0.005,
+    "answerText": "0,2 kg",
+    "pdfSource": {
+      "question": "pdf2-52-de",
+      "solution": "pdf2-52-giai"
+    }
+  },
+  {
+    "id": "ly-12-1-nhiet-pdf2-53",
+    "difficulty": "Vận dụng cao",
+    "prompt": "(Trả lời ngắn) Một khối đồng có khối lượng 120,0 g được lấy ra khỏi lò nung và nhanh chóng cho ◦ ◦ vào một cốc có nhiệt dung không đáng kể chứa 300,0 g nước. Nhiệt độ nước tăng từ 15,0 C đến 35,0 C. Cho nhiệt dung riêng của đồng và nước lần lượt là 0,420 J/(g.K) và 4,20 J/(g.K). Nhiệt độ của lò nung là bao nhiêu (theo thang đo Celsius, viết kết quả đến phần nguyên)?",
+    "explanation": "Giải ◦ Bỏ qua nhiệt lượng mất ra ngoài và coi khối đồng ban đầu ở nhiệt độ lò t. Đồng nguội về 35 C, nước nóng từ ◦ 15 đến 35 C. 120(0,420)(t − 35) = 300(4,20)(35 − 15). Vế phải bằng 25 200 J. Suy ra t − 35 = 500 ◦ C, tức t = 535 ◦ C. ◦ Đáp số 535 C",
+    "kind": "short",
+    "type": "Trả lời ngắn",
+    "value": 535,
+    "unit": "°C",
+    "tolerance": 5.1e-05,
+    "answerText": "535 °C",
+    "pdfSource": {
+      "question": "pdf2-53-de",
+      "solution": "pdf2-53-giai"
     }
   }
 ];
