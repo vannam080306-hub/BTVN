@@ -54,3 +54,5 @@
 .truth-fields select{display:block;width:100%;margin-top:.25rem}
 #true-false-form fieldset{min-width:0;border:0;padding:0;margin:0}
 .source-request{font-weight:600;line-height:1.7;margin:16px 0}
+
+.math-illustration{margin:18px 0;padding:12px;background:#fff;border:1px solid var(--line);border-radius:9px;overflow-x:auto}.math-illustration img{display:block;width:auto;max-width:100%;max-height:480px;height:auto;margin:auto}.truth-fields:has(.truth-statement .katex){grid-template-columns:1fr}.truth-statement{display:block;line-height:1.9}.truth-fields label:has(.truth-statement){display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:12px;align-items:start}.truth-fields .katex{white-space:normal}.truth-fields select{margin:0}.truth-statement .katex{white-space:nowrap}@media(max-width:600px){.truth-fields label:has(.truth-statement){grid-template-columns:1fr}.truth-fields label select{max-width:160px}.math-illustration{padding:6px}.math-illustration img{max-height:380px}}

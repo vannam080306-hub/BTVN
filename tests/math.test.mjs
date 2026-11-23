@@ -18,7 +18,7 @@ test('Các câu dùng trường hiển thị LaTeX và gợi ý đầy đủ, kh
   assert.ok(d.guide.symbols.every(([symbol,meaning])=>symbol&&meaning),q.id);
   for(const v of [d.prompt,d.explanation,d.hint,d.answerText,...d.options||[]])if(v)assert.doesNotThrow(()=>richText(v),q.id);
   for(const row of [d.table?.headers||[],...d.table?.rows||[]])for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
-  const answer=q.kind==='short'?d.answerText:('ABCD'[q.answer]+'. '+d.options[q.answer]);
+  const answer=q.answerText?d.answerText:('ABCD'[q.answer]+'. '+d.options[q.answer]);
   const solution=d.solutionSteps??d.explanation;
   const html=studyGuideHTML(d.guide,solution,answer);
   assert.ok(d.explanation,q.id);
