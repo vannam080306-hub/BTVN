@@ -24,9 +24,9 @@ test('Toán 12 Chương 1 có đủ 105 số thứ tự và ba dạng trả lờ
  for(const item of qs){
   assert.ok(item.source.page>=1&&item.source.page<=67,item.id);
   assert.equal(item.source.file,'Chuong_1.pdf');
-  assert.ok(item.nativeLatex&&item.solutionSteps.length>=3,item.id);
+  assert.ok(item.nativeLatex&&item.originalSolution&&item.explanation,item.id);
   for(const text of [item.prompt,...item.options??[],...item.statements??[]])assert.doesNotThrow(()=>richText(text),item.id);
-  assert.doesNotThrow(()=>solutionHTML(item.solutionSteps),item.id);
+  assert.doesNotThrow(()=>solutionHTML(item.explanation),item.id);
   if(item.kind==='true-false'){assert.equal(item.statements.length,4);assert.equal(item.answer.length,4);}
  }
 });

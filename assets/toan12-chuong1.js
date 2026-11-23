@@ -1,3 +1,4 @@
+import {originalSolutions} from './toan12-chuong1-solutions.js?v=709a7c5cfb11';
 // Nhập đủ 105 câu từ Chuong_1.pdf; các chỗ hiệu chỉnh được ghi trong docs/TOAN12-CHUONG1.md.
 const r=String.raw;
 const questions=[];
@@ -133,6 +134,11 @@ const sourcePages=[1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5, 5, 6, 6, 7, 7, 7, 8, 8, 8, 9
 const illustrated=new Set([1, 2, 4, 7, 8, 11, 12, 13, 16, 17, 19, 20, 22, 23, 24, 25, 27, 28, 29, 35, 37, 38, 39, 40, 41, 42, 43, 44, 47, 50, 52, 53, 54, 55, 56, 67, 70, 72, 74, 77, 78, 81, 83, 86, 88, 89, 90, 93, 94, 95, 96, 98, 100, 101, 102, 103, 104, 105]);
 for(const question of questions){
  question.source.page=sourcePages[question.sourceNumber-1];
+ question.explanation=originalSolutions[question.id];
+ question.originalSolution=true;
+ if([86,94].includes(question.sourceNumber))question.solutionDiagram={folder:'toan12-chuong1',file:question.sourceNumber+'-sol.webp',alt:'Hình trong lời giải gốc câu '+question.sourceNumber};
+ delete question.solutionSteps;
+ delete question.guide;
  if(illustrated.has(question.sourceNumber))question.diagram={file:question.sourceNumber+'.webp',alt:'Hình hoặc bảng dữ kiện của câu '+question.sourceNumber+' trong tài liệu Chương 1 Toán 12'};
 }
 

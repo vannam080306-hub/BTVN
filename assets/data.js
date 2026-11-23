@@ -1,14 +1,14 @@
-import {chapter4 as math12Chapter4} from './toan12-c4.js?v=42cab25fe163';
-import {chapter5 as math12Chapter5} from './toan12-c5.js?v=42cab25fe163';
-import {grade12Chapter1Questions} from './toan12-chuong1.js?v=42cab25fe163';
-import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=42cab25fe163';
-import {magneticFieldQuestions} from './ly12-tu-truong.js?v=42cab25fe163';
-import {idealGasQuestions} from './ly12-khi.js?v=42cab25fe163';
-import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=42cab25fe163';
-import {chapter4Questions} from './toan11-chuong4.js?v=42cab25fe163';
-import {chapter2Questions} from './toan11-chuong2.js?v=42cab25fe163';
-import {chapter1Questions} from './toan11-chuong1.js?v=42cab25fe163';
-import {chapter3Questions} from './toan11-chuong3.js?v=42cab25fe163';
+import {chapter4 as math12Chapter4} from './toan12-c4.js?v=709a7c5cfb11';
+import {chapter5 as math12Chapter5} from './toan12-c5.js?v=709a7c5cfb11';
+import {grade12Chapter1Questions} from './toan12-chuong1.js?v=709a7c5cfb11';
+import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=709a7c5cfb11';
+import {magneticFieldQuestions} from './ly12-tu-truong.js?v=709a7c5cfb11';
+import {idealGasQuestions} from './ly12-khi.js?v=709a7c5cfb11';
+import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=709a7c5cfb11';
+import {chapter4Questions} from './toan11-chuong4.js?v=709a7c5cfb11';
+import {chapter2Questions} from './toan11-chuong2.js?v=709a7c5cfb11';
+import {chapter1Questions} from './toan11-chuong1.js?v=709a7c5cfb11';
+import {chapter3Questions} from './toan11-chuong3.js?v=709a7c5cfb11';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],

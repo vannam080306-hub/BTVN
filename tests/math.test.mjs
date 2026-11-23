@@ -37,7 +37,7 @@ test('Các câu dùng trường hiển thị LaTeX và gợi ý đầy đủ, kh
 
 test('Các bài biến đổi, tính toán và phương trình có lời giải từng bước bằng LaTeX',()=>{
  const detailed=questions.filter(q=>mathContent[q.id]?.solutionSteps);
- assert.ok(detailed.length>=260);
+ assert.ok(detailed.length>=155);
  for(const q of detailed){
   const steps=mathContent[q.id]?.solutionSteps;
   assert.ok(steps.length>=3,q.id);
