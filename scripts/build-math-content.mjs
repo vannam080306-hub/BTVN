@@ -8,7 +8,7 @@ export async function buildMathContent(){
  const data={};
  for(const subject of subjects)for(const grade of [10,11,12])for(const chapter of chapters(subject.id,grade))for(const q of chapter.questions){
   // The PDF questions and authored thermal-physics prose are ready for display.
-  if(q.pdfSource||(subject.id==='ly'&&grade===12&&chapter.id===1))continue;
+  if(q.originalSolution||q.pdfSource||(subject.id==='ly'&&grade===12&&chapter.id===1))continue;
   if(q.nativeLatex){
    data[q.id]={prompt:q.prompt,options:q.options,explanation:q.explanation,hint:q.hint,guide:q.guide,solutionSteps:q.solutionSteps,answerText:q.answerText,statements:q.statements};
    continue;

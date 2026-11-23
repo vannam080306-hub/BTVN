@@ -11,11 +11,16 @@ const questions=subjects.flatMap(s=>[10,11,12].flatMap(g=>chapters(s.id,g)
  .filter(c=>!(s.id==='ly'&&g===12&&c.id===1)).flatMap(c=>c.questions.filter(q=>!q.pdfSource))));
 
 test('Các câu dùng trường hiển thị LaTeX và gợi ý đầy đủ, không đổi số lựa chọn',()=>{
- assert.equal(Object.keys(mathContent).length,questions.length);
+ assert.equal(Object.keys(mathContent).length,questions.filter(q=>!q.originalSolution).length);
  for(const q of questions){
-  const d=mathContent[q.id];assert.ok(d,q.id);assert.equal(d.options?.length,q.options?.length,q.id);
-  assert.ok(d.guide.formulas.length&&d.guide.symbols.length,q.id);
-  assert.ok(d.guide.symbols.every(([symbol,meaning])=>symbol&&meaning),q.id);
+  const d=q.originalSolution?q:mathContent[q.id];assert.ok(d,q.id);assert.equal(d.options?.length,q.options?.length,q.id);
+  if(q.originalSolution){
+   assert.equal(d.solutionSteps,undefined,q.id);
+   assert.ok(!d.guide,q.id);
+  }else{
+   assert.ok(d.guide.formulas.length&&d.guide.symbols.length,q.id);
+   assert.ok(d.guide.symbols.every(([symbol,meaning])=>symbol&&meaning),q.id);
+  }
   for(const v of [d.prompt,d.explanation,d.hint,d.answerText,...d.options||[]])if(v)assert.doesNotThrow(()=>richText(v),q.id);
   for(const row of [d.table?.headers||[],...d.table?.rows||[]])for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
   const answer=q.answerText?d.answerText:('ABCD'[q.answer]+'. '+d.options[q.answer]);
@@ -31,17 +36,17 @@ test('Các câu dùng trường hiển thị LaTeX và gợi ý đầy đủ, kh
 });
 
 test('Các bài biến đổi, tính toán và phương trình có lời giải từng bước bằng LaTeX',()=>{
- const detailed=questions.filter(q=>mathContent[q.id].solutionSteps);
+ const detailed=questions.filter(q=>mathContent[q.id]?.solutionSteps);
  assert.ok(detailed.length>=260);
  for(const q of detailed){
-  const steps=mathContent[q.id].solutionSteps;
+  const steps=mathContent[q.id]?.solutionSteps;
   assert.ok(steps.length>=3,q.id);
   for(const step of steps){assert.ok(step.content,q.id);assert.doesNotThrow(()=>richText(step.title),q.id);assert.doesNotThrow(()=>richText(step.content),q.id);}
   const html=solutionHTML(steps);
   assert.match(html,/Bước 1/);assert.match(html,/Bước 3/);assert.doesNotMatch(html,/katex-error/);
  }
- for(const q of questions.filter(q=>q.id.startsWith('toan-11-1-')&&(/Rút gọn|Tính |Tìm giá trị|Phương trình/.test(q.prompt))))assert.ok(mathContent[q.id].solutionSteps,q.id);
- for(const q of questions.filter(q=>q.id.startsWith('toan-11-2-')))assert.ok(mathContent[q.id].solutionSteps,q.id);
+ for(const q of questions.filter(q=>q.id.startsWith('toan-11-1-')&&(/Rút gọn|Tính |Tìm giá trị|Phương trình/.test(q.prompt))))assert.ok(mathContent[q.id]?.solutionSteps,q.id);
+ for(const q of questions.filter(q=>q.id.startsWith('toan-11-2-')))assert.ok(mathContent[q.id]?.solutionSteps,q.id);
 });
 
 test('Lọc tham số từng họ nghiệm khớp các nghiệm đã kiểm chứng, không bỏ hoặc đếm trùng',()=>{
