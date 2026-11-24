@@ -1,19 +1,19 @@
-import {vdc2} from './toan12-c2-vdc.js?v=9c88c06a42b1';
-import {vdc6} from './toan12-c6-vdc.js?v=9c88c06a42b1';
-import {chapter2 as math12Chapter2} from './toan12-c2.js?v=9c88c06a42b1';
-import {chapter3 as math12Chapter3} from './toan12-c3.js?v=9c88c06a42b1';
-import {chapter6 as math12Chapter6} from './toan12-c6.js?v=9c88c06a42b1';
-import {chapter4 as math12Chapter4} from './toan12-c4.js?v=9c88c06a42b1';
-import {chapter5 as math12Chapter5} from './toan12-c5.js?v=9c88c06a42b1';
-import {grade12Chapter1Questions} from './toan12-chuong1.js?v=9c88c06a42b1';
-import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=9c88c06a42b1';
-import {magneticFieldQuestions} from './ly12-tu-truong.js?v=9c88c06a42b1';
-import {idealGasQuestions} from './ly12-khi.js?v=9c88c06a42b1';
-import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=9c88c06a42b1';
-import {chapter4Questions} from './toan11-chuong4.js?v=9c88c06a42b1';
-import {chapter2Questions} from './toan11-chuong2.js?v=9c88c06a42b1';
-import {chapter1Questions} from './toan11-chuong1.js?v=9c88c06a42b1';
-import {chapter3Questions} from './toan11-chuong3.js?v=9c88c06a42b1';
+import {vdc2} from './toan12-c2-vdc.js?v=622d684dbe55';
+import {vdc6} from './toan12-c6-vdc.js?v=622d684dbe55';
+import {chapter2 as math12Chapter2} from './toan12-c2.js?v=622d684dbe55';
+import {chapter3 as math12Chapter3} from './toan12-c3.js?v=622d684dbe55';
+import {chapter6 as math12Chapter6} from './toan12-c6.js?v=622d684dbe55';
+import {chapter4 as math12Chapter4} from './toan12-c4.js?v=622d684dbe55';
+import {chapter5 as math12Chapter5} from './toan12-c5.js?v=622d684dbe55';
+import {grade12Chapter1Questions} from './toan12-chuong1.js?v=622d684dbe55';
+import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=622d684dbe55';
+import {magneticFieldQuestions} from './ly12-tu-truong.js?v=622d684dbe55';
+import {idealGasQuestions} from './ly12-khi.js?v=622d684dbe55';
+import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=622d684dbe55';
+import {chapter4Questions} from './toan11-chuong4.js?v=622d684dbe55';
+import {chapter2Questions} from './toan11-chuong2.js?v=622d684dbe55';
+import {chapter1Questions} from './toan11-chuong1.js?v=622d684dbe55';
+import {chapter3Questions} from './toan11-chuong3.js?v=622d684dbe55';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
