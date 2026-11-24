@@ -39,7 +39,7 @@ function diagramHTML(diagram){
 function trueFalseForm(q,answered,selected){
  const choices=['Đúng','Sai'];
  if(q.answer.includes('Phụ thuộc giả thiết'))choices.push('Phụ thuộc giả thiết');
- return `<form id="true-false-form" class="short-form"><fieldset ${answered?'disabled':''}><legend>Đánh giá từng mệnh đề</legend><div class="truth-fields">${[...'abcd'].map((letter,i)=>`<label><span class="truth-statement">${q.statements?letter+") "+richText(q.statements[i]):"Mệnh đề "+letter+")"}</span><select name="${letter}" required><option value="">Chọn</option>${choices.map(choice=>`<option ${selected?.response?.[i]===choice?'selected':''}>${choice}</option>`).join('')}</select></label>`).join('')}</div><button class="button primary">Kiểm tra</button></fieldset></form>`;
+ return `<form id="true-false-form" class="short-form"><fieldset ${answered?'disabled':''}><legend>Đánh giá từng mệnh đề</legend><div class="truth-fields">${[...'abcd'].slice(0,q.answer.length).map((letter,i)=>`<label><span class="truth-statement">${q.statements?letter+") "+richText(q.statements[i]):"Mệnh đề "+letter+")"}</span><select name="${letter}" required><option value="">Chọn</option>${choices.map(choice=>`<option ${selected?.response?.[i]===choice?'selected':''}>${choice}</option>`).join('')}</select></label>`).join('')}</div><button class="button primary">Kiểm tra</button></fieldset></form>`;
 }
 function renderQuestion(){const c=current(),list=filtered();index=Math.max(0,Math.min(index,list.length-1));const q=list[index],area=document.querySelector('#question-area');if(!q){area.innerHTML=`<section class="empty panel"><span class="empty-icon">${icon(onlyPins?'star':'book')}</span><h1>${c.questions.length?'Không tìm thấy câu phù hợp':'Chưa có câu hỏi'}</h1><p>${c.questions.length?'':''}</p>${!c.questions.length?`<a class="button primary" href="#${route.subject}/${route.grade}/1">Xem chương đầu ${icon('arrow')}</a>`:'<button class="button" data-action="clear-filter">Bỏ bộ lọc</button>'}</section>`;renderGrid();return;}
  const display=mathContent[q.id]||q;
@@ -57,7 +57,7 @@ document.addEventListener('input',event=>{if(event.target.id==='search'){query=e
 document.addEventListener('change',event=>{if(event.target.id==='chapter-select')go(`${route.subject}/${route.grade}/${event.target.value}`);if(event.target.id==='lesson-select'){lessonFilter=event.target.value;typeFilter='';index=0;render();}if(event.target.id==='type-select'){typeFilter=event.target.value;index=0;renderQuestion();}if(event.target.id==='pins-only'){onlyPins=event.target.checked;index=0;renderQuestion();}});
 document.addEventListener('submit',event=>{if(!['short-form','true-false-form'].includes(event.target.id))return;event.preventDefault();const q=filtered()[index];if(!q||isAnswered(q,saved.answers[q.id]))return;
  if(q.kind==='true-false'){
-  const response=[...'abcd'].map(letter=>event.target.elements[letter].value);
+  const response=[...'abcd'].slice(0,q.answer.length).map(letter=>event.target.elements[letter].value);
   saved.answers[q.id]={response,correct:response.every((value,i)=>value===q.answer[i])};
   store();render();return;
  }

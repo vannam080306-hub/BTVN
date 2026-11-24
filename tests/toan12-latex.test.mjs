@@ -11,11 +11,13 @@ test('Các chương 2–6 có đủ đề và lời giải LaTeX, không dùng �
  const specs=[[2,39,5,5],[3,14,4,0],[4,43,30,26],[5,36,16,16],[6,5,11,10]];
  for(const [chapter,choices,truths,shorts] of specs){
   const {questions}=math12[chapter-1];
-  assert.equal(questions.length,choices+truths+shorts);
-  assert.deepEqual(questions.map(q=>q.id),questions.map((_,i)=>["toan",12,chapter,"pdf",i+1].join("-")));
-  assert.equal(questions.filter(q=>q.kind==='choice').length,choices);
-  assert.equal(questions.filter(q=>q.kind==='true-false').length,truths);
-  assert.equal(questions.filter(q=>q.kind==='short').length,shorts);
+  const extra=chapter===2?[23,9,25]:chapter===6?[0,11,10]:[0,0,0];
+  const oldCount=choices+truths+shorts;
+  assert.equal(questions.length,oldCount+extra.reduce((sum,count)=>sum+count,0));
+  assert.deepEqual(questions.map(q=>q.id),questions.map((_,i)=>i<oldCount?["toan",12,chapter,"pdf",i+1].join("-"):["toan",12,chapter,"vdc",i-oldCount+1].join("-")));
+  assert.equal(questions.filter(q=>q.kind==='choice').length,choices+extra[0]);
+  assert.equal(questions.filter(q=>q.kind==='true-false').length,truths+extra[1]);
+  assert.equal(questions.filter(q=>q.kind==='short').length,shorts+extra[2]);
   for(const q of questions){
    assert.ok(q.originalSolution && q.nativeLatex,q.id);
    assert.equal(q.pdfSource,undefined,q.id);
@@ -26,7 +28,7 @@ test('Các chương 2–6 có đủ đề và lời giải LaTeX, không dùng �
    }
    for(const row of [q.table?.headers||[],...q.table?.rows||[]])
     for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
-   if(q.kind==='true-false')assert.equal(q.statements.length,4,q.id);
+   if(q.kind==='true-false')assert.equal(q.statements.length,q.answer.length,q.id);
    assert.doesNotMatch(solutionHTML(q.explanation),/solution-steps|<h3>Bước/);
    for(const figure of [q.diagram,q.solutionDiagram].filter(Boolean))
     await access(new URL('../assets/'+figure.folder+'/'+figure.file,import.meta.url));

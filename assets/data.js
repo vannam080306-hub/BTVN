@@ -1,17 +1,19 @@
-import {chapter2 as math12Chapter2} from './toan12-c2.js?v=03e095cee1e0';
-import {chapter3 as math12Chapter3} from './toan12-c3.js?v=03e095cee1e0';
-import {chapter6 as math12Chapter6} from './toan12-c6.js?v=03e095cee1e0';
-import {chapter4 as math12Chapter4} from './toan12-c4.js?v=03e095cee1e0';
-import {chapter5 as math12Chapter5} from './toan12-c5.js?v=03e095cee1e0';
-import {grade12Chapter1Questions} from './toan12-chuong1.js?v=03e095cee1e0';
-import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=03e095cee1e0';
-import {magneticFieldQuestions} from './ly12-tu-truong.js?v=03e095cee1e0';
-import {idealGasQuestions} from './ly12-khi.js?v=03e095cee1e0';
-import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=03e095cee1e0';
-import {chapter4Questions} from './toan11-chuong4.js?v=03e095cee1e0';
-import {chapter2Questions} from './toan11-chuong2.js?v=03e095cee1e0';
-import {chapter1Questions} from './toan11-chuong1.js?v=03e095cee1e0';
-import {chapter3Questions} from './toan11-chuong3.js?v=03e095cee1e0';
+import {vdc2} from './toan12-c2-vdc.js?v=9c88c06a42b1';
+import {vdc6} from './toan12-c6-vdc.js?v=9c88c06a42b1';
+import {chapter2 as math12Chapter2} from './toan12-c2.js?v=9c88c06a42b1';
+import {chapter3 as math12Chapter3} from './toan12-c3.js?v=9c88c06a42b1';
+import {chapter6 as math12Chapter6} from './toan12-c6.js?v=9c88c06a42b1';
+import {chapter4 as math12Chapter4} from './toan12-c4.js?v=9c88c06a42b1';
+import {chapter5 as math12Chapter5} from './toan12-c5.js?v=9c88c06a42b1';
+import {grade12Chapter1Questions} from './toan12-chuong1.js?v=9c88c06a42b1';
+import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=9c88c06a42b1';
+import {magneticFieldQuestions} from './ly12-tu-truong.js?v=9c88c06a42b1';
+import {idealGasQuestions} from './ly12-khi.js?v=9c88c06a42b1';
+import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=9c88c06a42b1';
+import {chapter4Questions} from './toan11-chuong4.js?v=9c88c06a42b1';
+import {chapter2Questions} from './toan11-chuong2.js?v=9c88c06a42b1';
+import {chapter1Questions} from './toan11-chuong1.js?v=9c88c06a42b1';
+import {chapter3Questions} from './toan11-chuong3.js?v=9c88c06a42b1';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
@@ -62,6 +64,6 @@ const bank={
  q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
  q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
 };
-const math12Chapters = [grade12Chapter1Questions, math12Chapter2, math12Chapter3, math12Chapter4, math12Chapter5, math12Chapter6];
+const math12Chapters = [grade12Chapter1Questions, [...math12Chapter2,...vdc2], math12Chapter3, math12Chapter4, math12Chapter5, [...math12Chapter6,...vdc6]];
 
 export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===12?math12Chapters[i]:subject==='ly'&&Number(grade)===12&&i===0?thermalPhysicsQuestions:subject==='ly'&&Number(grade)===12&&i===1?idealGasQuestions:subject==='ly'&&Number(grade)===12&&i===2?magneticFieldQuestions:subject==='ly'&&Number(grade)===12&&i===3?nuclearPhysicsQuestions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}

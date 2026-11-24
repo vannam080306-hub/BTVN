@@ -1,8 +1,8 @@
-import {mathContent} from './math-content.js?v=03e095cee1e0';
-import {richText,studyGuideHTML,solutionHTML} from './math.js?v=03e095cee1e0';
-import {geometryFigure} from './geometry.js?v=03e095cee1e0';
-import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=03e095cee1e0';
-import {subjects,chapters} from './data.js?v=03e095cee1e0';
+import {mathContent} from './math-content.js?v=9c88c06a42b1';
+import {richText,studyGuideHTML,solutionHTML} from './math.js?v=9c88c06a42b1';
+import {geometryFigure} from './geometry.js?v=9c88c06a42b1';
+import {gradeShortAnswer,isAnswered,isCorrect} from './answers.js?v=9c88c06a42b1';
+import {subjects,chapters} from './data.js?v=9c88c06a42b1';
 const app=document.querySelector('#app');
 const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icons={book:'M4 4h6a3 3 0 0 1 2 2v15a5 5 0 0 0-5-2H4V4Zm16 0h-6a3 3 0 0 0-2 2v15a5 5 0 0 1 5-2h3V4Z',arrow:'M5 12h14m-5-5 5 5-5 5',back:'M19 12H5m5-5-5 5 5 5',star:'m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z',check:'m5 12 4 4L19 6',sun:'M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1 1M18 18l1 1M5 19l1-1M18 6l1-1M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0',search:'M20 20l-5-5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0',chevron:'m9 5 7 7-7 7',home:'m3 10 9-7 9 7M5 9v12h5v-7h4v7h5V9'};
@@ -39,7 +39,7 @@ function diagramHTML(diagram){
 function trueFalseForm(q,answered,selected){
  const choices=['Đúng','Sai'];
  if(q.answer.includes('Phụ thuộc giả thiết'))choices.push('Phụ thuộc giả thiết');
- return `<form id="true-false-form" class="short-form"><fieldset ${answered?'disabled':''}><legend>Đánh giá từng mệnh đề</legend><div class="truth-fields">${[...'abcd'].map((letter,i)=>`<label><span class="truth-statement">${q.statements?letter+") "+richText(q.statements[i]):"Mệnh đề "+letter+")"}</span><select name="${letter}" required><option value="">Chọn</option>${choices.map(choice=>`<option ${selected?.response?.[i]===choice?'selected':''}>${choice}</option>`).join('')}</select></label>`).join('')}</div><button class="button primary">Kiểm tra</button></fieldset></form>`;
+ return `<form id="true-false-form" class="short-form"><fieldset ${answered?'disabled':''}><legend>Đánh giá từng mệnh đề</legend><div class="truth-fields">${[...'abcd'].slice(0,q.answer.length).map((letter,i)=>`<label><span class="truth-statement">${q.statements?letter+") "+richText(q.statements[i]):"Mệnh đề "+letter+")"}</span><select name="${letter}" required><option value="">Chọn</option>${choices.map(choice=>`<option ${selected?.response?.[i]===choice?'selected':''}>${choice}</option>`).join('')}</select></label>`).join('')}</div><button class="button primary">Kiểm tra</button></fieldset></form>`;
 }
 function renderQuestion(){const c=current(),list=filtered();index=Math.max(0,Math.min(index,list.length-1));const q=list[index],area=document.querySelector('#question-area');if(!q){area.innerHTML=`<section class="empty panel"><span class="empty-icon">${icon(onlyPins?'star':'book')}</span><h1>${c.questions.length?'Không tìm thấy câu phù hợp':'Chưa có câu hỏi'}</h1><p>${c.questions.length?'':''}</p>${!c.questions.length?`<a class="button primary" href="#${route.subject}/${route.grade}/1">Xem chương đầu ${icon('arrow')}</a>`:'<button class="button" data-action="clear-filter">Bỏ bộ lọc</button>'}</section>`;renderGrid();return;}
  const display=mathContent[q.id]||q;
@@ -57,7 +57,7 @@ document.addEventListener('input',event=>{if(event.target.id==='search'){query=e
 document.addEventListener('change',event=>{if(event.target.id==='chapter-select')go(`${route.subject}/${route.grade}/${event.target.value}`);if(event.target.id==='lesson-select'){lessonFilter=event.target.value;typeFilter='';index=0;render();}if(event.target.id==='type-select'){typeFilter=event.target.value;index=0;renderQuestion();}if(event.target.id==='pins-only'){onlyPins=event.target.checked;index=0;renderQuestion();}});
 document.addEventListener('submit',event=>{if(!['short-form','true-false-form'].includes(event.target.id))return;event.preventDefault();const q=filtered()[index];if(!q||isAnswered(q,saved.answers[q.id]))return;
  if(q.kind==='true-false'){
-  const response=[...'abcd'].map(letter=>event.target.elements[letter].value);
+  const response=[...'abcd'].slice(0,q.answer.length).map(letter=>event.target.elements[letter].value);
   saved.answers[q.id]={response,correct:response.every((value,i)=>value===q.answer[i])};
   store();render();return;
  }

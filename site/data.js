@@ -1,3 +1,5 @@
+import {vdc2} from './toan12-c2-vdc.js';
+import {vdc6} from './toan12-c6-vdc.js';
 import {chapter2 as math12Chapter2} from './toan12-c2.js';
 import {chapter3 as math12Chapter3} from './toan12-c3.js';
 import {chapter6 as math12Chapter6} from './toan12-c6.js';
@@ -62,6 +64,6 @@ const bank={
  q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
  q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
 };
-const math12Chapters = [grade12Chapter1Questions, math12Chapter2, math12Chapter3, math12Chapter4, math12Chapter5, math12Chapter6];
+const math12Chapters = [grade12Chapter1Questions, [...math12Chapter2,...vdc2], math12Chapter3, math12Chapter4, math12Chapter5, [...math12Chapter6,...vdc6]];
 
 export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===12?math12Chapters[i]:subject==='ly'&&Number(grade)===12&&i===0?thermalPhysicsQuestions:subject==='ly'&&Number(grade)===12&&i===1?idealGasQuestions:subject==='ly'&&Number(grade)===12&&i===2?magneticFieldQuestions:subject==='ly'&&Number(grade)===12&&i===3?nuclearPhysicsQuestions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}

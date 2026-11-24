@@ -1,4 +1,4 @@
-import {originalSolutions} from './toan12-chuong1-solutions.js?v=03e095cee1e0';
+import {originalSolutions} from './toan12-chuong1-solutions.js?v=9c88c06a42b1';
 // Nhập đủ 105 câu từ Chuong_1.pdf; các chỗ hiệu chỉnh được ghi trong docs/TOAN12-CHUONG1.md.
 const r=String.raw;
 const questions=[];
