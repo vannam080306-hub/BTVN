@@ -5,7 +5,7 @@ import {join} from 'node:path';
 import {createHash} from 'node:crypto';
 const root=fileURLToPath(new URL('..',import.meta.url));
 await buildMathContent();
-const names=['math.js','math-content.js','app.js','data.js','toan12-chuong1.js','toan12-chuong1-solutions.js','toan12-c4.js','toan12-c5.js','ly12-nhiet.js','ly12-khi.js','ly12-tu-truong.js','ly12-hat-nhan.js','toan11-chuong4.js','geometry.js','toan11-chuong3.js','toan11-chuong2.js','toan11-chuong1.js','answers.js','styles.css','favicon.svg'];
+const names=['math.js','math-content.js','app.js','data.js','toan12-chuong1.js','toan12-chuong1-solutions.js','toan12-c2.js','toan12-c3.js','toan12-c4.js','toan12-c5.js','toan12-c6.js','ly12-nhiet.js','ly12-khi.js','ly12-tu-truong.js','ly12-hat-nhan.js','toan11-chuong4.js','geometry.js','toan11-chuong3.js','toan11-chuong2.js','toan11-chuong1.js','answers.js','styles.css','favicon.svg'];
 const sources=await Promise.all(names.map(n=>readFile(join(root,'site',n),'utf8')));
 const version=createHash('sha256').update(sources.join('')).digest('hex').slice(0,12);
 await mkdir(join(root,'assets'),{recursive:true});
@@ -14,7 +14,7 @@ html=html.replace(/\.\/assets\/(app\.js|styles\.css)/g,(s)=>s+'?v='+version);
 await writeFile(join(root,'index.html'),html);
 for(let i=0;i<names.length;i++){
  let content=sources[i];
- if(names[i].endsWith('.js'))content=content.replace(/(\.\/(?:math-content|math|data|answers|geometry|ly12-nhiet|ly12-khi|ly12-tu-truong|ly12-hat-nhan|toan12-chuong1|toan12-chuong1-solutions|toan12-c4|toan12-c5|toan11-chuong4|toan11-chuong1|toan11-chuong2|toan11-chuong3)\.js)(['"])/g,(_,file,quote)=>file+'?v='+version+quote);
+ if(names[i].endsWith('.js'))content=content.replace(/(\.\/(?:math-content|math|data|answers|geometry|ly12-nhiet|ly12-khi|ly12-tu-truong|ly12-hat-nhan|toan12-chuong1|toan12-chuong1-solutions|toan12-c[2-6]|toan11-chuong4|toan11-chuong1|toan11-chuong2|toan11-chuong3)\.js)(['"])/g,(_,file,quote)=>file+'?v='+version+quote);
  await writeFile(join(root,'assets',names[i]),content);
 }
 await cp(join(root,'site/ly12-nhiet'),join(root,'assets/ly12-nhiet'),{recursive:true});
@@ -22,7 +22,7 @@ await cp(join(root,'site/ly12-khi'),join(root,'assets/ly12-khi'),{recursive:true
 await cp(join(root,'site/ly12-tu-truong'),join(root,'assets/ly12-tu-truong'),{recursive:true});
 await cp(join(root,'site/ly12-hat-nhan'),join(root,'assets/ly12-hat-nhan'),{recursive:true});
 await cp(join(root,'site/toan12-chuong1'),join(root,'assets/toan12-chuong1'),{recursive:true});
-for (const folder of ['toan12-c4','toan12-c5']) {
+for (const folder of ['toan12-c2','toan12-c4','toan12-c5','toan12-c6']) {
  await cp(join(root,'site',folder),join(root,'assets',folder),{recursive:true});
 }
 await cp(join(root,'site/vendor'),join(root,'assets/vendor'),{recursive:true});

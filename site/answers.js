@@ -22,4 +22,8 @@ export function gradeShortAnswer(question,response){
  return Math.abs(value-question.value)<=(question.tolerance??0.000051);
 }
 export function isAnswered(question,record){return ['short','true-false'].includes(question.kind)?!!record&&typeof record==='object'&&typeof record.correct==='boolean':Number.isInteger(record);}
-export function isCorrect(question,record){return ['short','true-false'].includes(question.kind)?isAnswered(question,record)&&record.correct:record===question.answer;}
+export function isCorrect(question,record){
+ if(!isAnswered(question,record))return false;
+ if(question.kind==='short'||question.kind==='true-false')return record.correct;
+ return question.acceptedChoiceIndices?.includes(record)??record===question.answer;
+}

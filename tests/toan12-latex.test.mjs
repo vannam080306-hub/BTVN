@@ -1,21 +1,31 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {access} from 'node:fs/promises';
+import {isCorrect} from '../site/answers.js';
+import {chapters} from '../site/data.js';
 import {chapter4} from '../site/toan12-c4.js';
-import {chapter5} from '../site/toan12-c5.js';
 import {richText,solutionHTML} from '../site/math.js';
 
-test('Chương 4–5 hiển thị đủ 167 đề và lời giải LaTeX, không dùng ảnh cắt chữ', async()=>{
- for(const [questions,count] of [[chapter4,99],[chapter5,68]]){
-  assert.equal(questions.length,count);
+test('Các chương 2–6 có đủ đề và lời giải LaTeX, không dùng ảnh cắt chữ', async()=>{
+ const math12=chapters('toan',12);
+ const specs=[[2,39,5,5],[3,14,4,0],[4,43,30,26],[5,36,16,16],[6,5,11,10]];
+ for(const [chapter,choices,truths,shorts] of specs){
+  const {questions}=math12[chapter-1];
+  assert.equal(questions.length,choices+truths+shorts);
+  assert.deepEqual(questions.map(q=>q.id),questions.map((_,i)=>["toan",12,chapter,"pdf",i+1].join("-")));
+  assert.equal(questions.filter(q=>q.kind==='choice').length,choices);
+  assert.equal(questions.filter(q=>q.kind==='true-false').length,truths);
+  assert.equal(questions.filter(q=>q.kind==='short').length,shorts);
   for(const q of questions){
    assert.ok(q.originalSolution && q.nativeLatex,q.id);
    assert.equal(q.pdfSource,undefined,q.id);
    assert.equal(q.solutionSteps,undefined,q.id);
    assert.ok(q.explanation.length>10,q.id);
-   for(const value of [q.prompt,q.explanation,q.answerText,...q.options||[],...q.statements||[]]){
+   for(const value of [q.prompt,q.explanation,q.answerText,q.sourceNote,...q.options||[],...q.statements||[]]){
     if(value)assert.doesNotThrow(()=>richText(value),q.id);
    }
+   for(const row of [q.table?.headers||[],...q.table?.rows||[]])
+    for(const cell of row)assert.doesNotThrow(()=>richText(cell),q.id);
    if(q.kind==='true-false')assert.equal(q.statements.length,4,q.id);
    assert.doesNotMatch(solutionHTML(q.explanation),/solution-steps|<h3>Bước/);
    for(const figure of [q.diagram,q.solutionDiagram].filter(Boolean))
@@ -32,3 +42,11 @@ test('Câu 5 giữ đủ cận -1 và 1, dấu tích phân và phép tính nguy�
  assert.equal(q.options.length,4);
 });
 
+
+test('Câu 12 chương 2 chấm đúng cả hai phương án giống nhau trong PDF',()=>{
+ const q=chapters('toan',12)[1].questions[11];
+ assert.equal(q.options[1],q.options[3]);
+ assert.equal(isCorrect(q,1),true);
+ assert.equal(isCorrect(q,3),true);
+ assert.equal(isCorrect(q,2),false);
+});
