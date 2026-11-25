@@ -1,19 +1,20 @@
-import {vdc2} from './toan12-c2-vdc.js?v=622d684dbe55';
-import {vdc6} from './toan12-c6-vdc.js?v=622d684dbe55';
-import {chapter2 as math12Chapter2} from './toan12-c2.js?v=622d684dbe55';
-import {chapter3 as math12Chapter3} from './toan12-c3.js?v=622d684dbe55';
-import {chapter6 as math12Chapter6} from './toan12-c6.js?v=622d684dbe55';
-import {chapter4 as math12Chapter4} from './toan12-c4.js?v=622d684dbe55';
-import {chapter5 as math12Chapter5} from './toan12-c5.js?v=622d684dbe55';
-import {grade12Chapter1Questions} from './toan12-chuong1.js?v=622d684dbe55';
-import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=622d684dbe55';
-import {magneticFieldQuestions} from './ly12-tu-truong.js?v=622d684dbe55';
-import {idealGasQuestions} from './ly12-khi.js?v=622d684dbe55';
-import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=622d684dbe55';
-import {chapter4Questions} from './toan11-chuong4.js?v=622d684dbe55';
-import {chapter2Questions} from './toan11-chuong2.js?v=622d684dbe55';
-import {chapter1Questions} from './toan11-chuong1.js?v=622d684dbe55';
-import {chapter3Questions} from './toan11-chuong3.js?v=622d684dbe55';
+import {chemistry12Chapters} from './hoa12.js?v=b91a9bf39d7b';
+import {vdc2} from './toan12-c2-vdc.js?v=b91a9bf39d7b';
+import {vdc6} from './toan12-c6-vdc.js?v=b91a9bf39d7b';
+import {chapter2 as math12Chapter2} from './toan12-c2.js?v=b91a9bf39d7b';
+import {chapter3 as math12Chapter3} from './toan12-c3.js?v=b91a9bf39d7b';
+import {chapter6 as math12Chapter6} from './toan12-c6.js?v=b91a9bf39d7b';
+import {chapter4 as math12Chapter4} from './toan12-c4.js?v=b91a9bf39d7b';
+import {chapter5 as math12Chapter5} from './toan12-c5.js?v=b91a9bf39d7b';
+import {grade12Chapter1Questions} from './toan12-chuong1.js?v=b91a9bf39d7b';
+import {nuclearPhysicsQuestions} from './ly12-hat-nhan.js?v=b91a9bf39d7b';
+import {magneticFieldQuestions} from './ly12-tu-truong.js?v=b91a9bf39d7b';
+import {idealGasQuestions} from './ly12-khi.js?v=b91a9bf39d7b';
+import {thermalPhysicsQuestions} from './ly12-nhiet.js?v=b91a9bf39d7b';
+import {chapter4Questions} from './toan11-chuong4.js?v=b91a9bf39d7b';
+import {chapter2Questions} from './toan11-chuong2.js?v=b91a9bf39d7b';
+import {chapter1Questions} from './toan11-chuong1.js?v=b91a9bf39d7b';
+import {chapter3Questions} from './toan11-chuong3.js?v=b91a9bf39d7b';
 export const subjects=[
  {id:'toan',name:'Toán',full:'Toán học',symbol:'ƒ',caption:'Tư duy logic. Khám phá quy luật.',color:'teal',chapters:{
   10:['Mệnh đề và tập hợp','Bất phương trình và hệ bất phương trình bậc nhất hai ẩn','Hệ thức lượng trong tam giác','Vectơ','Các số đặc trưng của mẫu số liệu không ghép nhóm','Hàm số, đồ thị và ứng dụng','Phương pháp tọa độ trong mặt phẳng','Đại số tổ hợp','Tính xác suất theo định nghĩa cổ điển'],
@@ -58,12 +59,8 @@ const bank={
  'hoa-11':[
  q('Khi một hệ phản ứng thuận nghịch đạt trạng thái cân bằng, điều nào đúng?', ['Phản ứng thuận dừng lại','Phản ứng nghịch dừng lại','Tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch','Nồng độ mọi chất đều bằng nhau'],2,'Cân bằng hóa học là cân bằng động: phản ứng thuận và nghịch vẫn diễn ra với tốc độ bằng nhau.','Chú ý cân bằng là trạng thái động.'),
  q('Với phản ứng N₂(g) + 3H₂(g) ⇌ 2NH₃(g), biểu thức Kc là:', ['[NH₃]² / ([N₂][H₂]³)','[N₂][H₂] / [NH₃]','[NH₃] / ([N₂][H₂])','[N₂][H₂]³ / [NH₃]²'],0,'Trong biểu thức Kc, nồng độ sản phẩm ở tử, chất phản ứng ở mẫu; số mũ là hệ số trong phương trình cân bằng.','Đặt sản phẩm ở tử và dùng hệ số phản ứng làm số mũ.','Trung bình'),
- q('Chất xúc tác ảnh hưởng thế nào đến vị trí cân bằng hóa học?', ['Luôn chuyển dịch theo chiều thuận','Luôn chuyển dịch theo chiều nghịch','Không làm thay đổi vị trí cân bằng','Làm mọi phản ứng dừng lại'],2,'Chất xúc tác làm tăng tốc độ cả hai chiều và giúp hệ đạt cân bằng nhanh hơn, không làm thay đổi vị trí cân bằng.','Phân biệt tốc độ đạt cân bằng với vị trí cân bằng.')],
- 'hoa-12':[
- q('Công thức nào sau đây là của một ester?', ['CH₃COOCH₃','CH₃COOH','C₂H₅OH','CH₃CHO'],0,'CH₃COOCH₃ có nhóm chức ester –COO– nối với gốc hydrocarbon. Các chất còn lại là acid, alcohol và aldehyde.','Tìm nhóm chức –COO–.'),
- q('Thủy phân ethyl acetate trong dung dịch NaOH thu được:', ['CH₃COONa và C₂H₅OH','CH₃OH và C₂H₅COONa','CH₃COOH và NaCl','CH₄ và CO₂'],0,'CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH. Đây là phản ứng xà phòng hóa ester.','Tách phần CH₃COO– và gốc ethyl của ester.','Trung bình'),
- q('Chất béo là triester của glycerol với:', ['Acid béo','Acid hydrochloric','Acid sulfuric','Mọi acid vô cơ'],0,'Chất béo là triester tạo bởi glycerol và các acid béo.','Xét các acid carboxylic mạch dài trong lipid.')]
+ q('Chất xúc tác ảnh hưởng thế nào đến vị trí cân bằng hóa học?', ['Luôn chuyển dịch theo chiều thuận','Luôn chuyển dịch theo chiều nghịch','Không làm thay đổi vị trí cân bằng','Làm mọi phản ứng dừng lại'],2,'Chất xúc tác làm tăng tốc độ cả hai chiều và giúp hệ đạt cân bằng nhanh hơn, không làm thay đổi vị trí cân bằng.','Phân biệt tốc độ đạt cân bằng với vị trí cân bằng.')]
 };
 const math12Chapters = [grade12Chapter1Questions, [...math12Chapter2,...vdc2], math12Chapter3, math12Chapter4, math12Chapter5, [...math12Chapter6,...vdc6]];
 
-export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===12?math12Chapters[i]:subject==='ly'&&Number(grade)===12&&i===0?thermalPhysicsQuestions:subject==='ly'&&Number(grade)===12&&i===1?idealGasQuestions:subject==='ly'&&Number(grade)===12&&i===2?magneticFieldQuestions:subject==='ly'&&Number(grade)===12&&i===3?nuclearPhysicsQuestions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}
+export function chapters(subject,grade){const item=subjects.find(s=>s.id===subject);return (item?.chapters[grade]||[]).map((name,i)=>({id:i+1,name,questions:subject==='toan'&&Number(grade)===12?math12Chapters[i]:subject==='hoa'&&Number(grade)===12?chemistry12Chapters[i]:subject==='ly'&&Number(grade)===12&&i===0?thermalPhysicsQuestions:subject==='ly'&&Number(grade)===12&&i===1?idealGasQuestions:subject==='ly'&&Number(grade)===12&&i===2?magneticFieldQuestions:subject==='ly'&&Number(grade)===12&&i===3?nuclearPhysicsQuestions:subject==='toan'&&Number(grade)===11&&i===0?chapter1Questions:subject==='toan'&&Number(grade)===11&&i===1?chapter2Questions:subject==='toan'&&Number(grade)===11&&i===2?chapter3Questions:subject==='toan'&&Number(grade)===11&&i===3?chapter4Questions:i===0?(bank[subject+'-'+grade]||[]).map((item,j)=>({...item,id:`${subject}-${grade}-1-${j+1}`})):[]}));}
